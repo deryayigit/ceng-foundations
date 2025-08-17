@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int addNumbers(int n) {
-  if (n != 0)
+  if (n > 0)
     return n + addNumbers(n - 1);
   else
-    return n;
+    return 0;
 }
 
 int main() {
@@ -15,3 +15,4 @@ int main() {
   printf("Sum = %d", addNumbers(num));
   return 0;
 }
+
