@@ -12,7 +12,7 @@ This directory contains implementations of fundamental mathematical and logical 
   - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
   - 1634 → 1⁴ + 6⁴ + 3⁴ + 4⁴ = 1634 → Armstrong number  
 
-  👉 To test whether a number is an Armstrong number, see the code in - [**armstrong_number.c**](./armstrong_number.c)
+  👉 To test whether a number is an Armstrong number, see the code in : algorithms/basics/armstorng_number.c
 
   
   
@@ -34,6 +34,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Example: 7 → Prime, 9 → Not prime.
 
 ---
+
 
 
 
