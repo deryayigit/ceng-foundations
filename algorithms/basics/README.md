@@ -17,9 +17,9 @@ This directory contains implementations of fundamental mathematical and logical 
   
   
 
-- [**factorial_iterative.c**](./factorial_iterative.c)  
-  Computes the factorial of a number using an **iterative (loop-based)** approach.  
+- Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
+  👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
 
 - Leap year is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
@@ -49,6 +49,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Example: 7 → Prime, 9 → Not prime.
 
 ---
+
 
 
 
