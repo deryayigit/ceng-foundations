@@ -21,9 +21,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
-- Determines whether a given year is a **leap year**.  
-
-  A leap year is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
+- Leap year is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
   To correct this discrepancy, an extra day (February 29) is added in certain years.  
 
@@ -51,6 +49,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Example: 7 → Prime, 9 → Not prime.
 
 ---
+
 
 
 
