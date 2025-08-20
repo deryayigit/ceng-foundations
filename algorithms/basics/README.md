@@ -1,4 +1,4 @@
-# Algorithms Directory
+# Algorithms Basics Directory 
 
 This directory contains implementations of fundamental mathematical and logical algorithms in C.
 
@@ -32,3 +32,4 @@ Each file can be compiled individually using `gcc`:
 ```bash
 gcc filename.c -o filename
 ./filename
+
