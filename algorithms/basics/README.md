@@ -4,9 +4,19 @@ This directory contains implementations of fundamental mathematical and logical 
 
 ## Files
 
-- [**armstrong_number.c**](./armstrong_number.c)  
-  Checks whether a given number is an Armstrong number (also called narcissistic number).  
-  Example: 153 → 1³ + 5³ + 3³ = 153 → Armstrong number.
+- Armstrong Numbers :
+  An Armstrong number is defined as follows:  
+  If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
+  Armstrong numbers have at least three digits.  
+
+  Examples:  
+  - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
+  - 1634 → 1⁴ + 6⁴ + 3⁴ + 4⁴ = 1634 → Armstrong number  
+
+  👉 To test whether a number is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c).
+
+  
+  
 
 - [**factorial_iterative.c**](./factorial_iterative.c)  
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
@@ -25,6 +35,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Example: 7 → Prime, 9 → Not prime.
 
 ---
+
 
 
 
