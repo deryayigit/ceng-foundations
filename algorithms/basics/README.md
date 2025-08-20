@@ -4,9 +4,9 @@ This directory contains implementations of fundamental mathematical and logical 
 
 ## Basic Algorithms and Links
 
-- Armstrong Numbers :
+- **Armstrong Numbers**:
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
-Armstrong numbers have at least three digits. Also Armstrong numbers also called Narsistic numbers.
+Armstrong numbers have at least three digits. Also Armstrong numbers also called Narcissistic numbers.
 
   Examples:  
   - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
@@ -22,7 +22,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
   👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
 
-- Leap year is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
+- **Leap Year** is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
   To correct this discrepancy, an extra day (February 29) is added in certain years.  
 
@@ -41,7 +41,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
    👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
 
 
-- Perfect number is a positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
+- **Perfect number** is a positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
 
   Examples:  
   - 6 → 1 + 2 + 3 = 6 → Perfect number  
@@ -49,10 +49,11 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
   👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)
 
--  Prime number is a positive integer greater than 1 that has no divisors other than 1 and itself.  
+-  **Prime number** is a positive integer greater than 1 that has no divisors other than 1 and itself.  
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
