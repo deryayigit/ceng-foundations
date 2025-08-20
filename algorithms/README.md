@@ -39,7 +39,8 @@ The performance of an algorithm is measured by the number of operations it requi
 ### Big-O Notation Explained
 ### Big-O Complexity Chart
 
-![Big-O Complexity Chart](./assets/big-o-complexity-chart.png)
+![Big-O Complexity Chart] <img width="554" height="392" alt="image" src="https://github.com/user-attachments/assets/4b0727a4-3f95-4ed2-bcf2-194c9bbcb524" />
+
 
 - **O(1) — Constant Time:**  
   Independent of input size, runs in the same amount of time.  
@@ -82,4 +83,5 @@ The performance of an algorithm is measured by the number of operations it requi
 ---
 
 📌 This directory contains C language implementations of the above concepts, with examples that demonstrate both theory and practice.  
+
 
