@@ -5,7 +5,6 @@ This directory contains implementations of fundamental mathematical and logical 
 ## Files
 
 - Armstrong Numbers :
-  An Armstrong number is defined as follows:  
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
   Armstrong numbers have at least three digits.  
 
@@ -35,6 +34,7 @@ This directory contains implementations of fundamental mathematical and logical 
   Example: 7 → Prime, 9 → Not prime.
 
 ---
+
 
 
 
