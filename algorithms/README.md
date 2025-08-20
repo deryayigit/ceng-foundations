@@ -37,7 +37,9 @@ In short, algorithms are the **step-by-step recipes** for both real-world proces
 The performance of an algorithm is measured by the number of operations it requires, often expressed in **Big-O notation**.  
 
 ### Big-O Notation Explained
-![Big-O Complexity Chart](https://github.com/deryayigit/ceng-foundations/issues/1#issue-3339577055)
+### Big-O Complexity Chart
+
+![Big-O Complexity Chart](./assets/big-o-complexity-chart.png)
 
 - **O(1) — Constant Time:**  
   Independent of input size, runs in the same amount of time.  
@@ -80,3 +82,4 @@ The performance of an algorithm is measured by the number of operations it requi
 ---
 
 📌 This directory contains C language implementations of the above concepts, with examples that demonstrate both theory and practice.  
+
