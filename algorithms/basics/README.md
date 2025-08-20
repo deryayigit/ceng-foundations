@@ -49,10 +49,12 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
   👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)
 
--  ***Prime number*** is a positive integer greater than 1 that has no divisors other than 1 and itself.  
+-  ***Prime number*** is a positive integer greater than 1 that has no divisors other than 1 and itself.
+  
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
