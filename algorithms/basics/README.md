@@ -6,19 +6,20 @@ This directory contains implementations of fundamental mathematical and logical 
 
 - Armstrong Numbers :
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
-  Armstrong numbers have at least three digits.  
+Armstrong numbers have at least three digits. Also Armstrong numbers also called Narsistic numbers.
 
   Examples:  
   - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
   - 1634 → 1⁴ + 6⁴ + 3⁴ + 4⁴ = 1634 → Armstrong number  
 
-  👉 To test whether a number is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
+ 👉 To test whether a number is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
   
   
 
 - Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
+
   👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
 
 - Leap year is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
@@ -52,6 +53,7 @@ This directory contains implementations of fundamental mathematical and logical 
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
