@@ -26,10 +26,6 @@ This directory contains implementations of fundamental mathematical and logical 
 
 ---
 
-## How to Compile and Run
-Each file can be compiled individually using `gcc`:
 
-```bash
-gcc filename.c -o filename
-./filename
+
 
