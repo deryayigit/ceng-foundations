@@ -2,7 +2,7 @@
 
 This directory contains implementations of fundamental mathematical and logical algorithms in C.
 
-## Files
+## Basic Algorithms and Links
 
 - Armstrong Numbers :
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
@@ -40,15 +40,19 @@ This directory contains implementations of fundamental mathematical and logical 
    👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
 
 
-- [**isperfect.c**](./isperfect.c)  
-  Checks whether a number is a **perfect number** (sum of its proper divisors equals the number itself).  
-  Example: 28 → 1 + 2 + 4 + 7 + 14 = 28 → Perfect number.
+- Perfect number is a positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
 
-- [**isprime.c**](./isprime.c)  
-  Tests whether a number is a **prime number**.  
-  Example: 7 → Prime, 9 → Not prime.
+  Examples:  
+  - 6 → 1 + 2 + 3 = 6 → Perfect number  
+  - 28 → 1 + 2 + 4 + 7 + 14 = 28 → Perfect number  
+
+  👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)
+
+-  Prime number is a positive integer greater than 1 that has no divisors other than 1 and itself.  
+  👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
