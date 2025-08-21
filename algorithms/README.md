@@ -1,8 +1,8 @@
 # Algorithms Overview
 
-## What is an Algorithm?
-An algorithm is a finite sequence of well-defined steps designed to solve a specific problem.  
-In computer science, algorithms define the fundamental processes for handling, storing, and processing data.  
+## Definition
+An algorithm is a finite and well-defined sequence of operations designed to solve a specific problem.
+In computer science, algorithms define the fundamental processes for processing, storing, and managing data. 
 
 ---
 
@@ -82,6 +82,7 @@ The performance of an algorithm is measured by the number of operations it requi
 ---
 
 📌 This directory contains C language implementations of the above concepts, with examples that demonstrate both theory and practice.  
+
 
 
 
