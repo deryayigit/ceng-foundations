@@ -90,7 +90,6 @@ The performance of an algorithm is measured by the number of operations it requi
 
 ---
 
-📌 This directory contains C language implementations of the above concepts, with examples that demonstrate both theory and practice.  
 
 
 
