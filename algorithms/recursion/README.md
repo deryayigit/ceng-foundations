@@ -1,6 +1,6 @@
 # Recursion
 
-Recursion is **a technique used in computer science** to solve big problems by breaking them into smaller, similar problems.  
+Recursion is a technique used in computer science to solve big problems by breaking them into smaller, similar problems.  
 The process in which a function calls itself directly or indirectly is called **recursion**, and the corresponding function is called a **recursive function**.  
 
 For recursion to work correctly, there must always be a **base condition (termination condition)** — otherwise the recursion will continue infinitely and cause a stack overflow.
@@ -28,4 +28,5 @@ There are several common types of recursion:
 - **Tail Recursion**  
   The recursive call is the **last statement** in the method.  
   Tail recursion can sometimes be optimized by compilers into iteration.  
+
 
