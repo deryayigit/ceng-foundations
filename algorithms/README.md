@@ -1,15 +1,14 @@
 # Algorithms Overview
 
 ## Definition
-An algorithm is a finite and well-defined sequence of operations designed to solve a specific problem.
-In computer science, algorithms define the fundamental processes for processing, storing, and managing data. 
+An **algorithm** is a finite and well-defined sequence of operations designed to solve a specific problem.  
+In computer science, algorithms define the fundamental processes for processing, storing, and managing data.  
+
+The term *algorithm* originates from the 9th-century mathematician **Muhammad al-Khwarizmi**, whose works on algebra were translated into Latin and spread in Europe under the term *algorismus*.  
+Over time, the word evolved to represent not only arithmetic procedures but also general problem-solving methods.  
 
 ---
-
-## Historical Background
-The concept of the algorithm is named after the 9th-century mathematician **Muhammad al-Khwarizmi**.  
-His works on algebra were translated into Latin and spread in Europe under the term *algorismus*.  
-Over time, the word evolved to represent not only arithmetic procedures but also general problem-solving methods.  
+ 
 
 ---
 
@@ -89,6 +88,7 @@ The performance of an algorithm is measured by the number of operations it requi
   Choice of data structures and auxiliary variables can greatly affect this.  
 
 ---
+
 
 
 
