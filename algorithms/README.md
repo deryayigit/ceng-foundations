@@ -23,13 +23,22 @@ In short, algorithms are the **step-by-step recipes** for both real-world proces
 
 ---
 
-## Types of Algorithms
-- **Searching Algorithms:** Linear Search, Binary Search  
-- **Sorting Algorithms:** Bubble Sort, Merge Sort, Quick Sort  
-- **Recursive Algorithms:** Fibonacci, Factorial (recursive)  
-- **Graph Algorithms:** BFS, DFS, Dijkstra, Kruskal  
-- **Dynamic Programming Algorithms:** Knapsack, Longest Common Subsequence  
-- **Greedy Algorithms:** Activity Selection, Huffman Coding  
+## Key Algorithmic Paradigms
+
+| Concept            | Description                              | Example                          |
+|--------------------|------------------------------------------|----------------------------------|
+| **Brute Force**    | Tries all possibilities/combinations      | Password cracking                |
+| **Divide & Conquer** | Splits problem into subproblems and combines results | Merge Sort                       |
+| **Greedy**         | Makes the best local choice at each step  | Huffman Coding, Activity Selection |
+| **Dynamic Programming** | Optimizes by storing solutions to overlapping subproblems | Knapsack Problem                  |
+| **Backtracking**   | Explores all possibilities but backtracks when a path is invalid | N-Queens, Sudoku                 |
+| **Branch & Bound** | Eliminates branches that cannot yield better solutions | Travelling Salesman Problem (TSP) |
+| **Randomized**     | Uses random decisions to simplify or speed up computation | Randomized Quick Sort, Monte Carlo |
+
+> 📌 **Note:**  
+> These paradigms are not specific algorithms but general approaches to problem-solving.  
+> Each paradigm can be applied to a wide variety of problems and combined with others for more efficient solutions.
+
 
 ---
 
@@ -82,6 +91,7 @@ The performance of an algorithm is measured by the number of operations it requi
 ---
 
 📌 This directory contains C language implementations of the above concepts, with examples that demonstrate both theory and practice.  
+
 
 
 
