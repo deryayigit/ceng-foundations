@@ -33,11 +33,6 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
   This adjustment ensures long-term alignment between the civil calendar and the solar year.  
 
-  **Examples:**  
-  - 2020 → Leap year  
-  - 1900 → Not a leap year  
-  - 2000 → Leap year
-
    👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
 
 
@@ -54,6 +49,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
