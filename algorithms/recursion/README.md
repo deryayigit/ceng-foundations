@@ -8,7 +8,22 @@ For recursion to work correctly, there must always be a **base condition (termin
 Recursion helps in **logic building** and provides a natural way to solve complex problems by decomposing them into smaller subproblems.  
 It is a powerful technique, but must be used carefully to avoid performance issues and infinite loops.  
 
+
 ---
+
+## Base Case and Recursive Case
+Every recursive function must contain two parts:
+
+- **Base Case:** The simplest instance of the problem that can be solved directly.  
+- **Recursive Case:** The part where the function calls itself with a smaller/simpler input.  
+
+**Example (Factorial):**
+```
+int factorial(int n) {
+    if (n == 0) return 1;      // Base case
+    return n * factorial(n-1); // Recursive case
+}
+
 
 ## Types of Recursion
 
@@ -28,5 +43,6 @@ There are several common types of recursion:
 - **Tail Recursion**  
   The recursive call is the **last statement** in the method.  
   Tail recursion can sometimes be optimized by compilers into iteration.  
+
 
 
