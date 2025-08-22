@@ -1,7 +1,3 @@
-# Algorithms Basics Directory 
-
-This directory contains implementations of fundamental mathematical and logical algorithms in C.
-
 ## Basic Algorithms and Links
 
 - ***Armstrong Numbers***:
@@ -49,6 +45,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
