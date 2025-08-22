@@ -19,11 +19,12 @@ Every recursive function must contain two parts:
 
 **Example (Factorial):**
 
+```c
 int factorial(int n) {
     if (n == 0) return 1;      // Base case
     return n * factorial(n-1); // Recursive case
 }
-
+```
 
 ## Types of Recursion
 
@@ -43,6 +44,7 @@ There are several common types of recursion:
 - **Tail Recursion**  
   The recursive call is the **last statement** in the method.  
   Tail recursion can sometimes be optimized by compilers into iteration.  
+
 
 
 
