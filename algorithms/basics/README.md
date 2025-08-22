@@ -20,7 +20,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 - Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
-  👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
+👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
 
 - ***Leap Year*** is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
@@ -33,7 +33,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
   This adjustment ensures long-term alignment between the civil calendar and the solar year.  
 
-   👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
+  👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
 
 
 - ***Perfect number*** is a positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
@@ -49,6 +49,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
