@@ -17,7 +17,7 @@ Every recursive function must contain two parts:
 - **Base Case:** The simplest instance of the problem that can be solved directly.  
 - **Recursive Case:** The part where the function calls itself with a smaller/simpler input.  
 
-**Example (Factorial):**
+**Example :**
 
 ```c
 int factorial(int n) {
@@ -44,6 +44,7 @@ There are several common types of recursion:
 - **Tail Recursion**  
   The recursive call is the **last statement** in the method.  
   Tail recursion can sometimes be optimized by compilers into iteration.  
+
 
 
 
