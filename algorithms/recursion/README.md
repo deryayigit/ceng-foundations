@@ -5,8 +5,7 @@ The process in which a function calls itself directly or indirectly is called **
 
 For recursion to work correctly, there must always be a **base condition (termination condition)** — otherwise the recursion will continue infinitely and cause a stack overflow.
 
-Recursion helps in **logic building** and provides a natural way to solve complex problems by decomposing them into smaller subproblems.  
-It is a powerful technique, but must be used carefully to avoid performance issues and infinite loops.  
+Recursion helps in **logic building** and provides a natural way to solve complex problems by decomposing them into smaller subproblems.    
 
 
 ---
@@ -44,6 +43,7 @@ There are several common types of recursion:
 - **Tail Recursion**  
   The recursive call is the **last statement** in the method.  
   Tail recursion can sometimes be optimized by compilers into iteration.  
+
 
 
 
