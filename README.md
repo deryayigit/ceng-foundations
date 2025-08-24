@@ -1,6 +1,3 @@
 # CENG Foundations
 
-This repository includes implementations of course projects in C and C++, 
-with a focus on fundamental concepts essential to my computer engineering studies.  
-It also contains individual projects developed from external trainings, 
-mainly in C and C++, but also using Python and C#.
+This repository is dedicated to exploring fundamental computer engineering concepts and implementing their code primarily in C and C++. It also includes my independent work and personal projects. While C and C++ are used predominantly, there are also projects developed in Python and C#.
