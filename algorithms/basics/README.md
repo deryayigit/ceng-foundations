@@ -8,7 +8,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
   - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
   - 1634 → 1⁴ + 6⁴ + 3⁴ + 4⁴ = 1634 → Armstrong number  
 
- 👉 To test whether a number is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
+ 👉 To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
   
   
@@ -45,6 +45,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
