@@ -32,24 +32,22 @@ The square root of the variance; used to understand data spread.
 
 # Digital Signal Processing (DSP) Overview
 
-## Signal Digitization
+# Digitization of Continuous Signals
 
-A continuous signal is digitized by passing it through an **ADC (Analog-to-Digital Converter)**, transferring real-world data into the digital domain. The discretization occurs in both **time** and **amplitude**:
+A continuous signal is digitized by passing it through an **ADC (Analog-to-Digital Converter)**, allowing real-world data to be transferred into the digital domain.
 
-- **Sampling (Time Discretization / x-axis)**: The process of converting a continuous-time signal into a discrete-time signal by taking measurements at regular time intervals.
-- **Quantization (Amplitude Discretization / y-axis)**: The process of mapping a continuous amplitude signal to discrete levels.
+The discretization of the continuous signal from the ADC occurs along the **x** and **y** axes:
 
-### Errors and Noise
+- **Sampling**: Discretization along the x-axis (time axis).  
+- **Quantization**: Discretization along the y-axis (amplitude axis).
 
-- **Aliasing**: Errors that occur during time discretization when the sampling rate is insufficient.
-- **Quantization Error**: Errors introduced during amplitude discretization due to the finite resolution of the ADC.
+In the digital conversion process:
 
-### Improving Conversion Quality
+- Losses along the x-axis are called **sampling noise** or **aliasing**.  
+- Losses along the y-axis are called **noise** or **quantization error**.
 
-To minimize errors and improve digital signal quality:
+To reduce these losses, the number of samples should be increased. However, while increasing the number of samples up to a certain point improves conversion quality, excessive sampling can lead to **inefficiency** and **higher costs**.
 
-- Increase the **sampling rate** (number of samples per unit time).
-- Balance the number of samples to avoid excessive processing cost and efficiency loss.
 
   
 ---
@@ -60,5 +58,6 @@ To minimize errors and improve digital signal quality:
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
 
