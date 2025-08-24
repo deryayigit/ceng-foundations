@@ -10,6 +10,11 @@ Example: Audio waveform, analog temperature sensor output.
 ### Discrete Signal
 A discrete signal is a sequence of values obtained by **sampling a continuous signal at uniform intervals in time**. Each sample represents the amplitude of the signal at that specific time. Discrete signals are typically processed digitally using algorithms such as **DFT (Discrete Fourier Transform)**, filters, or difference equations.
 
+<img width="1440" height="960" alt="fig001" src="https://github.com/user-attachments/assets/136651b1-a197-4364-b323-d3fe5a886dfa" />
+
+<img width="1440" height="960" alt="fig002" src="https://github.com/user-attachments/assets/0cfa3f61-e735-4546-aa5b-9cc040e6c211" />
+
+
 **Summary:**  
 A discrete signal is simply a **sequence of sampled values from a continuous signal** and should not be confused with specific analysis techniques applied to it.
 
@@ -61,6 +66,7 @@ To reduce these losses, the number of samples should be increased. However, whil
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
 
 
