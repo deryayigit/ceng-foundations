@@ -14,23 +14,19 @@ Example: Audio sampled by an ADC.
 ### Mean (μ)
 Represents the central value of a dataset.
 
-\[
-\mu = \frac{1}{N} \sum_{i=1}^{N} x_i
-\]
+<img width="146" height="101" alt="image" src="https://github.com/user-attachments/assets/47be30b8-a3d5-41db-b894-03ce82a6514d" />
 
 ### Variance (σ²)
 Indicates how much the data deviates from the mean.
 
-\[
-\sigma^2 = \frac{1}{N} \sum_{i=1}^{N} (x_i - \mu)^2
-\]
+<img width="205" height="85" alt="image" src="https://github.com/user-attachments/assets/460367f4-ba71-445a-a45c-89758a0d3c10" />
+
 
 ### Standard Deviation (σ)
 The square root of the variance; used to understand data spread.
 
-\[
-\sigma = \sqrt{\sigma^2}
-\]
+<img width="108" height="51" alt="image" src="https://github.com/user-attachments/assets/ffc3d60a-b6db-41f7-a391-366d20bf7607" />
+
 
 ---
 
@@ -67,3 +63,4 @@ Discrete Fourier Transform (DFT) is used to analyze the frequency components of 
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
