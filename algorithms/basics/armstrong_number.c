@@ -4,7 +4,8 @@
 
 int main() {
     char input[100];  //take number
-    unsigned long long int num, original_num, remainder, n = 0, result = 0;
+    unsigned long long int num, original_num, remainder, n = 0; 
+    unsigned long long int result = 0;
 
     printf("Enter an integer: ");
     fgets(input, sizeof(input), stdin);
@@ -49,4 +50,5 @@ int main() {
 
     return 0;
 }
+
 
