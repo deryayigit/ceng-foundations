@@ -10,7 +10,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
  👉 To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
-- ***Iterative Factorial Calculate***
+- ***Iterative Factorial Calculate***:
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
@@ -43,6 +43,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
