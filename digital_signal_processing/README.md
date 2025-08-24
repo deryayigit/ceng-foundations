@@ -3,6 +3,14 @@
 
 ## Basic Concepts
 
+**Statistics and Probability Concepts**
+Mean:
+Variance:
+Standart Deviation:
+PDF:
+CDF:
+---
+
 ### Continuous Signal
 A signal that is continuous in time and can take any value at any moment.  
 Example: Audio waveform, analog temperature sensor output.
@@ -60,12 +68,15 @@ To reduce these losses, the number of samples should be increased. However, whil
   
 ---
 
+**Convulation**
+
 
 ## References
 
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
 
 
