@@ -30,37 +30,35 @@ The square root of the variance; used to understand data spread.
 
 ---
 
-## ADC and Digitization
+# Digital Signal Processing (DSP) Overview
 
-- **Sampling:** Taking the signal at specific intervals along the time axis (x-axis).  
-- **Quantization:** Rounding the signal to specific levels along the amplitude axis (y-axis).  
-- **Alias (Sampling Noise):** High-frequency components appearing as low-frequency due to insufficient sampling.  
-- **Quantization Error / Noise:** Errors created during amplitude discretization.
+## Signal Digitization
 
-💡 Increasing the number of samples improves quality, but increases cost and data size.
+A continuous signal is digitized by passing it through an **ADC (Analog-to-Digital Converter)**, transferring real-world data into the digital domain. The discretization occurs in both **time** and **amplitude**:
 
+- **Sampling (Time Discretization / x-axis)**: The process of converting a continuous-time signal into a discrete-time signal by taking measurements at regular time intervals.
+- **Quantization (Amplitude Discretization / y-axis)**: The process of mapping a continuous amplitude signal to discrete levels.
+
+### Errors and Noise
+
+- **Aliasing**: Errors that occur during time discretization when the sampling rate is insufficient.
+- **Quantization Error**: Errors introduced during amplitude discretization due to the finite resolution of the ADC.
+
+### Improving Conversion Quality
+
+To minimize errors and improve digital signal quality:
+
+- Increase the **sampling rate** (number of samples per unit time).
+- Balance the number of samples to avoid excessive processing cost and efficiency loss.
+
+  
 ---
 
-## Example Project Ideas
-
-## DFT (Discrete Fourier Transform)
-
-Discrete Fourier Transform (DFT) is used to analyze the frequency components of a discrete signal.
-
----
-
-## Additional Concepts
-
-- **Aliasing:** Misrepresentation of a signal at the wrong frequency due to insufficient sampling.  
-- **Noise:** Signal error caused by ADC or environmental effects.  
-- **Butterworth Filter:** A signal filter that passes frequencies within a specific range.  
-- **Gray Scale Transform:** Converting color image data to grayscale in image processing.
-
----
 
 ## References
 
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
