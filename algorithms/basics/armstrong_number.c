@@ -4,7 +4,7 @@
 
 int main() {
     char input[100];  //take number
-    unsigned long long int num, originalNum, remainder, n = 0, result = 0;
+    unsigned long long int num, original_num, remainder, n = 0, result = 0;
 
     printf("Enter an integer: ");
     fgets(input, sizeof(input), stdin);
@@ -20,18 +20,18 @@ int main() {
     cleaned[j] = '\0';
 
     num = strtoull(cleaned, NULL, 10);
-    originalNum = num;
+    original_num = num;
 
   
-    while (originalNum != 0) {
-        originalNum /= 10;
+    while (original_num != 0) {
+        original_num /= 10;
         ++n;
     }
 
-    originalNum = num;
+    original_num = num;
 
-    while (originalNum != 0) {
-        remainder = originalNum % 10;
+    while (original_num != 0) {
+        remainder = original_num % 10;
 
         unsigned long long int power = 1;
         for (unsigned long long int i = 0; i < n; i++) {
@@ -39,7 +39,7 @@ int main() {
         }
 
         result += power;
-        originalNum /= 10;
+        original_num /= 10;
     }
 
     if (result == num)
@@ -49,3 +49,4 @@ int main() {
 
     return 0;
 }
+
