@@ -1,3 +1,8 @@
+/*
+Space Complexity: O(1)
+Time Complexity: O(n^2)
+*/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -50,5 +55,6 @@ int main() {
 
     return 0;
 }
+
 
 
