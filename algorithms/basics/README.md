@@ -10,11 +10,28 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 
  👉 To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
+-Complexity Analysis:
+
+Time Complexity Analysis:
+Input cleaning loop: O(n) if strlen is stored once, otherwise O(n^2).
+Counting digits (while loop): O(d), where d = number of digits.
+Armstrong check (while loop with inner for): O(d * n) ≈ O(n^2).
+
+Space Complexity Analysis:
+Fixed-size arrays (input[100], cleaned[100]): O(1)
+Constant number of variables: O(1)
+
 - ***Iterative Factorial Calculate***:
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.
 
 👉 To test whether a number is an Armstrong number, see the code in [**factorial_iterative.c**](./factorial_iterative.c)
+
+-Complexity Analysis:
+
+Time Complexity Analysis:
+
+
 
 - ***Leap Year*** is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
@@ -43,6 +60,7 @@ Armstrong numbers have at least three digits. Also Armstrong numbers also called
 👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
 ---
+
 
 
 
