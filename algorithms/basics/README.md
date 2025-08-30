@@ -30,7 +30,7 @@ Constant number of variables: O(1)
 -Complexity Analysis:
 
 Time Complexity Analysis:
-
+Space Complexity Analysis:
 
 
 - ***Leap Year*** is a year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
@@ -46,6 +46,11 @@ Time Complexity Analysis:
 
 👉 To test whether a year is a Leap year, see the code in  [**isleap.c**](./isleap.c)
 
+-Complexity Analysis:
+
+Time Complexity Analysis:
+Space Complexity Analysis:
+
 
 - ***Perfect number*** is a positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
 
@@ -55,11 +60,22 @@ Time Complexity Analysis:
 
 👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)
 
+-Complexity Analysis:
+
+Time Complexity Analysis:
+Space Complexity Analysis:
+
 -  ***Prime number*** is a positive integer greater than 1 that has no divisors other than 1 and itself.
   
 👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)
 
+-Complexity Analysis:
+
+Time Complexity Analysis:
+Space Complexity Analysis:
+
 ---
+
 
 
 
