@@ -1,6 +1,6 @@
 # CENG Foundations
 
-This repository showcases my academic and personal projects in Computer Engineering, focusing on practical implementations and problem-solving skills.
+This repository showcases the projects I developed during my Computer Engineering studies, reflecting the core knowledge I gained and my practical experience with problem-solving.
 
 ---
 
