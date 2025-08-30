@@ -37,4 +37,3 @@ The goal of this repository is to consolidate my knowledge, demonstrate practica
 - Python scripts can be run with Python 3.x.
 - C# projects can be opened and run in Visual Studio.
 
----
