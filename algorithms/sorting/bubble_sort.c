@@ -1,3 +1,10 @@
+/*
+Time Complexity: 
+-Worst Case -> O(n^2)
+-Best Case -> O(n)
+Space Complexity: O(1)
+*/
+
 #include <stdio.h>
 
 void bubbleSort(int array[], int size, int ascending){
@@ -44,3 +51,4 @@ int main(){
 
    return 0;
 }
+
