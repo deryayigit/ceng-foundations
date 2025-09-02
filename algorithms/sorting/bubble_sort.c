@@ -8,7 +8,7 @@ Space Complexity: O(1)
 #include <stdio.h>
 
 void bubbleSort(int array[], int size, int ascending){
-   for(int i = 0; i < size; i++) {
+   for(int i = 0; i < size - 1; i++) {
       int swaps = 0;
       for(int j = 0; j < size - i - 1; j++) {
          if(ascending ? (array[j] > array[j+1]) : (array[j] < array[j+1])) {
@@ -51,4 +51,5 @@ int main(){
 
    return 0;
 }
+
 
