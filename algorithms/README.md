@@ -52,6 +52,14 @@ The performance of an algorithm is measured by the number of operations it requi
 
 <img width="554" height="392" alt="image" src="https://github.com/user-attachments/assets/4b0727a4-3f95-4ed2-bcf2-194c9bbcb524" />
 
+## Growth Order of Time Complexities
+
+📌Algorithms can be compared based on how their running time grows with input size **n**.  
+From the fastest (least time) to the slowest (most time):
+
+O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
+
+
 - **O(1) — Constant Time:**  
   Independent of input size, runs in the same amount of time.  
   *Example: Accessing the first element of an array.*  
@@ -111,3 +119,4 @@ The performance of an algorithm is measured by the number of operations it requi
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
