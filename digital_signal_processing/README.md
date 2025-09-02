@@ -47,7 +47,7 @@ The square root of the variance; used to understand data spread.
 ---
 
 
-# Digitization of Continuous Signals
+## Digitization of Continuous Signals
 
 A continuous signal is digitized by passing it through an **ADC (Analog-to-Digital Converter)**, allowing real-world data to be transferred into the digital domain.
 
@@ -75,6 +75,7 @@ To reduce these losses, the number of samples should be increased. However, whil
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
 
 
