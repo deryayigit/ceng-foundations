@@ -82,10 +82,8 @@ The performance of an algorithm is measured by the number of operations it requi
   The worst case; operations grow factorially with input size.  
   *Example: Naive backtracking approaches for the N-Queens problem.*
 
-  📌Algorithms can be compared based on how their running time grows with input size **n**.  
-From the fastest (least time) to the slowest (most time):
-
-O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
+📌Algorithms can be compared based on how their running time grows with input size **n**. From the fastest (least time) to the slowest (most time):
+                                O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 
 ---
 
@@ -118,5 +116,6 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
