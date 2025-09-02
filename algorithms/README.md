@@ -39,9 +39,6 @@ In short, algorithms are the **step-by-step recipes** for both real-world proces
 | **Branch & Bound**   | Eliminates branches that cannot yield better solutions | Travelling Salesman Problem (TSP) |
 | **Randomized**       | Uses random decisions to simplify or speed up computation | Randomized Quick Sort, Monte Carlo |
 
-> 📌 **Note:**  
-> These paradigms are not specific algorithms but general approaches to problem-solving.  
-> Each paradigm can be applied to a wide variety of problems and combined with others for more efficient solutions.
 
 ---
 
@@ -117,6 +114,7 @@ The performance of an algorithm is measured by the number of operations it requi
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
