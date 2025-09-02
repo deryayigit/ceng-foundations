@@ -10,7 +10,7 @@
 
   👉 To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
-- 📊 ***Complexity Analysis***:  
+ 📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
   Input cleaning loop: O(n) if strlen is stored once, otherwise O(n^2).  
   Counting digits (while loop): O(d), where d = number of digits.  
@@ -26,7 +26,7 @@
 
   👉 To test factorial calculation, see the code in [**factorial_iterative.c**](./factorial_iterative.c)  
 
-- 📊 ***Complexity Analysis***:  
+ 📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
   **Space Complexity Analysis:**  
 
@@ -42,7 +42,7 @@
 
   👉 To test whether a year is a Leap year, see the code in [**isleap.c**](./isleap.c)  
 
-- 📊 ***Complexity Analysis***:  
+  📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
   **Space Complexity Analysis:**  
 
@@ -55,7 +55,7 @@
 
   👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)  
 
-- 📊 ***Complexity Analysis***:  
+ 📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
   **Space Complexity Analysis:**  
 
@@ -64,6 +64,7 @@
 
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)  
 
-- 📊 ***Complexity Analysis***:  
+ 📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
   **Space Complexity Analysis:**  
+
