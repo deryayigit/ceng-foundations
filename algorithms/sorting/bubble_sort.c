@@ -24,32 +24,33 @@ void bubbleSort(int array[], int size, int ascending){
 
 int main(){
    int n;
-   printf("Dizinin eleman sayisini girin: ");
+   printf("Please Enter the Number of Elements in The Array : ");
    scanf("%d", &n);
 
    int arr[n];
-   printf("Dizinin elemanlarini girin:\n");
+   printf("Please Enter Element of Array : \n");
    for(int i = 0; i < n; i++) {
       scanf("%d", &arr[i]);
    }
 
    int choice;
-   printf("Siralamayi secin (1 = artan, 0 = azalan): ");
+   printf("Select sort (1 = ascending, 0 = descending): ");
    scanf("%d", &choice);
 
-   printf("Siralamadan once: ");
+   printf("Before Sorting : ");
    for(int i = 0; i < n; i++)
       printf("%d ", arr[i]);
    printf("\n");
 
    bubbleSort(arr, n, choice);
 
-   printf("Siralamadan sonra: ");
+   printf("After Sorting : ");
    for(int i = 0; i < n; i++)
       printf("%d ", arr[i]);
    printf("\n");
 
    return 0;
 }
+
 
 
