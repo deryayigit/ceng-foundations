@@ -97,7 +97,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
     *Example: Linear Search → element is the first one → O(1)*  
   - **Average Case:** The expected time for a random input.  
     *Example: Linear Search → element is somewhere in the middle → O(n)*  
-  - **Worst Case:** The slowest scenario, maximum steps required.   
+  - - **Worst Case:** The slowest scenario, maximum steps required. *Example: Linear Search → element not found or at the end → O(n)*  
 
   > ℹ️ By default, **Big-O notation usually refers to the worst case** unless otherwise stated.  
 
@@ -116,6 +116,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
