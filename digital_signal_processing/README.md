@@ -46,7 +46,6 @@ The square root of the variance; used to understand data spread.
 
 ---
 
-# Digital Signal Processing (DSP) Overview
 
 # Digitization of Continuous Signals
 
@@ -76,6 +75,7 @@ To reduce these losses, the number of samples should be increased. However, whil
 - Oppenheim, A. V., & Schafer, R. W. *Discrete-Time Signal Processing*.  
 - Smith, S. W. *The Scientist and Engineer's Guide to DSP*.  
 - Online DSP Tutorials: [https://www.dspguide.com](https://www.dspguide.com)
+
 
 
 
