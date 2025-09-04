@@ -1,6 +1,6 @@
 /*
-- Time complexity: O(2^n)
-- Space complexity: O(n)
+Time complexity: O(2^n)
+Space complexity: O(n)
 */
 #include <stdio.h>
 
@@ -16,4 +16,5 @@ int main() {
     printf("%d. Fibonacci number: %d\n", n, fibonacci(n));
     return 0;
 }
+
 
