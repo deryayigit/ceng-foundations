@@ -1,6 +1,6 @@
 /*
-- Time complexity: O(2^n)
-- Space complexity: O(n)
+Time complexity: O(2^n)
+Space complexity: O(n)
 */
 
 #include <stdio.h>
@@ -38,4 +38,5 @@ int main(void) {
     hanoi(n, 'A', 'C', 'B');
     return 0;
 }
+
 
