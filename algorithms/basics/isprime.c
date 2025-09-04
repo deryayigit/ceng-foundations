@@ -1,3 +1,8 @@
+/*
+Space Complexity: Worst O(n), Best: O(1)
+Time Complexity: O(1)
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -25,3 +30,4 @@ int main() {
 
   return 0;
 }
+
