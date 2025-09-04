@@ -1,3 +1,8 @@
+/*
+Space Complexity: O(1)
+Time Complexity: O(1)
+*/
+
 #include <stdio.h>
 
 int isleap(int y)
@@ -13,3 +18,4 @@ int main()
 
     return printf("%d %s\n", year, isleap(year) ? "leap year" : "not a leap year");
 }
+
