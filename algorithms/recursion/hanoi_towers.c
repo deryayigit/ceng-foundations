@@ -1,3 +1,8 @@
+/*
+- Time complexity: O(2^n)
+- Space complexity: O(n)
+*/
+
 #include <stdio.h>
 
 static long long step_no = 0;
@@ -33,3 +38,4 @@ int main(void) {
     hanoi(n, 'A', 'C', 'B');
     return 0;
 }
+
