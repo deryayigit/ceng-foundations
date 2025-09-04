@@ -1,3 +1,8 @@
+/*
+Time complexity: O(n)
+Space complexity: O(n)
+*/
+
 #include <stdio.h>
 
 int addNumbers(int n) {
@@ -15,4 +20,5 @@ int main() {
   printf("Sum = %d", addNumbers(num));
   return 0;
 }
+
 
