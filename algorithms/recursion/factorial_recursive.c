@@ -1,3 +1,8 @@
+/*
+Space Complexity: O(n)
+Time Complexity: O(n)
+*/
+
 #include <stdio.h>
 
 int factorial(int n) {
