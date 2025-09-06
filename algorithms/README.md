@@ -121,11 +121,11 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
   ### Time Complexity Cases
   The total number of steps an algorithm needs to complete.  
 
-Examples:  
-- `O(1)` → Constant  
-- `O(n)` → Linear  
-- `O(log n)` → Logarithmic  
-- `O(n²)` → Quadratic  
+    Examples:  
+    - `O(1)` → Constant  
+    - `O(n)` → Linear  
+    - `O(log n)` → Logarithmic  
+    - `O(n²)` → Quadratic  
 
 - **Space Complexity:**  
   Represents the amount of memory required by the algorithm during execution.  
@@ -142,6 +142,7 @@ Examples:
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
