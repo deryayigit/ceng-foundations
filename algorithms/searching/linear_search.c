@@ -9,9 +9,9 @@ Complexity:
 int linear_search(int arr[], int n, int key) {
     for (int i = 0; i < n; i++) {
         if (arr[i] == key)
-            return i; 
+            return i;
     }
-    return -1; 
+    return -1;
 }
 
 int main() {
@@ -21,9 +21,9 @@ int main() {
     scanf("%d", &n);
 
     int arr[n];
-    printf("%d Enter value please:\n", n);
+    printf("%d values (separate with spaces or commas):\n", n);
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d,", &arr[i]); // accepts comma separeted input
     }
 
     printf("Please enter the number to search: ");
@@ -38,3 +38,5 @@ int main() {
 
     return 0;
 }
+
+
