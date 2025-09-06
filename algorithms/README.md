@@ -45,6 +45,23 @@ In short, algorithms are the **step-by-step recipes** for both real-world proces
 ## Algorithmic Complexity
 The performance of an algorithm is measured by the number of operations it requires, often expressed in **Big-O notation**.  
 
+Big O Notation is a **mathematical representation that describes the performance of an algorithm (time or space) as the input size grows**.  
+- It shows how code execution scales with data.  
+- Machine independent: based only on number of steps.  
+- Ignores smaller operations:  
+  - e.g. `O(n + 1)` → `O(n)`  
+
+> **In short:** *"How code slows as data grows."*
+
+---
+
+## 🧮 Basic Definitions
+- **Big O (O)** → **Worst case** performance of an algorithm.  
+- **Big Ω (Ω)** → **Best case** performance of an algorithm.  
+- **Big Θ (Θ)** → **Average case** performance of an algorithm.  
+
+---
+
 ### Big-O Notation Explained
 
 <img width="554" height="392" alt="image" src="https://github.com/user-attachments/assets/4b0727a4-3f95-4ed2-bcf2-194c9bbcb524" />
@@ -53,31 +70,40 @@ The performance of an algorithm is measured by the number of operations it requi
 
 - **O(1) — Constant Time:**  
   Independent of input size, runs in the same amount of time.  
-  *Example: Accessing the first element of an array.*  
+  *Examples:*  
+  - Random access of an element in an array  
+  - Inserting at the beginning of a linked list  
 
 - **O(log n) — Logarithmic Time:**  
   Operations grow slowly even as input size increases.  
-  *Example: Binary Search.*  
+  *Example:*  
+  - Binary Search  
 
 - **O(n) — Linear Time:**  
   Operations grow directly in proportion to input size.  
-  *Example: Linear Search.*  
+  *Examples:*  
+  - Looping through elements in an array  
+  - Searching through a linked list  
 
-- **O(n log n) — Linearithmic Time:**  
+- **O(n log n) — Quasilinear Time (Linearithmic):**  
   Combination of linear and logarithmic growth.  
-  *Example: Merge Sort, Quick Sort (average case).*  
+  *Examples:*  
+  - Quicksort  
+  - Mergesort  
+  - Heapsort  
 
 - **O(n²) — Quadratic Time:**  
   Operations grow proportional to the square of input size.  
-  *Example: Bubble Sort, Selection Sort.*  
-
-- **O(2^n) — Exponential Time:**  
-  Each increase in input size doubles the required operations.  
-  *Example: Brute force solutions for combinatorial problems.*  
+  *Examples:*  
+  - Insertion Sort  
+  - Selection Sort  
+  - Bubble Sort  
 
 - **O(n!) — Factorial Time:**  
   The worst case; operations grow factorially with input size.  
-  *Example: Naive backtracking approaches for the N-Queens problem.*
+  *Example:*  
+  - Traveling Salesman Problem  
+
 
 
 📌Algorithms can be compared based on how their **running time grows** with input size *n*.  
@@ -116,6 +142,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
