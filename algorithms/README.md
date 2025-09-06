@@ -119,13 +119,13 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
   Represents the number of steps an algorithm takes to complete relative to input size.  
 
   ### Time Complexity Cases
-  - **Best Case:** The fastest scenario for an algorithm.  
-    *Example: Linear Search → element is the first one → O(1)*  
-  - **Average Case:** The expected time for a random input.  
-    *Example: Linear Search → element is somewhere in the middle → O(n)*  
-  - **Worst Case:** The slowest scenario, maximum steps required. *Example: Linear Search → element not found or at the end → O(n)*  
+  The total number of steps an algorithm needs to complete.  
 
-  > ℹ️ By default, **Big-O notation usually refers to the worst case** unless otherwise stated.  
+Examples:  
+- `O(1)` → Constant  
+- `O(n)` → Linear  
+- `O(log n)` → Logarithmic  
+- `O(n²)` → Quadratic  
 
 - **Space Complexity:**  
   Represents the amount of memory required by the algorithm during execution.  
@@ -142,6 +142,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(2^n) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
