@@ -19,12 +19,13 @@ The two most common approaches are:
   Mostly used in **unsorted small datasets**.  
 
 **Pseudo Code:**
-
+```pseudo
 LinearSearch(collection, key):
     for each element in collection:
         if element == key:
             return index
     return "Not found"
+```
 
 
 Complexity Analysis:
@@ -47,7 +48,8 @@ At each step, it compares the middle element with the target value and narrows t
 Suitable for large, sorted datasets where efficiency is important.
 
 **Pseudo Code:**
-binarySearch(collection, key):
+```pseudo
+BinarySearch(collection, key):
     left = 0
     right = length(collection) - 1
     while left <= right:
@@ -59,7 +61,7 @@ binarySearch(collection, key):
         else:
             right = mid - 1
     return "Not found"
-
+```
 
 Complexity Analysis:
 
@@ -70,3 +72,4 @@ Worst Case: O(log n) → Search space halves continuously.
 Average Case: O(log n)
 
 Auxiliary Space: O(1)
+
