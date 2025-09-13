@@ -62,6 +62,57 @@ Big O Notation is a **mathematical representation that describes the performance
 
 ---
 
+# 📘 Rules for Big O Complexity Analysis
+
+These are general rules for analyzing algorithm complexity using **Big O notation**. They help estimate the upper bounds of operations, loops, and conditions during algorithm execution — both iteratively and structurally.
+
+---
+
+## ✅ General Rules
+
+- **Single-line assignment statements**  
+  Simple operations such as `a = a + 2` are considered to take **constant time** → **O(1)**.
+
+- **Loops depending on array size**  
+  If a loop runs in proportion to the size of an array or input `n`, its complexity is typically **O(n)**.
+
+- **Nested loops**  
+  When loops are nested, their ranges multiply:
+  - Outer loop over `n` and inner loop over `m` → **O(n × m)**
+  - Both loops over `n` → **O(n²)**
+
+- **Loops where the range depends on another variable**  
+  If a loop runs up to `m` instead of `n`, the complexity is based on `m`: → **O(m)**
+
+- **Conditional branches (`if-else`)**  
+  In complexity analysis, the **branch with higher cost dominates**:
+  - Use **max(if branch, else branch)**
+
+- **Halving the input size each iteration**  
+  When the problem size is halved in each step (e.g., binary search), the complexity becomes **logarithmic**: → **O(log n)**
+
+- **Highest-order term dominates**  
+  When evaluating mathematical expressions, the highest-degree term determines growth:
+  - Example: √(n³ + n²) ≈ **Θ(n^1.5)**
+
+- **Ignore constant factors**  
+  Constants are not considered in Big O analysis:
+  - Example: `O((1/2) × n²)` → **O(n²)**
+
+---
+
+## 📝 Note
+
+These rules apply primarily to **non-recursive (iterative)** algorithms.  
+For **recursive algorithms**, special techniques such as:
+- **Recurrence relations**
+- **Master Theorem**
+- **Recursion tree method**
+
+...are used to determine complexity more accurately.
+
+
+
 ### Big-O Notation Explained
 
 <img width="554" height="392" alt="image" src="https://github.com/user-attachments/assets/4b0727a4-3f95-4ed2-bcf2-194c9bbcb524" />
@@ -142,6 +193,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
