@@ -62,13 +62,13 @@ Big O Notation is a **mathematical representation that describes the performance
 
 ---
 
-# 📘 Rules for Big O Complexity Analysis
+## 📘 Rules for Big O Complexity Analysis
 
 These are general rules for analyzing algorithm complexity using **Big O notation**. They help estimate the upper bounds of operations, loops, and conditions during algorithm execution — both iteratively and structurally.
 
 ---
 
-## ✅ General Rules
+### General Rules
 
 - **Single-line assignment statements**  
   Simple operations such as `a = a + 2` are considered to take **constant time** → **O(1)**.
@@ -104,13 +104,9 @@ These are general rules for analyzing algorithm complexity using **Big O notatio
 ## 📝 Note
 
 These rules apply primarily to **non-recursive (iterative)** algorithms.  
-For **recursive algorithms**, special techniques such as:
-- **Recurrence relations**
-- **Master Theorem**
-- **Recursion tree method**
+For **recursive algorithms**, special techniques.
 
-...are used to determine complexity more accurately.
-
+---
 
 
 ### Big-O Notation Explained
@@ -193,6 +189,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
