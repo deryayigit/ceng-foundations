@@ -99,9 +99,8 @@ These are general rules for analyzing algorithm complexity using **Big O notatio
   Constants are not considered in Big O analysis:
   - Example: `O((1/2) × n²)` → **O(n²)**
 
----
 
-## 📝 Note
+## 📌 Note
 
 These rules apply primarily to **non-recursive (iterative)** algorithms.  
 For **recursive algorithms**, special techniques.
@@ -189,6 +188,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
