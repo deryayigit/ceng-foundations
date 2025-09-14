@@ -1,3 +1,25 @@
+# Algorithms Repository Structure
+
+🚀 **Featured Assignments**  
+These are serious academic projects given in university coursework and fundamental practices.
+
+---
+
+## 📚 Fundamentals
+- [Basics](fundamentals/basic-algorithms/)  
+- [Recursion](fundamentals/recursion-problems/)  
+- [Sorting](fundamentals/sorting-algorithms/)  
+- [Searching](fundamentals/searching-algorithms/)  
+
+---
+
+## 📝 Assignments
+- [Soroban Project](assignments/soroban-project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
+- [Eight Queens Problem](assignments/eight-queens-problem/) – Backtracking solution to the N-Queens problem.  
+
+---
+
+
 # Algorithms Overview
 
 ## Definition
@@ -188,6 +210,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
