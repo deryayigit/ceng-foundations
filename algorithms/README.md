@@ -14,8 +14,7 @@ These are serious academic projects given in university coursework and fundament
 ---
 
 ## 📝 Assignments
-- [Soroban Project](assignments/soroban-project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
-- [Eight Queens Problem](assignments/eight-queens-problem/) – Backtracking solution to the N-Queens problem.  
+- [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
 
 ---
 
@@ -210,6 +209,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
