@@ -11,8 +11,6 @@ The content is organized into two main sections, you can explore the contents by
   - [Sorting](fundamentals/sorting-algorithms/)  
   - [Searching](fundamentals/searching-algorithms/)  
   
-  ---
-  
   ### 📝 Assignments
   - [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
 
@@ -209,6 +207,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
