@@ -5,16 +5,15 @@ This repository brings together my **theoretical knowledge** and **practical pro
 
 The content is organized into **two main sections**:
 
-📂 algorithms  
-├── 📂 fundamentals   *Topic-based algorithm implementations and practice problems*  
-│   ├── 📂 basic-algorithms/  
-│   ├── 📂 recursion-problems/  
-│   ├── 📂 sorting-algorithms/  
-│   └── 📂 searching-algorithms/  
+📂 **algorithms**  
+├── 📂 **fundamentals** – Topic-based algorithm implementations and practice problems  
+│   ├── 📄 [Basics](fundamentals/basic-algorithms/)  
+│   ├── 📄 [Recursion](fundamentals/recursion-problems/)  
+│   ├── 📄 [Sorting](fundamentals/sorting-algorithms/)  
+│   └── 📄 [Searching](fundamentals/searching-algorithms/)  
 │  
-└── 📂 assignments   *Serious academic projects developed as coursework*  
-    └── 📂 soroban_project/   *Simulation of the Japanese abacus*
-
+└── 📂 **assignments** – Serious academic projects developed as coursework  
+&nbsp;&nbsp;&nbsp; ├── 📄 [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus  
 
 ---
 
@@ -209,6 +208,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
+
 
 
 
