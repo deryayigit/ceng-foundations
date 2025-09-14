@@ -3,15 +3,16 @@
 Algorithms is one of the cornerstone courses of Computer Engineering, forming the foundation of problem-solving and software development skills.  
 This repository brings together my **theoretical knowledge** and **practical projects** from the course.  
 
-The content is organized into two main sections, you can explore the contents by clicking the links below:  
-1 **📚 Fundamentals** – Topic-based algorithm implementations and practice problems  
-  - [Basics](fundamentals/basic-algorithms/)  
-  - [Recursion](fundamentals/recursion-problems/)  
-  - [Sorting](fundamentals/sorting-algorithms/)  
-  - [Searching](fundamentals/searching-algorithms/)  
-  
-2 **📝 Assignments** – Serious academic projects developed as coursework  
-  - [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
+The content is organized into **two main sections**. You can explore each by clicking the links below:  
+
+1. **📚 Fundamentals** – Topic-based algorithm implementations and practice problems  
+   - [Basics](fundamentals/basic-algorithms/)  
+   - [Recursion](fundamentals/recursion-problems/)  
+   - [Sorting](fundamentals/sorting-algorithms/)  
+   - [Searching](fundamentals/searching-algorithms/)  
+
+2. **📝 Assignments** – Serious academic projects developed as coursework  
+   - [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus, focusing on algorithmic operations.  
 
 ---
 
@@ -206,28 +207,5 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 | **Bubble Sort**     | O(n)      | O(n²)        | O(n²)       |
 | **Merge Sort**      | O(n log n)| O(n log n)   | O(n log n)  |
 | **Quick Sort**      | O(n log n)| O(n log n)   | O(n²)       |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
