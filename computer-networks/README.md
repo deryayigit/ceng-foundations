@@ -42,7 +42,8 @@ Devices that manage and support network functions, such as:
     </ul>
   </div>
   <div>
-    <img src="images/network-topologies.png" alt="Network Topologies" width="300"/>
+   <img width="559" height="444" alt="image" src="https://github.com/user-attachments/assets/329a65b8-99a1-4acc-bb96-da03753cb275" />
+
   </div>
 </div>
 
@@ -95,6 +96,7 @@ These organizations define and maintain the rules and protocols used worldwide.
 📌 Note: For more details, check my personal website.  
 
 ## 📖 References  
+
 
 
 
