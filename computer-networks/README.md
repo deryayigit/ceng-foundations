@@ -10,7 +10,10 @@ The Internet is a global system of interconnected devices that share resources a
 ### Growth of the Internet  
 - The exact size of the Internet cannot be measured precisely.  
 - Estimates rely on IP-based addressing, since many devices connect through modem-assigned IPs.  
-- MAC addresses are not used for global size estimations because they are unique only at the local network level.  
+- MAC addresses are not used for global size estimations because they are unique only at the local network level.
+
+  <img width="896" height="379" alt="image" src="https://github.com/user-attachments/assets/937a18f9-ef16-4d6f-a3c9-373f07a4eb79" />
+
 
 ---
 
@@ -84,6 +87,7 @@ These organizations define and maintain the rules and protocols used worldwide.
 📌 Note: For more details, check my personal website.  
 
 ## 📖 References  
+
 
 
 
