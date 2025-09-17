@@ -75,6 +75,12 @@ To avoid chaos in the rapidly evolving networking field, international organizat
 These organizations define and maintain the rules and protocols used worldwide.  
 
 ---
+
+## 🔑 Key Networking Paradigms 
+
+---
+
 📌 Note: For more details, check my personal website.  
 
 ## 📖 References  
+
