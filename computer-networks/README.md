@@ -28,24 +28,12 @@ Devices that manage and support network functions, such as:
 ---
 
 ## 🕸️ Network Topologies  
-<div style="display: flex; align-items: flex-start; gap: 20px;">
-  <div>
-    <p><b>Common structures used to connect devices:</b></p>
-    <ul>
-      <li>Bus</li>
-      <li>Ring</li>
-      <li>Mesh</li>
-      <li>Star</li>
-      <li>Fully Connected</li>
-      <li>Line</li>
-      <li>Tree</li>
-    </ul>
-  </div>
-  <div>
-   <img width="559" height="444" alt="image" src="https://github.com/user-attachments/assets/329a65b8-99a1-4acc-bb96-da03753cb275" />
+## 🕸️ Network Topologies  
 
-  </div>
-</div>
+| Common structures used to connect devices | Diagram |
+|-------------------------------------------|---------|
+| - Bus <br> - Ring <br> - Mesh <br> - Star <br> - Fully Connected <br> - Line <br> - Tree | <img width="350" alt="Network Topologies" src="https://github.com/user-attachments/assets/329a65b8-99a1-4acc-bb96-da03753cb275" /> |
+
 
 ---
 
@@ -96,6 +84,7 @@ These organizations define and maintain the rules and protocols used worldwide.
 📌 Note: For more details, check my personal website.  
 
 ## 📖 References  
+
 
 
 
