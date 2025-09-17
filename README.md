@@ -15,7 +15,8 @@ This way, you can explore each topic individually while still seeing the bigger 
 ## 🛠️ Technologies & Languages
 - **C, C++** – Primary focus for algorithms, data structures, and core projects  
 - **Python, C#** – Used in select projects and experiments  
-- **Core Computer Engineering Concepts** – Implemented through hands-on projects  
+- **Core Computer Engineering Concepts** – Implemented through hands-on projects
+- I selected the technology according to the needs and purpose.
 
 ---
 
