@@ -1,69 +1,69 @@
-# 🎨 Bilgisayar Grafikleri  
+# 🎨 Computer Graphics  
 
-Bu depo, **bilgisayar grafikleri** konusundaki temel kavramları, ışık modellerini, kesişim testlerini ve donanım destekli uygulamaları içermektedir.  
-
----
-
-<img width="718" height="449" alt="image" src="https://github.com/user-attachments/assets/c9e69a44-05f3-4a07-9967-a5174c0f2c26" />
-
-
-## 💡 Işık ve Aydınlatma  
-
-- **Işık Kaynağının Konumu**  
-- **Diffuze Bileşen**: Işık kaynağının vuruş açısına göre farklı tonlarda parlama olmasıdır.  
-- **Specular Bileşen**: Işık kaynağının cisim üzerindeki parlama etkisidir.  
-- **Ambient Bileşen**: Ortam ışığı sayesinde gölgede kalan bölgelerin de aydınlanmasıdır.  
-
-> **Not:** Bakış noktası genellikle *(0,0,0)* alınır.  
+This repository covers the **fundamentals of computer graphics**, including lighting models, intersection tests, and hardware-accelerated applications.  
 
 ---
 
-## 📐 Temel Matematik  
+<img width="712" height="449" alt="image" src="https://github.com/user-attachments/assets/e3c850c0-cf5c-49f3-8ba2-bbb29ea1f97d" />
 
-- **Skaler Çarpım (Dot Product)**  
-- **Vektörel Çarpım (Cross Product)**  
+
+## 💡 Lighting and Illumination  
+
+- **Light Source Position**  
+- **Diffuse Component**: Brightness varies depending on the angle of incidence of the light source.  
+- **Specular Component**: Reflection of the light source on the object’s surface.  
+- **Ambient Component**: Background light that ensures even shaded areas are illuminated.  
+
+> **Note:** The viewpoint is usually taken as *(0,0,0)*.  
+
+---
+
+## 📐 Basic Mathematics  
+
+- **Dot Product**  
+- **Cross Product**  
 
 ---
 
 ## 🔦 Ray Tracing  
 
-- Görüntü düzlemindeki piksel koordinatlarının hesaplanması:  
+- Pixel coordinate calculation on the image plane:  
 
 \[
 GD(X,Y,Z) = \Big(16 \cdot \frac{x}{799} - 8,\ 4.5 - \frac{y \cdot 9}{449},\ 10\Big)
 \]  
 
-- **Işın-Üçgen Kesişim Testi**  
-- **Işın-Küre Kesişim Testi**  
+- **Ray-Triangle Intersection Test**  
+- **Ray-Sphere Intersection Test**  
 
 ---
 
-## 🖌️ Boyama Modelleri  
+## 🖌️ Shading Models  
 
-- **Phong Boyama Modeli**  
-  - Diffuse Renk Bileşeni  
-  - Specular Renk Bileşeni  
-  - Ambient Renk Bileşeni  
-
----
-
-## ⚙️ Donanım ve DirectX  
-
-- **DirectX**: Hızlı donanım uygulamaları yazabilmek için geliştirilmiş donanım destekli yazılım kütüphanelerindendir.  
-- **Primitive Topology** (Nokta, çizgi, üçgen tanımları)  
-- **Object Space** (Nesnenin kendi koordinat sistemi)  
+- **Phong Shading Model**  
+  - Diffuse Color Component  
+  - Specular Color Component  
+  - Ambient Color Component  
 
 ---
 
-## 🧩 Örnek Uygulamalar  
+## ⚙️ Hardware and DirectX  
 
-- Üçgen Çizimi  
-- Küp Çizimi  
+- **DirectX**: A hardware-accelerated API designed for high-performance applications.  
+- **Primitive Topology** (point, line, triangle definitions)  
+- **Object Space** (object’s own coordinate system)  
 
 ---
 
-## 📷 Kaynaklar  
+## 🧩 Example Applications  
+
+- Drawing a Triangle  
+- Drawing a Cube  
+
+---
+
+## 📷 References  
 
 - Foley, van Dam, Feiner, Hughes – *Computer Graphics: Principles and Practice*  
-- OpenGL & DirectX resmi dökümantasyonları  
-- Ders notları  
+- Official OpenGL & DirectX documentation  
+- Lecture notes  
