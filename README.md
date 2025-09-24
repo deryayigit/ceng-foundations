@@ -1,7 +1,6 @@
 # CENG Foundations
 
-This repository showcases the projects I developed during my Computer Engineering studies, reflecting the core knowledge I gained and my practical experience with problem-solving.
-
+This repository presents the projects I developed and the core knowledge I acquired during my Computer Engineering studies. You can review the work to see my projects in action. Each folder in this repository can be considered as a standalone project, similar to an individual repository.
 ---
 
 ## 📂 Repository Structure
