@@ -12,7 +12,7 @@ The content is organized into **two main sections**:
 │   ├── 📄 [Sorting](fundamentals/sorting-algorithms/)  
 │   └── 📄 [Searching](fundamentals/searching-algorithms/)  
 │  
-└── 📂 **assignments** – Serious academic projects developed as coursework  
+└── 📂 **projects** – Serious academic projects developed as coursework  
 &nbsp;&nbsp;&nbsp; ├── 📄 [Soroban Project](assignments/soroban_project/) – Simulation of the Japanese abacus  
 
 ---
@@ -212,6 +212,7 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 
 ---
 # References
+
 
 
 
