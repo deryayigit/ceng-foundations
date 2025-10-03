@@ -25,15 +25,11 @@ It demonstrates **single-layer** and **multi-layer supervised learning** models,
 
 ## 📂 Folder Structure
 
-ANN/
-|-- single_layer/
-|   |-- single_neuron.cpp
-|   |-- multi_neuron.cpp
-|   `-- README.md
-|-- multi_layer/
-|   |-- mlp.cpp
-|   |-- utils.cpp
-|   `-- README.md
-|-- report/
-|   `-- ANN_Project_Report.pdf
-`-- README.md
+📂 **ANN**  
+├── 📂 **single_leyer** – Topic-based algorithm implementations and practice problems  
+│   ├── 📄 single_neuron.cpp  
+│   ├── 📄 multi_neuron.cpp
+├── 📂 **multi_layer** – Topic-based algorithm implementations and practice problems  
+│   ├── 📄 mlp.cpp  
+│   ├── 📄 utils.cpp
+  
