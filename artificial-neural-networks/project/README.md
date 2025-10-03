@@ -23,7 +23,7 @@ It demonstrates **single-layer** and **multi-layer supervised learning** models,
 
 ---
 
-## 📂 Folder Structure
+## 📂 **Folder Structure**
 ANN/
 │── single_layer/
 │   ├── single_neuron.cpp (or .py)
@@ -39,3 +39,4 @@ ANN/
 │   └── ANN_Project_Report.pdf
 │
 └── README.md
+
