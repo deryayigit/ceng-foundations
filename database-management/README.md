@@ -75,10 +75,8 @@ EER diagrams extend ER models by including:
 
 ---
 
-## 🧾 License
-
-This project is open-source and freely available for educational use.
 
 ---
+
 
 
