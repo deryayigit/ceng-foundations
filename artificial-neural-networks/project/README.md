@@ -23,19 +23,17 @@ It demonstrates **single-layer** and **multi-layer supervised learning** models,
 
 ---
 
-## 📂 **Folder Structure**
+## 📂 Folder Structure
+
 ANN/
-├── single_layer/
-│ ├── single_neuron.cpp # Single Neuron implementation
-│ ├── multi_neuron.cpp # Multi Neuron implementation
-│ └── README.md
-│
-├── multi_layer/
-│ ├── mlp.cpp # Multi-Layer Perceptron implementation
-│ ├── utils.cpp # Helper functions
-│ └── README.md
-│
-├── report/
-│ └── ANN_Project_Report.pdf
-│
-└── README.md
+|-- single_layer/
+|   |-- single_neuron.cpp
+|   |-- multi_neuron.cpp
+|   `-- README.md
+|-- multi_layer/
+|   |-- mlp.cpp
+|   |-- utils.cpp
+|   `-- README.md
+|-- report/
+|   `-- ANN_Project_Report.pdf
+`-- README.md
