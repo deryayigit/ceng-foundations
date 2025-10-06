@@ -1,4 +1,4 @@
-# 🖼️ Image Processing (Görüntü İşleme)
+# 🖼️ Image Processing
 
 This repository contains lecture notes, assignments, and projects related to **Digital Image Processing**.  
 The focus is on **low-level implementations in C/C++ without external libraries** (e.g., OpenCV), as required in coursework.  
@@ -67,5 +67,6 @@ Every pixel has **x** and **y** coordinates, which is why a digital image can es
 4. **Calibration & Affine Transformation**
    - Camera calibration experiment
    - Derive transformation matrix between world and image coordinates
+
 
 
