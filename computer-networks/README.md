@@ -26,8 +26,7 @@ Devices that manage and support network functions, such as:
 - Firewalls  
 
 ---
-
-## 🕸️ Network Topologies  
+  
 ## 🕸️ Network Topologies  
 
 | Common structures used to connect devices | Diagram |
@@ -84,6 +83,7 @@ These organizations define and maintain the rules and protocols used worldwide.
 📌 Note: For more details, check my personal website.  
 
 ## 📖 References  
+
 
 
 
