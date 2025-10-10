@@ -47,7 +47,7 @@
   **Space Complexity Analysis:**  
 
 - 💎 ***Perfect Number***:  
-  A positive integer that is equal to the sum of all its proper divisors (excluding the number itself).  
+  A positive integer equal to the sum of all its divisors except itself.  In other words, numbers whose sum of divisors equals twice the number itself.
 
   Examples:  
   - 6 → 1 + 2 + 3 = 6 → Perfect number  
@@ -67,5 +67,6 @@
    📊 ***Complexity Analysis***:  
     **Time Complexity Analysis:**  
     **Space Complexity Analysis:**  
+
 
 
