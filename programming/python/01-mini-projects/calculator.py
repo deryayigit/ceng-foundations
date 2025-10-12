@@ -10,7 +10,7 @@ def multiply(a, b):
 def divide(a, b): 
     return a / b
     
-def pow(a, b): 
+def power(a, b): 
     return a ** b
 
 def safe_zone(func, a, b):
@@ -52,13 +52,15 @@ def calculator():
             print("Invalid operation!")
             continue
         
-        result = safe_operation(operations[op], num1, num2)
+        result = safe_zone(operations[op], num1, num2)
         print(f"Result: {num1} {op} {num2} = {result}")
         
-        cont = input("Try again? (y/n): ").strip().lower()
-        if cont != 'y':
+        new_input = input("Try again? (y/n): ").strip().lower()
+        if new_input != 'y':
             print("End of calculation")
             break
     
-    if __name__ == "__main__":
-        calculator()
+    
+if __name__ == "__main__":
+    calculator()
+
