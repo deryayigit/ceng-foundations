@@ -53,8 +53,7 @@ def calculator():
             print("End of calculation")
             break
 
-    
-    
 calculator()
+
 
 
