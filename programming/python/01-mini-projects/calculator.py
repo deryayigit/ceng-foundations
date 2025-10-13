@@ -34,8 +34,6 @@ operations = {
     '**': ('Exponentiation', power)
 }
 
-
-
 def calculator():
     while True:
         num1 = float(input("Enter first number, please: "))
@@ -58,4 +56,5 @@ def calculator():
     
     
 calculator()
+
 
