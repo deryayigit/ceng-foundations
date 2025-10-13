@@ -36,8 +36,13 @@ operations = {
 
 def calculator():
     while True:
-        num1 = float(input("Enter first number, please: "))
-        num2 = float(input("Enter second number please: "))
+        try:
+            num1 = float(input("Enter first number, please: "))
+            num2 = float(input("Enter second number please: "))
+        except ValueError:
+            print("Please enter numeric values")
+            continue
+            
         op = input("Operations: +, -, *, /, ** \nYour choice: ")
 
         if op not in operations:
@@ -54,6 +59,7 @@ def calculator():
             break
 
 calculator()
+
 
 
 
