@@ -10,7 +10,7 @@ def multiply(a, b):
 def divide(a, b): 
     return a / b
     
-def pow(a, b): 
+def power(a, b): 
     return a ** b
 
 def safe_zone(func, a, b):
@@ -23,42 +23,43 @@ def safe_zone(func, a, b):
     except OverflowError:
         return "Numbers are too large"
     except Exception as e:
-        return f"Unexcepted error: {e}"
+        return f"Unexpected error: {e}"
 #I prefer built-in functions for exception handling which are ZeroDivisionError, TypeError, ValueError, OverflowError
 
 operations = {
-    '+': add,
-    '-': subtract,
-    '*': multiply,
-    '/': divide,
-    '**': power
+    '+': ('Addition', add),
+    '-': ('Subtraction', subtract),
+    '*': ('Multiplication', multiply),
+    '/': ('Division', divide),
+    '**': ('Exponentiation', power)
 }
 
-def get_number(n):
-    while True:
-        value = input(n)
-        try:
-            return float(value)
-        except ValueError:
-            print("Invalid number, try again please.")
-        
 def calculator():
     while True:
-        num1 = get_number("Enter first number: ")
-        num2 = get_number("Enter second number: ")
-        op = input("Choose operation: ")
-        
-        if op not in operations:
-            print("Invalid operation!")
+        try:
+            num1 = float(input("Enter first number, please: "))
+            num2 = float(input("Enter second number please: "))
+        except ValueError:
+            print("Please enter numeric values")
             continue
-        
-        result = safe_operation(operations[op], num1, num2)
+            
+        op = input("Operations: +, -, *, /, ** \nYour choice: ")
+
+        if op not in operations:
+            print("Invalid operation symbol!")
+            continue
+
+        func = operations[op][1]  # fonksiyonu al
+        result = safe_zone(func, num1, num2)
         print(f"Result: {num1} {op} {num2} = {result}")
         
         cont = input("Try again? (y/n): ").strip().lower()
         if cont != 'y':
             print("End of calculation")
             break
-    
-    if __name__ == "__main__":
-        calculator()
+
+calculator()
+
+
+
+
