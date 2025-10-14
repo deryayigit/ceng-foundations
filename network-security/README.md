@@ -85,13 +85,16 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 
 ### KDC-Based Protocols
 - **Needham–Schroeder Protocol**  
-  <img width="589" height="556" alt="Needham-Schroeder Protocol" src="https://github.com/user-attachments/assets/f1c05de5-76f4-416f-8277-419d8f2b6c34" />
+<img width="569" height="548" alt="image" src="https://github.com/user-attachments/assets/e026501d-89c1-4c0f-942b-d5ca6a145f55" />
+
 
 - **Otway–Rees Protocol**  
-  <img width="615" height="610" alt="Otway-Rees Protocol" src="https://github.com/user-attachments/assets/c79d982b-f0f7-46a9-bfe6-b7c68b68780e" />
+<img width="564" height="606" alt="image" src="https://github.com/user-attachments/assets/76f38083-6f2f-48f9-a4eb-29b16dc3f523" />
 
-- **Kerberos Protocol**  
-  <img width="595" height="492" alt="Kerberos Protocol" src="https://github.com/user-attachments/assets/1c99a95f-4d7c-4f44-860f-0a11e285ac82" />
+
+- **Kerberos Protocol**
+  <img width="578" height="754" alt="image" src="https://github.com/user-attachments/assets/9c0d92eb-3585-41aa-bd8a-f1171bbabde6" />
+
 
 ---
 
@@ -117,3 +120,4 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 - [Wikipedia – Network Security](http://en.wikipedia.org)
 
 ---
+
