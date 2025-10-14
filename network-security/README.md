@@ -103,7 +103,8 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 - Enables secure communication *without transmitting the key itself.*  
 - Based on modular exponential mathematics.
 
-  <img width="578" height="320" alt="Diffie-Hellman Key Exchange" src="https://github.com/user-attachments/assets/2a5e546f-7d4a-4e98-8279-d75b7db61b1f" />
+<img width="516" height="293" alt="image" src="https://github.com/user-attachments/assets/3101c2ee-bef8-43b5-9312-f207ac79a04d" />
+
 
 ---
 
@@ -120,5 +121,6 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 - [Wikipedia – Network Security](http://en.wikipedia.org)
 
 ---
+
 
 
