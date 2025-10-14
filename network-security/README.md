@@ -93,7 +93,7 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 
 
 - **Kerberos Protocol**
-  <img width="578" height="754" alt="image" src="https://github.com/user-attachments/assets/9c0d92eb-3585-41aa-bd8a-f1171bbabde6" />
+<img width="578" height="754" alt="image" src="https://github.com/user-attachments/assets/9c0d92eb-3585-41aa-bd8a-f1171bbabde6" />
 
 
 ---
@@ -120,4 +120,5 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 - [Wikipedia – Network Security](http://en.wikipedia.org)
 
 ---
+
 
