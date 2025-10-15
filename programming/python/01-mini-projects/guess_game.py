@@ -18,7 +18,8 @@ while True:
         elif guess > n:
             print("Please enter a smaller number")
         else:
-            print(f"🎉 Congrats! You found it in {g} guesses. The number was: {n}")
+            print(f"You found it in {g} guesses. The number was: {n}")
             break
     except ValueError:
         print("Please enter a valid number!")
+
