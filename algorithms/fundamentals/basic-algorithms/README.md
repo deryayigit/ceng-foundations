@@ -68,5 +68,9 @@
     **Time Complexity Analysis:**  
     **Space Complexity Analysis:**  
 
+---
+
+## References
+- Mathew Crawford, *Introduction to Number Theory*  
 
 
