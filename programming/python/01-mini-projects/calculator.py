@@ -59,7 +59,3 @@ def calculator():
             break
 
 calculator()
-
-
-
-
