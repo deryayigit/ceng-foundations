@@ -1,6 +1,6 @@
 ## Basic Algorithms and Links
 
-- **Armstrong Numbers**:  
+- ***Armstrong Numbers***:  
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
   Armstrong numbers have at least three digits. Also Armstrong numbers also called Narcissistic numbers.
 
@@ -72,6 +72,7 @@
 
 ## References
 - Mathew Crawford, *Introduction to Number Theory*  
+
 
 
 
