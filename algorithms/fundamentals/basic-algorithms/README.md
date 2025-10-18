@@ -1,6 +1,6 @@
 ## Basic Algorithms and Links
 
-- ✨ ***Armstrong Numbers***:  
+- ***Armstrong Numbers***:  
   If the sum of the n-th powers of its digits equals the number itself, then the number is called an Armstrong number.  
   Armstrong numbers have at least three digits. Also Armstrong numbers also called Narcissistic numbers.
 
@@ -20,7 +20,7 @@
     Fixed-size arrays (input[100], cleaned[100]): O(1)  
     Constant number of variables: O(1)  
 
-- 🔁 ***Iterative Factorial Calculate***:  
+-  ***Iterative Factorial Calculate***:  
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.  
 
@@ -30,7 +30,7 @@
     **Time Complexity Analysis:**  
     **Space Complexity Analysis:**  
 
-- 📅 ***Leap Year***:  
+- ***Leap Year***:  
   A year introduced in the Gregorian calendar to keep the calendar year synchronized with the astronomical year.  
   The Earth completes one revolution around the Sun in approximately **365.2422 days**, not exactly 365 days.  
   To correct this discrepancy, an extra day (February 29) is added in certain years.  
@@ -46,7 +46,7 @@
   **Time Complexity Analysis:**  
   **Space Complexity Analysis:**  
 
-- 💎 ***Perfect Number***:  
+-  ***Perfect Number***:  
   A positive integer equal to the sum of all its divisors except itself.  In other words, numbers whose sum of divisors equals twice the number itself.
 
   Examples:  
@@ -59,7 +59,7 @@
       **Time Complexity Analysis:**  
       **Space Complexity Analysis:**  
 
-- 🔑 ***Prime Number***:  
+- ***Prime Number***:  
   A positive integer greater than 1 that has no divisors other than 1 and itself.  
 
   👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)  
@@ -72,5 +72,6 @@
 
 ## References
 - Mathew Crawford, *Introduction to Number Theory*  
+
 
 
