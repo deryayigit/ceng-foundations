@@ -4,7 +4,7 @@ This repository covers the **fundamentals of Computer Networks**, including core
 
 ---
 
-## 🌐 What is the Internet?  
+## What is the Internet?  
 The Internet is a global system of interconnected devices that share resources and data.  
 
 ### Growth of the Internet  
@@ -17,7 +17,7 @@ The Internet is a global system of interconnected devices that share resources a
 
 ---
 
-## 🔌 Network Devices  
+## Network Devices  
 Devices that manage and support network functions, such as:  
 - Routers  
 - Switches  
@@ -36,7 +36,7 @@ Devices that manage and support network functions, such as:
 
 ---
 
-## 🏗️ Layered Architectures  
+## Layered Architectures  
 
 Different technologies coexist and need to interoperate. The **layering concept** makes this possible and also easier to understand.  
 
@@ -45,7 +45,7 @@ Different technologies coexist and need to interoperate. The **layering concept*
 
 ---
 
-## 📡 Transmission Media  
+## Transmission Media  
 
 Data transmission varies according to the type of energy used:  
 - Electrical signals (Copper cables)  
@@ -54,7 +54,7 @@ Data transmission varies according to the type of energy used:
 
 ---
 
-## 🌍 IP Addressing & Subnetting  
+## IP Addressing & Subnetting  
 
 An **IP address** is the identity of every device connected to the Internet. It enables devices to deliver data to the correct destination.  
 
@@ -64,7 +64,7 @@ Types of IP addressing:
 
 ---
 
-## 🏢 Networking Authorities  
+## Networking Authorities  
 
 To avoid chaos in the rapidly evolving networking field, international organizations establish standards:  
 
@@ -76,13 +76,14 @@ These organizations define and maintain the rules and protocols used worldwide.
 
 ---
 
-## 🔑 Key Networking Paradigms 
+## Key Networking Paradigms 
 
 ---
 
 📌 Note: For more details, check my personal website.  
 
-## 📖 References  
+## References  
+
 
 
 
