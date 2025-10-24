@@ -1,11 +1,11 @@
-# 🧠 Artificial Neural Networks (ANN)
+#  Artificial Neural Networks (ANN)
 
 This project is prepared for **BIL4015 Artificial Neural Networks course**.  
 It demonstrates **single-layer** and **multi-layer supervised learning** models, including implementation, training, testing, and update processes.  
 
 ---
 
-## 📌 Project Scope
+## Project Scope
 - **Single Layer Neural Network**
   - **Single Neuron**: Binary classification on 2D data using sigmoid activation.  
   - **Multi Neuron**: Multi-class classification on 2D data using sigmoid activation.  
@@ -16,7 +16,7 @@ It demonstrates **single-layer** and **multi-layer supervised learning** models,
 
 ---
 
-## 🛠️ Implementation Details
+## Implementation Details
 - Custom code written without using high-level ML libraries (e.g., TensorFlow, PyTorch).  
 - Includes **training**, **testing**, and **update** phases.  
 - Structured as a **course project** with detailed documentation.  
@@ -33,3 +33,4 @@ It demonstrates **single-layer** and **multi-layer supervised learning** models,
 │   ├── 📄 mlp.cpp  
 │   ├── 📄 utils.cpp
   
+
