@@ -9,7 +9,7 @@ The focus is on **low-level implementations in C/C++ without external libraries*
 
 - **Image Representation**
   - Pixels, Intensity 
-  - RGB, Grayscale, YUV color spaces
+  - RGB, Grayscale
   - Histograms and Histogram Equalization
 
 **Pixel:**  
@@ -67,6 +67,7 @@ Every pixel has **x** and **y** coordinates, which is why a digital image can es
 4. **Calibration & Affine Transformation**
    - Camera calibration experiment
    - Derive transformation matrix between world and image coordinates
+
 
 
 
