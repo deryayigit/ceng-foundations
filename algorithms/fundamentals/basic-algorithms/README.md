@@ -8,7 +8,7 @@
   - 153 → 1³ + 5³ + 3³ = 153 → Armstrong number  
   - 1634 → 1⁴ + 6⁴ + 3⁴ + 4⁴ = 1634 → Armstrong number  
 
-  👉 To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
+To check if any integer entered instead of a fixed length is an Armstrong number, see the code in [**armstrong_number.c**](./armstrong_number.c) 
 
    📊 ***Complexity Analysis***:  
     **Time Complexity Analysis:**  
@@ -24,7 +24,7 @@
   Computes the factorial of a number using an **iterative (loop-based)** approach.  
   Example: 5! = 5 × 4 × 3 × 2 × 1 = 120.  
 
-  👉 To test factorial calculation, see the code in [**factorial_iterative.c**](./factorial_iterative.c)  
+To test factorial calculation, see the code in [**factorial_iterative.c**](./factorial_iterative.c)  
 
    📊 ***Complexity Analysis***:  
     **Time Complexity Analysis:**  
@@ -40,7 +40,7 @@
   - However, if the year is divisible by **100**, it is **not** considered a leap year.  
   - Exception: if the year is also divisible by **400**, then it **is** a leap year.  
 
-  👉 To test whether a year is a Leap year, see the code in [**isleap.c**](./isleap.c)  
+To test whether a year is a Leap year, see the code in [**isleap.c**](./isleap.c)  
 
   📊 ***Complexity Analysis***:  
   **Time Complexity Analysis:**  
@@ -53,7 +53,7 @@
   - 6 → 1 + 2 + 3 = 6 → Perfect number  
   - 28 → 1 + 2 + 4 + 7 + 14 = 28 → Perfect number  
 
-  👉 To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)  
+To test whether a number is a Perfect number, see the code in [**isperfect.c**](./isperfect.c)  
     
      📊 ***Complexity Analysis***:  
       **Time Complexity Analysis:**  
@@ -72,6 +72,7 @@
 
 ## References
 - Mathew Crawford, *Introduction to Number Theory*  
+
 
 
 
