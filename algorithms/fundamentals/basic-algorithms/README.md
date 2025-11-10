@@ -62,7 +62,7 @@ To test whether a number is a Perfect number, see the code in [**isperfect.c**](
 ✨ ***Prime Number***:  
   A positive integer greater than 1 that has no divisors other than 1 and itself.  
 
-  👉 To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)  
+To test whether a number is prime, see the code in [**isprime.c**](./isprime.c)  
 
    📊 ***Complexity Analysis***:  
     **Time Complexity Analysis:**  
@@ -72,6 +72,7 @@ To test whether a number is a Perfect number, see the code in [**isperfect.c**](
 
 ## References
 - Mathew Crawford, *Introduction to Number Theory*  
+
 
 
 
