@@ -1,4 +1,4 @@
-# Assignment Description
+# Project Description
 
 This assignment aims to provide a practical experience in basic array operations, file input/output operations, and simple object creation using the C++ programming language. Important details about the assignment are provided below.
 
@@ -36,3 +36,4 @@ e. `print()` → displays the formatted student list on the screen.
 f. `print()` (overloaded) → if the method receives a string argument, the output should be written to a file.
 
 4. Apart from these methods, additional methods may be implemented; however, the inclusion of these four methods is mandatory for the assignment.
+
