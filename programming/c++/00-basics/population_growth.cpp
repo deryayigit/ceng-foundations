@@ -10,11 +10,12 @@ int main() {
     int year = 2025;
     
     while (pop <= 100000000) {
-        pop *= 1.0105; 
+        pop *= 1.0105; // pop = pop + (pop * 0.0105);
         year++;
     }
 
     cout << "Population exceeds 100 million in the year " << yil <<  endl;
     return 0;
 }
+
 
