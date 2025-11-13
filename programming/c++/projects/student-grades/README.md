@@ -8,10 +8,10 @@ This assignment aims to provide a practical experience in basic array operations
 The file contains the following fields:
    
    a. Name → `string[]`  
-   b. Student No → `string[]`  
+   b. Number → `string[]`  
    c. Midterm → `float[]`  
    d. Second Exam → `float[]`  
-   e. Assignment → `float[]`  
+   e. Project → `float[]`  
    f. Final → `float[]`  
    g. Attendance → `int[]`
 
@@ -36,5 +36,6 @@ The specified link for **input.csv** may be used.
    f. `print()` (overloaded) → if the method receives a string argument, the output should be written to a file.
 
 4. Apart from these methods, additional methods may be implemented; however, the inclusion of these four methods is mandatory for the assignment.
+
 
 
