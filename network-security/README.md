@@ -1,4 +1,4 @@
-# 🔐 Network Security
+# Network Security
 
 This document provides a concise overview of **Network Security** concepts, covering both fundamental and advanced security protocols, authentication mechanisms, and key management systems.
 
@@ -34,7 +34,7 @@ Methods used to verify the identity of a communicating party.
 
 ## 5. Password Systems
 
-### • Fixed Password
+###  Fixed Password
 - Static passwords used repeatedly.  
 - **Weaknesses:** Vulnerable to brute-force and dictionary attacks.  
 - **Enhancements:** Use of *salting*, *hashing*, and *multi-factor authentication (MFA)*.
@@ -46,7 +46,7 @@ Methods used to verify the identity of a communicating party.
 - Are **one-way** functions — impossible to reverse.  
 - The same input always produces the same hash output.
 
-### • SHA-512
+###  SHA-512
 - Produces a 512-bit output.  
 - Provides high security.  
 - Widely used in modern encryption protocols.
@@ -121,6 +121,7 @@ Covers the **generation**, **distribution**, **renewal**, and **revocation** of 
 - [Wikipedia – Network Security](http://en.wikipedia.org)
 
 ---
+
 
 
 
