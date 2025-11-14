@@ -1,4 +1,4 @@
-## Port and Service Scanner with OS Detection
+# Port and Service Scanner with OS Detection
 
 ## 1. Basic Information
 ### 1.1 Problem Definition and Purpose
