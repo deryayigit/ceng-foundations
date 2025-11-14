@@ -1,78 +1,31 @@
-# Port and Service Scanner with OS Detection
+Port and Service Scanner with OS Detection
 
-## 1. Basic Information
+This project is a C++ application capable of estimating the operating system of a remote machine based on its IP address, scanning both TCP and UDP ports, identifying the services running on them, and recording all results with timestamps. It is built directly on top of the Winsock API in Windows and is designed as a practical exercise in low-level network programming rather than a theoretical study.
 
-### 1.1 Problem Definition and Purpose
-A C++ program that:
-- Detects the operating system of a remote machine given its IP address
-- Lists open TCP and UDP ports
-- Identifies the services running on these ports
-- Saves all results to both a file and the console with timestamps
+1. Purpose and Scope
 
-**Project Requirements:**
-- Estimate the OS from service banner data
-- Perform simultaneous TCP and UDP port scanning
-- Detect service names on open ports
-- Log results with timestamps to a file and display on screen
+The application begins by resolving the target IP or domain name, then attempts connections across selected TCP and UDP ports. Whenever possible, it retrieves service banners and uses this information to infer the remote system’s OS. All findings are printed to the console and simultaneously written to a log file. The overall goal is to understand the mechanics behind port scanning, banner grabbing, parallel scanning, and basic OS fingerprinting—concepts that form the foundation of many security tools.
 
----
+The project is organized into several functional components: an input and resolution unit, TCP and UDP scanning routines, banner analysis, OS estimation, a logging system, and a multithreaded execution structure that allows scans to run in parallel. This design keeps the workflow efficient even when scanning larger port ranges.
 
-### 1.2 Project Sections
-- **Input Unit:** Accept and resolve IP/domain name
-- **TCP Port Scanning:** Connect to each TCP port and retrieve service information
-- **UDP Port Scanning:** Send a basic test message via UDP and await a response
-- **Banner Analysis:** Extract banner data from TCP connections
-- **OS Detection:** Estimate the possible OS based on banner content
-- **Data Logging:** Save results to `sonuclar_windows.txt`
-- **Concurrency:** Use threads for parallel scanning
+2. Technologies and Environment
 
----
+The program is written in C++ and uses the Winsock API on Windows. Visual Studio is recommended as the development environment. Although the tool runs on Windows, it can scan targets on any operating system, including Linux machines set up via virtual environments.
 
-### 1.3 Technologies and Tools
-- **Programming Language:** C++
-- **IDE:** Microsoft Visual Studio (Windows)
+To run the application comfortably, a modern x86-64 processor, at least 8 GB RAM, and a few gigabytes of free storage are sufficient. The project was primarily developed and tested on Windows 10/11.
 
----
+3. Algorithm Overview
 
-### 1.4 Hardware Requirements
-- **Processor:** Any modern x86_64 CPU
-- **Memory:** Minimum 8 GB RAM
-- **Storage:** Minimum 8 GB free disk space
-- **Operating System:** Windows 10/11 (development environment), optional Linux testing via virtual machines
+The program starts by resolving the provided host name or IP. It then attempts TCP connections to selected ports and, when available, retrieves banner information returned by the remote service. These banners form the basis of the OS estimation process. On the UDP side, the tool sends lightweight probe packets and determines port status based on the responses received—or the lack thereof.
 
----
+All scanning operations happen concurrently through multiple threads, improving performance significantly. The results are displayed in the terminal and saved to a file named sonuclar_windows.txt with accurate timestamps to preserve the traceability of each step.
 
-## 2. Technical Requirements
+4. Why This Project Matters
 
-### 2.1 Project Algorithm
-1. Receive IP or domain from the user and resolve it
-2. Connect to specific TCP ports and retrieve service banners
-3. Analyze banner data for OS estimation
-4. Perform TCP and UDP scanning in parallel
-5. Log results to file and display them in the console
+This tool serves as a compact, hands-on introduction to how real-world scanners—such as Nmap—operate under the hood. Features like banner grabbing, concurrent TCP/UDP scanning, and OS inference reflect concepts widely used in penetration testing, network auditing, and cybersecurity research. Understanding these mechanisms strengthens one’s grasp of low-level socket communication and network behavior.
 
-### 2.2 Critical Components
-- **Winsock Initialization (`WSAStartup`):** Required for network functions in Windows
-- **Banner Retrieval:** Critical for OS detection
-- **Parallel Port Scanning:** Uses threads to reduce execution time
+5. Example Output
 
----
-
-## 3. Overview
-This project demonstrates the core techniques behind tools like **Nmap**.  
-With features like simultaneous TCP/UDP scanning, banner retrieval, and OS estimation, it is designed as a practical, real-world solution rather than a purely theoretical exercise.
-
----
-
-
-### Output: Scanning `portquiz.net`
+Below is a sample output from scanning portquiz.net:
 
 <img width="562" height="494" alt="image" src="https://github.com/user-attachments/assets/2c633a93-c4b3-4e34-bf53-7d18f08e14b5" />
-
-
-
----
-
-
-
-
