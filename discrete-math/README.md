@@ -6,10 +6,9 @@
 - Grafın dereceler toplamı çift ise çizilebilir.
 - Grafın kenar sayısı, düğüm dereceleri toplamının yarısıdır:
 
-\[
-e = \frac{1}{2} \sum s_i
-\]
+\( e = \frac{1}{2} \sum s_i \)
 
+\sum s_i \ = Düğüm derecelerinin toplamıdır
 ---
 
 ## ⭐ Ağaç (Tree) Özelliği
@@ -312,3 +311,4 @@ Seçilen kenarlar:
 \[
 O(k \log k)
 \]
+
