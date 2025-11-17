@@ -38,8 +38,7 @@ Leonhard Euler made fundamental contributions, including integrating factors, ge
 
 In the nineteenth century, existence and uniqueness theorems were established, and partial differential equations became central to physics. In the twentieth century, numerical methods gained importance, and with the rise of computers, nonlinear systems could be studied more effectively. Modern approaches also include geometric and topological perspectives to understand the qualitative behavior of solutions.
 
----
-
-# In Short
+## In Short
 
 Differential equations began with Newton and Leibniz, were developed by the Bernoulli family, Euler, Lagrange, and Laplace, enriched in the nineteenth and twentieth centuries with theoretical and numerical methods, and in the modern era have reached far wider applications thanks to computers.
+
