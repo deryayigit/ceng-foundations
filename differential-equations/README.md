@@ -1,14 +1,15 @@
 # Differential Equations
 
-A differential equation is any equation which contains derivatives, either ordinary derivatives or partial derivatives.
+A differential equation is any equation that contains derivatives—either ordinary derivatives or partial derivatives. Differential equations describe how a system changes with respect to a quantity such as time, position, temperature, or pressure, and they express the relationship between a function and its derivatives.
 
-A differential equation is a mathematical expression that describes how a system changes with respect to a quantity such as time, position, temperature, or pressure, and involves a function together with its derivatives. For example, the equation that relates an object's position to its velocity and acceleration is also a differential equation.
+For example, the equation that relates an object's position to its velocity and acceleration is a differential equation.
 
-Differential equations represent physical models and are referred to as mathematical models. The main purpose of solving differential equations is to gain insight into the mathematical model that expresses a physical process. Understanding a complex and natural process often involves reducing it to its simplest form. Hence, to comprehend the equations that describe these models and their solutions, we must first be familiar with their simpler versions.
+Differential equations represent physical processes and are therefore considered mathematical models. The main purpose of solving differential equations is to understand the behavior of a physical system through its mathematical model. Understanding complex natural processes often requires reducing them to simpler forms; thus, to comprehend these models and their solutions, one must first become familiar with simpler types of differential equations.
 
-An ordinary differential equation (ODE) is one in which the unknown function depends on only one independent variable. If the unknown function depends on two or more independent variables, the differential equation is called a partial differential equation (PDE).
+An ordinary differential equation (ODE) is a differential equation in which the unknown function depends on only one independent variable.
+A partial differential equation (PDE) is used when the unknown function depends on two or more independent variables.
 
-The order of a differential equation is the order of the highest derivative appearing in the equation.
+The order of a differential equation is the order of the highest derivative appearing in the equation. order of a differential equation is the order of the highest derivative appearing in the equation.
 
 ---
 
@@ -50,6 +51,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
+
 
 
 
