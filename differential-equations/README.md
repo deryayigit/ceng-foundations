@@ -1,215 +1,247 @@
+# Differential Equations
 
-# 📘 Differential Equations
+A differential equation is an equation involving an unknown function and its derivatives.
 
-A **differential equation** is an equation involving an unknown function and its derivatives. These equations are fundamental in modeling physical phenomena such as:
+Understanding differential equations is essential for analyzing many types of problems such as fluid motion, electric current in circuits, heat transfer in solid objects, detection of seismic waves, population growth or decline, and many similar natural phenomena.
 
-- Fluid dynamics
-- Electrical circuits
-- Heat conduction
-- Seismic activity
-- Population changes
+Differential equations represent physical processes and are therefore considered mathematical models. The main purpose of solving differential equations is to gain insight into these models. Understanding a complex natural process often requires reducing it to its simplest form. Hence, to comprehend the equations that describe these models and their solutions, one must first be familiar with simpler cases.
 
-Solving a differential equation helps us gain insight into the behavior of these systems.
+An ordinary differential equation (ODE) involves a function with only one independent variable. If the unknown function depends on two or more independent variables, the equation is called a partial differential equation (PDE).
 
----
-
-## 🧠 Basic Concepts
-
-### 1. Order
-
-The **order** of a differential equation is the highest derivative involved.
-
-Examples:
-
-- $$ y'' + 3y' - 2y = 0 \quad 	ext{(2nd order)} $$
-- $$ y^{(4)} - x y' = \sin x \quad 	ext{(4th order)} $$
-- $$ \left( \frac{dy}{dx} \right)^3 + y = 0 \quad 	ext{(1st order)} $$
+The order of a differential equation is the order of the highest derivative appearing in the equation.
 
 ---
 
-### 2. Degree
+# Notation
 
-The **degree** is the highest power of the highest derivative (only when in polynomial form).
+The expressions \( y', y'', y''', y^{(4)}, \ldots, y^{(n)} \) represent the first, second, third, fourth, …, nth derivatives of \( y \) with respect to the independent variable.
 
-Examples:
+Thus, \( y'' \) means \( \frac{d^2y}{dx^2} \) when the independent variable is \( x \), but \( \frac{d^2y}{dp^2} \) when the variable is \( p \).
 
-- $$ (y'')^2 + y = x \quad 	ext{(2nd degree)} $$
-- $$ y' + x y = 0 \quad 	ext{(1st degree)} $$
-- $$ \frac{dy}{dx} + \sqrt{y''} = 0 \quad 	ext{(undefined degree)} $$
+Parentheses in \( y^{(n)} \) distinguish it from the nth power \( y^n \).
+
+If the independent variable is time \( t \), primes are replaced by dots. Thus, \( \dot{y}, \ddot{y}, \dddot{y} \) represent \( \frac{dy}{dt}, \frac{d^2y}{dt^2}, \frac{d^3y}{dt^3} \).
 
 ---
 
-### 3. Linear Differential Equation
+# History of Differential Equations
 
-A general linear form:
+The study of differential equations began in the seventeenth century with Isaac Newton and Gottfried Wilhelm Leibniz. Newton classified first-order equations and developed series solution methods, while Leibniz introduced derivative and integral notation and the method of separation of variables.
 
-$$
+The Bernoulli family expanded the field through new methods and applications to fluid mechanics. Leonhard Euler made fundamental contributions such as integrating factors, general solutions for linear equations, and numerical methods. Joseph-Louis Lagrange improved the theoretical basis with the variation of parameters method and the structure of higher-order solutions. Pierre-Simon Laplace introduced equations central to mathematical physics and the Laplace transform.
+
+In the nineteenth century existence and uniqueness theorems were established, and in the twentieth century numerical analysis and computers increased the ability to study nonlinear systems. Today geometric and topological methods provide deeper insight into the qualitative behavior of solutions.
+
+**In short:** Differential equations grew from Newton and Leibniz, developed by Euler, Bernoulli, Lagrange, and Laplace, formalized in the nineteenth and twentieth centuries, and expanded greatly in the modern era with computational tools.
+
+---
+
+# Fundamental Concepts in Differential Equations
+
+## 1. Order
+The order of a differential equation is the degree of the highest derivative.  
+Examples:  
+- \( y'' + 3y' - 2y = 0 \) → 2nd order  
+- \( y^{(4)} - x y' = \sin x \) → 4th order  
+- \( \left(\frac{dy}{dx}\right)^3 + y = 0 \) → 1st order  
+
+---
+
+## 2. Degree
+If the equation is polynomial in derivatives, the degree is the power of the highest derivative. If derivatives appear inside roots, logarithms, or trigonometric functions, the degree is undefined.  
+Examples:  
+- \( (y'')^2 + y = x \) → 2nd degree  
+- \( y' + xy = 0 \) → 1st degree  
+- \( \frac{dy}{dx} + \sqrt{y''} = 0 \) → undefined degree  
+
+---
+
+## 3. Linear Differential Equation
+General form:  
+
+
+\[
 a_n(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y' + a_0(x) y = g(x)
-$$
+\]
 
-Examples:
 
-- Linear: $$ y'' + 3y' + 2y = e^x $$
-- Nonlinear: $$ (y')^2 + y = 0 $$
+
+Conditions for linearity: \( y \) and its derivatives must appear to the first power, not multiplied together, and not inside logarithmic, root, or trigonometric functions.  
+
+- Linear example: \( y'' + 3y' + 2y = e^x \)  
+- Nonlinear example: \( (y')^2 + y = 0 \)  
 
 ---
 
-### 4. Homogeneous vs. Nonhomogeneous
+## 4. Linear – Homogeneous / Non-Homogeneous
 
-Form:
 
-$$
+\[
 a_n y^{(n)} + \dots + a_0 y = g(x)
-$$
+\]
 
-- Homogeneous: $$ g(x) = 0 $$
-- Nonhomogeneous: $$ g(x) \neq 0 $$
+
+
+- Homogeneous: \( g(x) = 0 \)  
+- Non-homogeneous: \( g(x) \neq 0 \)  
 
 ---
 
-### 5. Separable Equation
+## 5. Separable Equation
 
-$$
+
+\[
 \frac{dy}{dx} = f(x) g(y)
-$$
+\]
 
-Rewritten as:
 
-$$
+
+Can be rearranged as:  
+
+
+\[
 \frac{1}{g(y)} dy = f(x) dx
-$$
+\]
+
+
 
 ---
 
-### 6. Exact Equation
+## 6. Exact Equation
+Form:  
 
-Form:
 
-$$
-M(x, y) + N(x, y) y' = 0
-$$
+\[
+M(x,y) + N(x,y) y' = 0
+\]
 
-Condition for exactness:
 
-$$
+
+Condition for exactness:  
+
+
+\[
 \frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}
-$$
+\]
+
+
+
+If satisfied, there exists a potential function \( \Phi(x,y) \).
 
 ---
 
-### 7. Integrating Factor
+## 7. Integrating Factor
+First-order linear equation:  
 
-Standard form:
 
-$$
-y' + P(x)y = Q(x)
-$$
+\[
+y' + P(x) y = Q(x)
+\]
 
-Integrating factor:
 
-$$
+
+Integrating factor:  
+
+
+\[
 \mu(x) = e^{\int P(x) dx}
-$$
+\]
+
+
 
 ---
 
-### 8. Homogeneous ODE (by variable type)
+## 8. Homogeneous ODE
 
-$$
-\frac{dy}{dx} = F\left( \frac{y}{x} \right)
-$$
 
-Substitution:
+\[
+\frac{dy}{dx} = F\left(\frac{y}{x}\right)
+\]
 
-$$
-y = ux \Rightarrow y' = u + x \frac{du}{dx}
-$$
 
----
 
-### 9. Bernoulli Equation
-
-$$
-y' + P(x)y = Q(x)y^n
-$$
-
-Substitution:
-
-$$
-v = y^{1-n}
-$$
+Substitution: \( y = ux \), \( y' = u + x u' \).  
+This reduces the equation to a separable form.
 
 ---
 
-### 10. General and Particular Solution
+## 9. Bernoulli Equation
 
-- **General solution** includes arbitrary constants.
-- **Particular solution** is obtained when initial conditions are applied.
 
----
+\[
+y' + P(x) y = Q(x) y^n
+\]
 
-### 11. Reduction of Order
 
-Typical substitutions:
 
-- $$ v = y' $$
-- $$ y = ux $$
-- $$ v = \frac{y}{x} $$
+Transformation: \( v = y^{1-n} \).  
+The equation becomes linear.
 
 ---
 
-### 12. Second-Order Linear Equation
+## 14. General and Particular Solution
+- General solution contains arbitrary constants.  
+- Particular solution is obtained when initial conditions are applied.  
 
-General form:
+---
 
-$$
+## 15. Reduction of Order – Substitution Techniques
+Common substitutions:  
+- \( v = y' \)  
+- \( y = ux \)  
+- \( v = y/x \)  
+
+---
+
+## 16. Second-Order Linear Equation
+
+
+\[
 a_2(x) y'' + a_1(x) y' + a_0(x) y = g(x)
-$$
+\]
+
+
 
 ---
 
-### 13. Second-Order Homogeneous Equation
+## 17. Second-Order Linear Homogeneous Equation
 
-$$
+
+\[
 a_2(x) y'' + a_1(x) y' + a_0(x) y = 0
-$$
+\]
 
-General solution:
 
-$$
+
+General solution:  
+
+
+\[
 y = C_1 y_1(x) + C_2 y_2(x)
-$$
+\]
+
+
 
 ---
 
-### 14. Constant Coefficient Second-Order Homogeneous Equation
+## 18. Second-Order Constant Coefficient Linear Homogeneous Equation
 
-$$
+
+\[
 a y'' + b y' + c y = 0
-$$
+\]
 
-Characteristic equation:
 
-$$
+
+Characteristic equation:  
+
+
+\[
 a r^2 + b r + c = 0
-$$
+\]
 
-#### Solutions:
-- **Real, distinct roots**:
-  $$ y = C_1 e^{r_1 x} + C_2 e^{r_2 x} $$
-- **Repeated roots**:
-  $$ y = (C_1 + C_2 x) e^{r x} $$
-- **Complex roots**:
-  $$ y = e^{\alpha x}(C_1 \cos(\beta x) + C_2 \sin(\beta x)) $$
 
----
 
-### 📌 Note on Notation
-
-- Prime notation: $$ y', y'', y^{(3)} $$
-- Dot notation (if independent variable is time): $$ \dot{y}, \ddot{y}, \dddot{y} $$
-- Parentheses in superscripts: $$ y^{(n)} $$ means the nth derivative, while $$ y^n $$ is a power.
-
----
-
-> This file is LaTeX-enabled and optimized for platforms like Jupyter Notebook, Obsidian, or any renderer with MathJax support.
+- Real distinct roots: \( y = C_1 e^{r_1 x} + C_2 e^{r_2 x} \)  
+- Repeated root: \( y = (C_1 + C_2 x) e^{rx} \)  
+- Complex roots: \( y = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right) \)  
