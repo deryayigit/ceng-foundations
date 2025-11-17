@@ -158,31 +158,30 @@ a_2(x)y'' + a_1(x)y' + a_0(x)y = 0
 
 ---
 
-## 14. Constant Coefficient 2nd-Order Linear Equation
+### 14. Constant Coefficient 2nd-Order Linear Equation
 
-\[
-ay'' + by' + cy = 0
-\quad \text{Characteristic: } ar^2 + br + c = 0
-\]
+$$
+ay'' + by' + cy = 0 \quad \text{Characteristic: } ar^2 + br + c = 0
+$$
 
-### Case 1: Distinct Real Roots
+**Case 1: Distinct Real Roots**
 
-\[
-y = C_1e^{r_1x} + C_2e^{r_2x}
-\]
+$$
+y = C_1 e^{r_1 x} + C_2 e^{r_2 x}
+$$
 
-### Case 2: Repeated Roots
+**Case 2: Repeated Roots**
 
-\[
-y = (C_1 + C_2x)e^{rx}
-\]
+$$
+y = (C_1 + C_2 x)e^{r x}
+$$
 
-### Case 3: Complex Roots
+**Case 3: Complex Roots**
 
-\[
-y = e^{\alpha x}(C_1\cos(\beta x) + C_2\sin(\beta x))
-\]
+$$
+y = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right)
+$$
 
----
 
-# ✅ End of Notes
+
+
