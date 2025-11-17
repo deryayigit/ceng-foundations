@@ -149,41 +149,6 @@ Denklem lineer biçim alır.
 
 ---
 
-## 10. Clairaut Denklemi
-
-\[
-y = x y' + f(y')
-\]
-
-Genel çözüm doğru ailesi, özel çözüm zarf eğrisidir.
-
----
-
-## 11. Riccati Denklemi
-
-\[
-y' = a(x) y^2 + b(x) y + c(x)
-\]
-
----
-
-## 12. ODE – PDE
-
-ODE tek bağımsız değişkene bağlıdır.  
-PDE birden fazla bağımsız değişkene bağlıdır.
-
----
-
-## 13. Başlangıç ve Sınır Şartları
-
-Initial Value Problem (IVP):  
-\( y(x_0) = y_0,\; y'(x_0) = y_1 \)
-
-Boundary Value Problem (BVP):  
-\( y(a) = A,\; y(b) = B \)
-
----
-
 ## 14. Genel ve Özel Çözüm
 
 Genel çözüm sabit içerir.  
@@ -234,3 +199,4 @@ Gerçek ve farklı kökler:
 
 Karmaşık kökler:  
 \( y = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right) \)
+
