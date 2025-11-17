@@ -14,19 +14,20 @@ The order of a differential equation is the order of the highest derivative appe
 
 # Notation
 
-The expressions \( y', y'', y''', y^{(4)}, \ldots, y^{(n)} \) are commonly used to represent the first, second, third, fourth, ..., nth derivatives of a function \( y \) with respect to the independent variable.
+The expressions \( y', y'', y''', y^{(4)}, \ldots, y^{(n)} \) represent the first, second, third, fourth, ..., nth derivatives of \( y \) with respect to the independent variable.
 
 For example:
 - If the independent variable is \( x \), then \( y'' = \frac{d^2y}{dx^2} \)
 - If the independent variable is \( p \), then \( y'' = \frac{d^2y}{dp^2} \)
 
-Parentheses in \( y^{(n)} \) are used to distinguish it from the nth power \( y^n \).
+Parentheses in \( y^{(n)} \) distinguish it from the nth power \( y^n \).
 
-When the independent variable is time (usually denoted by \( t \)), primes are often replaced by dots:
+If the independent variable is time \( t \), primes are replaced by dots:
 - \( \dot{y} = \frac{dy}{dt} \)
 - \( \ddot{y} = \frac{d^2y}{dt^2} \)
 - \( \dddot{y} = \frac{d^3y}{dt^3} \)
 
+---
 ---
 
 # History of Differential Equations
@@ -53,6 +54,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [1] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010.
 
 [2] C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
+
 
 
 
