@@ -2,7 +2,7 @@
 
 A differential equation is any equation which contains derivatives, either ordinary derivatives or partial derivatives.
 
-Understanding differential equations is essential for analyzing and interpreting many types of problems such as fluid motion, electric current in circuits, heat transfer in solid objects, detection of seismic waves, population growth or decline, and many similar phenomena.
+A differential equation is a mathematical expression that describes how a system changes with respect to a quantity such as time, position, temperature, or pressure, and involves a function together with its derivatives. For example, the equation that relates an object's position to its velocity and acceleration is also a differential equation.
 
 Differential equations represent physical models and are referred to as mathematical models. The main purpose of solving differential equations is to gain insight into the mathematical model that expresses a physical process. Understanding a complex and natural process often involves reducing it to its simplest form. Hence, to comprehend the equations that describe these models and their solutions, we must first be familiar with their simpler versions.
 
@@ -50,6 +50,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
+
 
 
 
