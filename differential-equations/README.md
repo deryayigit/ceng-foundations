@@ -1,169 +1,168 @@
 # Differential Equations
 
-A differential equation is an equation involving an unknown function and its derivatives.
+A **differential equation** is an equation involving an unknown function and its derivatives.
 
-Understanding differential equations is essential for analyzing many types of problems such as fluid motion, electric current in circuits, heat transfer in solid objects, detection of seismic waves, population growth or decline, and many similar natural phenomena.
+Understanding differential equations is crucial for analyzing many types of phenomena such as fluid flow, electric currents in circuits, heat transfer in solids, seismic wave propagation, population dynamics, and many other natural processes.
 
-Differential equations represent physical processes and are therefore considered mathematical models. The main purpose of solving differential equations is to gain insight into these models. Understanding a complex natural process often requires reducing it to its simplest form. Hence, to comprehend the equations that describe these models and their solutions, one must first be familiar with simpler cases.
+Differential equations serve as mathematical models of physical processes. The main purpose of solving them is to gain insight into the system being modeled. Understanding complex processes often starts with simplifying them, and that begins with simpler cases.
 
-An ordinary differential equation (ODE) involves a function with only one independent variable. If the unknown function depends on two or more independent variables, the equation is called a partial differential equation (PDE). The order of a differential equation is the order of the highest derivative appearing in the equation.
+An **ordinary differential equation (ODE)** involves a function with only one independent variable. If the function depends on multiple variables, it's called a **partial differential equation (PDE)**.
+
+The **order** of a differential equation refers to the highest derivative involved.
 
 ---
 
 # Notation
 
-The expressions `y'`, `y''`, `y'''`, `y^(4)`, …, `y^(n)` represent the first, second, third, fourth, …, nth derivatives of `y` with respect to the independent variable. Thus, `y''` means `d²y/dx²` when the independent variable is `x`, but `d²y/dp²` when the variable is `p`. Parentheses in `y^(n)` distinguish it from the nth power `y^n`. If the independent variable is time `t`, primes are replaced by dots. Thus, `ẏ`, `ÿ`, and `y⃛` represent `dy/dt`, `d²y/dt²`, and `d³y/dt³`.
+The expressions \( y' \), \( y'' \), \( y''' \), \( y^{(4)} \), …, \( y^{(n)} \) represent the 1st, 2nd, 3rd, 4th, …, nth derivatives of \( y \) with respect to its independent variable.
+
+For example:
+- \( y'' = \frac{d^2y}{dx^2} \) when the variable is \( x \)
+- \( y'' = \frac{d^2y}{dp^2} \) when the variable is \( p \)
+
+When the variable is time \( t \), prime notation is replaced with dots:
+- \( \dot{y} = \frac{dy}{dt} \), \( \ddot{y} = \frac{d^2y}{dt^2} \), \( \dddot{y} = \frac{d^3y}{dt^3} \)
 
 ---
 
 # History of Differential Equations
 
-The study of differential equations began in the seventeenth century with Isaac Newton and Gottfried Wilhelm Leibniz. Newton classified first-order equations and developed series solution methods, while Leibniz introduced derivative and integral notation and the method of separation of variables. The Bernoulli family expanded the field through new methods and applications to fluid mechanics. Leonhard Euler made fundamental contributions such as integrating factors, general solutions for linear equations, and numerical methods. Joseph-Louis Lagrange improved the theoretical basis with the variation of parameters method and the structure of higher-order solutions. Pierre-Simon Laplace introduced equations central to mathematical physics and the Laplace transform. In the nineteenth century existence and uniqueness theorems were established, and in the twentieth century numerical analysis and computers increased the ability to study nonlinear systems. Today geometric and topological methods provide deeper insight into the qualitative behavior of solutions.
+Differential equations began in the 17th century with **Isaac Newton** and **Gottfried Wilhelm Leibniz**. Newton developed classification of first-order equations and series solutions. Leibniz introduced the notation for derivatives and integrals and the method of separation of variables.
 
-In short, differential equations grew from Newton and Leibniz, developed by Euler, Bernoulli, Lagrange, and Laplace, formalized in the nineteenth and twentieth centuries, and expanded greatly in the modern era with computational tools.
+**The Bernoulli family** applied and expanded the theory in fluid mechanics. **Euler** contributed integrating factors, general linear solutions, and numerical methods. **Lagrange** enhanced the theoretical foundation, and **Laplace** introduced equations central to physics.
 
----
-
-# Diferansiyel Denklemlerde Temel Kavramlar
-
-## 1. Mertebe (Order)
-
-Bir diferansiyel denklemdeki en yüksek türevin derecesi mertebedir.
-
-Örnekler:
-
-\( y'' + 3y' - 2y = 0 \) → 2. mertebe  
-\( y^{(4)} - x y' = \sin x \) → 4. mertebe  
-\( (dy/dx)^3 + y = 0 \) → 1. mertebe
+By the 19th century, existence and uniqueness theorems were formalized. In the 20th century, numerical methods and computers allowed the study of nonlinear systems. Today, geometry and topology give qualitative insights.
 
 ---
 
-## 2. Derece (Degree)
+# Fundamental Concepts in Differential Equations
 
-Denklem polinom biçimindeyse, en yüksek türevin kuvveti derecedir.  
-Türevin içinde kök, log veya trigonometrik ifade varsa derece tanımsızdır.
+## 1. Order
 
-Örnekler:
+The **order** is the highest derivative appearing in the equation.
 
-\( (y'')^2 + y = x \) → 2. derece  
-\( y' + xy = 0 \) → 1. derece  
-\( dy/dx + \sqrt{y''} = 0 \) → derece tanımsız
+**Examples:**
+
+- \( y'' + 3y' - 2y = 0 \) → 2nd order  
+- \( y^{(4)} - x y' = \sin x \) → 4th order  
+- \( \left( \frac{dy}{dx} \right)^3 + y = 0 \) → 1st order  
 
 ---
 
-## 3. Lineer Diferansiyel Denklem
+## 2. Degree
 
-Genel form:
+The **degree** is the power of the highest derivative (only defined when the equation is polynomial in derivatives).
+
+**Examples:**
+
+- \( (y'')^2 + y = x \) → 2nd degree  
+- \( y' + xy = 0 \) → 1st degree  
+- \( \frac{dy}{dx} + \sqrt{y''} = 0 \) → degree undefined  
+
+---
+
+## 3. Linear Differential Equation
+
+General form:
 
 \[
 a_n(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y' + a_0(x) y = g(x)
 \]
 
-Lineerlik koşulları: y ve türevleri birinci kuvvette olmalı, çarpım şeklinde olmamalı ve türevler logaritma, kök veya trigonometrik fonksiyon içinde bulunmamalıdır.
+**Conditions for linearity:**
+- \( y \) and its derivatives appear only to the first power
+- No products of \( y \), \( y' \), \( y'' \), etc.
+- No \( \log(y) \), \( \sqrt{y} \), \( \sin(y') \), etc.
 
-Lineer örnek: \( y'' + 3y' + 2y = e^x \)  
-Lineer olmayan örnek: \( (y')^2 + y = 0 \)
+**Examples:**
+
+- Linear: \( y'' + 3y' + 2y = e^x \)  
+- Nonlinear: \( (y')^2 + y = 0 \)
 
 ---
 
-## 4. Lineer – Homojen / Homojen Olmayan
+## 4. Homogeneous vs. Non-Homogeneous Linear Equations
 
 \[
 a_n y^{(n)} + \dots + a_0 y = g(x)
 \]
 
-Homojen denklemde \( g(x) = 0 \).  
-Homojen olmayan denklemde \( g(x) \neq 0 \).
+- Homogeneous if \( g(x) = 0 \)  
+- Non-homogeneous if \( g(x) \neq 0 \)
 
 ---
 
-## 5. Ayrılabilir Denklem (Separable)
+## 5. Separable Equation
 
 \[
-\frac{dy}{dx} = f(x) g(y)
-\]
-
-Ayrılabilir biçime dönüştürülebilir:
-
-\[
-\frac{1}{g(y)} dy = f(x) dx
+\frac{dy}{dx} = f(x) g(y) \quad \Rightarrow \quad \frac{1}{g(y)} dy = f(x) dx
 \]
 
 ---
 
-## 6. Exact (Tam) Denklem
+## 6. Exact Equation
 
 Form:
 
 \[
-M(x,y) + N(x,y) y' = 0
+M(x,y) + N(x,y) \frac{dy}{dx} = 0
 \]
 
-Exactlık şartı:
+**Exactness condition:**
 
 \[
 \frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}
 \]
 
-Bu sağlandığında bir potansiyel fonksiyon \( \Phi(x,y) \) vardır.
+If true, a potential function \( \Phi(x, y) \) exists such that \( \nabla \Phi = (M, N) \)
 
 ---
 
 ## 7. Integrating Factor
 
-1. mertebe lineer denklem:
+Used for solving linear 1st-order equations:
 
 \[
-y' + P(x) y = Q(x)
-\]
-
-Integrating factor:
-
-\[
-\mu(x) = e^{\int P(x) dx}
+y' + P(x)y = Q(x) \quad \Rightarrow \quad \mu(x) = e^{\int P(x) dx}
 \]
 
 ---
 
-## 8. Homojen ODE (ODE anlamında homogeneous)
+## 8. Homogeneous Equation (in the ODE sense)
 
 \[
 \frac{dy}{dx} = F\left( \frac{y}{x} \right)
+\Rightarrow y = ux, \quad y' = u + x \frac{du}{dx}
 \]
-
-Dönüşüm:  
-\( y = ux \) ve \( y' = u + x u' \).  
-Bu dönüşüm sonrası denklem ayrılabilir hale gelir.
 
 ---
 
-## 9. Bernoulli Denklemi
+## 9. Bernoulli Equation
 
 \[
-y' + P(x) y = Q(x) y^n
+y' + P(x)y = Q(x)y^n \quad \Rightarrow \quad v = y^{1-n}
 \]
 
-Dönüşüm:  
-\( v = y^{1-n} \)  
-Denklem lineer biçim alır.
+---
+
+## 14. General and Particular Solutions
+
+- **General solution** contains arbitrary constants  
+- **Particular solution** is obtained by applying initial/boundary conditions
 
 ---
 
-## 14. Genel ve Özel Çözüm
+## 15. Reduction of Order (Substitution Techniques)
 
-Genel çözüm sabit içerir.  
-Özel çözüm başlangıç koşulları verildiğinde sabitler belirlenerek elde edilir.
+Common substitutions:
 
----
-
-## 15. Mertebe Düşürme – Substitution Teknikleri
-
-Kullanılan dönüşümler:  
-\( v = y' \), \( y = ux \), \( v = y/x \)
+\[
+v = y', \quad y = ux, \quad v = \frac{y}{x}
+\]
 
 ---
 
-## 16. İkinci Mertebe Lineer Denklem
+## 16. 2nd-Order Linear Equation
 
 \[
 a_2(x) y'' + a_1(x) y' + a_0(x) y = g(x)
@@ -171,32 +170,34 @@ a_2(x) y'' + a_1(x) y' + a_0(x) y = g(x)
 
 ---
 
-## 17. İkinci Mertebe Lineer Homojen Denklem
+## 17. 2nd-Order Homogeneous Equation
 
 \[
-a_2(x) y'' + a_1(x) y' + a_0(x) y = 0
+a_2(x) y'' + a_1(x) y' + a_0(x) y = 0 \quad \Rightarrow \quad y = C_1 y_1(x) + C_2 y_2(x)
 \]
-
-Genel çözüm:  
-\( y = C_1 y_1(x) + C_2 y_2(x) \)
 
 ---
 
-## 18. İkinci Mertebe Sabit Katsayılı Lineer Homojen Denklem
+## 18. Constant-Coefficient 2nd-Order Linear Homogeneous Equation
 
 \[
 ay'' + by' + cy = 0
+\Rightarrow ar^2 + br + c = 0
 \]
 
-Karakteristik denklem:  
-\( ar^2 + br + c = 0 \)
+### Solution Types:
 
-Gerçek ve farklı kökler:  
-\( y = C_1 e^{r_1 x} + C_2 e^{r_2 x} \)
+- **Distinct real roots:**  
+  \[
+  y = C_1 e^{r_1 x} + C_2 e^{r_2 x}
+  \]
 
-Çakışık kök:  
-\( y = (C_1 + C_2 x) e^{rx} \)
+- **Repeated root:**  
+  \[
+  y = (C_1 + C_2 x)e^{r x}
+  \]
 
-Karmaşık kökler:  
-\( y = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right) \)
-
+- **Complex roots:**  
+  \[
+  y = e^{\alpha x} \left( C_1 \cos(\beta x) + C_2 \sin(\beta x) \right)
+  \]
