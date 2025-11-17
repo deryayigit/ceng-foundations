@@ -38,11 +38,11 @@ In the 19th century, **existence and uniqueness theorems** were formalized. In t
 
 ---
 
-# Fundamental Concepts in Differential Equations
+## 🔢 Fundamental Concepts in Differential Equations
 
-## 1. Order
+### 1. Order
 
-The order of a differential equation is the degree of the highest derivative.
+The **order** of a differential equation is the order of the highest derivative.
 
 **Examples:**
 
@@ -52,9 +52,9 @@ The order of a differential equation is the degree of the highest derivative.
 
 ---
 
-## 2. Degree
+### 2. Degree
 
-The degree is the power of the highest derivative, **if** the equation is polynomial in derivatives.
+The **degree** is the exponent of the highest order derivative, **if** the equation is polynomial in derivatives.
 
 **Examples:**
 
@@ -64,7 +64,7 @@ The degree is the power of the highest derivative, **if** the equation is polyno
 
 ---
 
-## 3. Linear Differential Equation
+### 3. Linear Differential Equation
 
 **General form:**
 
@@ -74,14 +74,17 @@ a_n(x) y^{(n)} + a_{n-1}(x) y^{(n-1)} + \dots + a_1(x) y' + a_0(x) y = g(x)
 
 **Linearity Conditions:**
 
-- \( y \) and its derivatives must appear to the first power.
-- No product of \( y \) terms or derivatives.
-- Must not be inside root, log, or trig functions.
+- \( y \) and its derivatives appear to the first power  
+- No product of \( y \) terms or derivatives  
+- Not inside log, trig, root, etc.
 
 **Examples:**
 
-- Linear: \( y'' + 3y' + 2y = e^x \)  
-- Nonlinear: \( (y')^2 + y = 0 \)  
+- ✅ Linear: \( y'' + 3y' + 2y = e^x \)  
+- ❌ Nonlinear: \( (y')^2 + y = 0 \)
+
+---
+
 
 ---
 
@@ -245,3 +248,4 @@ ar^2 + br + c = 0
 [1] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010.
 
 [2] C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
+
