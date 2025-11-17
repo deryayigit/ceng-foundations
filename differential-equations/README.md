@@ -14,17 +14,18 @@ The order of a differential equation is the order of the highest derivative appe
 
 # Notation
 
-The expressions `y'`, `y''`, `y'''`, `y^(4)`, …, `y^(n)` are often used to represent, respectively, 
-the first, second, third, fourth, …, nth derivatives of `y` with respect to the independent variable 
-under consideration. 
+The expressions \( y', y'', y''', y^{(4)}, \ldots, y^{(n)} \) are commonly used to represent the first, second, third, fourth, ..., nth derivatives of a function \( y \) with respect to the independent variable.
 
-Thus, `y''` represents `d^2y/dx^2` if the independent variable is `x`, but `d^2y/dp^2` if the independent 
-variable is `p`. 
+For example:
+- If the independent variable is \( x \), then \( y'' = \frac{d^2y}{dx^2} \)
+- If the independent variable is \( p \), then \( y'' = \frac{d^2y}{dp^2} \)
 
-Parentheses in `y^(n)` are used to distinguish it from the nth power `y^n`.  
+Parentheses in \( y^{(n)} \) are used to distinguish it from the nth power \( y^n \).
 
-If the independent variable is time, usually denoted by `t`, primes are often replaced by dots.  
-Thus, `ẏ`, `ÿ`, and `y⃛` represent `dy/dt`, `d^2y/dt^2`, and `d^3y/dt^3`, respectively.
+When the independent variable is time (usually denoted by \( t \)), primes are often replaced by dots:
+- \( \dot{y} = \frac{dy}{dt} \)
+- \( \ddot{y} = \frac{d^2y}{dt^2} \)
+- \( \dddot{y} = \frac{d^3y}{dt^3} \)
 
 ---
 
@@ -52,6 +53,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [1] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010.
 
 [2] C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
+
 
 
 
