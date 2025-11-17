@@ -1,6 +1,6 @@
 # Differential Equations
 
-A differential equation is an equation involving an unknown function and its derivatives.
+A differential equation is any equation which contains derivatives, either ordinary derivatives or partial derivatives.
 
 Understanding differential equations is essential for analyzing and interpreting many types of problems such as fluid motion, electric current in circuits, heat transfer in solid objects, detection of seismic waves, population growth or decline, and many similar phenomena.
 
@@ -50,6 +50,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
+
 
 
 
