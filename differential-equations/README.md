@@ -47,7 +47,9 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ---
 ## References
 [1] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
+
 [2] C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
+
 
 
 
