@@ -59,13 +59,13 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ## 2) Second-Order Differential Equations
 - Second-Order Linear Differential Equations
 - Second-Order Linear Homogeneous Differential Equations
-  - a) Distinct Real Roots
-  - b) Repeated Roots
-  - c) Complex Roots
+    a) Distinct Real Roots
+    b) Repeated Roots
+    c) Complex Roots
 - Second-Order Constant-Coefficient Homogeneous Linear Differential Equations
 - Non-Homogeneous Constant-Coefficient Equations
-  - a) Method of Undetermined Coefficients
-  - b) Method of Variation of Parameters
+    a) Method of Undetermined Coefficients
+    b) Method of Variation of Parameters
 
 ## 3) Applications of Differential Equations
 - Newton's Law of Cooling
@@ -86,6 +86,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
