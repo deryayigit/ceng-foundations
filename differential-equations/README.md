@@ -48,84 +48,24 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 # 📘 Types of Differential Equations and Equation Solutions  
 
-Bu bölümde diferansiyel denklemlerin türleri ve çözüm yöntemleri özetlenmiştir. Her başlık, ileride eklenecek örnekler ve uygulamalar için temel bir çerçeve sunar.
 
 ---
 
 ## 1. 🔹 Differential Equations Separable by Variables  
-**Ayrılabilir diferansiyel denklemler**,  
-\[
-\frac{dy}{dx} = f(x)\, g(y)
-\]  
-şeklinde yazılabilen ve değişkenlerin karşılıklı olarak ayrılabildiği denklemlerdir.  
 
-**Temel çözüm yaklaşımı:**  
-- \( y \)-terimli ifadeler sol tarafa,  
-- \( x \)-terimli ifadeler sağ tarafa alınır.  
-- Her iki taraf ayrı ayrı integre edilir.
 
----
+
 
 ## 2. 🔹 Homogeneous Differential Equations  
-Bir denklem,  
-\[
-M(x,y)\,dx + N(x,y)\,dy = 0
-\]  
-şeklinde yazılabilir ve  
-\[
-M(\lambda x, \lambda y) = \lambda^k M(x,y)
-\]  
-\[
-N(\lambda x, \lambda y) = \lambda^k N(x,y)
-\]  
-koşulunu sağlıyorsa *homojen* bir diferansiyel denklemdir.  
 
-**Temel çözüm yaklaşımı:**  
-- Substitution yapılır:  
-\[
-y = vx \quad \Rightarrow \quad dy = v\,dx + x\,dv
-\]  
-- Denklem \( v \) cinsinden ayrılabilir forma dönüştürülür ve çözülür.
-
----
 
 ## 3. 🔹 Substitution Method  
-Bazı diferansiyel denklemler belirli bir **dönüşüm/substitution** ile çözülebilir hale gelir.  
-
-Yaygın substitution türleri:  
-- \( y = vx \)  (homojen form için)  
-- \( v = y/x \)  
-- \( v = y^n \)  
-- \( u = ax + by \)  
-- Lineer olmayan denklemleri lineer ya da ayrılabilir hale getirme amaçlı özel dönüşümler  
-
-**Temel fikir:**  
-Denklemi çözülmesi kolay bir forma dönüştürmek.
 
 ---
 
 ## 4. 🔹 Exact Differential Equations  
-Denklem  
-\[
-M(x,y)\,dx + N(x,y)\,dy = 0
-\]  
-şeklindeyse ve  
-\[
-\frac{\partial M}{\partial y} = \frac{\partial N}{\partial x}
-\]  
-koşulu sağlanıyorsa bu denklem *exact (eksak)* bir diferansiyel denklemdir.  
 
-**Temel çözüm yaklaşımı:**  
-1. \( M(x,y) \)’yi \( x \)’e göre integre et → potansiyel fonksiyonun bir kısmı  
-2. \( N(x,y) \)’yi \( y \)’ye göre integre ederek eksik terimleri tamamlarsın  
-3. Çözüm:  
-\[
-\Phi(x,y) = C
-\]
 
----
-
-> ✨ *Bu alan ileride örnek çözümler, formüller, C/C++ sembolik çözüm algoritmaları ve test soruları ile genişletilecektir.*
 
 
 
@@ -138,5 +78,6 @@ koşulu sağlanıyorsa bu denklem *exact (eksak)* bir diferansiyel denklemdir.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
