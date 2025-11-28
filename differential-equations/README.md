@@ -46,21 +46,21 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 ---
 
-# 📘 Types of Differential Equations and Equation Solutions  
+# Types of Differential Equations and Equation Solutions  
 
 
 ---
 
-## 1. 🔹 Differential Equations Separable by Variables  
+## 1. Differential Equations Separable by Variables  
 
 
-## 2. 🔹 Homogeneous Differential Equations  
+## 2. Homogeneous Differential Equations  
 
 
-## 3. 🔹 Substitution Method  
+## 3. Substitution Method  
 
 
-## 4. 🔹 Exact Differential Equations  
+## 4. Exact Differential Equations  
 
 
 
@@ -75,6 +75,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
