@@ -51,6 +51,106 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ### 1) First-Order Differential Equations
 
     1.1) Differential Equations Separable by Variables
+
+    ## 1.1) Separable Differential Equations
+
+A first-order differential equation of the form
+
+\[
+y' = f(x,y)
+\]
+
+is **Separable by Variables** if the function \( f(x,y) \) can be written as a product of a function of \( x \) and a function of \( y \):
+
+\[
+f(x,y) = g(x) \, h(y)
+\]
+
+In this case, the differential equation becomes:
+
+\[
+\frac{dy}{dx} = g(x)h(y)
+\]
+
+which can be **separated** as:
+
+\[
+\frac{dy}{h(y)} = g(x)\, dx
+\]
+
+---
+
+### ✔ When is an Equation Separable?
+
+For the equation to be separable, the right-hand side must contain expressions that can be written in one of the following forms:
+
+- \( f(x) \)
+- \( f(y) \)
+- \( g(x) \cdot h(y) \)
+- \( \frac{g(x)}{h(y)} = g(x) \cdot \frac{1}{h(y)} \)
+
+So if the function \( f(x,y) \) in \( y' = f(x,y) \) can be expressed as a product of an \( x\)-only function and a \( y \)-only function, the equation is **separable**.
+
+---
+
+## ✔ Solution Method
+
+Given:
+
+\[
+y' = g(x)\,h(y)
+\]
+
+### **Step 1 — Separate variables**
+
+\[
+\frac{dy}{dx} = g(x) h(y)
+\]
+
+Move the \( y \)-terms to the left and the \( x \)-terms to the right:
+
+\[
+\frac{dy}{h(y)} = g(x) \, dx
+\]
+
+---
+
+### **Step 2 — Integrate both sides**
+
+\[
+\int \frac{1}{h(y)}\, dy = \int g(x)\, dx
+\]
+
+Let:
+
+\[
+H(y) = \int \frac{1}{h(y)}\, dy, 
+\quad 
+G(x) = \int g(x)\, dx
+\]
+
+The general solution becomes:
+
+\[
+H(y) = G(x) + C
+\]
+
+```
+Before Separation:
+    y' = g(x) * h(y)
+
+Separate Variables:
+    dy/dx = g(x) * h(y)
+
+Move h(y) to the left:
+    dy / h(y) = g(x) dx
+
+Integrate Both Sides:
+    ∫ 1/h(y) dy  =  ∫ g(x) dx
+
+Final Form:
+    H(y) = G(x) + C
+```    
     1.2) Homogeneous Differential Equations
     1.3) Substitution Method
     1.4) Exact Differential Equations
@@ -91,6 +191,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
