@@ -56,18 +56,24 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 ### 1.1) Separable by Variables for Differential Equations
 
-#### **Definition**
+#### Definition
 
-For an equation of the form
+For an equation of the form:
 
 $$ y' = f(x, y) $$
 
 to be **separable**, the expression \( f(x, y) \) must be expressible as:
 
-- \( f(x) \)
-- \( f(y) \)
-- \( g(x) \cdot h(y) \)
-- \( g(x)/h(y) = g(x) \cdot \frac{1}{h(y)} \)
+- functions of only **x**
+- functions of only **y**
+- a product of a function of **x** and a function of **y**
+
+Examples:
+
+$$ f(x, y) = f(x) $$
+$$ f(x, y) = f(y) $$
+$$ f(x, y) = g(x)\,h(y) $$
+$$ f(x, y) = \frac{g(x)}{h(y)} = g(x)\,\frac{1}{h(y)} $$
 
 If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),  
 then the equation is called a **Differential Equation Separable by Variables**.
@@ -143,6 +149,7 @@ where:
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
