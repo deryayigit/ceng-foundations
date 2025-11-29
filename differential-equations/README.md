@@ -119,7 +119,7 @@ $$
 if the function \( f(x,y) \) can be rewritten as:
 
 $$
-f(x,y) = f\!\left(\frac{y}{x}\right)
+f(x,y) = f\left(\frac{y}{x}\right)
 $$
 
 and if for any real number \( \lambda \):
@@ -263,6 +263,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
