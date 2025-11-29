@@ -1,3 +1,5 @@
+First Method
+
 import math 
 
 def simpson(f, a, b, n=1000): if n % 2 == 1: n += 1 h = (b - a) / n s = f(a) + f(b) 
@@ -44,7 +46,7 @@ print(f"\n❯ y({x}) = {result}\n")
 --------
 
 '''
-Second Method
+Second Method : Pythonic
 
 import sympy as sp
 
