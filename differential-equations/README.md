@@ -49,30 +49,33 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ## Types of Differential Equations and Equation Solutions
 
 ### 1) First-Order Differential Equations
- #### 1.1) Differential Equations Separable by Variables
- #### 1.2) Homogeneous Differential Equations
- #### 1.3) Substitution Method
- #### 1.4) Exact Differential Equations
- #### 1.5) Linear Differential Equations
- #### 1.6) Bernoulli Differential Equations
+
+    1.1) Differential Equations Separable by Variables
+    1.2) Homogeneous Differential Equations
+    1.3) Substitution Method
+    1.4) Exact Differential Equations
+    1.5) Linear Differential Equations
+    1.6) Bernoulli Differential Equations
 
 ### 2) Second-Order Differential Equations
- #### 2.1) Second-Order Linear Differential Equations
- #### 2.2) Second-Order Linear Homogeneous Differential Equations
-   a) Distinct Real Roots  
-   b) Repeated Roots  
-   c) Complex Roots  
 
-- #### 2.3) Second-Order Constant-Coefficient Homogeneous Linear Differential Equations
-- #### 2.4) Non-Homogeneous Constant-Coefficient Equations
-  - a) Method of Undetermined Coefficients  
-  - b) Method of Variation of Parameters  
+    2.1) Second-Order Linear Differential Equations
+    2.2) Second-Order Linear Homogeneous Differential Equations
+        a) Distinct Real Roots  
+        b) Repeated Roots  
+        c) Complex Roots
+
+    2.3) Second-Order Constant-Coefficient Homogeneous Linear Differential Equations
+    2.4) Non-Homogeneous Constant-Coefficient Equations
+        a) Method of Undetermined Coefficients  
+        b) Method of Variation of Parameters
 
 ### 3) Applications of Differential Equations
-- #### 3.1) Newton's Law of Cooling
-- #### 3.2) Population
-- #### 3.3) Mechanical Vibrations
-- #### 3.4) Electric Circuits
+
+    3.1) Newton's Law of Cooling  
+    3.2) Population  
+    3.3) Mechanical Vibrations  
+    3.4) Electric Circuits
 
 ### 4) First-Order Constant Coefficient Homogeneous Linear Differential Equation Systems
 
@@ -88,6 +91,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
