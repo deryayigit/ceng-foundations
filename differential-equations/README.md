@@ -123,7 +123,7 @@ $$
 f(x,y) = f\left(\frac{y}{x}\right)
 $$
 
-and if for any real number (\lambda) λ :
+and if for any real number λ (lambda):
 
 $$
 f(\lambda x, \lambda y) = f(x,y)
@@ -236,6 +236,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
