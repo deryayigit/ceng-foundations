@@ -52,7 +52,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 #### 1.1) Differential Equations Separable by Variables
 
-##### Definition:
+**Definition:**
 
 For an equation of the form
 
@@ -67,7 +67,7 @@ to be **separable**, the expression \( f(x, y) \) must be expressible as:
 - a product of a function of **x** and a function of **y**
 
 
-Examples:
+**Examples:**
 
 $$ f(x, y) = f(x) $$
 $$ f(x, y) = f(y) $$
@@ -79,7 +79,7 @@ then the equation is called a **Differential Equation Separable by Variables**.
 
 ---
 
-### **Solution of the Equation**
+**Solution of the Equation**
 
 Given:
 
@@ -146,6 +146,7 @@ $$ H(y) = G(x) + C $$
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
