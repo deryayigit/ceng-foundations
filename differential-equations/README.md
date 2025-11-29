@@ -49,12 +49,12 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ## Types of Differential Equations and Equation Solutions
 
 ### 1) First-Order Differential Equations
-#### 1.1) Differential Equations Separable by Variables
-#### 1.2) Homogeneous Differential Equations
-#### 1.3) Substitution Method
-#### 1.4) Exact Differential Equations
-#### 1.5) Linear Differential Equations
-#### 1.6) Bernoulli Differential Equations
+    #### 1.1) Differential Equations Separable by Variables
+    #### 1.2) Homogeneous Differential Equations
+    #### 1.3) Substitution Method
+    #### 1.4) Exact Differential Equations
+    #### 1.5) Linear Differential Equations
+    #### 1.6) Bernoulli Differential Equations
 
 ### 2) Second-Order Differential Equations
 #### 2.1) Second-Order Linear Differential Equations
@@ -87,6 +87,7 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
