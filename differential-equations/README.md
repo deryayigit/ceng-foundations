@@ -171,7 +171,9 @@ $$
 to obtain the final solution.
 
 ### 🔗 Code Implementation
-👉  Code file for solving this system of equations: [homogeneous.c](homogeneous.c)
+👉  Code file for solving this system of equations: [homogeneous](homogeneous.c)
+
+
 ---
 
 #### 1.3) Substitution Method
@@ -237,6 +239,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
