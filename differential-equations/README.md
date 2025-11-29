@@ -103,7 +103,7 @@ $$ H(y) = G(x) + C $$
 
 
 ### 🔗 Code Implementation
-[separable_dif_eq](separable_dif_eq)
+👉 Code file for solving this system of equations: [separable_dif_eq](separable_dif_eq)
 
 ```    
     1.2) Homogeneous Differential Equations
@@ -146,6 +146,7 @@ $$ H(y) = G(x) + C $$
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
