@@ -164,32 +164,6 @@ $$
 u + x \frac{du}{dx} = f(x, ux)
 $$
 
-Since the equation is homogeneous:
-
-$$
-f(x,ux) = f(u)
-$$
-
-Thus the equation becomes **separable**:
-
-$$
-x \frac{du}{dx} = f(u) - u
-$$
-
-Rewrite:
-
-$$
-\frac{du}{f(u) - u} = \frac{dx}{x}
-$$
-
-Integrate both sides:
-
-$$
-\int \frac{1}{f(u)-u} \, du = \int \frac{1}{x} \, dx
-$$
-
-After solving for \( u(x) \), substitute back:
-
 $$
 u = \frac{y}{x}
 $$
@@ -263,6 +237,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
