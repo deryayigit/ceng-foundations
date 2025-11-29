@@ -196,11 +196,6 @@ $$
 
 is applied.
 
-Substitute:
-$$
-u = ax + by + c
-$$
-
 Differentiate both sides with respect to \( x \):
 
 $$
@@ -288,6 +283,7 @@ This substitution transforms the original equation into a new equation involving
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
