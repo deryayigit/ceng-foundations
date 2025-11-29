@@ -132,7 +132,7 @@ then the equation is called a **Homogeneous Differential Equation**.
 
 ---
 
-### Solution Method
+**Solution of the Equation**
 
 Given:
 
@@ -239,6 +239,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
