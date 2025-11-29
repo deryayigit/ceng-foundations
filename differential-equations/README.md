@@ -56,13 +56,11 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 ### 1.1) Separable by Variables for Differential Equations
 
-**Definition**
+#### **Definition**
 
 For an equation of the form
 
-\[
-y' = f(x, y)
-\]
+$$ y' = f(x, y) $$
 
 to be **separable**, the expression \( f(x, y) \) must be expressible as:
 
@@ -71,7 +69,8 @@ to be **separable**, the expression \( f(x, y) \) must be expressible as:
 - \( g(x) \cdot h(y) \)
 - \( g(x)/h(y) = g(x) \cdot \frac{1}{h(y)} \)
 
-If the function \( f(x, y) \) can be written as a product of a function of \( x \) and a function of \( y \), then the equation is called a **Differential Equation Separable by Variables**.
+If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),  
+then the equation is called a **Differential Equation Separable by Variables**.
 
 ---
 
@@ -79,39 +78,29 @@ If the function \( f(x, y) \) can be written as a product of a function of \( x 
 
 Given:
 
-\[
-y' = g(x) \cdot h(y)
-\]
+$$ y' = g(x) \cdot h(y) $$
 
 Rewrite as:
 
-\[
-\frac{dy}{dx} = g(x) \cdot h(y)
-\]
+$$ \frac{dy}{dx} = g(x) \cdot h(y) $$
 
 Separate variables:
 
-\[
-\frac{1}{h(y)}\,dy = g(x)\,dx
-\]
+$$ \frac{1}{h(y)}\,dy = g(x)\,dx $$
 
 Integrate both sides:
 
-\[
-\int \frac{1}{h(y)}\,dy = \int g(x)\,dx
-\]
+$$ \int \frac{1}{h(y)}\,dy = \int g(x)\,dx $$
 
 General implicit solution:
 
-\[
-H(y) = G(x) + C
-\]
+$$ H(y) = G(x) + C $$
 
-where  
-- \( H(y) = \displaystyle \int \frac{1}{h(y)}\,dy \)  
+where:
+
+- \( H(y) = \displaystyle \int \frac{1}{h(y)}\,dy \)
 - \( G(x) = \displaystyle \int g(x)\,dx \)
 
----
 
 ```    
     1.2) Homogeneous Differential Equations
@@ -154,6 +143,7 @@ where
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
