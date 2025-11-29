@@ -101,10 +101,6 @@ General implicit solution:
 
 $$ H(y) = G(x) + C $$
 
-where:
-
-- \( H(y) = \displaystyle \int \frac{1}{h(y)}\,dy \)
-- \( G(x) = \displaystyle \int g(x)\,dx \)
 
 
 ```    
@@ -148,6 +144,7 @@ where:
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
