@@ -131,8 +131,6 @@ $$
 
 then the equation is called a **Homogeneous Differential Equation**.
 
----
-
 **Solution of the Equation**
 
 Given:
@@ -174,7 +172,6 @@ to obtain the final solution.
 ### 🔗 Code Implementation
 👉  Code file for solving this system of equations: [homogeneous](homogeneous.c)
 
-
 ---
 
 #### 🔹1.3) Substitution Method
@@ -195,8 +192,7 @@ to obtain the final solution.
 
 
 ### 🔗 Code Implementation
-👉 
-
+👉 Python Implementation: [linear_dif_equation](linear_dif_equation.py)
 ---
 
 #### 🔹1.6) Bernoulli Differential Equations
@@ -240,6 +236,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
