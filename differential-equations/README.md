@@ -52,10 +52,6 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
     1.1) Differential Equations Separable by Variables
 
-    ## 1.1) Separable Differential Equations
-
-### 1.1) Separable by Variables for Differential Equations
-
 #### Definition
 
 For an equation of the form:
@@ -149,6 +145,7 @@ where:
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
