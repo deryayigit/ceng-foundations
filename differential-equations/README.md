@@ -54,102 +54,65 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
     ## 1.1) Separable Differential Equations
 
-A first-order differential equation of the form
+### 1.1) Separable by Variables for Differential Equations
+
+**Definition**
+
+For an equation of the form
 
 \[
-y' = f(x,y)
+y' = f(x, y)
 \]
 
-is **Separable by Variables** if the function \( f(x,y) \) can be written as a product of a function of \( x \) and a function of \( y \):
-
-\[
-f(x,y) = g(x) \, h(y)
-\]
-
-In this case, the differential equation becomes:
-
-\[
-\frac{dy}{dx} = g(x)h(y)
-\]
-
-which can be **separated** as:
-
-\[
-\frac{dy}{h(y)} = g(x)\, dx
-\]
-
----
-
-### ✔ When is an Equation Separable?
-
-For the equation to be separable, the right-hand side must contain expressions that can be written in one of the following forms:
+to be **separable**, the expression \( f(x, y) \) must be expressible as:
 
 - \( f(x) \)
 - \( f(y) \)
 - \( g(x) \cdot h(y) \)
-- \( \frac{g(x)}{h(y)} = g(x) \cdot \frac{1}{h(y)} \)
+- \( g(x)/h(y) = g(x) \cdot \frac{1}{h(y)} \)
 
-So if the function \( f(x,y) \) in \( y' = f(x,y) \) can be expressed as a product of an \( x\)-only function and a \( y \)-only function, the equation is **separable**.
+If the function \( f(x, y) \) can be written as a product of a function of \( x \) and a function of \( y \), then the equation is called a **Differential Equation Separable by Variables**.
 
 ---
 
-## ✔ Solution Method
+### **Solution of the Equation**
 
 Given:
 
 \[
-y' = g(x)\,h(y)
+y' = g(x) \cdot h(y)
 \]
 
-### **Step 1 — Separate variables**
+Rewrite as:
 
 \[
-\frac{dy}{dx} = g(x) h(y)
+\frac{dy}{dx} = g(x) \cdot h(y)
 \]
 
-Move the \( y \)-terms to the left and the \( x \)-terms to the right:
+Separate variables:
 
 \[
-\frac{dy}{h(y)} = g(x) \, dx
+\frac{1}{h(y)}\,dy = g(x)\,dx
 \]
 
----
-
-### **Step 2 — Integrate both sides**
+Integrate both sides:
 
 \[
-\int \frac{1}{h(y)}\, dy = \int g(x)\, dx
+\int \frac{1}{h(y)}\,dy = \int g(x)\,dx
 \]
 
-Let:
-
-\[
-H(y) = \int \frac{1}{h(y)}\, dy, 
-\quad 
-G(x) = \int g(x)\, dx
-\]
-
-The general solution becomes:
+General implicit solution:
 
 \[
 H(y) = G(x) + C
 \]
 
-```
-Before Separation:
-    y' = g(x) * h(y)
+where  
+- \( H(y) = \displaystyle \int \frac{1}{h(y)}\,dy \)  
+- \( G(x) = \displaystyle \int g(x)\,dx \)
 
-Separate Variables:
-    dy/dx = g(x) * h(y)
+---
 
-Move h(y) to the left:
-    dy / h(y) = g(x) dx
-
-Integrate Both Sides:
-    ∫ 1/h(y) dy  =  ∫ g(x) dx
-
-Final Form:
-    H(y) = G(x) + C
 ```    
     1.2) Homogeneous Differential Equations
     1.3) Substitution Method
@@ -191,6 +154,7 @@ Final Form:
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
