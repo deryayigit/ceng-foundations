@@ -49,7 +49,6 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 ## Types of Differential Equations and Equation Solutions
 
 ### 1) First-Order Differential Equations
-
 #### 1.1) Differential Equations Separable by Variables
 
 **Definition:**
@@ -77,7 +76,6 @@ $$ f(x, y) = \frac{g(x)}{h(y)} = g(x)\,\frac{1}{h(y)} $$
 If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),  
 then the equation is called a **Differential Equation Separable by Variables**.
 
----
 
 **Solution of the Equation**
 
@@ -105,12 +103,131 @@ $$ H(y) = G(x) + C $$
 ### 🔗 Code Implementation
 👉 Code file for solving this system of equations: [separable_dif_eq](separable_dif_eq)
 
-```    
-    1.2) Homogeneous Differential Equations
-    1.3) Substitution Method
-    1.4) Exact Differential Equations
-    1.5) Linear Differential Equations
-    1.6) Bernoulli Differential Equations
+---
+
+
+#### 1.2) Homogeneous Differential Equations
+
+**Definition:**
+
+In the differential equation:
+
+$$
+y' = f(x, y)
+$$
+
+if the function \( f(x,y) \) can be rewritten as:
+
+$$
+f(x,y) = f\!\left(\frac{y}{x}\right)
+$$
+
+and if for any real number \( \lambda \):
+
+$$
+f(\lambda x, \lambda y) = f(x,y)
+$$
+
+then the equation is called a **Homogeneous Differential Equation**.
+
+---
+
+### Solution Method
+
+Given:
+
+$$
+y' = f(x,y)
+$$
+
+Make the substitution:
+
+$$
+u = \frac{y}{x}
+$$
+
+which implies:
+
+$$
+y = ux
+$$
+
+Differentiate using the product rule:
+
+$$
+y' = u + x\frac{du}{dx}
+$$
+
+Substitute into the original equation:
+
+$$
+u + x \frac{du}{dx} = f(x, ux)
+$$
+
+Since the equation is homogeneous:
+
+$$
+f(x,ux) = f(u)
+$$
+
+Thus the equation becomes **separable**:
+
+$$
+x \frac{du}{dx} = f(u) - u
+$$
+
+Rewrite:
+
+$$
+\frac{du}{f(u) - u} = \frac{dx}{x}
+$$
+
+Integrate both sides:
+
+$$
+\int \frac{1}{f(u)-u} \, du = \int \frac{1}{x} \, dx
+$$
+
+After solving for \( u(x) \), substitute back:
+
+$$
+u = \frac{y}{x}
+$$
+
+to obtain the final solution.
+
+### 🔗 Code Implementation
+👉 
+---
+
+#### 1.3) Substitution Method
+
+
+### 🔗 Code Implementation
+👉 
+---
+
+#### 1.4) Exact Differential Equations
+
+
+### 🔗 Code Implementation
+👉 
+---
+
+#### 1.5) Linear Differential Equations
+
+
+### 🔗 Code Implementation
+👉 
+
+---
+
+#### 1.6) Bernoulli Differential Equations
+
+
+### 🔗 Code Implementation
+👉 
+---
 
 ### 2) Second-Order Differential Equations
 
@@ -146,6 +263,7 @@ $$ H(y) = G(x) + C $$
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
