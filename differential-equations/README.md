@@ -176,6 +176,65 @@ to obtain the final solution.
 
 #### 🔹1.3) Substitution Method
 
+Consider the differential equation:
+
+$$
+y' = f(x, y)
+$$
+
+If the equation can be written in the form:
+
+$$
+\frac{dy}{dx} = F(ax + by + c)
+$$
+
+then the substitution
+
+$$
+u = ax + by + c
+$$
+
+is applied.
+
+---
+
+### ✔ Step 1 — Substitute \( u = ax + by + c \)
+
+$$
+u = ax + by + c
+$$
+
+Differentiate both sides with respect to \( x \):
+
+$$
+\frac{du}{dx} = a + b\frac{dy}{dx}
+$$
+
+Thus we get:
+
+$$
+u' = a + b\,y'
+$$
+
+---
+
+### ✔ Step 2 — Solve for \( \frac{dy}{dx} \)
+
+Starting from:
+
+$$
+\frac{du}{dx} = a + b\frac{dy}{dx}
+$$
+
+Isolate the derivative:
+
+$$
+\frac{dy}{dx} = \frac{1}{b}\left( \frac{du}{dx} - a \right)
+$$
+
+This substitution transforms the original equation into a new equation involving only \( u \) and \( x \), which is usually separable.
+
+
 
 ### 🔗 Code Implementation
 👉 
@@ -236,6 +295,7 @@ to obtain the final solution.
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
