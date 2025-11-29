@@ -67,7 +67,7 @@ to be **separable**, the expression \( f(x, y) \) must be expressible as:
 - a product of a function of **x** and a function of **y**
 
 
-**Possible Forms**
+**Possible Forms:**
 
 $$ f(x, y) = f(x) $$
 $$ f(x, y) = f(y) $$
@@ -146,6 +146,7 @@ $$ H(y) = G(x) + C $$
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
