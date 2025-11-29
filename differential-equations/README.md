@@ -54,7 +54,9 @@ Differential equations began with Newton and Leibniz, were developed by the Bern
 
 #### Definition: 
 
-$$ y' = f(x, y) $$ 
+$$
+y' = f(x, y)
+$$ 
 in the form of an equation to be **separable**, the expression \( f(x, y) \) must be expressible as:
 
 - functions of only **x**
@@ -142,6 +144,7 @@ where:
 [2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
 
 [3] https://tutorial.math.lamar.edu/
+
 
 
 
