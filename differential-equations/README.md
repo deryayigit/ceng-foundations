@@ -71,7 +71,7 @@ to be **separable**, the expression \( f(x, y) \) must be expressible as:
 
 $$ f(x, y) = f(x) $$
 $$ f(x, y) = f(y) $$
-$$ f(x, y) = g(x)\,h(y) $$
+$$ f(x, y) = g(x)\.h(y) $$
 $$ f(x, y) = \frac{g(x)}{h(y)} = g(x)\,\frac{1}{h(y)} $$
 
 If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),  
@@ -285,5 +285,6 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
