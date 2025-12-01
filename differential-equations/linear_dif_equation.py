@@ -1,4 +1,4 @@
-First Method
+#First Method
 
 import math 
 
@@ -46,7 +46,7 @@ print(f"\n❯ y({x}) = {result}\n")
 --------
 
 '''
-Second Method : Pythonic
+#Second Method : Pythonic
 
 import sympy as sp
 
