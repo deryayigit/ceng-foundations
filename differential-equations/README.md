@@ -205,7 +205,7 @@ $$
 Thus we get:
 
 $$
-u' = a + b\,y'
+u' = a + b\.y'
 $$
 
 
@@ -285,6 +285,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
