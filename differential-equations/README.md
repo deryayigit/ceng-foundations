@@ -94,7 +94,7 @@ $$ \frac{1}{h(y)}\,dy = g(x)\,dx $$
 
 Integrate both sides:
 
-$$ \int \frac{1}{h(y)}\,dy = \int g(x)\,dx $$
+$$ \int \frac{1}{h(y)}\dy = \int g(x)\dx $$
 
 General implicit solution:
 
@@ -285,4 +285,5 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
