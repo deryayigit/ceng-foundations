@@ -52,7 +52,7 @@ The **order** of a differential equation is the order of the **highest derivativ
 
 The **degree** of a differential equation is the power (exponent) of the **highest-order derivative**, *provided that the equation is polynomial in its derivatives*.
 
-## ❗ Important Notes
+#### Attention ❗
 
 - If a derivative appears inside a **root**, **logarithm**, **exponential**, or **trigonometric** function,  
   → the **degree is undefined**.
@@ -331,6 +331,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
