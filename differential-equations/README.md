@@ -1,21 +1,27 @@
 # Differential Equations
 
-This repository is a comprehensive foundational document for **differential equations**, one of the core pillars of Computer Engineering and engineering sciences in general.
+This repository was created to demonstrate why differential equations—one of the fundamental pillars of engineering—are essential, how they are classified, and how their solution methods can be implemented using programming languages.
 
-In engineering, natural sciences, and even social sciences, many real-world phenomena are modeled mathematically through **differential equations**.  
-This is because differential equations provide the most powerful framework for expressing physical laws, system behaviors, and processes of change in mathematical form.
+In engineering, natural sciences, and even social sciences, many phenomena are modeled mathematically through **differential equations**.
 
-To understand the behavior of a real system, it must first be transformed into a **mathematical model**.  
-Since this transformation fundamentally relies on differential equations, they play a critical role across virtually all branches of engineering.
+Differential equations express numerous physical laws and relationships in mathematical form. They serve as the core model used when transitioning from a physical situation to a *mathematical model*. Any quantity in a system that changes over time—velocity, temperature, current, voltage, population, position, energy, interaction, oscillation—can only be described through derivatives and differential equations.
 
-This repository aims to explain the types of differential equations, present their solution methods in a systematic manner, and provide their **code implementations**.
+Thus, they are the fundamental tool for translating real-world problems into mathematics.
 
-The code structure follows a clear approach:
-- The **type of the differential equation must be known** by the user (order, degree, linearity, homogeneity, etc.).
-- The program then requests the necessary expressions (functions, coefficients, or initial values) based on the selected equation type.
-- Finally, the appropriate analytical or numerical method is applied to compute the solution.
+With these principles in mind, this repository explains differential equation types and provides their code implementations. The programming structure is designed such that the **type of the differential equation is known by the user**, and the program receives the required expressions as inputs accordingly.
 
-Through this design, the repository offers a versatile learning experience for understanding differential equations from both theoretical and **algorithmic** perspectives.
+This repository aims both to explain these mathematical structures theoretically and to reconstruct them algorithmically through programming.
+
+The implementation follows this approach:
+
+1. The user first identifies the type of the differential equation (order, degree, linearity, homogeneity, etc.).  
+2. The program then requests the necessary functions, coefficients, or initial values based on the selected type.  
+3. Finally, the equation is solved using the appropriate analytical or numerical method.
+
+Due to the need for low-level control and precision in numerical computations, **C and C++** were chosen, while **Python** was additionally used for flexibility and ease of testing.
+
+Overall, this repository serves as a comprehensive study intended to understand differential equation solution techniques from an engineering perspective and to develop their algorithmic counterparts.
+
 
 ---
 
@@ -414,4 +420,5 @@ This substitution transforms the original equation into a new equation involving
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
