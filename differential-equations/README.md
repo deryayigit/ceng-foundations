@@ -29,68 +29,49 @@ Thus, `ẏ`, `ÿ`, and `y⃛` represent `dy/dt`, `d^2y/dt^2`, and `d^3y/dt^3`, r
 
 ---
 
-# 🔹Order of a Differential Equation
+# 🔹 Order of a Differential Equation
 
 The **order** of a differential equation is the order of the **highest derivative** that appears in the equation.
 
 ## Examples
 
--  
-  \[
-  y'' + 3y' - 2y = 0
-  \]
+- $y'' + 3y' - 2y = 0$  
   → **2nd order**
 
--  
-  \[
-  y^{(4)} - x y' = \sin x
-  \]
+- $y^{(4)} - x y' = \sin x$  
   → **4th order**
 
--  
-  \[
-  \left( \frac{dy}{dx} \right)^3 + y = 0
-  \]
-  Highest derivative: \( y' \)  
+- $\left( \dfrac{dy}{dx} \right)^3 + y = 0$  
+  Highest derivative: $y'$  
   → **1st order**
 
 
 ---
 
-# 🔹Degree of a Differential Equation
+# 🔹 Degree of a Differential Equation
 
 The **degree** of a differential equation is the power (exponent) of the **highest-order derivative**, *provided that the equation is polynomial in its derivatives*.
 
 ## ❗ Important Notes
 
 - If a derivative appears inside a **root**, **logarithm**, **exponential**, or **trigonometric** function,  
-  → **the degree is undefined**.
+  → the **degree is undefined**.
 
 - The degree is defined **only when the equation is polynomial in derivatives**.
 
 ## Examples
 
-1.  
-   \[
-   (y'')^2 + y = x
-   \]
-   Highest derivative: \( y'' \), exponent 2  
+1. $(y'')^2 + y = x$  
+   Highest derivative: $y''$, exponent $2$  
    → **2nd degree**
 
-2.  
-   \[
-   y' + xy = 0
-   \]
-   Highest derivative exponent: 1  
+2. $y' + xy = 0$  
+   Highest derivative exponent: $1$  
    → **1st degree**
 
-3.  
-   \[
-   \frac{dy}{dx} + \sqrt{y''} = 0
-   \]
+3. $\dfrac{dy}{dx} + \sqrt{y''} = 0$  
    Since the derivative appears inside a square root  
    → **Degree is undefined**
-
 
 ---
 
@@ -350,6 +331,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
