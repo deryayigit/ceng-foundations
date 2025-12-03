@@ -394,14 +394,4 @@ This substitution transforms the original equation into a new equation involving
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
-
-
-
-
-
-
-
-
-
-
-
+[5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
