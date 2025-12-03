@@ -21,6 +21,7 @@ Overall, this repository serves as a comprehensive study intended to understand 
 
 
 ---
+# Definition
 
 A differential equation is any equation that contains derivatives—either ordinary derivatives or partial derivatives. Differential equations describe how a system changes with respect to a quantity such as time, position, temperature, or pressure, and they express the relationship between a function and its derivatives.
 
@@ -417,6 +418,7 @@ This substitution transforms the original equation into a new equation involving
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
