@@ -91,8 +91,71 @@ In the nineteenth century, existence and uniqueness theorems were established, a
 Differential equations began with Newton and Leibniz, were developed by the Bernoulli family, Euler, Lagrange, and Laplace, enriched in the nineteenth and twentieth centuries with theoretical and numerical methods, and in the modern era have reached far wider applications thanks to computers.
 
 ---
+# Code Implementation
 
-## Types of Differential Equations and Equation Solutions
+Programming languages solve differential equations by relying on the core mathematical operations involved in these equations—namely **derivatives** and **integrals**. To compute these operations numerically, various **Numerical Analysis Methods** are used. Simpson’s rule and Runge–Kutta methods are examples of these numerical techniques.
+
+There are many libraries designed for solving differential equations, and they generally fall into two main categories:
+
+---
+
+## 1. Symbolic (Analytical) Solvers
+
+Symbolic solvers attempt to analyze the structure of a differential equation and provide **closed-form (analytical)** solutions.
+
+Examples include:  
+- **SymPy (Python)**  
+- **Maple**  
+- **Mathematica (Wolfram)**  
+
+However, all symbolic solvers have limitations. Even the most advanced systems clearly state that not every differential equation can be solved symbolically:
+
+> “SymPy can only solve certain classes of ODEs. Not all ODEs are solvable symbolically.”  
+> — *SymPy Documentation*
+
+> “DSolve cannot find solutions for all differential equations.”  
+> — *Mathematica Documentation*
+
+> “The dsolve command can handle many ODEs, but not all.”  
+> — *Maple Documentation*
+
+Symbolic solvers cannot handle many nonlinear or complex differential equation types.
+
+---
+
+## 2. Numerical Solvers
+
+Numerical solvers provide **approximate** solutions when an equation is given in the form `$y' = f(x, y)$`.
+
+These solvers do **not** classify the equation, interpret expressions, or determine the structure of the differential equation. They simply compute the numerical result based on the given function and initial conditions.
+
+Examples include:  
+- **SciPy.integrate (Python)**  
+- **GSL – GNU Scientific Library (C)**  
+- **SUNDIALS (C/C++)**  
+- **Boost ODEINT (C++)**
+
+Numerical solvers:  
+- do not parse user-provided string equations,  
+- do not determine the type of the differential equation,  
+- do not produce closed-form solutions.  
+
+They strictly generate numerical approximations.
+
+---
+
+## The Approach I Followed in My Implementation
+
+To correctly solve a differential equation, it is crucial to:
+
+1. **Identify the type of the equation** (order, degree, linear/nonlinear, homogeneous/nonhomogeneous, etc.),  
+2. And then apply the appropriate mathematical or numerical method.
+
+Because of this, in my implementation I designed the system so that **the user specifies the type of the differential equation**, and depending on this classification, the program takes the necessary inputs and applies the relevant solution method.
+
+---
+
+# Types of Differential Equations and Equation Solutions
 
 ### 1) First-Order Differential Equations
 
@@ -331,6 +394,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
