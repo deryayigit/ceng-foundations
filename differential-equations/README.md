@@ -154,7 +154,7 @@ Because of this, in my implementation I designed the system so that **the user s
 
 ---
 
-# Types of Differential Equations and Equation Solutions
+# Types of Differential Equations & Solutions & Code Implementation
 
 ### 1) First-Order Differential Equations
 
@@ -393,6 +393,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
