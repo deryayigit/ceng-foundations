@@ -1,5 +1,24 @@
 # Differential Equations
 
+This repository is a comprehensive foundational document for **differential equations**, one of the core pillars of Computer Engineering and engineering sciences in general.
+
+In engineering, natural sciences, and even social sciences, many real-world phenomena are modeled mathematically through **differential equations**.  
+This is because differential equations provide the most powerful framework for expressing physical laws, system behaviors, and processes of change in mathematical form.
+
+To understand the behavior of a real system, it must first be transformed into a **mathematical model**.  
+Since this transformation fundamentally relies on differential equations, they play a critical role across virtually all branches of engineering.
+
+This repository aims to explain the types of differential equations, present their solution methods in a systematic manner, and provide their **code implementations**.
+
+The code structure follows a clear approach:
+- The **type of the differential equation must be known** by the user (order, degree, linearity, homogeneity, etc.).
+- The program then requests the necessary expressions (functions, coefficients, or initial values) based on the selected equation type.
+- Finally, the appropriate analytical or numerical method is applied to compute the solution.
+
+Through this design, the repository offers a versatile learning experience for understanding differential equations from both theoretical and **algorithmic** perspectives.
+
+---
+
 A differential equation is any equation that contains derivatives—either ordinary derivatives or partial derivatives. Differential equations describe how a system changes with respect to a quantity such as time, position, temperature, or pressure, and they express the relationship between a function and its derivatives.
 
 For example, the equation that relates an object's position to its velocity and acceleration is a differential equation.
@@ -395,3 +414,4 @@ This substitution transforms the original equation into a new equation involving
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
