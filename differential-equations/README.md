@@ -125,8 +125,7 @@ Symbolic solvers cannot handle many nonlinear or complex differential equation t
 
 ## 2. Numerical Solvers
 
-Numerical solvers provide **approximate** solutions when an equation is given in the form `$y' = f(x, y)$`.
-
+Numerical solvers provide **approximate** solutions when an equation is given in the form.
 These solvers do **not** classify the equation, interpret expressions, or determine the structure of the differential equation. They simply compute the numerical result based on the given function and initial conditions.
 
 Examples include:  
@@ -394,6 +393,7 @@ This substitution transforms the original equation into a new equation involving
 [3] https://tutorial.math.lamar.edu/
 
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+
 
 
 
