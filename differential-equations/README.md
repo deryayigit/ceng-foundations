@@ -392,38 +392,37 @@ $$
 
 ### Solution Method
 
-1. Multiply the entire differential equation by the integrating factor:
+1) Multiply the entire differential equation by the integrating factor:
 
-   $$
-   e^{\int p(x)\,dx} \cdot \left( y' + p(x)\,y \right)
-   $$
+$$
+e^{\int p(x)\,dx} \left( y' + p(x)\,y \right)
+$$
 
-2. The left-hand side becomes a total derivative:
+2) The left-hand side becomes a total derivative:
 
-   $$
-   \frac{d}{dx}\left( e^{\int p(x)\,dx}\, y \right)
-   $$
+$$
+\frac{d}{dx}\left( e^{\int p(x)\,dx}\,y \right)
+$$
 
-3. Rewrite the equation:
+3) Rewrite the equation:
 
-   $$
-   \frac{d}{dx}\left( e^{\int p(x)\,dx}\, y \right)
-   = q(x)\,e^{\int p(x)\,dx}
-   $$
+$$
+\frac{d}{dx}\left( e^{\int p(x)\,dx}\,y \right)
+= q(x)\,e^{\int p(x)\,dx}
+$$
 
-4. Integrate both sides:
+4) Integrate both sides:
 
-   $$
-   e^{\int p(x)\,dx}\, y
-   = \int q(x)\,e^{\int p(x)\,dx}\,dx + C
-   $$
+$$
+e^{\int p(x)\,dx}\,y
+= \int q(x)\,e^{\int p(x)\,dx}\,dx + C
+$$
 
-5. Solve for \( y \):
+5) Solve for \( y \):
 
-   $$
-   y = \frac{\int q(x)\,e^{\int p(x)\,dx}\,dx + C}{e^{\int p(x)\,dx}}
-   $$
-
+$$
+y = \frac{\int q(x)\,e^{\int p(x)\,dx}\,dx + C}{e^{\int p(x)\,dx}}
+$$
 
 ---
 
@@ -486,6 +485,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
