@@ -241,63 +241,65 @@ $$ H(y) = G(x) + C $$
 ### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
-
 A differential equation of the form
-
 $$
 y' = f(x, y)
 $$
 
-is **homogeneous** if the function \( f(x, y) \) can be written as:
+is called a **Homogeneous Differential Equation** if the function \( f(x, y) \) can be written as
 
 $$
-f(x, y) = f\left(\frac{y}{x}\right)
+f(x, y) = F\left(\frac{y}{x}\right)
 $$
 
-and if for any real number \( \lambda \):
+and satisfies the condition
 
 $$
 f(\lambda x, \lambda y) = f(x, y)
 $$
 
+for any real number \( \lambda \).
+
 ---
 
-### **Solution of the Equation**
+## Solution Method
 
-1. Let \( u = u(x) \).  
-   Make the substitution:
+1. Let \( u = u(x) \). Make the substitution:
+
+   $$
+   u = \frac{y}{x}
+   \quad\Rightarrow\quad
+   y = u(x)\,x
+   $$
+
+   Differentiating gives:
+
+   $$
+   y' = u'(x)\,x + u(x)
+   $$
+
+2. Substitute into the differential equation:
+
+   $$
+   y' = \frac{dy}{dx} = x\frac{du}{dx} + u
+   $$
+
+3. Using \( y = ux \) and \( y' = x\frac{du}{dx} + u \), we obtain:
+
+   $$
+   x\frac{du}{dx} + u = f(x, ux)
+   $$
+
+4. Solve the resulting equation for \( u(x) \), then convert back using
 
    $$
    u = \frac{y}{x}
    $$
 
-   which implies:
-
-   $$
-   y = u x
-   $$
-
-2. Differentiate using the product rule:
-
-   $$
-   y' = u + x\frac{du}{dx}
-   $$
-
-3. Substitute into the original equation:
-
-   $$
-   u + x\frac{du}{dx} = f(x, ux)
-   $$
-
-4. Solve the resulting equation for \( u(x) \), then use:
-
-   $$
-   u = \frac{y}{x}
-   $$
-
-   to obtain the final solution.
+to obtain the final solution.
 
 
+---
 
 #### 🔹1.3) Substitution Method
 
@@ -462,6 +464,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
