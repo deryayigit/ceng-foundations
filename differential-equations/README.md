@@ -418,20 +418,8 @@ $$
 y = \frac{\int q(x)\.e^{\int p(x)\.dx}\,dx + C}{e^{\int p(x)\.dx}}
 $$
 
----
-
-## **Short Form**
-
-The general solution can be written as:
-
-$$
-y = \frac{\int e^{\int p(x)\.dx} \. q(x)\.dx + C}{e^{\int p(x)\.dx}}
-$$
-
-
-
 ### 🔗 Code Implementation
-👉 Python Implementation: [linear_dif_equation](linear_dif_equation.py)
+👉 [linear_dif_equation](linear_dif_equation.py)
 ---
 
 #### 🔹1.6) Bernoulli Differential Equations
@@ -479,6 +467,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
