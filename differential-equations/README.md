@@ -368,12 +368,10 @@ This substitution transforms the original equation into a new equation involving
 
 #### 🔹1.5) Linear Differential Equations
 
-# Linear Differential Equations
-
 A first-order differential equation is **linear** if it can be written in the form:
 
 $$
-y' + p(x)\,y = q(x)
+y' + p(x)\.y = q(x)
 $$
 
 Here, \( p(x) \) and \( q(x) \) are functions of \( x \), and they are extracted directly from the equation.
@@ -385,7 +383,7 @@ Here, \( p(x) \) and \( q(x) \) are functions of \( x \), and they are extracted
 The integrating factor is:
 
 $$
-\mu(x) = e^{\int p(x)\,dx}
+\mu(x) = e^{\int p(x)\.dx}
 $$
 
 ---
@@ -395,33 +393,33 @@ $$
 1) Multiply the entire differential equation by the integrating factor:
 
 $$
-e^{\int p(x)\,dx} \left( y' + p(x)\,y \right)
+e^{\int p(x)\,dx} \left( y' + p(x)\.y \right)
 $$
 
 2) The left-hand side becomes a total derivative:
 
 $$
-\frac{d}{dx}\left( e^{\int p(x)\,dx}\,y \right)
+\frac{d}{dx}\left( e^{\int p(x)\,dx}\.y \right)
 $$
 
 3) Rewrite the equation:
 
 $$
-\frac{d}{dx}\left( e^{\int p(x)\,dx}\,y \right)
-= q(x)\,e^{\int p(x)\,dx}
+\frac{d}{dx}\left( e^{\int p(x)\,dx}\.y \right)
+= q(x)\.e^{\int p(x)\.dx}
 $$
 
 4) Integrate both sides:
 
 $$
-e^{\int p(x)\,dx}\,y
-= \int q(x)\,e^{\int p(x)\,dx}\,dx + C
+e^{\int p(x)\.dx}\.y
+= \int q(x)\.e^{\int p(x)\.dx}\.dx + C
 $$
 
 5) Solve for \( y \):
 
 $$
-y = \frac{\int q(x)\,e^{\int p(x)\,dx}\,dx + C}{e^{\int p(x)\,dx}}
+y = \frac{\int q(x)\.e^{\int p(x)\.dx}\,dx + C}{e^{\int p(x)\.dx}}
 $$
 
 ---
@@ -431,7 +429,7 @@ $$
 The general solution can be written as:
 
 $$
-y = \frac{\int e^{\int p(x)\,dx} \, q(x)\,dx + C}{e^{\int p(x)\,dx}}
+y = \frac{\int e^{\int p(x)\.dx} \. q(x)\.dx + C}{e^{\int p(x)\.dx}}
 $$
 
 
@@ -485,6 +483,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
