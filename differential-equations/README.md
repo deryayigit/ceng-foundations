@@ -374,11 +374,11 @@ $$
 y' + p(x)\.y = q(x)
 $$
 
-Here, \( p(x) \) and \( q(x) \) are functions of \( x \), and they are extracted directly from the equation.
+The process begins by finding p(x) and q(x) from this equation.
 
 ---
 
-## **Integral Multiplier (Integrating Factor)**
+**Integral Multiplier (Integrating Factor)**
 
 The integrating factor is:
 
@@ -388,18 +388,18 @@ $$
 
 ---
 
-### Solution Method
+#### Solution Method
 
 1) Multiply the entire differential equation by the integrating factor:
 
 $$
-e^{\int p(x)\,dx} \left( y' + p(x)\.y \right)
+e^{\int p(x)\,dx} \left( y' + p(x)\.y \right) = q(x)\.e^{\int p(x)\.dx}
 $$
 
 2) The left-hand side becomes a total derivative:
 
 $$
-\frac{d}{dx}\left( e^{\int p(x)\,dx}\.y \right)
+\frac{d}{dx}\left( e^{\int p(x)\,dx}\.y \right) = q(x)\.e^{\int p(x)\.dx}
 $$
 
 3) Rewrite the equation:
@@ -483,6 +483,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
