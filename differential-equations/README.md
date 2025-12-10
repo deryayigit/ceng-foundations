@@ -254,7 +254,7 @@ $$
 f(x, y) = F\left(\frac{y}{x}\right)
 $$
 
-The equation also satisfies the following condition for any real number (\lambda) :
+The equation also satisfies the following condition for any real number λ (lambda) :
 
 $$
 f(\lambda x, \lambda y) = f(x, y)
@@ -467,6 +467,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
