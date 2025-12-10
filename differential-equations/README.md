@@ -238,71 +238,66 @@ $$ H(y) = G(x) + C $$
 ---
 
 
-#### 🔹1.2) Homogeneous Differential Equations
+### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
+
+A differential equation of the form
+
 $$
 y' = f(x, y)
 $$
-denkleminde if the function \( f(x,y) \) can be rewritten as:
+
+is **homogeneous** if the function \( f(x, y) \) can be written as:
 
 $$
-f(x,y) = f\left(\frac{y}{x}\right)
+f(x, y) = f\left(\frac{y}{x}\right)
 $$
 
-and if for any real number λ (lambda):
+and if for any real number \( \lambda \):
 
 $$
-f(\lambda x, \lambda y) = f(x,y)
+f(\lambda x, \lambda y) = f(x, y)
 $$
-
-then the equation is called a **Homogeneous Differential Equation**.
-
-**Solution of the Equation**
-
-1. u = u(x) olmak üzere y/x = u dönüşümü yapılır. Yani:
-y = u(x).x'dir.
-y' = u'(x).x + u(x) elde edilir.  
-
-2. Eşitlikler denklemde yazılır:
-y' = dy/dx = (du/dx).x + u elde edilir.
-
-3. y = u.x  ve y' = (dy/dx).x + u = f(x, ux) olur.
- 
-4. Denklem çözülerek u = u(x) bulunur ve u = y/x yazılır.
-
-$$
-u = \frac{y}{x}
-$$
-
-which implies:
-
-$$
-y = ux
-$$
-
-Differentiate using the product rule:
-
-$$
-y' = u + x\frac{du}{dx}
-$$
-
-Substitute into the original equation:
-
-$$
-u + x \frac{du}{dx} = f(x, ux)
-$$
-
-$$
-u = \frac{y}{x}
-$$
-
-to obtain the final solution.
-
-### 🔗 Code Implementation
-👉  Code file for solving this system of equations: [homogeneous](homogeneous.c)
 
 ---
+
+### **Solution of the Equation**
+
+1. Let \( u = u(x) \).  
+   Make the substitution:
+
+   $$
+   u = \frac{y}{x}
+   $$
+
+   which implies:
+
+   $$
+   y = u x
+   $$
+
+2. Differentiate using the product rule:
+
+   $$
+   y' = u + x\frac{du}{dx}
+   $$
+
+3. Substitute into the original equation:
+
+   $$
+   u + x\frac{du}{dx} = f(x, ux)
+   $$
+
+4. Solve the resulting equation for \( u(x) \), then use:
+
+   $$
+   u = \frac{y}{x}
+   $$
+
+   to obtain the final solution.
+
+
 
 #### 🔹1.3) Substitution Method
 
@@ -467,6 +462,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
