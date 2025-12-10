@@ -241,14 +241,10 @@ $$ H(y) = G(x) + C $$
 #### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
-
-In the differential equation:
-
 $$
 y' = f(x, y)
 $$
-
-if the function \( f(x,y) \) can be rewritten as:
+denkleminde if the function \( f(x,y) \) can be rewritten as:
 
 $$
 f(x,y) = f\left(\frac{y}{x}\right)
@@ -264,13 +260,16 @@ then the equation is called a **Homogeneous Differential Equation**.
 
 **Solution of the Equation**
 
-Given:
+1. u = u(x) olmak üzere y/x = u dönüşümü yapılır. Yani:
+y = u(x).x'dir.
+y' = u'(x).x + u(x) elde edilir.  
 
-$$
-y' = f(x,y)
-$$
+2. Eşitlikler denklemde yazılır:
+y' = dy/dx = (du/dx).x + u elde edilir.
 
-Make the substitution:
+3. y = u.x  ve y' = (dy/dx).x + u = f(x, ux) olur.
+ 
+4. Denklem çözülerek u = u(x) bulunur ve u = y/x yazılır.
 
 $$
 u = \frac{y}{x}
@@ -368,6 +367,7 @@ This substitution transforms the original equation into a new equation involving
 
 #### 🔹1.5) Linear Differential Equations
 
+**Definition:**
 A first-order differential equation is **linear** if it can be written in the form:
 
 $$
@@ -395,7 +395,7 @@ $$
 2) The left-hand side becomes a total derivative:
 
 $$
-\frac{d}{dx}\left( e^{\int p(x)\,dx}\.y \right) = q(x)\.e^{\int p(x)\.dx}
+\frac{d}{dx}\left( e^{\int p(x)\.dx}\.y \right) = q(x)\.e^{\int p(x)\.dx}
 $$
 
 3) Rewrite the equation:
@@ -415,7 +415,7 @@ $$
 5) Solve for \( y \):
 
 $$
-y = \frac{\int q(x)\.e^{\int p(x)\.dx}\,dx + C}{e^{\int p(x)\.dx}}
+y = \frac{\int q(x)\.e^{\int p(x)\.dx}\.dx + C}{e^{\int p(x)\.dx}}
 $$
 
 ### 🔗 Code Implementation
@@ -467,6 +467,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
