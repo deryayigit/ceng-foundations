@@ -376,11 +376,7 @@ $$
 
 The process begins by finding p(x) and q(x) from this equation.
 
----
-
-**Integral Multiplier (Integrating Factor)**
-
-The integrating factor is:
+*The Integral Multiplier (Integrating Factor) is:*
 
 $$
 \mu(x) = e^{\int p(x)\.dx}
@@ -483,6 +479,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
