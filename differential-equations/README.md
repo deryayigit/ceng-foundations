@@ -241,10 +241,6 @@ $$ H(y) = G(x) + C $$
 ### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
-# 1.2) Homogeneous Differential Equations
-
-## Definition
-
 A differential equation of the form
 
 $$
@@ -270,40 +266,40 @@ for any real number \( \lambda \).
 ## Solution of the Equation
 
 1. Let \( u = u(x) \). Apply the substitution
+$$
+u = \frac{y}{x}
+$$
 
-   $$
-   u = \frac{y}{x}
-   $$
+which implies:
 
-   which gives
+$$
+y = u(x)\,x
+$$
 
-   $$
-   y = u(x)\,x
-   $$
+Differentiate using the product rule:
 
-   Differentiating:
+$$
+y' = u'(x)\,x + u(x)
+$$
 
-   $$
-   y' = u'(x)\,x + u(x)
-   $$
 
 2. Substitute these expressions into the differential equation:
-
-   $$
-   y' = \frac{dy}{dx} = x\frac{du}{dx} + u
-   $$
+   
+$$
+u'(x)\,x + u = f(x, ux)
+$$
 
 3. Using \( y = u x \) and \( y' = x\frac{du}{dx} + u \), the equation becomes
 
-   $$
-   x\frac{du}{dx} + u = f(x, ux)
-   $$
+$$
+u = \frac{y}{x}
+$$
 
 4. Solve the equation for \( u = u(x) \), then convert back using
 
-   $$
-   u = \frac{y}{x}
-   $$
+$$
+u = \frac{y}{x}
+$$
 
 to obtain the final solution.
 
@@ -474,6 +470,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
