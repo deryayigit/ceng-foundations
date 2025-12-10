@@ -241,6 +241,7 @@ $$ H(y) = G(x) + C $$
 ### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
+
 A differential equation of the form
 
 $$
@@ -253,15 +254,11 @@ $$
 f(x, y) = F\left(\frac{y}{x}\right)
 $$
 
-and satisfies
+The equation also satisfies the following condition for any real number \( \lambda \):
 
 $$
 f(\lambda x, \lambda y) = f(x, y)
 $$
-
-for any real number \( \lambda \).
-
----
 
 ## Solution of the Equation
 
@@ -385,8 +382,6 @@ $$
 \mu(x) = e^{\int p(x)\.dx}
 $$
 
----
-
 #### Solution Method
 
 1) Multiply the entire differential equation by the integrating factor:
@@ -470,6 +465,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
