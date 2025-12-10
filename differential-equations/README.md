@@ -246,7 +246,7 @@ $$
 y' = f(x, y)
 $$
 
-An equation like the one above can be written as follows, and the equation also satisfies the following condition for any real number λ (lambda). It is called a Homogeneous Differential Equation:
+An equation like the one above can be written as follows, and the equation also satisfies the following condition for any real number λ (lambda). It is called a *Homogeneous Differential Equation*:
 
 $$
 f(x, y) = F\left(\frac{y}{x}\right)
@@ -256,7 +256,6 @@ $$
 f(\lambda x, \lambda y) = f(x, y)
 $$
 
-is called a **Homogeneous Differential Equation** 
 
 #### Solution of the Equation
 
@@ -464,6 +463,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
