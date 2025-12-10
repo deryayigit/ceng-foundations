@@ -246,7 +246,7 @@ $$
 y' = f(x, y)
 $$
 
-An equation like the one above can be written as follows, and the equation also satisfies the following condition for any real number λ (lambda). It is called a *Homogeneous Differential Equation*:
+An equation of the above form that can be written in this way and satisfies the following condition for any real number 𝜆 is called a *Homogeneous Differential Equation*:
 
 $$
 f(x, y) = F\left(\frac{y}{x}\right)
@@ -273,14 +273,14 @@ $$
 Differentiate using the product rule:
 
 $$
-y' = u'(x)\,x + u(x)
+y' = u'(x)\.x + u(x)
 $$
 
 
 2. Substitute these expressions into the differential equation:
    
 $$
-u'(x)\,x + u = f(x, ux)
+u'(x)\.x + u = f(x, ux)
 $$
 
 3. Using \( y = u x \) and \( y' = x\frac{du}{dx} + u \), the equation becomes
@@ -463,6 +463,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
