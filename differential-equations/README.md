@@ -241,7 +241,12 @@ $$ H(y) = G(x) + C $$
 ### 🔹1.2) Homogeneous Differential Equations
 
 **Definition:**
+# 1.2) Homogeneous Differential Equations
+
+## Definition
+
 A differential equation of the form
+
 $$
 y' = f(x, y)
 $$
@@ -252,7 +257,7 @@ $$
 f(x, y) = F\left(\frac{y}{x}\right)
 $$
 
-and satisfies the condition
+and satisfies
 
 $$
 f(\lambda x, \lambda y) = f(x, y)
@@ -262,41 +267,46 @@ for any real number \( \lambda \).
 
 ---
 
-## Solution Method
+## Solution of the Equation
 
-1. Let \( u = u(x) \). Make the substitution:
+1. Let \( u = u(x) \). Apply the substitution
 
    $$
    u = \frac{y}{x}
-   \quad\Rightarrow\quad
+   $$
+
+   which gives
+
+   $$
    y = u(x)\,x
    $$
 
-   Differentiating gives:
+   Differentiating:
 
    $$
    y' = u'(x)\,x + u(x)
    $$
 
-2. Substitute into the differential equation:
+2. Substitute these expressions into the differential equation:
 
    $$
    y' = \frac{dy}{dx} = x\frac{du}{dx} + u
    $$
 
-3. Using \( y = ux \) and \( y' = x\frac{du}{dx} + u \), we obtain:
+3. Using \( y = u x \) and \( y' = x\frac{du}{dx} + u \), the equation becomes
 
    $$
    x\frac{du}{dx} + u = f(x, ux)
    $$
 
-4. Solve the resulting equation for \( u(x) \), then convert back using
+4. Solve the equation for \( u = u(x) \), then convert back using
 
    $$
    u = \frac{y}{x}
    $$
 
 to obtain the final solution.
+
 
 
 ---
@@ -464,6 +474,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
