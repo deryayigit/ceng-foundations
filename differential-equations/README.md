@@ -275,40 +275,26 @@ $$
 
 #### Solution Method: 
 
-1. Let \( u = u(x) \). Apply the substitution
+1. The transformation y = u(x) is performed.
+NOTE: y = u(x).x, meaning u is a variable dependent on x.
    
 $$
 u = \frac{y}{x}
 $$
-
-which implies:
 
 $$
 y = u(x)\.x
 $$
 
-Differentiate using the product rule:
-
-$$
-y' = u'(x)\.x + u(x)
-$$
-
-
 2. Substitute these expressions into the differential equation:
-   
+
 $$
-u'(x)\.x + u = f(x, ux)
+y' = f(x, ux) =u'(x)\.x + u(x)
 $$
 
 3. The expressions y = u.x and y' = x.(du/dx) + u are substituted into the equation y' = f(x, y), and the equation is transformed into separable form.
 
-4. Then u = u(x) is found, u = y/x is written, the equation is solved
-
-$$
-u = \frac{y}{x}
-$$
-
-to obtain the final solution.
+4. Then u = u(x) is found, u = y/x is written, the equation is solved.
 
 #### 🔗 Code Implementation
 👉
@@ -476,6 +462,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
