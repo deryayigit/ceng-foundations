@@ -276,6 +276,7 @@ $$
 #### Solution Method: 
 
 1. Let \( u = u(x) \). Apply the substitution
+   
 $$
 u = \frac{y}{x}
 $$
@@ -283,7 +284,7 @@ $$
 which implies:
 
 $$
-y = u(x)\,x
+y = u(x)\.x
 $$
 
 Differentiate using the product rule:
@@ -480,6 +481,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
