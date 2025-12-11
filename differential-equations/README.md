@@ -294,6 +294,10 @@ $$
 
 3. The expressions y = u.x and y' = x.(du/dx) + u are substituted into the equation y' = f(x, y), and the equation is transformed into separable form.
 
+$$
+y' = f(x, y) = x\frac{dy}{dx} + u = f(x, ux)
+$$
+
 4. Then u = u(x) is found, u = y/x is written, the equation is solved.
 
 #### 🔗 Code Implementation
@@ -462,6 +466,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
