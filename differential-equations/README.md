@@ -298,7 +298,9 @@ $$
 y' = f(x, y) = x\frac{dy}{dx} + u = f(x, ux)
 $$
 
-4. $$ Then the equation is solved to find u = u(x), and
+4.
+$$
+Then the equation is solved to find u = u(x), and
 u = \frac{y}{x} is found.
 $$
 
@@ -468,6 +470,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
