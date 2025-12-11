@@ -185,51 +185,69 @@ Because of this, in my implementation I designed the system so that **the user s
 
 **Definition:**
 
-For an equation of the form
-
 $$
 y' = f(x, y)
 $$
 
-to be **separable**, the expression \( f(x, y) \) must be expressible as:
+For a differential equation given as above to be **separable**, it must satisfy the following conditions:
 
-- functions of only **x**
-- functions of only **y**
-- a product of a function of **x** and a function of **y**
+- functions of only \( x \)
+- functions of only \( y \)
+- a product of a function of \( x \) and a function of \( y \)
 
+Possible Forms:
 
-**Possible Forms:**
+$$
+f(x, y) = f(x)
+$$
 
-$$ f(x, y) = f(x) $$
-$$ f(x, y) = f(y) $$
-$$ f(x, y) = g(x)\.h(y) $$
-$$ f(x, y) = \frac{g(x)}{h(y)} = g(x)\.\frac{1}{h(y)} $$
+$$
+f(x, y) = f(y)
+$$
 
-If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),  
+$$
+f(x, y) = g(x)\,h(y)
+$$
+
+$$
+f(x, y) = \frac{g(x)}{h(y)} = g(x)\,\frac{1}{h(y)}
+$$
+
+If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),
 then the equation is called a **Differential Equation Separable by Variables**.
 
+---
 
-**Solution of the Equation**
+## **Solution of the Equation**
 
-Given:
+$$
+y' = g(x)\,h(y)
+$$
 
-$$ y' = g(x) \cdot h(y) $$
+1. The equation is rearranged:
 
-Rewrite as:
+$$
+\frac{dy}{dx} = g(x)\,h(y)
+$$
 
-$$ \frac{dy}{dx} = g(x) \cdot h(y) $$
+2. The terms involving \( x \) are collected on one side and the terms involving \( y \) on the other:
 
-Separate variables:
+$$
+\frac{1}{h(y)}\,dy = g(x)\,dx
+$$
 
-$$ \frac{1}{h(y)}\,dy = g(x)\,dx $$
+3. Integrate both sides:
 
-Integrate both sides:
+$$
+\int \frac{1}{h(y)}\,dy = \int g(x)\,dx
+$$
 
-$$ \int \frac{1}{h(y)}\.dy = \int g(x)\.dx $$
+4. General implicit solution:
 
-General implicit solution:
+$$
+H(y) = G(x) + C
+$$
 
-$$ H(y) = G(x) + C $$
 
 
 ### 🔗 Code Implementation
@@ -463,6 +481,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
