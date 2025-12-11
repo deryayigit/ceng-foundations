@@ -193,7 +193,7 @@ For a differential equation given as above to be **separable**, it must satisfy 
 
 - functions of only \( x \)
 - functions of only \( y \)
-- a product of a function of \( x \) and a function of \( y \)
+- a product of a function of x and a function of y 
 
 Possible Forms:
 
@@ -206,38 +206,38 @@ f(x, y) = f(y)
 $$
 
 $$
-f(x, y) = g(x)\,h(y)
+f(x, y) = g(x)\.h(y)
 $$
 
 $$
-f(x, y) = \frac{g(x)}{h(y)} = g(x)\,\frac{1}{h(y)}
+f(x, y) = \frac{g(x)}{h(y)} = g(x)\.\frac{1}{h(y)}
 $$
 
-If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),
+If the function f(x, y) can be written as the product of a function of \( x \) and a function of \( y \),
 then the equation is called a **Differential Equation Separable by Variables**.
 
 #### Solution Method:
 
 $$
-y' = g(x)\,h(y)
+y' = g(x)\.h(y)
 $$
 
 1. The equation is rearranged:
 
 $$
-\frac{dy}{dx} = g(x)\,h(y)
+\frac{dy}{dx} = g(x)\.h(y)
 $$
 
-2. The terms involving \( x \) are collected on one side and the terms involving \( y \) on the other:
+2. The terms involving x are collected on one side and the terms involving y on the other:
 
 $$
-\frac{1}{h(y)}\,dy = g(x)\,dx
+\frac{1}{h(y)}\.dy = g(x)\.dx
 $$
 
 3. Integrate both sides:
 
 $$
-\int \frac{1}{h(y)}\,dy = \int g(x)\,dx
+\int \frac{1}{h(y)}\.dy = \int g(x)\.dx
 $$
 
 4. General implicit solution:
@@ -480,6 +480,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
