@@ -300,13 +300,13 @@ $$
 u'(x)\.x + u = f(x, ux)
 $$
 
-3. Using \( y = u x \) and \( y' = x\frac{du}{dx} + u \), the equation becomes
+3. Using y = u.x and \( y' = x\,(du/dx) + u \) then the equation becomes
 
 $$
 u = \frac{y}{x}
 $$
 
-4. Solve the equation for \( u = u(x) \), then convert back using
+4. Solve the equation for u = u(x), then convert back using
 
 $$
 u = \frac{y}{x}
@@ -481,6 +481,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
