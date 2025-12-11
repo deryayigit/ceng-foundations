@@ -300,13 +300,9 @@ $$
 u'(x)\.x + u = f(x, ux)
 $$
 
-3. Using y = u.x and \( y' = x\,(du/dx) + u \) then the equation becomes
+3. The expressions y = u.x and y' = x.(du/dx) + u are substituted into the equation y' = f(x, y), and the equation is transformed into separable form.
 
-$$
-u = \frac{y}{x}
-$$
-
-4. Solve the equation for u = u(x), then convert back using
+4. Then u = u(x) is found, u = y/x is written, the equation is solved
 
 $$
 u = \frac{y}{x}
@@ -481,6 +477,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
