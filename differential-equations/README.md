@@ -315,10 +315,9 @@ to obtain the final solution.
 
 ---
 
-#### 🔹1.3) Substitution Method
+### 🔹1.3) Substitution Method
 
-Consider the differential equation:
-
+#### Definition:
 $$
 y' = f(x, y)
 $$
@@ -477,6 +476,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
