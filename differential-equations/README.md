@@ -216,9 +216,7 @@ $$
 If the function \( f(x, y) \) can be written as the product of a function of \( x \) and a function of \( y \),
 then the equation is called a **Differential Equation Separable by Variables**.
 
----
-
-## **Solution of the Equation**
+#### Solution Method:
 
 $$
 y' = g(x)\,h(y)
@@ -250,7 +248,7 @@ $$
 
 
 
-### 🔗 Code Implementation
+#### 🔗 Code Implementation:
 👉 Code file for solving this system of equations: [separable_dif_eq](separable_dif_eq)
 
 ---
@@ -275,7 +273,7 @@ f(\lambda x, \lambda y) = f(x, y)
 $$
 
 
-#### Solution of the Equation
+#### Solution Method: 
 
 1. Let \( u = u(x) \). Apply the substitution
 $$
@@ -315,7 +313,7 @@ $$
 
 to obtain the final solution.
 
-### 🔗 Code Implementation
+#### 🔗 Code Implementation
 👉
 
 ---
@@ -377,7 +375,7 @@ This substitution transforms the original equation into a new equation involving
 #### 🔹1.4) Exact Differential Equations
 
 
-### 🔗 Code Implementation
+#### 🔗 Code Implementation
 👉 
 ---
 
@@ -432,14 +430,15 @@ $$
 y = \frac{\int q(x)\.e^{\int p(x)\.dx}\.dx + C}{e^{\int p(x)\.dx}}
 $$
 
-### 🔗 Code Implementation
+#### 🔗 Code Implementation
 👉 [linear_dif_equation](linear_dif_equation.py)
+
 ---
 
 #### 🔹1.6) Bernoulli Differential Equations
 
 
-### 🔗 Code Implementation
+#### 🔗 Code Implementation
 👉 
 ---
 
@@ -481,6 +480,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
