@@ -34,7 +34,7 @@ This stage primarily focuses on:
 - Verifying analytical solution procedures  
 - Designing solver logic in a readable and extensible form  
 
-### 2. Parser-Based Numerical Solver (C / C++)
+### 2. Parser-Based Numerical Solver (C++)
 
 In the second stage, the system shifts to a more **automated and low-level approach**:
 
@@ -499,6 +499,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
