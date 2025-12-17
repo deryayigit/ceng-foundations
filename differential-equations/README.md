@@ -463,46 +463,8 @@ $$
 
 [3] https://tutorial.math.lamar.edu/
 
+[4] J.Sundnes, *Solving Ordinary Differential Equations in Python*, 2023.
+
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
