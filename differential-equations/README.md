@@ -189,11 +189,8 @@ $$
 y' = f(x, y)
 $$
 
-For a differential equation given as above to be **separable**, it must satisfy the following conditions:
-
-- functions of only \( x \)
-- functions of only \( y \)
-- a product of a function of x and a function of y 
+For a differential equation to be separable, f(x,y) must be expressible as a product
+or ratio of a function of x and a function of y.
 
 Possible Forms:
 
@@ -468,5 +465,6 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
