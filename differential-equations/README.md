@@ -192,17 +192,6 @@ They strictly generate numerical approximations.
 
 ---
 
-## The Approach I Followed in My Implementation
-
-To correctly solve a differential equation, it is crucial to:
-
-1. **Identify the type of the equation** (order, degree, linear/nonlinear, homogeneous/nonhomogeneous, etc.),  
-2. And then apply the appropriate mathematical or numerical method.
-
-Because of this, in my implementation I designed the system so that **the user specifies the type of the differential equation**, and depending on this classification, the program takes the necessary inputs and applies the relevant solution method.
-
----
-
 # Types of Differential Equations & Solutions & Code Implementation
 
 ### 1) First-Order Differential Equations
@@ -499,6 +488,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
