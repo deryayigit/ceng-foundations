@@ -32,7 +32,7 @@ Differential equations represent physical processes and are therefore considered
 An ordinary differential equation (ODE) is a differential equation in which the unknown function depends on only one independent variable.
 A partial differential equation (PDE) is used when the unknown function depends on two or more independent variables.
 
-The order of a differential equation is the order of the highest derivative appearing in the equation. order of a differential equation is the order of the highest derivative appearing in the equation.
+The order of a differential equation is the order of the highest derivative appearing in the equation.
 
 ---
 
@@ -295,7 +295,7 @@ $$
 3. The expressions y = u.x and y' = x.(du/dx) + u are substituted into the equation y' = f(x, y), and the equation is transformed into separable form.
 
 $$
-y' = f(x, y) = x\frac{dy}{dx} + u = f(x, ux)
+y = ux \Rightarrow \frac{dy}{dx} = x\frac{du}{dx} + u
 $$
 
 4. The equation is solved to find u = u(x), and u = y/x is written.
@@ -468,4 +468,5 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
