@@ -1,8 +1,11 @@
 import sympy as sp
 
+x, y = sp.symbols('x y')
+
 class SeparableODESolver:
     def __init__(self, A_y, B_x):
-        self.x, self.y = sp.symbols('x y')
+        self.x = x
+        self.y = y
         self.Ay = A_y
         self.Bx = B_x
 
@@ -18,8 +21,6 @@ class SeparableODESolver:
 
 
 print("Separable ODE Solver")
-
-x, y = sp.symbols('x y')
 
 Ay_input = input("Enter A(y): ")
 Bx_input = input("Enter B(x): ")
