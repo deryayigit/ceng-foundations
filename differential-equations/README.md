@@ -13,9 +13,7 @@ With these principles in mind, this repository explains differential equation ty
 
 This project follows a **two-stage implementation strategy** for solving ordinary differential equations.
 
----
-
-## 1. Python-Based Analytical & Prototyping Stage
+1. Python-Based Analytical & Prototyping Stage
 
 The application follows the workflow below:
 
@@ -36,9 +34,7 @@ This stage primarily focuses on:
 - Verifying analytical solution procedures  
 - Designing solver logic in a readable and extensible form  
 
----
-
-## 2. Parser-Based Numerical Solver (C / C++)
+2. Parser-Based Numerical Solver (C / C++)
 
 In the second stage, the system shifts to a more **automated and low-level approach**:
 
@@ -503,6 +499,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
