@@ -1,11 +1,3 @@
-"""
-    Solves a Homogeneous ODE of the form:
-        y' = f(x, y) = F(y/x)
-
-    Returns:
-        implicit solution in terms of y and x
-"""
-
 import sympy as sp
 
 class HomogeneousODESolver:
@@ -79,3 +71,4 @@ if initial_condition == "Y":
 
     print("\nSolution with initial condition:")
     sp.pprint(final_solution)
+
