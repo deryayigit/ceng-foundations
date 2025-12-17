@@ -301,7 +301,7 @@ $$
 4. The equation is solved to find u = u(x), and u = y/x is written.
 
 #### 🔗 Code Implementation
-👉
+👉 [homogeneous_ode](homogeneous_ode.py)
 
 ---
 
@@ -466,6 +466,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
