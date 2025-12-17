@@ -449,6 +449,14 @@ $$
 
 
 
+### 5) Laplace Transforms
+
+    5.1) Laplace Transform
+    5.2) Inverse Laplace Transform
+    5.3) Solving Differential Equations Using Laplace Transforms
+    5.4) Laplace Transforms for Polynomial Coefficient Differential Equations
+    5.5) Heaviside Step Function
+
 
 ---
 ## References
@@ -462,9 +470,10 @@ $$
 
 [4] J.Sundnes, *Solving Ordinary Differential Equations in Python*, 2023.
 
-[4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+[5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
-[5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+[6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
