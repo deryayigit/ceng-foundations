@@ -249,7 +249,7 @@ $$
 
 
 #### 🔗 Code Implementation:
-👉 Code file for solving this system of equations: [separable_dif_eq](separable_dif_eq)
+👉 Code file for solving this system of equations: [separable_dif_eq](separable_ode.py)
 
 ---
 
@@ -466,6 +466,7 @@ $$
 [4] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [5] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
