@@ -1,8 +1,12 @@
 import sympy as sp
 
+x, y, u = sp.symbols('x y u')
+
 class HomogeneousODESolver:
     def __init__(self, f_xy):
-        self.x, self.y, self.u = sp.symbols('x y u')
+        self.x = x
+        self.y = y
+        self.u = u
         self.f_xy = f_xy
 
     def solve_general(self):
@@ -24,8 +28,6 @@ class HomogeneousODESolver:
         return solution_y
 
 print("Homogeneous ODE Solver")
-
-x, y = sp.symbols('x y')
 
 f_input = input("Enter f(x,y): ")
 try:
@@ -71,4 +73,5 @@ if initial_condition == "Y":
 
     print("\nSolution with initial condition:")
     sp.pprint(final_solution)
+
 
