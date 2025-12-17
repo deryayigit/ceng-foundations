@@ -1,5 +1,33 @@
 #First Method
 
+import sympy as sp
+
+# Değişkeni tanımlıyoruz
+x = sp.symbols('x')
+
+# Kullanıcıdan p(x) ve q(x) alınır
+p_str = input("p(x) fonksiyonunu girin: ")
+q_str = input("q(x) fonksiyonunu girin: ")
+
+# String → SymPy fonksiyonuna çeviriyoruz
+p = sp.sympify(p_str)
+q = sp.sympify(q_str)
+
+# Integrating factor
+mu = sp.exp(sp.integrate(p, x))          # μ(x) = e^(∫p dx)
+
+# Genel çözüm
+integral_mu_q = sp.integrate(mu * q, x)  # ∫ μ*q dx
+C = sp.symbols('C')                       # integrasyon sabiti
+
+y = (integral_mu_q + C) / mu
+
+print("\nGenel çözüm y(x) = ")
+print(sp.simplify(y))
+
+print(------------------------------------------------------------------------------------------------)
+
+#Second Method
 import math 
 
 def simpson(f, a, b, n=1000): if n % 2 == 1: n += 1 h = (b - a) / n s = f(a) + f(b) 
@@ -41,35 +69,3 @@ p_str = input("p(x) fonksiyonunu girin (ör: 2/x, sin(x), x*2+1 ): ") q_str = in
 result = solve_linear_ode(x, x0, y0, p_str, q_str) 
 
 print(f"\n❯ y({x}) = {result}\n") 
-
-
---------
-
-'''
-#Second Method : Pythonic
-
-import sympy as sp
-
-# Değişkeni tanımlıyoruz
-x = sp.symbols('x')
-
-# Kullanıcıdan p(x) ve q(x) alınır
-p_str = input("p(x) fonksiyonunu girin: ")
-q_str = input("q(x) fonksiyonunu girin: ")
-
-# String → SymPy fonksiyonuna çeviriyoruz
-p = sp.sympify(p_str)
-q = sp.sympify(q_str)
-
-# Integrating factor
-mu = sp.exp(sp.integrate(p, x))          # μ(x) = e^(∫p dx)
-
-# Genel çözüm
-integral_mu_q = sp.integrate(mu * q, x)  # ∫ μ*q dx
-C = sp.symbols('C')                       # integrasyon sabiti
-
-y = (integral_mu_q + C) / mu
-
-print("\nGenel çözüm y(x) = ")
-print(sp.simplify(y))
-'''
