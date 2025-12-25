@@ -1,4 +1,4 @@
-# 🎨 Computer Graphics  
+# Computer Graphics  
 
 This repository covers the **fundamentals of computer graphics**, including lighting models, intersection tests, and hardware-accelerated applications.  
 
@@ -25,7 +25,7 @@ This repository covers the **fundamentals of computer graphics**, including ligh
 
 ---
 
-## 🔦 Ray Tracing  
+## Ray Tracing  
 
 - Pixel coordinate calculation on the image plane:  
 
@@ -38,7 +38,7 @@ GD(X,Y,Z) = \Big(16 \cdot \frac{x}{799} - 8,\ 4.5 - \frac{y \cdot 9}{449},\ 10\B
 
 ---
 
-## 🖌️ Shading Models  
+## Shading Models  
 
 - **Phong Shading Model**  
   - Diffuse Color Component  
@@ -47,7 +47,7 @@ GD(X,Y,Z) = \Big(16 \cdot \frac{x}{799} - 8,\ 4.5 - \frac{y \cdot 9}{449},\ 10\B
 
 ---
 
-## ⚙️ Hardware and DirectX  
+## Hardware and DirectX  
 
 - **DirectX**: A hardware-accelerated API designed for high-performance applications.  
 - **Primitive Topology** (point, line, triangle definitions)  
@@ -55,15 +55,16 @@ GD(X,Y,Z) = \Big(16 \cdot \frac{x}{799} - 8,\ 4.5 - \frac{y \cdot 9}{449},\ 10\B
 
 ---
 
-## 🧩 Example Applications  
+## Example Applications  
 
 - Drawing a Triangle  
 - Drawing a Cube  
 
 ---
 
-## 📷 References  
+## References  
 
 - Foley, van Dam, Feiner, Hughes – *Computer Graphics: Principles and Practice*  
 - Official OpenGL & DirectX documentation  
 - Lecture notes  
+
