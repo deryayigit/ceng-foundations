@@ -84,13 +84,13 @@ The **order** of a differential equation is the order of the **highest derivativ
 
 ## Examples
 
-- $y'' + 3y' - 2y = 0$  
+1. $y'' + 3y' - 2y = 0$  
   → **2nd order**
 
-- $y^{(4)} - x y' = \sin x$  
+2. $y^{(4)} - x y' = \sin x$  
   → **4th order**
 
-- $\left( \dfrac{dy}{dx} \right)^3 + y = 0$  
+3. $\left( \dfrac{dy}{dx} \right)^3 + y = 0$  
   Highest derivative: $y'$  
   → **1st order**
 
@@ -488,6 +488,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
