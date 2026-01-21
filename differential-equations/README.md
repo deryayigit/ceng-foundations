@@ -9,36 +9,6 @@ Thus, they are the fundamental tool for translating real-world problems into mat
 
 With these principles in mind, this repository explains differential equation types and provides their code implementations. The programming structure is designed such that the **type of the differential equation is known by the user**, and the program receives the required expressions as inputs accordingly.
 
-### Proposed Approach
-
-This project follows a **two-stage implementation strategy** for solving ordinary differential equations.
-
-### 1. Python and C++ Based Analytical & Prototyping Stage
-
-The application follows the workflow below:
-
-This repository includes both Python and C++ implementations to demonstrate how the process of solving differential equations is handled at different levels of abstraction.
-
-In the first stage, the user is assumed to know the type of the differential equation and provides inputs to the system accordingly. Based on the selected type, the required functions, coefficients, or initial conditions are obtained, and the equation is solved using an appropriate analytical or numerical method.
-
-Python is used for prototyping solution algorithms, clearly expressing mathematical reasoning, and validating solution steps.
-
-C++ implementations, on the other hand, emphasize low-level numerical computation and system-oriented design. This approach is chosen with performance-oriented and system-level scenarios in mind.
-
-By implementing the same differential equation categories in both languages, this repository aims to demonstrate how numerical methods and solution strategies vary across abstraction levels, and how mathematical models are transformed into algorithms under different programming paradigms.
-
-### 2. Parser-Based Numerical Solver (C++)
-
-In the second stage, the system shifts to a more **automated and low-level approach**:
-
-- The differential equation type is **detected automatically** from the user-provided equation.
-- The equation is parsed syntactically using a **custom-written expression parser**.
-- Solutions are obtained primarily through **numerical methods**, without relying on high-level symbolic libraries.
-
-
-Overall, this repository serves as a comprehensive study intended to understand differential equation solution techniques from an engineering perspective and to develop their algorithmic counterparts.
-
-
 ---
 # Definition
 
@@ -182,6 +152,36 @@ Numerical solvers:
 - do not produce closed-form solutions.  
 
 They strictly generate numerical approximations.
+
+### Proposed Approach
+
+This project follows a **two-stage implementation strategy** for solving ordinary differential equations.
+
+### 1. Python and C++ Based Analytical & Prototyping Stage
+
+The application follows the workflow below:
+
+This repository includes both Python and C++ implementations to demonstrate how the process of solving differential equations is handled at different levels of abstraction.
+
+In the first stage, the user is assumed to know the type of the differential equation and provides inputs to the system accordingly. Based on the selected type, the required functions, coefficients, or initial conditions are obtained, and the equation is solved using an appropriate analytical or numerical method.
+
+Python is used for prototyping solution algorithms, clearly expressing mathematical reasoning, and validating solution steps.
+
+C++ implementations, on the other hand, emphasize low-level numerical computation and system-oriented design. This approach is chosen with performance-oriented and system-level scenarios in mind.
+
+By implementing the same differential equation categories in both languages, this repository aims to demonstrate how numerical methods and solution strategies vary across abstraction levels, and how mathematical models are transformed into algorithms under different programming paradigms.
+
+### 2. Parser-Based Numerical Solver (C++)
+
+In the second stage, the system shifts to a more **automated and low-level approach**:
+
+- The differential equation type is **detected automatically** from the user-provided equation.
+- The equation is parsed syntactically using a **custom-written expression parser**.
+- Solutions are obtained primarily through **numerical methods**, without relying on high-level symbolic libraries.
+
+
+Overall, this repository serves as a comprehensive study intended to understand differential equation solution techniques from an engineering perspective and to develop their algorithmic counterparts.
+
 
 ---
 
@@ -481,6 +481,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
