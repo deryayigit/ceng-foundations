@@ -13,26 +13,19 @@ With these principles in mind, this repository explains differential equation ty
 
 This project follows a **two-stage implementation strategy** for solving ordinary differential equations.
 
-### 1. Python-Based Analytical & Prototyping Stage
+### 1. Python and C++ Based Analytical & Prototyping Stage
 
 The application follows the workflow below:
 
-- The user first determines the **type of the differential equation**  
-  (e.g. order, linearity, homogeneity, separability).
+This repository includes both Python and C++ implementations to demonstrate how the process of solving differential equations is handled at different levels of abstraction.
 
-- Based on the selected type, the program requests the required elements such as  
-  functions, coefficients, or initial conditions.
+In the first stage, the user is assumed to know the type of the differential equation and provides inputs to the system accordingly. Based on the selected type, the required functions, coefficients, or initial conditions are obtained, and the equation is solved using an appropriate analytical or numerical method.
 
-- The equation is then solved using the **appropriate analytical or numerical method**.
+Python is used for prototyping solution algorithms, clearly expressing mathematical reasoning, and validating solution steps.
 
-Python is chosen for this stage due to its **flexibility**, **rapid prototyping capability**, and **ease of testing**.  
-Symbolic computation libraries allow the mathematical structure of differential equations and solution methods to be expressed clearly and transparently, making Python ideal for validating solution logic and methodology.
+C++ implementations, on the other hand, emphasize low-level numerical computation and system-oriented design. This approach is chosen with performance-oriented and system-level scenarios in mind.
 
-This stage primarily focuses on:
-
-- Understanding equation classifications  
-- Verifying analytical solution procedures  
-- Designing solver logic in a readable and extensible form  
+By implementing the same differential equation categories in both languages, this repository aims to demonstrate how numerical methods and solution strategies vary across abstraction levels, and how mathematical models are transformed into algorithms under different programming paradigms.
 
 ### 2. Parser-Based Numerical Solver (C++)
 
@@ -488,6 +481,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
