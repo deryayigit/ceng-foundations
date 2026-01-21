@@ -109,7 +109,7 @@ Programming languages solve differential equations by relying on the core mathem
 
 There are many libraries designed for solving differential equations, and they generally fall into two main categories:
 
----
+
 
 ## 1. Symbolic (Analytical) Solvers
 
@@ -133,7 +133,7 @@ However, all symbolic solvers have limitations. Even the most advanced systems c
 
 Symbolic solvers cannot handle many nonlinear or complex differential equation types.
 
----
+
 
 ## 2. Numerical Solvers
 
@@ -481,6 +481,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
