@@ -7,7 +7,7 @@ In engineering, natural sciences, and even social sciences, many phenomena are m
 Differential equations express numerous physical laws and relationships in mathematical form. They serve as the core model used when transitioning from a physical situation to a *mathematical model*. Any quantity in a system that changes over time—velocity, temperature, current, voltage, population, position, energy, interaction, oscillation—can only be described through derivatives and differential equations.
 Thus, they are the fundamental tool for translating real-world problems into mathematics.
 
-With these principles in mind, this repository explains differential equation types and provides their code implementations. The programming structure is designed such that the **type of the differential equation is known by the user**, and the program receives the required expressions as inputs accordingly.
+With these principles in mind, this repository explains differential equation types and provides their code implementations. 
 
 ---
 # Definition
@@ -481,6 +481,7 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
+
 
 
 
