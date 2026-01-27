@@ -122,8 +122,6 @@ $$
 | ADC | DAC |
 |-----|-----|
 | <img src="https://github.com/user-attachments/assets/e5950948-d115-43f6-a788-c259983ccae5" width="450"/> | <img src="https://github.com/user-attachments/assets/20e9648c-bf85-4f7d-b614-67df946b88d4" width="450"/> |
-| *Figure 1. ADC: Circuit architecture and conversion stages.* | *Figure 2. DAC: Circuit architecture and conversion stages.* |
-
 
 
 ### Quantization
@@ -163,6 +161,7 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 4. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
    https://www.dspguide.com/
+
 
 
 
