@@ -150,21 +150,14 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ## References
 
-1. Hackatronic – *Analog to Digital Converter (ADC): Block Diagram, Working, Types and Applications*  
+1. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
+   https://www.dspguide.com/
+  
+2. Hackatronic – *Analog to Digital Converter (ADC): Block Diagram, Working, Types and Applications*  
    https://hackatronic.com/analog-to-digital-converter-adc-block-diagram-working-types-applications/
 
-2. Predictable Designs – *Introduction to Analog-to-Digital Converters (ADC)*  
+3. Predictable Designs – *Introduction to Analog-to-Digital Converters (ADC)*  
    https://predictabledesigns.com/introduction-to-analog-to-digital-converters-adc/
 
-3. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
+4. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
    https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
-
-4. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
-   https://www.dspguide.com/
-
-
-
-
-
-
-
