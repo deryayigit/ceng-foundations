@@ -119,8 +119,7 @@ $$
   To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
-<img width="801" height="497" alt="image" src="https://github.com/user-attachments/assets/de0473d0-066f-4710-af2d-b6e6eee16ff9" />
-
+<img width="1536" height="1024" alt="ADC-DAC" src="https://github.com/user-attachments/assets/0f5b0fb0-bcb1-40c7-aa88-77e5d2b14837" />
 
 
 ### Quantization
@@ -143,7 +142,20 @@ f_s \geq 2 f_{\text{max}}
 $$
 
   If this condition is violated, aliasing occurs and information loss is irreversible.
+---
 
+##References
 
+## References
 
+1. Hackatronic – *Analog to Digital Converter (ADC): Block Diagram, Working, Types and Applications*  
+   https://hackatronic.com/analog-to-digital-converter-adc-block-diagram-working-types-applications/
 
+2. Predictable Designs – *Introduction to Analog-to-Digital Converters (ADC)*  
+   https://predictabledesigns.com/introduction-to-analog-to-digital-converters-adc/
+
+3. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
+   https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
+
+4. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
+   https://www.dspguide.com/
