@@ -6,8 +6,6 @@
 
   The main application areas in which DSP methods are used are listed below.
 
----
-
 ### 1. Telecommunications
 
   Telecommunications deals with the transfer of information from one location to another. In order for information to be transmitted, a channel is required between two locations. This channel may be a pair of wires, a radio signal, an optical fiber, etc. While telecommunications companies generate revenue by carrying customers’ information, they incur costs to build and maintain these channels. DSP has transformed telecommunications in many ways. In this section, three examples are considered: multiplexing, compression, and echo control.
@@ -141,4 +139,5 @@ f_s \geq 2 f_{\text{max}}
 $$
 
   If this condition is violated, aliasing occurs and information loss is irreversible.
+
 
