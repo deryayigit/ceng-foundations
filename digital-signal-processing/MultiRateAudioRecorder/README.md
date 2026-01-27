@@ -1,5 +1,7 @@
 # Audio Recorder Using Arduino and Multi-Rate Processing
 
+## Project Description
+
 Within the scope of the Digital Signal Processing (DSP) Applications course, the **Audio Recorder Using Arduino and Multi-Rate Processing** project aims to digitize an analog audio signal using a microcontroller with limited hardware resources, process the signal using multi-rate digital signal processing techniques, and store the resulting data on an SD card.
 
 ---
@@ -51,3 +53,7 @@ The audio data obtained in the project are stored either in raw (RAW) format or 
 ## Evaluation
 
 The project is evaluated based on the correctness of the hardware setup, the performance of the ADC and timer interrupt configuration, the correct implementation of the multi-rate algorithm, buffer management and uninterrupted writing to the SD card, as well as the quality of the technical report and the analyses performed.
+
+---
+
+## Algorithm Flowchart
