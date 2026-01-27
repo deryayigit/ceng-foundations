@@ -55,31 +55,26 @@ DSP overcomes this trade-off through pulse compression, digital filtering, and w
 
 Reflection seismology analyzes waves reflected from subsurface layers. Multiple reflections complicate real-world signals. DSP enables separation of primary and secondary echoes, allowing reliable modeling of subsurface structures and enabling oil exploration in difficult regions.
 
----
 
 ### 3. Medicine
 
 In medical imaging, DSP enables separation of overlapping structures, enhancement of tissue contrast, and extraction of physiological information. Computed tomography and magnetic resonance imaging produce diagnostically valuable cross-sectional images through DSP.
 
----
 
 ### 4. Space
 
 In space applications, DSP improves degraded images, corrects spatial distortions, and combines multiple images to produce meaningful visual information, enabling remote sensing and planetary analysis.
 
----
 
 ### 5. Image Processing
 
 DSP models images as discrete digital signals over spatial domains, enabling filtering, frequency analysis, noise suppression, and compression. This approach forms the mathematical foundation of modern image and video processing.
 
----
 
 ### 6. Music Processing
 
 DSP enables processing of multi-channel music signals through filtering, addition, subtraction, and time–frequency domain operations. Artificial echo and reverberation effects are based on digital modeling of acoustic environments.
 
----
 
 ### 7. Speech Generation & Recognition
 
@@ -142,4 +137,5 @@ f_s \geq 2 f_{\text{max}}
 $$
 
 If this condition is violated, aliasing occurs and information loss is irreversible.
+
 
