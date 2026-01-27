@@ -116,26 +116,36 @@ $$
 
 ## ADC and DAC
 
-Analog-to-digital conversion (ADC) allows continuous-time, continuous-amplitude signals to be processed digitally through sampling and quantization.
+Analog-to-digital conversion (ADC) enables a continuous-time and continuous-amplitude signal to be processed by digital systems. This process consists of the stages of sampling and quantization. A continuous signal is digitized by passing it through an ADC, thereby allowing real-world data to be transferred into the digital domain.
 
-Sampling discretizes the time axis, while quantization discretizes the amplitude axis. These processes introduce sampling noise (aliasing) and quantization noise.
+The discretization of a continuous signal passing through an ADC occurs along both the x-axis and the y-axis.
+
+Discretization along the x-axis, that is, the time axis, is called sampling.
+
+Discretization along the y-axis, that is, the amplitude axis, is called quantization.
+
+During the digitization process, losses inevitably occur due to the conversion itself, since it is never possible to achieve a 100% efficient analog-to-digital conversion. These losses are categorized as follows:
+
+Discretization along the x-axis results in sampling distortion, also known as aliasing.
+
+Discretization along the y-axis is referred to as noise or quantization error.
+
+To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
+
+Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
 ### Quantization
 
-Quantization maps sampled analog amplitudes to a finite set of digital levels. The resulting quantization error is bounded by:
+Quantization is the process by which the amplitude values of a sampled analog signal are mapped from a continuous range to a finite set of discrete digital levels. In an ADC, quantization is performed by rounding the true analog amplitude of each sample to the nearest digital value within predefined quantization intervals. During this process, the dependent variable of the analog signal (for example, voltage) is converted from a continuous form to a discrete one, and an unavoidable loss of information occurs because different analog values that fall within the same quantization interval are represented by a single digital code. This difference is referred to as quantization error, which in an ideal ADC is bounded within ±½ LSB for each sample.
 
-$$
-\pm \frac{1}{2} \text{LSB}
-$$
+When the signal is sufficiently varying or already contains natural analog noise, the quantization error appears with small magnitude and varying sign across samples; therefore, in practice, quantization error can be modeled as a random noise component with zero mean and limited amplitude. Quantization resolution depends on the number of bits: as the bit depth increases, the least significant bit (LSB) becomes smaller, resulting in a finer digital representation. However, if the intrinsic noise level of the analog signal exceeds the quantization step size, increasing the bit depth cannot reveal new information that is not already present in the signal; it merely provides a more detailed digital representation of the existing analog noise.
+
+Quantization is therefore regarded as a fundamental and limiting mechanism that determines the amount of information an ADC can transfer from the analog signal.
 
 ### The Sampling Theorem
+The Sampling Theorem defines the conditions under which a continuous-time signal can be reconstructed uniquely and completely from its samples. According to the theorem, an analog signal is correctly sampled only if it contains no frequency components higher than half of the sampling frequency, known as the Nyquist frequency. When this condition is satisfied, no information is lost, even if the samples appear sparse or insufficient, because sampling implicitly encodes the complete frequency content of the analog signal, not merely its instantaneous values.
 
-A signal can be perfectly reconstructed from its samples if:
+Theoretically, sampling is modeled as the multiplication of a continuous-time signal by an impulse train in the time domain. This operation causes periodic replications of the signal spectrum at integer multiples of the sampling frequency in the frequency domain. When the sampling frequency satisfies the Nyquist criterion, these spectral replicas do not overlap, and the information in the baseband is preserved. Consequently, the original analog signal can be perfectly and uniquely reconstructed from its samples using an ideal low-pass filter.
 
-$$
-f_s \geq 2 f_{\text{max}}
-$$
-
-If this condition is violated, aliasing occurs and information loss is irreversible.
-
+When the spectral replicas are properly separated below the Nyquist frequency, the information is preserved. However, if the analog signal contains frequency components above the Nyquist limit, these replicas overlap, resulting in aliasing. In the presence of aliasing, different analog frequencies produce the same digital frequency component, and even phase information may be inverted. As a result, the sampled data can no longer be uniquely associated with the original analog signal, leading to irreversible information loss. Therefore, the Sampling Theorem defines not only the lower bound on the sampling rate but also the necessity of anti-aliasing filtering and serves as the central theoretical foundation of analog-to-digital conversion in digital signal processing.
 
