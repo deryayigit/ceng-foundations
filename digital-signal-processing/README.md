@@ -119,6 +119,9 @@ $$
   To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
+  <img width="814" height="478" alt="image" src="https://github.com/user-attachments/assets/423d6df8-6409-43b0-9e29-11e15d0ef22c" />
+
+
 ### Quantization
 
   Quantization is the process by which the amplitude values of a sampled analog signal are mapped from a continuous range to a finite set of discrete digital levels. In an ADC, quantization is performed by rounding the true analog amplitude of each sample to the nearest digital value within predefined quantization intervals. During this process, the dependent variable of the analog signal (for example, voltage) is converted from a continuous form to a discrete one, and an unavoidable loss of information occurs because different analog values that fall within the same quantization interval are represented by a single digital code. This difference is referred to as quantization error, which in an ideal ADC is bounded within ±½ LSB for each sample.
@@ -139,5 +142,6 @@ f_s \geq 2 f_{\text{max}}
 $$
 
   If this condition is violated, aliasing occurs and information loss is irreversible.
+
 
 
