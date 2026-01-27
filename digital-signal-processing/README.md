@@ -8,11 +8,11 @@ The main application areas in which DSP methods are used are listed below.
 
 ---
 
-## 1. Telecommunications
+### 1. Telecommunications
 
 Telecommunications deals with the transfer of information from one location to another. In order for information to be transmitted, a channel is required between two locations. This channel may be a pair of wires, a radio signal, an optical fiber, etc. While telecommunications companies generate revenue by carrying customers’ information, they incur costs to build and maintain these channels. DSP has transformed telecommunications in many ways. In this section, three examples are considered: multiplexing, compression, and echo control.
 
-### 1.1 Multiplexing
+#### 1.1 Multiplexing
 
 There are approximately one billion telephones worldwide. By pressing a few buttons, switching networks allow any of these devices to be connected to another within a few seconds. Traditionally, each connection required a dedicated physical channel.
 
@@ -20,17 +20,16 @@ Thanks to DSP, audio signals are sampled, digitized, and converted into separabl
 
 The economic advantage of digital transmission is significant: cables and analog switches are expensive, whereas digital logic gates are inexpensive.
 
-### 1.2 Compression
+#### 1.2 Compression
 
 Digital audio signals contain a high degree of redundancy between neighboring samples. DSP-based data compression algorithms reduce this redundancy, thereby lowering the bit rate required for transmission and storage. As the compression ratio increases, perceived audio quality decreases; however, depending on the application, this loss may be acceptable.
 
-### 1.3 Echo Control
+#### 1.3 Echo Control
 
 Echo control is the process of modeling delayed returning audio signals in communication systems using DSP and canceling the echo by generating an appropriate antisignal. This technique is used to improve communication quality in long-distance telephone connections and speakerphone systems.
 
----
 
-## 2. Echo Location
+### 2. Echo Location
 
 Echo location enables the extraction of location and structural information by analyzing the time and amplitude characteristics of reflected waves. DSP plays a central role in separating and interpreting echoes in this process. Radar (Radio Detection and Ranging), sonar, and reflection seismology fall into this category.
 
@@ -38,13 +37,13 @@ A common way to obtain information about a distant object is to transmit a wave 
 
 The operating range of a radar system depends on two parameters: the amount of energy contained in the transmitted pulse and the noise level of the receiver. Increasing pulse energy generally requires increasing pulse duration, which reduces time measurement accuracy. As a result, a fundamental trade-off arises between long-range detection and precise distance estimation.
 
-### 2.1 Sonar (SOund NAvigation and Ranging)
+#### 2.1 Sonar (SOund NAvigation and Ranging)
 
 Sonar systems are divided into two categories: active and passive. In active sonar, sound pulses in the range of 2 kHz to 40 kHz are transmitted into water, and the returning echoes are detected and analyzed. Active sonar is used for underwater object detection and localization, navigation, communication, and seabed mapping. Typical maximum operating ranges are between 10 and 100 kilometers. Passive sonar, on the other hand, only listens to underwater sounds such as natural turbulence, marine life, and mechanical noise from vessels. Since passive sonar does not emit energy, it is ideal for covert operations.
 
 DSP has revolutionized sonar in ways similar to radar, including pulse generation, pulse compression, and filtering. Due to the irregular and unstable underwater environment, sonar problems are often more challenging. Sonar systems typically use arrays of transmitters and receivers, enabling beam steering and direction-of-arrival estimation.
 
-### 2.3 Radar (Radio Detection and Ranging)
+#### 2.3 Radar (Radio Detection and Ranging)
 
 Radar determines the range and direction of objects by transmitting radio-frequency pulses and processing the returned echoes. Distance is computed from the time delay between transmission and reception, while antenna orientation determines angular position.
 
@@ -52,37 +51,37 @@ Radar performance is primarily limited by pulse energy and receiver noise. Longe
 
 DSP overcomes this trade-off through pulse compression, digital filtering, and waveform optimization. Modern radar systems often operate at sampling rates close to radio frequency, making DSP both an algorithmic and high-speed hardware design challenge.
 
-### 2.2 Reflection Seismology
+#### 2.2 Reflection Seismology
 
 Reflection seismology analyzes waves reflected from subsurface layers. Multiple reflections complicate real-world signals. DSP enables separation of primary and secondary echoes, allowing reliable modeling of subsurface structures and enabling oil exploration in difficult regions.
 
 ---
 
-## 3. Medicine
+### 3. Medicine
 
 In medical imaging, DSP enables separation of overlapping structures, enhancement of tissue contrast, and extraction of physiological information. Computed tomography and magnetic resonance imaging produce diagnostically valuable cross-sectional images through DSP.
 
 ---
 
-## 4. Space
+### 4. Space
 
 In space applications, DSP improves degraded images, corrects spatial distortions, and combines multiple images to produce meaningful visual information, enabling remote sensing and planetary analysis.
 
 ---
 
-## 5. Image Processing
+### 5. Image Processing
 
 DSP models images as discrete digital signals over spatial domains, enabling filtering, frequency analysis, noise suppression, and compression. This approach forms the mathematical foundation of modern image and video processing.
 
 ---
 
-## 6. Music Processing
+### 6. Music Processing
 
 DSP enables processing of multi-channel music signals through filtering, addition, subtraction, and time–frequency domain operations. Artificial echo and reverberation effects are based on digital modeling of acoustic environments.
 
 ---
 
-## 7. Speech Generation & Recognition
+### 7. Speech Generation & Recognition
 
 Speech generation aims to digitally synthesize human voice signals. DSP achieves this by processing prerecorded speech or modeling the vocal tract with digital filters. Speech recognition relies on feature extraction and feature matching, using time–frequency analysis as a foundation.
 
@@ -96,7 +95,7 @@ Statistics and probability are used in DSP to describe signals and their generat
 
 A signal describes how one parameter varies with respect to another, such as voltage varying with time in analog electronics.
 
-### Mean and Standard Deviation
+## Mean and Standard Deviation
 
 The mean of a signal is defined as:
 
@@ -110,7 +109,7 @@ $$
 \sigma = \sqrt{\frac{1}{N} \sum_{n=0}^{N-1} (x[n] - \mu)^2}
 $$
 
-### The Histogram, PMF and PDF
+## The Histogram, PMF and PDF
 
 The probability density function of the normal (Gaussian) distribution is given by:
 
@@ -143,3 +142,4 @@ f_s \geq 2 f_{\text{max}}
 $$
 
 If this condition is violated, aliasing occurs and information loss is irreversible.
+
