@@ -116,9 +116,7 @@ $$
 
   Analog-to-digital conversion (ADC) enables a continuous-time and continuous-amplitude signal to be processed by digital systems. This process consists of the stages of sampling and quantization. A continuous signal is digitized by passing it through an ADC, thereby allowing real-world data to be transferred into the digital domain.
   The discretization of a continuous signal passing through an ADC occurs along both the x-axis and the y-axis. Discretization along the x-axis, that is, the time axis, is called sampling.Discretization along the y-axis, that is, the amplitude axis, is called quantization.
-  During the digitization process, losses inevitably occur due to the conversion itself, since it is never possible to achieve a 100% efficient analog-to-digital conversion. These losses are categorized as follows:
--Discretization along the x-axis results in sampling distortion, also known as aliasing.
--Discretization along the y-axis is referred to as noise or quantization error.
+  During the digitization process, losses inevitably occur due to the conversion itself, since it is never possible to achieve a 100% efficient analog-to-digital conversion. These losses have two categorization Discretization along the x-axis results in sampling distortion, also known as aliasing, other one is Discretization along the y-axis is referred to as noise or quantization error.
 
   To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
@@ -143,3 +141,4 @@ f_s \geq 2 f_{\text{max}}
 $$
 
   If this condition is violated, aliasing occurs and information loss is irreversible.
+
