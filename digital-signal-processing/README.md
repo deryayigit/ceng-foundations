@@ -119,7 +119,6 @@ $$
   To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
-<img width="1536" height="1024" alt="ADC-DAC" src="https://github.com/user-attachments/assets/0f5b0fb0-bcb1-40c7-aa88-77e5d2b14837" />
 
 
 ### Quantization
@@ -159,3 +158,4 @@ $$
 
 4. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
    https://www.dspguide.com/
+
