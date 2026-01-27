@@ -120,8 +120,6 @@ $$
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
 
-![1](https://github.com/user-attachments/assets/63dc3cdc-d5d9-4744-b050-46bbe292a7df)
-
 
 
 ### Quantization
@@ -161,5 +159,6 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 4. Steven W. Smith – *The Scientist and Engineer’s Guide to Digital Signal Processing*, Second Edition  
    https://www.dspguide.com/
+
 
 
