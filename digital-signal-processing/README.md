@@ -149,3 +149,9 @@ Theoretically, sampling is modeled as the multiplication of a continuous-time si
 
 When the spectral replicas are properly separated below the Nyquist frequency, the information is preserved. However, if the analog signal contains frequency components above the Nyquist limit, these replicas overlap, resulting in aliasing. In the presence of aliasing, different analog frequencies produce the same digital frequency component, and even phase information may be inverted. As a result, the sampled data can no longer be uniquely associated with the original analog signal, leading to irreversible information loss. Therefore, the Sampling Theorem defines not only the lower bound on the sampling rate but also the necessity of anti-aliasing filtering and serves as the central theoretical foundation of analog-to-digital conversion in digital signal processing.
 
+$$
+f_s \geq 2 f_{\text{max}}
+$$
+
+If this condition is violated, aliasing occurs and information loss is irreversible.
+Son durum özeti
