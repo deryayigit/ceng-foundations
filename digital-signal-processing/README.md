@@ -119,7 +119,8 @@ $$
   To reduce the losses occurring along the x-axis, that is, sampling distortion, the number of samples must be increased.
   Increasing the sampling rate up to a certain limit improves conversion quality and enables a more accurate representation of the signal; however, excessive sampling leads to inefficiency without further improvement.
 
-  <img width="814" height="478" alt="image" src="https://github.com/user-attachments/assets/423d6df8-6409-43b0-9e29-11e15d0ef22c" />
+<img width="801" height="497" alt="image" src="https://github.com/user-attachments/assets/de0473d0-066f-4710-af2d-b6e6eee16ff9" />
+
 
 
 ### Quantization
@@ -142,6 +143,7 @@ f_s \geq 2 f_{\text{max}}
 $$
 
   If this condition is violated, aliasing occurs and information loss is irreversible.
+
 
 
 
