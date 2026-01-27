@@ -4,13 +4,10 @@
 
 Within the scope of the Digital Signal Processing (DSP) Applications course, the **Audio Recorder Using Arduino and Multi-Rate Processing** project aims to digitize an analog audio signal using a microcontroller with limited hardware resources, process the signal using multi-rate digital signal processing techniques, and store the resulting data on an SD card.
 
----
 
 ## Objective of the Project
 
 The objective of this project is to transfer an analog audio signal into the digital domain using an ATmega328P-based microcontroller such as Arduino Uno or Nano and to demonstrate the multi-rate signal processing approach in a practical manner. In the project, the audio signal is sampled at a frequency higher than the target recording frequency, followed by digital low-pass filtering and a decimation process to reduce the sampling rate. This approach reduces the need for an analog anti-aliasing filter and enables more controlled filtering in the digital domain. In addition, oversampling is used to improve the signal-to-noise ratio.
-
----
 
 ## Required Hardware
 
@@ -24,13 +21,9 @@ The hardware components used in the project are listed below:
 - LED for indicating system status
 - Breadboard and connection wires
 
----
-
 ## Theoretical Background (Multi-Rate Processing)
 
 Under normal conditions, an audio signal can be sampled directly at the target sampling frequency, such as 8 kHz. However, in this project, a multi-rate approach based on oversampling and decimation is adopted. The audio signal is sampled at a higher frequency that is a multiple of the target frequency, for example 32 kHz. The samples obtained at this higher frequency are then passed through a digital low-pass filter, and only one out of a certain number of samples is retained, reducing the sampling frequency to 8 kHz. This approach reduces aliasing effects and increases the effectiveness of digital filtering.
-
----
 
 ## Project Stages and Implementation
 
@@ -42,13 +35,11 @@ Within the interrupt routine, the acquired samples are accumulated, basic digita
 
 Since writing to the SD card is a time-consuming operation, a double buffering mechanism is employed to prevent data loss. While one buffer is being filled, the other buffer is written to the SD card, and the roles of the buffers are swapped when a buffer becomes full.
 
----
 
 ## File Format and Recording
 
 The audio data obtained in the project are stored either in raw (RAW) format or in WAV format by adding a standard 44-byte WAV header. When the WAV format is used, the recorded files can be played directly on a computer without requiring any additional conversion.
 
----
 
 ## Evaluation
 
