@@ -1,10 +1,15 @@
 # Digital Signal Processing (DSP)
 
-  Digital Signal Processing (DSP) is an engineering field concerned with converting signals obtained from the analog world into digital form and applying mathematical and algorithmic operations to these signals.
+## Repository Structure
+This repository was created as part of a university-level Digital Signal Processing (DSP) course and contains course projects, applied assignments, and conceptual coding studies developed throughout the course.
 
-  DSP is the collection of mathematics, algorithms, and techniques used to process signals once they have been converted into digital form. The foundations of DSP are rooted in mathematics, probability theory, system theory, and electronics. The breadth of the field arises from its application to many disciplines such as telecommunications, audio processing, image processing, radar–sonar systems, and biomedical applications, each of which has developed a deep DSP technology with its own specific algorithms, mathematics, and specialized techniques. The depth of DSP stems from the specialized algorithms, transforms, and statistical models developed for each of these application domains.
+The primary objective of this repository is to demonstrate how theoretical knowledge in the field of Digital Signal Processing is translated into practical implementations through a project-based approach. Each folder within the repository contains either an independent course project or a set of implementations focused on a specific DSP concept.
 
-  The main application areas in which DSP methods are used are listed below.
+## Definition
+Digital Signal Processing (DSP) is an engineering discipline concerned with converting signals obtained from the analog world into digital form and applying mathematical and algorithmic operations to these signals. DSP encompasses the collection of mathematical methods, algorithms, and techniques used to process signals once they have been digitized.
+
+The foundations of DSP are rooted in mathematics, probability theory, system theory, and electronics. The breadth of the field arises from its application to a wide range of disciplines such as telecommunications, audio processing, image processing, radar–sonar systems, and biomedical applications. Each of these areas has developed its own specialized algorithms, mathematical models, and techniques. The depth of DSP stems from advanced signal processing algorithms, transforms, and statistical models developed specifically for these application domains.
+
 
 ### 1. Telecommunications
 
@@ -161,3 +166,4 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 4. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
    https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
+
