@@ -16,7 +16,7 @@ The main objective of this study is to compute the mean, variance, and standard 
 
 ## Input Format
 
-The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `random.txt`, which contains random samples in the range (-100, 100), `sinus.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `zero_one.txt`, which consists of alternating binary values (0 and 1).
+The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `noise.txt`, which contains random samples in the range (-100, 100), `sin.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `binary.txt`, which consists of alternating binary values (0 and 1).
 
 ---
 
@@ -83,5 +83,6 @@ while sample exists:
 - GNU g++
 - GNU make
 - C++11 compatible compiler
+
 
 
