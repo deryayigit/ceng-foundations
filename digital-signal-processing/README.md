@@ -95,15 +95,22 @@ A signal describes how one parameter varies with respect to another, such as vol
 
 The mean of a signal is defined as:
 
-$$
-\mu = \frac{1}{N} \sum_{n=0}^{N-1} x[n]
-$$
+\[
+\mu = \frac{1}{N}\sum_{n=0}^{N-1} x[n]
+\]
 
-The standard deviation measures the spread around the mean:
+The variance measures the spread of the signal around the mean:
 
-$$
-\sigma = \sqrt{\frac{1}{N} \sum_{n=0}^{N-1} (x[n] - \mu)^2}
-$$
+\[
+\sigma^2 = \frac{1}{N}\sum_{n=0}^{N-1}(x[n] - \mu)^2
+\]
+
+The standard deviation is the square root of the variance:
+
+\[
+\sigma = \sqrt{\frac{1}{N}\sum_{n=0}^{N-1}(x[n] - \mu)^2}
+\]
+
 
 ## The Histogram, PMF and PDF
 
@@ -167,4 +174,10 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 4. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
    https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
 
-5. https://github.com/ertugrulkalkan/digital-signal-processing
+6. D. E. Knuth, *The Art of Computer Programming, Vol. 2: Seminumerical Algorithms*
+   
+7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
+
+8. https://github.com/ertugrulkalkan/digital-signal-processing 
+
+
