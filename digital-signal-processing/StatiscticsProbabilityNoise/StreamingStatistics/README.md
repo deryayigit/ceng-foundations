@@ -22,15 +22,15 @@ The input is provided as a **text file** in which each line contains **a single 
 
 ## Streaming Computation Model
 
-Each input sample is processed sequentially. Let \( x_n \) denote the current sample and \( n \) the total number of processed samples.
+Each input sample is processed sequentially. Let `x_n` denote the current sample and `n` the total number of processed samples.
+
+---
 
 ### Incremental Mean Calculation
 
 The mean value is updated using the following recursive formula:
 
-\[
-\mu_n = \frac{(n - 1)\mu_{n-1} + x_n}{n}
-\]
+`μ_n = ((n - 1) * μ_(n-1) + x_n) / n`
 
 This formulation allows the mean to be updated efficiently without storing previous samples.
 
@@ -40,17 +40,9 @@ This formulation allows the mean to be updated efficiently without storing previ
 
 The sample variance is calculated using the following expression:
 
-\[
-\sigma^2 =
-\frac{1}{n - 1}
-\left(
-\sum_{i=1}^{n} x_i^2 -
-\frac{1}{n}
-\left(\sum_{i=1}^{n} x_i\right)^2
-\right)
-\]
+`σ² = (1 / (n - 1)) * ( Σ(x_i²) - (1 / n) * (Σ(x_i))² )`
 
-Where \( \sum x_i \) represents the sum of the samples and \( \sum x_i^2 \) represents the sum of the squared samples.
+Where `Σ(x_i)` represents the sum of the samples and `Σ(x_i²)` represents the sum of the squared samples.
 
 ---
 
@@ -58,18 +50,20 @@ Where \( \sum x_i \) represents the sum of the samples and \( \sum x_i^2 \) repr
 
 The standard deviation is obtained by taking the square root of the variance:
 
-\[
-\sigma = \sqrt{\sigma^2}
-\]
+`σ = sqrt(σ²)`
+
 
 ---
 
-Pseudo-code:
 
+## Pseudo-code
+
+```text
 initialize:
     n = 0
     sum = 0
     sum_sq = 0
+    mean = 0
 
 while sample exists:
     read x
@@ -77,12 +71,11 @@ while sample exists:
     sum = sum + x
     sum_sq = sum_sq + x*x
 
-    mean = ((n-1)*mean + x)/n
-    variance = (sum_sq - (sum*sum)/n)/(n-1)
+    mean = ((n - 1) * mean + x) / n
+    variance = (sum_sq - (sum * sum) / n) / (n - 1)
     std = sqrt(variance)
 
     output(mean, variance, std)
-  
 
 ---
 
@@ -93,3 +86,4 @@ while sample exists:
 - GNU g++
 - GNU make
 - C++11 compatible compiler
+
