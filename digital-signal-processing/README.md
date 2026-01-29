@@ -93,24 +93,23 @@ A signal describes how one parameter varies with respect to another, such as vol
 
 ## Mean and Standard Deviation
 
-The mean of a signal is defined as:
+The mean (average value) of a discrete-time signal is defined as:
 
-\[
+$$
 \mu = \frac{1}{N}\sum_{n=0}^{N-1} x[n]
-\]
+$$
 
 The variance measures the spread of the signal around the mean:
 
-\[
+$$
 \sigma^2 = \frac{1}{N}\sum_{n=0}^{N-1}(x[n] - \mu)^2
-\]
+$$
 
 The standard deviation is the square root of the variance:
 
-\[
+$$
 \sigma = \sqrt{\frac{1}{N}\sum_{n=0}^{N-1}(x[n] - \mu)^2}
-\]
-
+$$
 
 ## The Histogram, PMF and PDF
 
@@ -179,5 +178,6 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
+
 
 
