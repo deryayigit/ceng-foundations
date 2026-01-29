@@ -19,43 +19,6 @@ The main objective of this study is to compute the mean, variance, and standard 
 The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `noise.txt`, which contains random samples in the range (-100, 100), `sin.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `binary.txt`, which consists of alternating binary values (0 and 1).
 
 ---
-
-## Streaming Computation Model
-
-Each input sample is processed sequentially. Let `x_n` denote the current sample and `n` the total number of processed samples.
-
----
-
-### Incremental Mean Calculation
-
-The mean value is updated using the following recursive formula:
-
-`μ_n = ((n - 1) * μ_(n-1) + x_n) / n`
-
-This formulation allows the mean to be updated efficiently without storing previous samples.
-
----
-
-### Variance Calculation
-
-The sample variance is calculated using the following expression:
-
-`σ² = (1 / (n - 1)) * ( Σ(x_i²) - (1 / n) * (Σ(x_i))² )`
-
-Where `Σ(x_i)` represents the sum of the samples and `Σ(x_i²)` represents the sum of the squared samples.
-
----
-
-### Standard Deviation
-
-The standard deviation is obtained by taking the square root of the variance:
-
-`σ = sqrt(σ²)`
-
-
----
-
-
 ## Pseudo-code
 
 ```text
@@ -83,6 +46,7 @@ while sample exists:
 - GNU g++
 - GNU make
 - C++11 compatible compiler
+
 
 
 
