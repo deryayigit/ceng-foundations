@@ -167,3 +167,4 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 4. Arrow Electronics – *Engineering Resource: Basics of Analog-to-Digital Converters*  
    https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
 
+5. https://github.com/ertugrulkalkan/digital-signal-processing
