@@ -76,14 +76,12 @@ while sample exists:
     std = sqrt(variance)
 
     output(mean, variance, std)
-
----
-
-## Compilation and Execution
+```
 
 ### Requirements
 
 - GNU g++
 - GNU make
 - C++11 compatible compiler
+
 
