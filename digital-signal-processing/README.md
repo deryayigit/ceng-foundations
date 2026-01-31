@@ -158,6 +158,21 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ---
 
+## Linear Systems
+
+---
+
+## Concolution
+
+---
+
+## Discrete Fourier Transform
+
+---
+
+## Digital Filters
+
+---
 
 ## References
 
@@ -178,6 +193,7 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
+
 
 
 
