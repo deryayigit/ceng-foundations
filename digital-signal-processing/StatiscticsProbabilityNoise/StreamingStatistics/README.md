@@ -8,6 +8,12 @@ Each value in the input file is treated as a discrete-time signal sample. Statis
 
 ---
 
+## Input Format
+
+The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `noise.txt`, which contains random samples in the range (-100, 100), `sin.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `binary.txt`, which consists of alternating binary values (0 and 1).
+
+---
+
 ## Code Implementation
 
 The aim of this project is to compute the mean and variance of samples obtained from a signal in a single pass (streaming manner). When classical variance formulas are examined, it can be observed that they involve the subtraction of large and closely valued numbers. In floating-point arithmetic, such operations may lead to the amplification of rounding errors and a loss of numerical precision. This phenomenon is known in the literature as catastrophic cancellation.
@@ -18,11 +24,6 @@ In the Welford algorithm, neither large cumulative sums nor sums of squares are 
 
 ---
 
-## Input Format
-
-The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `noise.txt`, which contains random samples in the range (-100, 100), `sin.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `binary.txt`, which consists of alternating binary values (0 and 1).
-
----
 
 ## Pseudo-code
 
@@ -64,5 +65,6 @@ While there is a new sample x:
 - D. E. Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms.
 - S. W. Smith, The Scientist and Engineer’s Guide to Digital Signal Processing.
 - Alchemmist, “Welford Algorithm – Online Variance Estimation,” https://alchemmist.xyz/articles/welford-algorithm/
+
 
 
