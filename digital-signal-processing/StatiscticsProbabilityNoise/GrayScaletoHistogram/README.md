@@ -24,7 +24,7 @@ In the implementation, each input image is read from file, converted to grayscal
 
 ---
 
-## Algorithm Diagram / Pseudo Code
+## Pseudo Code
 
 ```text
 Initialize:
@@ -55,4 +55,5 @@ For K in {4, 8, 10}:
         Perform pixel-wise summation
     Compute histogram and PMF of summedImage
     Plot PMF of summedImage
+
 
