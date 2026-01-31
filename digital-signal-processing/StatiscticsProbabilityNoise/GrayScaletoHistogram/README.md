@@ -1,5 +1,4 @@
 # PMF Analysis of Grayscale Images  
-**(Digital Signal Processing Application)**
 
 ## Objective and Assignment Description
 
@@ -56,3 +55,4 @@ For K in {4, 8, 10}:
         Perform pixel-wise summation
     Compute histogram and PMF of summedImage
     Plot PMF of summedImage
+
