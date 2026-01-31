@@ -8,9 +8,13 @@ Each value in the input file is treated as a discrete-time signal sample. Statis
 
 ---
 
-## Objective
+## Code Implementation
 
-The main objective of this study is to compute the mean, variance, and standard deviation of a signal by processing samples **one by one** in a streaming manner. Instead of batch processing, each incoming sample contributes to the update of the statistical values, allowing the algorithm to operate without keeping all previous samples in memory. As a result, the implementation achieves **constant memory complexity (O(1))**, making it appropriate for real-time and resource-constrained environments.
+The aim of this project is to compute the mean and variance of samples obtained from a signal in a single pass (streaming manner). When classical variance formulas are examined, it can be observed that they involve the subtraction of large and closely valued numbers. In floating-point arithmetic, such operations may lead to the amplification of rounding errors and a loss of numerical precision. This phenomenon is known in the literature as catastrophic cancellation.
+
+For this reason, classical approaches based on running sums and sums of squares may pose risks in terms of numerical stability. Instead, a more robust method has been preferred. Due to its constant memory usage (O(1)), single-pass operation, and superior numerical stability, the Welford Algorithm was selected.
+
+In the Welford algorithm, neither large cumulative sums nor sums of squares are maintained. Instead, computations are performed using small deviations from the current mean. As each new sample arrives, the mean and variance are updated incrementally based on these small differences. This eliminates subtraction operations between large numbers, minimizes rounding errors, and significantly improves numerical stability. This approach aims not only to produce correct results, but also to preserve numerical reliability when processing long data streams, making it well suited for streaming and real-time signal processing applications.
 
 ---
 
@@ -19,26 +23,31 @@ The main objective of this study is to compute the mean, variance, and standard 
 The input is provided as a **text file** in which each line contains **a single numerical sample**. The samples are read sequentially and treated as discrete-time signal values. Example input files include `noise.txt`, which contains random samples in the range (-100, 100), `sin.txt`, which contains sinusoidal samples generated as sin((i * pi) / 10), and `binary.txt`, which consists of alternating binary values (0 and 1).
 
 ---
+---
 ## Pseudo-code
 
 ```text
-initialize:
-    n = 0
-    sum = 0
-    sum_sq = 0
-    mean = 0
 
-while sample exists:
-    read x
-    n = n + 1
-    sum = sum + x
-    sum_sq = sum_sq + x*x
+Initialize:
+    sampleCount          ← 0
+    runningMean          ← 0
+    sumSquaredDeviations ← 0
 
-    mean = ((n - 1) * mean + x) / n
-    variance = (sum_sq - (sum * sum) / n) / (n - 1)
-    std = sqrt(variance)
+While there is a new sample x:
+    sampleCount ← sampleCount + 1
 
-    output(mean, variance, std)
+    differenceFromMean ← x - runningMean
+    runningMean ← runningMean + differenceFromMean / sampleCount
+    differenceFromUpdatedMean ← x - runningMean
+
+    sumSquaredDeviations ← sumSquaredDeviations
+                            + differenceFromMean * differenceFromUpdatedMean
+
+    If sampleCount > 1:
+        variance ← sumSquaredDeviations / (sampleCount - 1)
+        standardDeviation ← sqrt(variance)
+
+
 ```
 
 ### Requirements
@@ -46,6 +55,7 @@ while sample exists:
 - GNU g++
 - GNU make
 - C++11 compatible compiler
+
 
 
 
