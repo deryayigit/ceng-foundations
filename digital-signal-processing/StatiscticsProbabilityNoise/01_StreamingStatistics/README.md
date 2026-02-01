@@ -22,6 +22,7 @@ For this reason, classical approaches based on running sums and sums of squares 
 
 In the Welford algorithm, neither large cumulative sums nor sums of squares are maintained. Instead, computations are performed using small deviations from the current mean. As each new sample arrives, the mean and variance are updated incrementally based on these small differences. This eliminates subtraction operations between large numbers, minimizes rounding errors, and significantly improves numerical stability. This approach aims not only to produce correct results, but also to preserve numerical reliability when processing long data streams, making it well suited for streaming and real-time signal processing applications.
 
+This code, developed using the Welford algorithm, is a single-responsibility, linear, and small-scope program. Since the algorithm requires sequential (online) updates, keeping the implementation within a single execution flow makes the algorithmic logic more readable and easier to follow. Therefore, the code was implemented within a single function.
 ---
 
 
@@ -65,6 +66,7 @@ While there is a new sample x:
 - D. E. Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms.
 - S. W. Smith, The Scientist and Engineer’s Guide to Digital Signal Processing.
 - Alchemmist, “Welford Algorithm – Online Variance Estimation,” https://alchemmist.xyz/articles/welford-algorithm/
+
 
 
 
