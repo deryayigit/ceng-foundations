@@ -21,23 +21,23 @@ int main(int argc, char** argv)
     std::cout << std::fixed << std::setprecision(6);  // Fixed-point format with 6-digit precision
 
     std::string line;   
-    size_t nSamples = 0;     // Number of processed samples
-    double meanRun = 0.0;    // Running mean
+    size_t sampleCount = 0;    
+    double meanRun = 0.0;    
     double sqDevSum = 0.0;   // Sum of squared deviations (Welford M2)
 
     // Read the file line by line (streaming approach)
     while (std::getline(file, line)) {
         try {
             double sample = std::stod(line); // Convert the read line to a double value
-            nSamples++;
+            sampleCount++;
 
             double delta = sample - meanRun;
-            meanRun += delta / nSamples;
+            meanRun += delta / sampleCount;
 
             double delta2 = sample - meanRun;
             sqDevSum += delta * delta2;
 
-            double variance = (nSamples > 1) ? sqDevSum / (nSamples - 1) : 0.0;
+            double variance = (sampleCount > 1) ? sqDevSum / (sampleCount - 1) : 0.0;
             double stddev = std::sqrt(variance);
 
             std::cout << "sample: " << sample
@@ -55,3 +55,4 @@ int main(int argc, char** argv)
     file.close();
     return 0; 
 }
+
