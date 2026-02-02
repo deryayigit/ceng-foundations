@@ -61,10 +61,11 @@ While there is a new sample x:
 
 ## References
 
-- B. P. Welford, “Note on a Method for Calculating Corrected Sums of Squares and Products,” Technometrics, 1962.
-- D. E. Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms.
-- S. W. Smith, The Scientist and Engineer’s Guide to Digital Signal Processing.
-- Alchemmist, “Welford Algorithm – Online Variance Estimation,” https://alchemmist.xyz/articles/welford-algorithm/
+1. B. P. Welford, “Note on a Method for Calculating Corrected Sums of Squares and Products,” Technometrics, 1962.
+2. D. E. Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms.
+3. S. W. Smith, The Scientist and Engineer’s Guide to Digital Signal Processing.
+4. Alchemmist, “Welford Algorithm – Online Variance Estimation,” https://alchemmist.xyz/articles/welford-algorithm/
+
 
 
 
