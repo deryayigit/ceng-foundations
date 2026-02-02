@@ -1,0 +1,10 @@
+# Generated outputs
+outputs/
+
+# Input images (local only)
+images/
+imagesDSP/
+
+# Python cache
+__pycache__/
+*.pyc
