@@ -66,4 +66,5 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 | Input Image | Grayscale Image | PMF |
 |------------|-----------------|-----|
-| <img src="figures/1.jpg" width="220"/> | <img src="figures/gray_image_1.png" width="220"/> | <img src="figures/pmf_image_1.png" width="420"/> |
+| <img src="figures/1.jpg" width="260"/> | <img src="figures/gray_image_1.png" width="260"/> | <img src="figures/pmf_image_1.png" width="420"/> |
+
