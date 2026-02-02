@@ -56,6 +56,8 @@ For K in {4, 8, 10}:
     Compute histogram and PMF of summedImage
     Plot PMF of summedImage
 
+```
+
 ## Example Results
 
 The figure below illustrates an example input image, its grayscale representation, and the corresponding PMF.  
@@ -65,5 +67,6 @@ The PMF represents the probability distribution of pixel intensities in the gray
 | Input Image | Grayscale Image | PMF |
 |------------|-----------------|-----|
 | ![](figures/input_example.jpg) | ![](figures/gray_example.png) | ![](figures/pmf_example.png) |
+
 
 
