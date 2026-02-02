@@ -86,12 +86,7 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 6. **A. V. Oppenheim and R. W. Schafer**, *Discrete-Time Signal Processing*, 3rd ed., Pearson, 2010.  
 
-7. **S. W. Smith**, *The Scientist and Engineer’s Guide to Digital Signal Processing*, California Technical Publishing, 1997.  Available online: https://www.dspguide.com/  
-
-8. **Python Software Foundation**, *NumPy Documentation*.  
+7. **Python Software Foundation**, *NumPy Documentation*.  
    https://numpy.org/doc/  
 
-9. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
-
-
-
+8. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
