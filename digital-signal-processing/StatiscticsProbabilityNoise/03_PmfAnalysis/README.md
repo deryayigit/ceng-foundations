@@ -56,4 +56,14 @@ For K in {4, 8, 10}:
     Compute histogram and PMF of summedImage
     Plot PMF of summedImage
 
+## Example Results
+
+The figure below illustrates an example input image, its grayscale representation, and the corresponding PMF.  
+The grayscale image is obtained after converting the input image to 8-bit intensity values in the range 0–255.  
+The PMF represents the probability distribution of pixel intensities in the grayscale image.
+
+| Input Image | Grayscale Image | PMF |
+|------------|-----------------|-----|
+| ![](figures/input_example.jpg) | ![](figures/gray_example.png) | ![](figures/pmf_example.png) |
+
 
