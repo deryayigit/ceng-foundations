@@ -15,42 +15,39 @@ int main(int argc, char** argv)
     std::ifstream file(argv[1]); // Open the input file
     if (!file.is_open()) {
         std::cerr << "File could not be opened.\n";
-        return 1; // Terminate the program if the file cannot be opened
+        return 1;
     }
 
-    
-    std::cout << std::fixed << std::setprecision(6);  // Print numeric outputs in fixed-point format with 6-digit precision
+    std::cout << std::fixed << std::setprecision(6);  // Fixed-point format with 6-digit precision
 
     std::string line;   
-    size_t n = 0;       // Number of processed samples
-    double mean = 0.0;  // Running mean value
-    double M2 = 0.0;    // Accumulated squared deviation term (used in Welford's algorithm)
+    size_t sampleCount = 0;    
+    double meanRun = 0.0;    
+    double sqDevSum = 0.0;   // Sum of squared deviations (Welford M2)
 
     // Read the file line by line (streaming approach)
     while (std::getline(file, line)) {
         try {
-            double x = std::stod(line); // Convert the read line to a double value
-            n++;
+            double sample = std::stod(line); // Convert the read line to a double value
+            sampleCount++;
 
-            double delta = x - mean;
-            mean += delta / n;
+            double delta = sample - meanRun;
+            meanRun += delta / sampleCount;
 
-            double delta2 = x - mean;
+            double delta2 = sample - meanRun;
+            sqDevSum += delta * delta2;
 
-            M2 += delta * delta2;
-
-
-            double variance = (n > 1) ? M2 / (n - 1) : 0.0;
+            double variance = (sampleCount > 1) ? sqDevSum / (sampleCount - 1) : 0.0;
             double stddev = std::sqrt(variance);
 
-            std::cout << "sample: " << x
-                      << "\tmean: " << mean
+            std::cout << "sample: " << sample
+                      << "\tmean: " << meanRun
                       << "\tstddev: " << stddev
                       << "\tvariance: " << variance
                       << "\n";
 
         } catch (...) {
-            // Invalid or non-numeric lines are safely skipped, allowing the streaming process to continue without interruption
+            // Invalid or non-numeric lines are safely skipped
             std::cerr << "Invalid input line skipped.\n";
         }
     }
@@ -58,3 +55,4 @@ int main(int argc, char** argv)
     file.close();
     return 0; 
 }
+
