@@ -71,8 +71,6 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 ## References
 
-## References
-
 1. **R. C. Gonzalez and R. E. Woods**,  
    *Digital Image Processing*, 4th ed., Pearson, 2018.  
    *(Grayscale conversion, pixel intensity representation, image resizing)*
@@ -114,4 +112,5 @@ The PMF represents the probability distribution of pixel intensities in the gray
    “Matplotlib: A 2D Graphics Environment,”  
    *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
    *(Visualization of PMFs and plotting results)*
+
 
