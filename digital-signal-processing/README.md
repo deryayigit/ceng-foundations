@@ -5,6 +5,15 @@ This repository was created as part of a university-level Digital Signal Process
 
 The primary objective of this repository is to demonstrate how theoretical knowledge in the field of Digital Signal Processing is translated into practical implementations through a project-based approach. Each folder within the repository contains either an independent course project or a set of implementations focused on a specific DSP concept.
 
+## Purpose of This Repository
+
+This repository was created to demonstrate the practical implementation of
+core Digital Signal Processing (DSP) concepts using low-level, library-free
+C/C++ implementations.
+
+Rather than relying on high-level DSP libraries, each project focuses on
+algorithmic understanding, numerical behavior, and signal interpretation.
+
 ## Definition
 Digital Signal Processing (DSP) is an engineering discipline concerned with converting signals obtained from the analog world into digital form and applying mathematical and algorithmic operations to these signals. DSP encompasses the collection of mathematical methods, algorithms, and techniques used to process signals once they have been digitized.
 
@@ -193,6 +202,7 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
+
 
 
 
