@@ -2,7 +2,7 @@
 
 ## Objective and Assignment Description
 
-The objective of this assignment is to statistically analyze the pixel intensity values of grayscale digital images and to investigate the effect of image summation on probability distributions. Within this scope, a total of ten grayscale images with a resolution of 256×256 and 8-bit depth, obtained from the internet, are used.
+The objective of this assignment is to statistically analyze the pixel intensity values of grayscale digital images and to investigate the effect of image summation on probability distributions. Within this scope, a total of ten images obtained from the internet are used. All images are converted to 256×256 resolution and 8-bit grayscale format prior to the analysis.
 
 First, the probability mass function (PMF) of the pixel intensity values is computed and plotted separately for each image. Then, the pixel values of four selected images are added in a pixel-wise manner to form a new image, and the PMF of this summed image is computed and plotted. The same procedure is repeated for eight images and for ten images, and the PMFs of the resulting summed images are obtained in each case.
 
@@ -37,7 +37,7 @@ Initialize:
 For each input image file until numberOfImages is reached:
     Read image from file
     If image is not grayscale:
-        Convert image to grayscale using weighted RGB formula
+        Convert image to 8-bit grayscale
     Resize image to 256×256
     Store processed image in imageSet
 
@@ -67,6 +67,7 @@ The PMF represents the probability distribution of pixel intensities in the gray
 | Input Image | Grayscale Image | PMF |
 |------------|-----------------|-----|
 | <img src="figures/1.jpg" width="340"/> | <img src="figures/gray_image_1.png" width="240"/> | <img src="figures/pmf_image_1.png" width="420"/> |
+
 
 
 
