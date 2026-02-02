@@ -73,29 +73,23 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 1. **R. C. Gonzalez and R. E. Woods**,  
    *Digital Image Processing*, 4th ed., Pearson, 2018.  
-   *(Grayscale conversion, pixel intensity representation, image resizing)*
 
 2. **Python Imaging Library (Pillow)**,  
    https://pillow.readthedocs.io/  
-   *(Image loading, grayscale conversion, and preprocessing implementation)*
 
 3. **Wikipedia contributors**,  
    *Probability Mass Function*.  
    https://en.wikipedia.org/wiki/Probability_mass_function  
-   *(Definition and interpretation of PMF for discrete-valued signals)*
 
 4. **Athanasios Papoulis and S. Unnikrishna Pillai**,  
    *Probability, Random Variables, and Stochastic Processes*, 4th ed., McGraw-Hill, 2002.  
-   *(Statistical interpretation of distributions and random variables)*
 
 5. **Wikipedia contributors**,  
    *Central Limit Theorem*.  
    https://en.wikipedia.org/wiki/Central_limit_theorem  
-   *(Behavior of summed images and convergence toward Gaussian-like distributions)*
 
 6. **A. V. Oppenheim and R. W. Schafer**,  
    *Discrete-Time Signal Processing*, 3rd ed., Pearson, 2010.  
-   *(Signal interpretation of images and statistical analysis in DSP context)*
 
 7. **S. W. Smith**,  
    *The Scientist and Engineer’s Guide to Digital Signal Processing*,  
@@ -106,11 +100,7 @@ The PMF represents the probability distribution of pixel intensities in the gray
 8. **Python Software Foundation**,  
    *NumPy Documentation*.  
    https://numpy.org/doc/  
-   *(Histogram computation, numerical operations, and array-based processing)*
 
 9. **Hunter, J. D.**,  
    “Matplotlib: A 2D Graphics Environment,”  
    *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
-   *(Visualization of PMFs and plotting results)*
-
-
