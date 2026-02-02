@@ -71,25 +71,20 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 ## References
 
-1. **R. C. Gonzalez and R. E. Woods**,  
-   *Digital Image Processing*, 4th ed., Pearson, 2018.  
+1. **R. C. Gonzalez and R. E. Woods**, *Digital Image Processing*, 4th ed., Pearson, 2018.  
 
 2. **Python Imaging Library (Pillow)**,  
    https://pillow.readthedocs.io/  
 
-3. **Wikipedia contributors**,  
-   *Probability Mass Function*.  
+3. **Wikipedia contributors**, *Probability Mass Function*.  
    https://en.wikipedia.org/wiki/Probability_mass_function  
 
-4. **Athanasios Papoulis and S. Unnikrishna Pillai**,  
-   *Probability, Random Variables, and Stochastic Processes*, 4th ed., McGraw-Hill, 2002.  
+4. **Athanasios Papoulis and S. Unnikrishna Pillai**, *Probability, Random Variables, and Stochastic Processes*, 4th ed., McGraw-Hill, 2002.  
 
-5. **Wikipedia contributors**,  
-   *Central Limit Theorem*.  
+5. **Wikipedia contributors**, *Central Limit Theorem*.  
    https://en.wikipedia.org/wiki/Central_limit_theorem  
 
-6. **A. V. Oppenheim and R. W. Schafer**,  
-   *Discrete-Time Signal Processing*, 3rd ed., Pearson, 2010.  
+6. **A. V. Oppenheim and R. W. Schafer**, *Discrete-Time Signal Processing*, 3rd ed., Pearson, 2010.  
 
 7. **S. W. Smith**,  
    *The Scientist and Engineer’s Guide to Digital Signal Processing*,  
@@ -97,10 +92,8 @@ The PMF represents the probability distribution of pixel intensities in the gray
    Available online: https://www.dspguide.com/  
    *(Histogram, PMF, and statistical analysis of discrete-time signals)*
 
-8. **Python Software Foundation**,  
-   *NumPy Documentation*.  
+8. **Python Software Foundation**, *NumPy Documentation*.  
    https://numpy.org/doc/  
 
-9. **Hunter, J. D.**,  
-   “Matplotlib: A 2D Graphics Environment,”  
-   *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
+9. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
+
