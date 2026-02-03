@@ -9,6 +9,12 @@ Thus, they are the fundamental tool for translating real-world problems into mat
 
 With these principles in mind, this repository explains differential equation types and provides their code implementations. 
 
+This repository focuses on the solution of differential equations. In engineering applications, the solutions of such equations often cannot be obtained in closed form, which makes numerical methods the only practically viable approach. For this reason, the solutions of differential equations in this study are addressed through numerical methods in a way that can be computed in a computer environment.
+
+## Why Numerical Methods Are Necessary
+
+Computers do not solve integrals analytically, instead, they divide a given integral into small pieces by sampling the function at specific points and calculate the result approximately by summing the contributions of these pieces. In real-world systems, the goal is often to obtain a reliable and accurate numerical value for a specific input rather than a symbolic expression. Therefore, numerical methods such as the trapezoidal method, Simpson's method, and Runge–Kutta are used as fundamental tools that transform continuous mathematics into computable algorithms. These methods offer a controlled approximation rather than a ‘full solution,’ and accuracy can be systematically improved by increasing the number of steps or using higher-order methods. 
+
 ---
 # Definition
 
@@ -481,17 +487,4 @@ $$
 [5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
 [6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
-
-
-
-
-
-
-
-
-
-
-
-
-
 
