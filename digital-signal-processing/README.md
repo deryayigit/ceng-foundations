@@ -9,16 +9,17 @@ Each folder represents a standalone DSP concept.
 Detailed explanations, mathematical background, and implementation details
 are provided in the README files within each project directory.
 
-## Purpose of This Repository
+---
 
-This repository was created to demonstrate the practical implementation of
-core Digital Signal Processing (DSP) concepts using low-level, library-free
-C/C++ implementations.Rather than relying on high-level DSP libraries, each project focuses on
-algorithmic understanding, numerical behavior, and signal interpretation.
+## Purpose of This Repository
+This repository was created to support the understanding of core Digital Signal Processing (DSP) concepts through practical implementations. Rather than relying directly on high level DSP libraries, the projects emphasize the underlying algorithms, their numerical behavior, and their effects on signals. The implementations are developed with an educational focus, aiming to reinforce the mathematical foundations of the applied methods and to enable meaningful interpretation of the statistical and temporal characteristics of signals.
+
+---
 
 ## Key Observations from Implementations
 As a result of the implementations carried out in this repository, it has been observed that histogram based PMF analyses tend toward a Gaussian like distribution as multiple independent images are summed together, which clearly demonstrates how the statistical behavior of image pixel values changes under accumulation. It has also been observed that variance and standard deviation computed using a streaming approach prevent numerical instability compared to classical naive methods and produce more reliable results for long data streams. In addition, increasing the sampling frequency improves the digital representation of a signal only up to a certain point, beyond which further increases in the sampling rate do not introduce new information and merely increase computational load. These observations highlight the importance of consciously selecting both statistical methods and sampling and quantization parameters in digital signal processing systems.
 
+---
 
 ## Definition
 Digital Signal Processing (DSP) is an engineering discipline concerned with converting signals obtained from the analog world into digital form and applying mathematical and algorithmic operations to these signals. DSP encompasses the collection of mathematical methods, algorithms, and techniques used to process signals once they have been digitized.
@@ -208,6 +209,7 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
+
 
 
 
