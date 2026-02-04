@@ -1,9 +1,8 @@
-# Gaussian CDF Calculation
+# Gauss CDF Trapezoidal Calculation
 
 ## Objective and Project Description
 
-Cumulative Distribution Function (CDF) of a Gaussian Distribution Using Trapezoidal Integration from the Probability Density Function (PDF) for a Single Value  
-(Gauss CDF Trapezoidal Calculation)
+Cumulative Distribution Function (CDF) of a Gaussian Distribution Using Trapezoidal Integration from the Probability Density Function (PDF) for a Single Value
 
 This project demonstrates how the **Cumulative Distribution Function (CDF)** of a **Gaussian (Normal) distribution** can be computed numerically using the **trapezoidal integration method** applied to the **Probability Density Function (PDF)**.
 
@@ -129,3 +128,4 @@ Return:
 
 5. “Trapezoidal rule.” Wikipedia (en).  
    https://en.wikipedia.org/wiki/Trapezoidal_rule
+
