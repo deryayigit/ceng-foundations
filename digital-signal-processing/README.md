@@ -209,13 +209,12 @@ If this condition is violated, aliasing occurs and information loss is irreversi
    https://www.arrow.com/en/research-and-events/articles/engineering-resource-basics-of-analog-to-digital-converters
 
 6. D. E. Knuth, *The Art of Computer Programming, Vol. 2: Seminumerical Algorithms*
-   
-7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
-8. https://github.com/ertugrulkalkan/digital-signal-processing 
+7. https://github.com/ertugrulkalkan/digital-signal-processing 
 ---
 
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
