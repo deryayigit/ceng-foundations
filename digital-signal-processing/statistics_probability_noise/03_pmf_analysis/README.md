@@ -100,7 +100,7 @@ change as the number of images increases.
   Although the distributions begin to concentrate around a central region,
   convergence toward an ideal Gaussian distribution is not observed.
   The primary reason for this behavior is that image pixel values are not
-  independent and identically distributed (i.i.d.) random variables and
+  independent and identically distributed random variables and
   exhibit spatial correlation.
 
 In conclusion, as the number of images increases, the PMFs become more regular
@@ -131,6 +131,7 @@ and therefore the distributions do not fully converge to a Gaussian form.
    https://numpy.org/doc/  
 
 8. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
+
 
 
 
