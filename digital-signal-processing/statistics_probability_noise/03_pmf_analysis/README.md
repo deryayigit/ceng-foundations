@@ -74,9 +74,10 @@ The PMF represents the probability distribution of pixel intensities in the gray
 
 | K = 4 | K = 8 | K = 10 |
 |------|------|-------|
-| <img src="figures/summed_image_4.png" width="160"/> | <img src="figures/summed_image_8.png" width="160"/> | <img src="figures/summed_image_10.png" width="160"/> |
-| <img src="figures/pmf_sum_4.png" width="360"/> | <img src="figures/pmf_sum_8.png" width="360"/> | <img src="figures/pmf_sum_10.png" width="360"/> |
+| <p align="center"><img src="figures/summed_image_4.png" width="160"/></p> | <p align="center"><img src="figures/summed_image_8.png" width="160"/></p> | <p align="center"><img src="figures/summed_image_10.png" width="160"/></p> |
+| <p align="center"><img src="figures/pmf_sum_4.png" width="360"/></p> | <p align="center"><img src="figures/pmf_sum_8.png" width="360"/></p> | <p align="center"><img src="figures/pmf_sum_10.png" width="360"/></p> |
 
+---
 
 ## Observations
 
@@ -130,6 +131,7 @@ and therefore the distributions do not fully converge to a Gaussian form.
    https://numpy.org/doc/  
 
 8. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
+
 
 
 
