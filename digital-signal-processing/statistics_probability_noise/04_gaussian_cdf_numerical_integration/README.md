@@ -2,9 +2,7 @@
 
 ## Objective and Project Description
 
-The objective of this project is to compute the Cumulative Distribution Function (CDF) of a Gaussian distribution for a given value by numerically integrating its Probability Density Function (PDF) using the trapezoidal method.
-
-This project demonstrates how the **Cumulative Distribution Function (CDF)** of a **Gaussian (Normal) distribution** can be computed numerically using the **trapezoidal integration method** applied to the **Probability Density Function (PDF)**.
+The objective of this project is to compute the Cumulative Distribution Function (CDF) of a Gaussian distribution at a given point by applying numerical analysis techniques to integrate its Probability Density Function (PDF).
 
 ---
 
@@ -128,5 +126,6 @@ Return:
 
 5. “Trapezoidal rule.” Wikipedia (en).  
    https://en.wikipedia.org/wiki/Trapezoidal_rule
+
 
 
