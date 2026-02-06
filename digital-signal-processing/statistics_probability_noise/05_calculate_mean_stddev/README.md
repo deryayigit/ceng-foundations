@@ -19,13 +19,6 @@ Due to its numerical stability and efficiency, the Welford algorithm is widely u
 
 The algorithm operates in linear time, **O(N)**, where *N* is the number of data points. It requires constant memory, **O(1)**, since it does not store the entire dataset.
 
-## Implementation Notes
-
-The implementation is written in the C programming language and uses basic arithmetic operations. The standard math library is only utilized for computing the square root when deriving the standard deviation from the variance.
-
-## Possible Extensions
-
-Possible extensions of this project include computing the sample variance using *(N − 1)*, supporting streaming input from files or sensors, and extending the algorithm to compute additional statistical measures.
 
 ---
 
@@ -41,4 +34,5 @@ Possible extensions of this project include computing the sample variance using 
 3. **John D. Cook – Computing Running Mean and Variance**  
    Clear and practical explanation of Welford’s algorithm with mathematical insight.  
    https://www.johndcook.com/blog/standard_deviation/
+
 
