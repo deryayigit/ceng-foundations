@@ -172,7 +172,9 @@ $$
 If this condition is violated, aliasing occurs and information loss is irreversible.
 
 ---
+
 ## DSP Software
+
 
 ---
 
@@ -215,6 +217,5 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ## Acknowledgments
 
-The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective throughout the course. 
-
+The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
 
