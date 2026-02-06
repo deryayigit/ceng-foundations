@@ -211,4 +211,11 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
+---
+
+## Acknowledgments
+
+The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University.
+
+I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective throughout the course. The studies presented in this repository were developed individually with the aim of achieving a deeper understanding of the subject matter, going beyond the requirements of the assigned coursework.
 
