@@ -33,7 +33,6 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
 #### 1.1 Multiplexing
 
-  There are approximately one billion telephones worldwide. By pressing a few buttons, switching networks allow any of these devices to be connected to another within a few seconds. Traditionally, each connection required a dedicated physical channel.
   Thanks to DSP, audio signals are sampled, digitized, and converted into separable data streams; this provides increased capacity and cost advantages in communication systems.
   he economic advantage of digital transmission is significant: cables and analog switches are expensive, whereas digital logic gates are inexpensive.
 
@@ -60,7 +59,7 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
   DSP has revolutionized sonar in ways similar to radar, including pulse generation, pulse compression, and filtering. Due to the irregular and unstable underwater environment, sonar problems are often more challenging. Sonar systems typically use arrays of transmitters and receivers, enabling beam steering and direction-of-arrival estimation.
 
-#### 2.3 Radar (Radio Detection and Ranging)
+#### 2.2 Radar (Radio Detection and Ranging)
 
   Radar determines the range and direction of objects by transmitting radio-frequency pulses and processing the returned echoes. Distance is computed from the time delay between transmission and reception, while antenna orientation determines angular position.
 
@@ -68,7 +67,7 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
   DSP overcomes this trade-off through pulse compression, digital filtering, and waveform optimization. Modern radar systems often operate at sampling rates close to radio frequency, making DSP both an algorithmic and high-speed hardware design challenge.
 
-#### 2.2 Reflection Seismology
+#### 2.3 Reflection Seismology
 
   Reflection seismology analyzes waves reflected from subsurface layers. Multiple reflections complicate real-world signals. DSP enables separation of primary and secondary echoes, allowing reliable modeling of subsurface structures and enabling oil exploration in difficult regions.
 
@@ -181,11 +180,11 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ---
 
-## Concolution
+## Convolution
 
 ---
 
-## Discrete Fourier Transform
+## Fourier Transform
 
 ---
 
@@ -212,12 +211,4 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 7. Welford, B. P., “Note on a Method for Calculating Corrected Sums of Squares and Products”, Technometrics
 
 8. https://github.com/ertugrulkalkan/digital-signal-processing 
-
-
-
-
-
-
-
-
 
