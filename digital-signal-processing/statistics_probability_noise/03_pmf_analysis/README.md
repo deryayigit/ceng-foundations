@@ -68,6 +68,44 @@ The PMF represents the probability distribution of pixel intensities in the gray
 |------------|-----------------|-----|
 | <img src="figures/1.jpg" width="340"/> | <img src="figures/gray_image_1.png" width="240"/> | <img src="figures/pmf_image_1.png" width="420"/> |
 
+### Summed Image Results
+
+| K | Summed Image | PMF |
+|---|-------------|-----|
+| 4 | ![](figures/summed_image_4.png) | ![](figures/pmf_sum_4.png) |
+| 8 | ![](figures/summed_image_8.png) | ![](figures/pmf_sum_8.png) |
+|10 | ![](figures/summed_image_10.png) | ![](figures/pmf_sum_10.png) |
+
+## Observations
+
+The objective of this study is to examine the probability distributions of pixel
+intensity values in grayscale images and to observe how these distributions
+change as the number of images increases.
+
+ **For individual images:**  
+  The PMF of each image varies depending on the scene content.
+  When grayscale images are interpreted as discrete-time and discrete-amplitude
+  signals, this indicates that their statistical properties are directly
+  influenced by the image content.
+
+ **For K = 4:**  
+  The PMF obtained after pixel-wise summation remains irregular and asymmetric.
+  This result indicates that statistical fluctuations are still dominant when
+  a limited number of images are summed.
+
+ **For K = 8 and K = 10:**  
+  Although the distributions begin to concentrate around a central region,
+  convergence toward an ideal Gaussian distribution is not observed.
+  The primary reason for this behavior is that image pixel values are not
+  independent and identically distributed (i.i.d.) random variables and
+  exhibit spatial correlation.
+
+In conclusion, as the number of images increases, the PMFs become more regular
+and structured. However, due to the statistical characteristics of natural
+images, the ideal conditions of the Central Limit Theorem are not satisfied,
+and therefore the distributions do not fully converge to a Gaussian form.
+
+---
 
 ## References
 
@@ -90,3 +128,4 @@ The PMF represents the probability distribution of pixel intensities in the gray
    https://numpy.org/doc/  
 
 8. **Hunter, J. D.**, “Matplotlib: A 2D Graphics Environment,” *Computing in Science & Engineering*, vol. 9, no. 3, pp. 90–95, 2007.  
+
