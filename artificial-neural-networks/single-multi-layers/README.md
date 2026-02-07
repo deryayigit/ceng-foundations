@@ -27,6 +27,7 @@ Both training and testing update processes are explicitly implemented
 and demonstrated.
 
 ---
-
+## Implementation
 Training and testing update processes are explicitly implemented and demonstrated in **C++**.
+
 
