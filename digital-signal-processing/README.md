@@ -102,7 +102,6 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
   In Digital Signal Processing (DSP), statistics and probability are used to understand the processes that generate signals and the behavior of these processes. Signals obtained from the real world are not ideal; measurement systems have inherent limitations. In addition, environmental effects are present, and the measured quantities often contain randomness. Therefore, one of the fundamental objectives of DSP is to suppress interference, noise, and other undesired components in the acquired data, or at least to characterize them accurately. These disturbing components may originate from the nature of the signal itself, from imperfections in the measurement system, or may arise as an unavoidable consequence of applied DSP operations. Statistics and probability provide the theoretical foundation necessary to make these irregularities measurable, comparable, and meaningful, and to develop methods for effectively dealing with undesired components.
 
-### Signal and Graph Terminology
 
   Signal is a function that carries information and represents variations in a physical or quantitative quantity as a function of one or more independent variables. Signals can be classified as continuous or discrete from a mathematical perspective, and as analog or digital according to their physical realization. In general, continuous signals are encountered in nature, while discrete (digitized) signals exist within computers and digital systems. However, exceptions exist for both cases.
 
@@ -110,23 +109,106 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
 ## Mean and Standard Deviation
 
-The mean (average value) of a discrete-time signal is defined as:
+## Overview
 
-$$
-\mu = \frac{1}{N}\sum_{n=0}^{N-1} x[n]
-$$
+Mean, variance, standard deviation, and standard error are fundamental concepts in statistics and engineering mathematics used for data analysis and interpretation. These measures provide quantitative information about the central tendency, variability, and spread of a dataset.
 
-The variance measures the spread of the signal around the mean:
+In engineering applications, these concepts play a crucial role in evaluating measurement results, analyzing noise, understanding signal behavior, and interpreting system performance.
 
-$$
-\sigma^2 = \frac{1}{N-1}\sum_{n=0}^{N-1}(x[n] - \mu)^2
-$$
+---
 
-The standard deviation is the square root of the variance:
+## Mean (Average)
 
-$$
-\sigma = \sqrt{\frac{1}{N-1}\sum_{n=0}^{N-1}(x[n] - \mu)^2}
-$$
+The mean is a basic measure of the central tendency of a dataset. It is obtained by summing all data values and dividing the result by the total number of samples. The mean represents the overall level of the data; however, by itself, it does not provide information about how the data are distributed around this central value.
+
+### Mathematical Definition
+
+\[
+\mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i
+\]
+
+**Where:**
+- \( x_i \): i-th sample  
+- \( N \): total number of samples  
+- \( \mu \): mean value  
+
+---
+
+## Variance
+
+Variance is a measure of how far the values in a dataset deviate from the mean. It quantitatively describes the variability of the data around the central value.
+
+Variance is calculated by taking the average of the squared differences between each data point and the mean. Squaring the differences ensures that positive and negative deviations do not cancel each other.
+
+### Mathematical Definition (Sample Variance)
+
+\[
+\sigma^2 = \frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2
+\]
+
+**Where:**
+- \( \sigma^2 \): variance  
+- \( x_i \): i-th sample  
+- \( \mu \): mean  
+- \( N \): number of samples  
+
+*Note:* The term \( N - 1 \) in the denominator is known as **Bessel’s correction** and provides an unbiased estimate of the population variance when using sample data.
+
+---
+
+## Standard Deviation
+
+Standard deviation is defined as the square root of the variance and expresses the spread of the data in the same units as the original measurements. This makes it more intuitive and easier to interpret than variance.
+
+Standard deviation indicates how far, on average, the data values lie from the mean and is widely used in engineering and scientific applications.
+
+### Mathematical Definition
+
+\[
+\sigma = \sqrt{\frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2}
+\]
+
+**Where:**
+- \( \sigma \): standard deviation  
+- \( \sigma^2 \): variance  
+
+### Expanded Form
+
+\[
+\sigma = \sqrt{\frac{(x_0 - \mu)^2 + (x_1 - \mu)^2 + \cdots + (x_{N-1} - \mu)^2}{N - 1}}
+\]
+
+This form explicitly shows that the standard deviation is based on the deviations of all samples from the mean.
+
+---
+
+## Relationship Between Mean, Variance, and Standard Deviation
+
+Mean, variance, and standard deviation are closely related measures that together provide a complete statistical description of a dataset. The mean determines the central value around which the data are distributed and represents the overall level of the dataset. Variance quantifies how much the data values deviate from this central value and therefore measures the degree of variability present in the data. Since variance is expressed in squared units, its direct interpretation may be unintuitive. Standard deviation resolves this issue by expressing the variability in the same units as the original data, making it easier to interpret. In this context, the mean indicates where the data are centered, variance describes how variable the data are, and standard deviation conveys how widely the data values are spread around the mean in a practical and interpretable manner.
+
+
+---
+
+## Standard Error of the Mean
+
+The standard error of the mean is a measure used to evaluate how accurately the sample mean estimates the population mean. It reflects uncertainty due to the sampling process rather than the variability of the data itself.
+
+As the number of samples increases, the standard error decreases, indicating a more reliable estimate of the population mean.
+
+### Mathematical Definition
+
+\[
+\mathrm{SE}_{\mu} = \frac{\sigma}{\sqrt{N}}
+\]
+
+**Where:**
+- \( \mathrm{SE}_{\mu} \): standard error of the mean  
+- \( \sigma \): standard deviation  
+- \( N \): number of samples  
+
+While standard deviation is a descriptive statistic, standard error is an inferential measure related to sampling uncertainty.
+
+---
 
 ## The Histogram, PMF and PDF
 
@@ -212,13 +294,14 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 6. D. E. Knuth, *The Art of Computer Programming, Vol. 2: Seminumerical Algorithms*
 
-7. https://github.com/ertugrulkalkan/digital-signal-processing 
+7. https://github.com/ertugrulkalkan/digital-signal-processing
+
+8. University of Southampton Library – *Variance, Standard Deviation and Standard Error*  
+https://library.soton.ac.uk/variance-standard-deviation-and-standard-error  
+
+9. GeeksforGeeks – *Mean, Variance and Standard Deviation* 
 ---
 
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
-
-
-
-
