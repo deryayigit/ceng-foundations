@@ -121,16 +121,15 @@ In engineering applications, these concepts play a crucial role in evaluating me
 
 The mean is a basic measure of the central tendency of a dataset. It is obtained by summing all data values and dividing the result by the total number of samples. The mean represents the overall level of the data; however, by itself, it does not provide information about how the data are distributed around this central value.
 
-### Mathematical Definition
-
-\[
+$$
 \mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i
-\]
+$$
 
 **Where:**
 - \( x_i \): i-th sample  
 - \( N \): total number of samples  
 - \( \mu \): mean value  
+
 
 ---
 
@@ -140,17 +139,18 @@ Variance is a measure of how far the values in a dataset deviate from the mean. 
 
 Variance is calculated by taking the average of the squared differences between each data point and the mean. Squaring the differences ensures that positive and negative deviations do not cancel each other.
 
-### Mathematical Definition (Sample Variance)
-
-\[
+$$
 \sigma^2 = \frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2
-\]
+$$
 
 **Where:**
 - \( \sigma^2 \): variance  
 - \( x_i \): i-th sample  
 - \( \mu \): mean  
 - \( N \): number of samples  
+
+*Note:* The term \( N - 1 \) is known as **Bessel’s correction**.
+
 
 *Note:* The term \( N - 1 \) in the denominator is known as **Bessel’s correction** and provides an unbiased estimate of the population variance when using sample data.
 
@@ -162,11 +162,9 @@ Standard deviation is defined as the square root of the variance and expresses t
 
 Standard deviation indicates how far, on average, the data values lie from the mean and is widely used in engineering and scientific applications.
 
-### Mathematical Definition
-
-\[
+$$
 \sigma = \sqrt{\frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2}
-\]
+$$
 
 **Where:**
 - \( \sigma \): standard deviation  
@@ -174,9 +172,20 @@ Standard deviation indicates how far, on average, the data values lie from the m
 
 ### Expanded Form
 
-\[
-\sigma = \sqrt{\frac{(x_0 - \mu)^2 + (x_1 - \mu)^2 + \cdots + (x_{N-1} - \mu)^2}{N - 1}}
-\]
+$$
+\sigma =
+\sqrt{
+\frac{
+(x_0 - \mu)^2 +
+(x_1 - \mu)^2 +
+\cdots +
+(x_{N-1} - \mu)^2
+}{
+N - 1
+}
+}
+$$
+
 
 This form explicitly shows that the standard deviation is based on the deviations of all samples from the mean.
 
@@ -195,11 +204,10 @@ The standard error of the mean is a measure used to evaluate how accurately the 
 
 As the number of samples increases, the standard error decreases, indicating a more reliable estimate of the population mean.
 
-### Mathematical Definition
-
-\[
+$$
 \mathrm{SE}_{\mu} = \frac{\sigma}{\sqrt{N}}
-\]
+$$
+
 
 **Where:**
 - \( \mathrm{SE}_{\mu} \): standard error of the mean  
@@ -305,3 +313,4 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
