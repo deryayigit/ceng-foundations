@@ -109,15 +109,13 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
 ## Mean and Standard Deviation
 
-## Overview
-
 Mean, variance, standard deviation, and standard error are fundamental concepts in statistics and engineering mathematics used for data analysis and interpretation. These measures provide quantitative information about the central tendency, variability, and spread of a dataset.
 
 In engineering applications, these concepts play a crucial role in evaluating measurement results, analyzing noise, understanding signal behavior, and interpreting system performance.
 
 ---
 
-## Mean (Average)
+### Mean (Average)
 
 The mean is a basic measure of the central tendency of a dataset. It is obtained by summing all data values and dividing the result by the total number of samples. The mean represents the overall level of the data; however, by itself, it does not provide information about how the data are distributed around this central value.
 
@@ -125,15 +123,8 @@ $$
 \mu = \frac{1}{N} \sum_{i=0}^{N-1} x_i
 $$
 
-**Where:**
-- \( x_i \): i-th sample  
-- \( N \): total number of samples  
-- \( \mu \): mean value  
 
-
----
-
-## Variance
+### Variance
 
 Variance is a measure of how far the values in a dataset deviate from the mean. It quantitatively describes the variability of the data around the central value.
 
@@ -143,20 +134,12 @@ $$
 \sigma^2 = \frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2
 $$
 
-**Where:**
-- \( \sigma^2 \): variance  
-- \( x_i \): i-th sample  
-- \( \mu \): mean  
-- \( N \): number of samples  
-
 *Note:* The term \( N - 1 \) is known as **Bessel’s correction**.
 
 
 *Note:* The term \( N - 1 \) in the denominator is known as **Bessel’s correction** and provides an unbiased estimate of the population variance when using sample data.
 
----
-
-## Standard Deviation
+### Standard Deviation
 
 Standard deviation is defined as the square root of the variance and expresses the spread of the data in the same units as the original measurements. This makes it more intuitive and easier to interpret than variance.
 
@@ -166,11 +149,7 @@ $$
 \sigma = \sqrt{\frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2}
 $$
 
-**Where:**
-- \( \sigma \): standard deviation  
-- \( \sigma^2 \): variance  
-
-### Expanded Form
+#### Expanded Form
 
 $$
 \sigma =
@@ -189,16 +168,12 @@ $$
 
 This form explicitly shows that the standard deviation is based on the deviations of all samples from the mean.
 
----
-
-## Relationship Between Mean, Variance, and Standard Deviation
+### Relationship Between Mean, Variance, and Standard Deviation
 
 Mean, variance, and standard deviation are closely related measures that together provide a complete statistical description of a dataset. The mean determines the central value around which the data are distributed and represents the overall level of the dataset. Variance quantifies how much the data values deviate from this central value and therefore measures the degree of variability present in the data. Since variance is expressed in squared units, its direct interpretation may be unintuitive. Standard deviation resolves this issue by expressing the variability in the same units as the original data, making it easier to interpret. In this context, the mean indicates where the data are centered, variance describes how variable the data are, and standard deviation conveys how widely the data values are spread around the mean in a practical and interpretable manner.
 
 
----
-
-## Standard Error of the Mean
+### Standard Error of the Mean
 
 The standard error of the mean is a measure used to evaluate how accurately the sample mean estimates the population mean. It reflects uncertainty due to the sampling process rather than the variability of the data itself.
 
@@ -208,11 +183,6 @@ $$
 \mathrm{SE}_{\mu} = \frac{\sigma}{\sqrt{N}}
 $$
 
-
-**Where:**
-- \( \mathrm{SE}_{\mu} \): standard error of the mean  
-- \( \sigma \): standard deviation  
-- \( N \): number of samples  
 
 While standard deviation is a descriptive statistic, standard error is an inferential measure related to sampling uncertainty.
 
@@ -313,4 +283,5 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
