@@ -134,9 +134,6 @@ $$
 \sigma^2 = \frac{1}{N - 1} \sum_{i=0}^{N-1} (x_i - \mu)^2
 $$
 
-*Note:* The term \( N - 1 \) is known as **Bessel’s correction**.
-
-
 *Note:* The term \( N - 1 \) in the denominator is known as **Bessel’s correction** and provides an unbiased estimate of the population variance when using sample data.
 
 ### Standard Deviation
@@ -283,5 +280,6 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
