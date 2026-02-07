@@ -100,11 +100,11 @@ The foundations of DSP are rooted in mathematics, probability theory, system the
 
 ## Statistics, Probability and Noise
 
-  Statistics and probability are used in DSP to describe signals and their generating processes. One primary goal of DSP is reducing noise, interference, and unwanted components in acquired data. These components may arise from the signal itself, data acquisition imperfections, or unavoidable side effects of DSP operations.
+  In Digital Signal Processing (DSP), statistics and probability are used to understand the processes that generate signals and the behavior of these processes. Signals obtained from the real world are not ideal; measurement systems have inherent limitations. In addition, environmental effects are present, and the measured quantities often contain randomness. Therefore, one of the fundamental objectives of DSP is to suppress interference, noise, and other undesired components in the acquired data, or at least to characterize them accurately. These disturbing components may originate from the nature of the signal itself, from imperfections in the measurement system, or may arise as an unavoidable consequence of applied DSP operations. Statistics and probability provide the theoretical foundation necessary to make these irregularities measurable, comparable, and meaningful, and to develop methods for effectively dealing with undesired components.
 
-### Signal and Graph Terminology
+  Signal is a function that carries information and represents variations in a physical or quantitative quantity as a function of one or more independent variables. Signals can be classified as continuous or discrete from a mathematical perspective, and as analog or digital according to their physical realization. In general, continuous signals are encountered in nature, while discrete (digitized) signals exist within computers and digital systems. However, exceptions exist for both cases.
 
-A signal describes how one parameter varies with respect to another, such as voltage varying with time in analog electronics.
+  A signal is defined by the relationship between an independent variable and the corresponding dependent variable. Amplitude represents the numerical value of the physical quantity conveyed by the signal and reflects the magnitude or intensity of the information it carries. In graphical representations, amplitude is shown on the y-axis (dependent variable) and is also referred to as the ordinate, amplitude, or dependent variable. The x-axis represents the independent variable of the signal and is referred to as the abscissa. This independent variable is most commonly time, but depending on the application, it may also represent frequency, distance, or sample index. While the independent variable determines when or under what conditions the samples are taken, the dependent variable represents the measured quantity itself.
 
 ## Mean and Standard Deviation
 
@@ -216,5 +216,6 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
