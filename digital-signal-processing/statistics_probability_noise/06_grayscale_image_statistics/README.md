@@ -1,4 +1,4 @@
-# Grayscale Image Histogram Analysis (C Language)
+# Grayscale Image Histogram Analysis
 
 ## Assignment Description
 
@@ -40,4 +40,5 @@ The **variance** measures how much the pixel intensity values deviate from the m
 $$
 \sigma^2 = \frac{1}{N} \sum_{i=0}^{255} (i - \mu)^2 \cdot h(i)
 $$
+
 
