@@ -3,7 +3,8 @@
 #include <string.h>  // string manipulation
 #include <math.h> // mathematical operations
 
-#define LEVELS 256 //8-bit greyscale → 256 levels between 0 and 255
+#define LEVELS 256 
+// 8-bit greyscale → 256 levels between 0 and 255
 
 #pragma pack(push, 1)
 
@@ -38,13 +39,10 @@ typedef struct {
 
 FILE* get_valid_bmp_file(BITMAPFILEHEADER* fh, BITMAPINFOHEADER* ih);
 unsigned char rgb_to_gray(unsigned char R, unsigned char G, unsigned char B);
-void process_image_and_histogram(FILE* fp, BITMAPFILEHEADER* fh,
-                                 BITMAPINFOHEADER* ih, int histogram[]);
+void process_image_and_histogram(FILE* fp, BITMAPFILEHEADER* fh,BITMAPINFOHEADER* ih, int histogram[]);
 double compute_mean(int histogram[], int total_pixels);
 double compute_variance(int histogram[], int total_pixels, double mean);
-void print_results(int width, int height, int total_pixels,
-                   double mean, double variance);
-
+void print_results(int width, int height, int total_pixels, double mean, double variance);
 
 int main(void) {
     BITMAPFILEHEADER fileHeader;
@@ -126,8 +124,7 @@ unsigned char rgb_to_gray(unsigned char R, unsigned char G, unsigned char B) {
     return (unsigned char)(0.299 * R + 0.587 * G + 0.114 * B + 0.5);
 }
 
-void process_image_and_histogram(FILE* fp, BITMAPFILEHEADER* fh,
-                                 BITMAPINFOHEADER* ih, int histogram[]) {
+void process_image_and_histogram(FILE* fp, BITMAPFILEHEADER* fh, BITMAPINFOHEADER* ih, int histogram[]) {
     int width  = ih->biWidth;
     int height = abs(ih->biHeight);
 
@@ -171,11 +168,11 @@ double compute_variance(int histogram[], int total_pixels, double mean) {
     return var / total_pixels;
 }
 
-void print_results(int width, int height, int total_pixels,
-                   double mean, double variance) {
+void print_results(int width, int height, int total_pixels, double mean, double variance) {
     printf("\n Grayscale Image Analysis: \n");
     printf("Image Size   : %d x %d\n", width, height);
     printf("Total Pixels : %d\n", total_pixels);
     printf("Mean         : %.2f\n", mean);
     printf("Variance     : %.2f\n", variance);
 }
+
