@@ -63,8 +63,12 @@ Using this approach, the statistical properties of the image are computed direct
 
 | Input Image | Outputs |
 |------------|---------|
-| <img src="1.bmp" width="340"/> | <pre> Grayscale Image Analysis:| Image Size   : 625 x 350 | Total Pixels : 218750 |Mean         : 68.25| Variance     : 3717.62 </pre> |
-
+| <img src="1.bmp" width="340"/> | 
+Grayscale Image Analysis:<br>
+Image Size   : 625 × 350<br>
+Total Pixels : 218750<br>
+Mean         : 68.25<br>
+Variance     : 3717.62<br><br>
 
 ---
 
@@ -73,6 +77,7 @@ Using this approach, the statistical properties of the image are computed direct
 2.  Microsoft Learn. *Bitmap Storage (BMP format)*.
    https://learn.microsoft.com/en-us/windows/win32/gdi/bitmap-storage
 3. Digital Video and HD: Algorithms and Interfaces Charles Poynton. Morgan Kaufmann, 2012.
+
 
 
 
