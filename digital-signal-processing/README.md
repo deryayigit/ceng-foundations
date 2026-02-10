@@ -195,6 +195,11 @@ $$
 
 ---
 
+#### 🔗 Projects Related to the Subject
+👉 [statistics_probability_noise](statistics_probability_noise)
+
+---
+
 ## ADC and DAC
 
   Analog-to-digital conversion (ADC) enables a continuous-time and continuous-amplitude signal to be processed by digital systems. This process consists of the stages of sampling and quantization. A continuous signal is digitized by passing it through an ADC, thereby allowing real-world data to be transferred into the digital domain.
@@ -280,6 +285,7 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
 
