@@ -72,6 +72,8 @@ Using this approach, the statistical properties of the image are computed direct
 2.  Microsoft Learn. *Bitmap Storage (BMP format)*.
    https://learn.microsoft.com/en-us/windows/win32/gdi/bitmap-storage
 3. Digital Video and HD: Algorithms and Interfaces Charles Poynton. Morgan Kaufmann, 2012.
+4. https://github.com/ertugrulkalkan/digital-signal-processing
+
 
 
 
