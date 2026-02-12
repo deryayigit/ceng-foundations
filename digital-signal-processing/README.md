@@ -212,6 +212,10 @@ $$
 |-----|-----|
 | <img src="https://github.com/user-attachments/assets/e5950948-d115-43f6-a788-c259983ccae5" width="450"/> | <img src="https://github.com/user-attachments/assets/20e9648c-bf85-4f7d-b614-67df946b88d4" width="450"/> |
 
+In a complete signal processing architecture, the ADC and DAC operate within a broader signal chain that interfaces digital computation with the physical domain. A transducer converts a physical variable into an electrical analog signal prior to the ADC stage. Following digital processing, the DAC generates an analog electrical signal that is applied to an actuator, which converts this electrical quantity into a corresponding physical action.
+
+<img width="1340" height="303" alt="image" src="https://github.com/user-attachments/assets/330ec5aa-9c3a-4cc5-8872-a1d213263e63" />
+
 
 ### Quantization
 
@@ -293,6 +297,7 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
 
