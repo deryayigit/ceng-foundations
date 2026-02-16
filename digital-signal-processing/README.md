@@ -1,5 +1,9 @@
 # Digital Signal Processing (DSP)
 
+This repository has been prepared in accordance with the course information package. The course information package has been structured to cover both the fundamental theoretical and practical topics of Digital Signal Processing. The content of the course includes: Discrete-Time Signals, Sampling, Signal Reconstruction, Discrete-Time Systems, Convolution, Difference Equations, Discrete-Time Fourier Transform (DTFT), Discrete-Time Fourier Series (DTFS), Fast Fourier Transform (FFT), System Transfer Function in the Frequency Domain, Z-Transform, System Transfer Function in the Z-Domain, and FIR and IIR Filter Structures.
+
+---
+
 ## Repository Structure
 This repository was created as part of a university-level Digital Signal Processing (DSP) course and contains course projects, applied assignments, and conceptual coding studies developed throughout the course.
 
@@ -300,6 +304,7 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 ## Acknowledgments
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
 
