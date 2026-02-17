@@ -15,7 +15,7 @@ The main purpose of this repository is to implement mathematical methods conscio
 
 Engineering Mathematics is the collection of methods that transform real-world physical processes into mathematical models in order to analyze, understand, and control systems through those models. This discipline combines the theoretical structure of mathematics with engineering applications and serves as a fundamental tool in system modeling, analysis, and solution processes.  
 
-At its core, Engineering Mathematics is an art of changing representation. Real-world systems are often too complex to be analyzed directly. Therefore, the engineer transforms the problem into a more suitable representation. For example, a signal that appears complex in the time domain may become much clearer when transformed into the frequency domain.
+At its core, Engineering Mathematics is an art of changing representation. Real-world systems are often too complex to be analyzed directly. Therefore, the engineer transforms the problem into a more suitable representation. A signal that appears complex in the time domain may become much clearer when transformed into the frequency domain.  For example, consider the transmission of sound to the other party via telephone. Sound is an analogue and complex signal, it is transmitted by being transformed into the frequency domain using mathematical methods.
 
 ### Fourier Series 
 
@@ -143,5 +143,6 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures, assignments, and inquiry-driven approach.
+
 
 
