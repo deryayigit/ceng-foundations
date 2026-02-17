@@ -137,9 +137,4 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 
 ## Acknowledgments 
 
-I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures, assignments, and inquiry-driven approach.
-
-
-
-
-
+I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
