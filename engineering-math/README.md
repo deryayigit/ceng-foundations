@@ -19,15 +19,10 @@ At its core, Engineering Mathematics is an art of changing representation. Real-
 
 ### Fourier Series 
 
-Joseph Fourier, during his studies in the late 18th and early 19th centuries, was trying to solve heat conduction problems. In particular, classical methods were insufficient to solve the heat equation that models how the temperature distribution of a rod changes over time. Fourier realized that the most effective way to approach the problem was to express the temperature distribution as a sum of sine and cosine waves, thereby solving the differential equation through its frequency components.
+Joseph Fourier, while attempting to solve heat transfer problems at the turn of the 19th century, realised that classical methods were insufficient for solving the heat equation, which models how the temperature distribution of a rod changes over time. He saw that the most effective way to solve the problem was to express the temperature distribution as the sum of sine and cosine waves; thus, he succeeded in solving the differential equation in terms of frequency components.
 
-The idea of expanding a function into a series in this form was used by Bernoulli, D’Alembert, and Euler (around 1750) in solving problems related to vibrating strings; however, the person who developed this approach into a generally useful framework was Joseph Fourier (1768–1830).
-
-Fourier was a French physicist interested in heat flow problems. Given the initial temperature at all points of a region, he attempted to determine how the temperature distribution changes over time.
-
-According to the Fourier Theorem, a periodic function satisfying certain conditions can be expressed as the sum of sine and cosine functions. This representation corresponds to decomposing the function into different frequency components. In other words, Fourier series allow us to express any steady-state response as the infinite sum of steady-state responses to sinusoidal inputs.
-
-The reason sine and cosine functions are used in these expressions is that they form a very suitable “basis” for decomposing a periodic function into wave components of different frequencies: their orthogonality over a period, their simple derivatives and integrals, and their natural correspondence to frequencies in many physical systems make writing periodic functions as their sum convenient both theoretically and practically. In short, Fourier series provide a powerful mathematical structure for expressing periodic functions in terms of orthogonal basis functions such as sine and cosine, and since this approach emerged from Joseph Fourier’s need to solve heat conduction problems through frequency components, it is both theoretically and physically the most natural and useful representation form.
+Although the idea of expanding a function in this way had previously been used by Bernoulli, D'Alembert, and Euler in problems involving vibrating strings, it was Fourier who transformed this approach into a general and systematic framework.
+According to Fourier's Theorem, a periodic function that satisfies certain conditions can be expressed as the sum of sine and cosine waves, which means that the function can be decomposed into different frequency components. The reason for choosing sine and cosine is that they provide a powerful mathematical structure for decomposing periodic functions into frequency components via orthogonal basis functions. Although originating from heat transfer problems, they are considered one of the most natural representations both theoretically and physically.
 
 General form:
 
@@ -143,6 +138,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures, assignments, and inquiry-driven approach.
+
 
 
 
