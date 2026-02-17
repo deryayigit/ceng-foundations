@@ -1,7 +1,8 @@
 # Engineering Mathematics
 
-Engineering Mathematics is not merely a collection of formulas.
-It is the structured framework that enables engineers to model, transform, analyze, and implement real-world systems through mathematical representations. The course includes Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant calculations, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector computation methods, and the numerical implementation of these concepts. The aim is to transform abstract mathematical structures into applicable tools for engineering problems.
+Engineering Mathematics is a structured framework that enables engineers to model, transform, analyse, and apply real-world systems through mathematical representations.  
+The aim is to transform abstract mathematical structures into tools applicable to engineering problems.
+This course covers Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant calculations, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector calculation methods, and the numerical applications of these concepts. 
 
 ## Repository Structure 
 
@@ -138,3 +139,4 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
