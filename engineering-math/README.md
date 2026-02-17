@@ -1,109 +1,103 @@
-# Engineering Mathematics
+# Engineering Mathematic 
 
-The Engineering Mathematics course systematically covers the fundamental mathematical tools used in computer engineering. The course includes Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant computation, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector computation methods, and the numerical implementation of these concepts.
+The Engineering Mathematics course systematically covers the fundamental mathematical tools used in computer engineering. The course includes Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant calculations, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector computation methods, and the numerical implementation of these concepts. The aim is to transform abstract mathematical structures into applicable tools for engineering problems.
 
-The goal is to transform abstract mathematical structures into applicable tools for solving engineering problems.
+## Repository Structure 
 
----
+This repository has been prepared to examine the fundamental concepts covered in the Engineering Mathematics course both theoretically and practically. The content includes not only mathematical definitions but also how these structures are applied to engineering problems and implemented at the code level. Each folder represents an independent study focusing on the analysis of a specific mathematical concept and its engineering application.
 
-## Repository Structure
+## Purpose of This Repository 
 
-This repository has been prepared to study the fundamental concepts covered in the Engineering Mathematics course both theoretically and practically.
+The main purpose of this repository is to implement mathematical methods consciously at a low level instead of using ready-made libraries. The objective is to understand the structure behind mathematical formulas, convert this structure into algorithms, and observe system behavior through code. In this way, mathematics becomes not only theoretical knowledge but a direct part of engineering practice.
 
-The content includes not only mathematical definitions but also how these structures are applied to engineering problems and implemented at the code level. Each folder represents an independent study focusing on a specific mathematical concept and its engineering application.
+## Definition 
 
----
+Engineering Mathematics is the collection of methods that transform real-world physical processes into mathematical models in order to analyze, understand, and control systems through those models. This discipline combines the theoretical structure of mathematics with engineering applications and serves as a fundamental tool in system modeling, analysis, and solution processes.  
 
-## Purpose of This Repository
+At its core, Engineering Mathematics is an art of changing representation. Real-world systems are often too complex to be analyzed directly. Therefore, the engineer transforms the problem into a more suitable representation. For example, a signal that appears complex in the time domain may become much clearer when transformed into the frequency domain.
 
-The main purpose of this repository is to implement mathematical methods at a low level consciously and independently instead of relying on ready-made libraries.
+### Fourier Series 
 
-The objective is to understand the structure behind mathematical formulas, convert these structures into algorithms, and observe system behavior directly through code. In this way, mathematics becomes not just theoretical knowledge but a direct component of engineering practice.
+Joseph Fourier, during his studies in the late 18th and early 19th centuries, was trying to solve heat conduction problems. In particular, classical methods were insufficient to solve the heat equation that models how the temperature distribution of a rod changes over time. Fourier realized that the most effective way to approach the problem was to express the temperature distribution as a sum of sine and cosine waves, thereby solving the differential equation through its frequency components.
 
----
+The idea of expanding a function into a series in this form was used by Bernoulli, D’Alembert, and Euler (around 1750) in solving problems related to vibrating strings; however, the person who developed this approach into a generally useful framework was Joseph Fourier (1768–1830).
 
-## Definition
+Fourier was a French physicist interested in heat flow problems. Given the initial temperature at all points of a region, he attempted to determine how the temperature distribution changes over time.
 
-Engineering Mathematics is the collection of methods that transform real-world physical processes into mathematical models in order to analyze, understand, and control systems through those models.
+According to the Fourier Theorem, a periodic function satisfying certain conditions can be expressed as the sum of sine and cosine functions. This representation corresponds to decomposing the function into different frequency components. In other words, Fourier series allow us to express any steady-state response as the infinite sum of steady-state responses to sinusoidal inputs.
 
-This discipline combines the theoretical structure of mathematics with engineering applications and serves as a fundamental tool in system modeling, analysis, and problem-solving processes.
+The reason sine and cosine functions are used in these expressions is that they form a very suitable “basis” for decomposing a periodic function into wave components of different frequencies: their orthogonality over a period, their simple derivatives and integrals, and their natural correspondence to frequencies in many physical systems make writing periodic functions as their sum convenient both theoretically and practically. In short, Fourier series provide a powerful mathematical structure for expressing periodic functions in terms of orthogonal basis functions such as sine and cosine, and since this approach emerged from Joseph Fourier’s need to solve heat conduction problems through frequency components, it is both theoretically and physically the most natural and useful representation form.
 
-At its core, Engineering Mathematics is an art of changing representation. Real-world systems are often too complex to analyze directly. Therefore, the engineer transforms the problem into a more suitable representation. For example, a signal that appears complex in the time domain may become much clearer when transformed into the frequency domain.
-
----
-
-## Fourier Series
-
-Joseph Fourier (1768–1830), while studying heat conduction problems, realized that expressing temperature distributions as sums of sine and cosine waves significantly simplified the solution of differential equations.
-
-According to the Fourier Theorem, a periodic function that satisfies certain conditions can be expressed as the sum of sine and cosine functions. This corresponds to decomposing the function into its frequency components.
-
----
-
-### General Form
-
-For a periodic function with period $T$, the Fourier series is written as:
+General form:
 
 $$
 f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left(a_n \cos(n\omega t)+b_n \sin(n\omega t)\right)
 $$
 
-where the angular frequency is:
+where  
 
 $$
 \omega=\frac{2\pi}{T}
 $$
 
----
+is the angular frequency.
 
-### Periodic Function
+#### Periodic Function  
 
-A function is called periodic if:
+A function is called periodic if for a given period $T$:
 
 $$
 f(t+mT)=f(t)
 $$
 
-for any integer $m$.
-
-The frequency is defined as:
+for any integer $m$. The period is the interval over which the function repeats itself. The frequency is the reciprocal of the period:
 
 $$
 f=\frac{1}{T}
 $$
 
-and the angular frequency is:
+The angular frequency is defined as:
 
 $$
 \omega=\frac{2\pi}{T}
 $$
 
----
+and its unit is radians per second.
 
-### Harmonics
+### Fourier Theorem 
 
-A periodic function can also be written as:
+The Fourier Theorem states that a periodic function satisfying certain conditions can be expressed as the infinite sum of sinusoidal components. This means that a seemingly complex waveform actually consists of harmonic components with different amplitudes and phases. In other words, a periodic function satisfying certain conditions can be represented as the infinite sum of sine and cosine terms whose frequencies are integer multiples of the fundamental frequency.
+
+That is, if $f(t)$ is a periodic function with period $T$:
 
 $$
-f(t)=A_0+A_1\sin(\omega t+\phi_1)+A_2\sin(2\omega t+\phi_2)+\dots
+f(t)=A_0+A_1\sin(\omega t+\phi_1)+A_2\sin(2\omega t+\phi_2)+\dots+A_n\sin(n\omega t+\phi_n)+\dots
 $$
 
-The term $A_n\sin(n\omega t+\phi_n)$ is called the $n$-th harmonic.  
-Its frequency is $n\omega$, which is $n$ times the fundamental frequency.
+Here $A_n$ are constants and  
 
-Using trigonometric identities:
+$$
+\omega=\frac{2\pi}{T}
+$$
+
+is the frequency of $f(t)$.
+
+The term $A_1\sin(\omega t+\phi_1)$ is called the first harmonic (fundamental mode) and has the same frequency as $f(t)$.  
+The term $A_n\sin(n\omega t+\phi_n)$ is called the $n$-th harmonic; its frequency is $n\omega$, which is $n$ times the fundamental frequency.
+
+$A_n$ represents the amplitude of the $n$-th harmonic, and $\phi_n$ represents the phase angle, measuring the delay or advance relative to a pure sine wave of the same frequency.
+
+Because:
 
 $$
 A_n\sin(n\omega t+\phi_n)=(A_n\cos\phi_n)\sin(n\omega t)+(A_n\sin\phi_n)\cos(n\omega t)
 $$
 
-which can be rewritten as:
-
 $$
 b_n\sin(n\omega t)+a_n\cos(n\omega t)
 $$
 
-where:
+where
 
 $$
 b_n=A_n\cos\phi_n
@@ -113,11 +107,11 @@ $$
 a_n=A_n\sin\phi_n
 $$
 
----
+the expansion can equivalently be written as a linear combination of cosine and sine terms.
 
-### Fourier Coefficients
+### Fourier Coefficients 
 
-The Fourier coefficients are computed as:
+Fourier coefficients determine the amplitude of each frequency component. They are computed using integrals:
 
 $$
 a_n=\frac{2}{T}\int_{d}^{d+T} f(t)\cos(n\omega t)\,dt
@@ -127,34 +121,25 @@ $$
 b_n=\frac{2}{T}\int_{d}^{d+T} f(t)\sin(n\omega t)\,dt
 $$
 
----
+These expressions measure the magnitude of the corresponding frequency component. In electrical engineering, these coefficients are referred to as the in-phase and quadrature components, respectively.
 
-### Even and Odd Functions
+### Even and Odd Functions 
 
-If $f(t)=f(-t)$, the function is even and the sine terms vanish.
+If a function satisfies $f(t)=f(-t)$, it is called an even function and its graph is symmetric with respect to the vertical axis. In this case, some Fourier coefficients become zero and the series simplifies. If $f(t)=-f(-t)$, the function is called an odd function and its graph is symmetric with respect to the origin. These symmetry properties significantly simplify Fourier series calculations.
 
-If $f(t)=-f(-t)$, the function is odd and the cosine terms vanish.
+## References 
 
----
+James, G. (2007). Advanced Modern Engineering Mathematics (4th ed.). Pearson Education.  
 
-## References
+Massachusetts Institute of Technology (MIT). (n.d.). Chapter 4: Fourier Series and Integrals.  
+Available at: https://math.mit.edu/~gs/cse/websections/cse41.pdf  
 
-## References
+MathOverflow. (2010). Why sin and cos in the Fourier series?  
+Available at: https://mathoverflow.net/questions/11761/why-sin-and-cos-in-the-fourier-series  
 
-1. James, G. (2007). *Advanced Modern Engineering Mathematics* (4th ed.). Pearson Education.
+Stanford University. (n.d.). Chapter 5: Fourier Analysis (Course Notes).  
+Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Analysis.pdf  
 
-2. Massachusetts Institute of Technology (MIT). (n.d.). *Chapter 4: Fourier Series and Integrals*.  
-   Available at: https://math.mit.edu/~gs/cse/websections/cse41.pdf
+## Acknowledgments 
 
-3. MathOverflow. (2010). *Why sin and cos in the Fourier series?*  
-   Available at: https://mathoverflow.net/questions/11761/why-sin-and-cos-in-the-fourier-series
-
-4. Stanford University. (n.d.). *Chapter 5: Fourier Analysis* (Course Notes).  
-   Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Analysis.pdf
-
-
----
-
-## Acknowledgments
-
-I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures and assignments.
+I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures, assignments, and inquiry-driven approach.
