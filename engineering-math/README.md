@@ -112,7 +112,7 @@ the expansion can equivalently be written as a linear combination of cosine and 
 
 ### Fourier Coefficients 
 
-Fourier coefficients determine the amplitude of each frequency component. They are computed using integrals:
+According to Euler's formula, the Fourier coefficient calculation is as follows:
 
 $$
 a_n=\frac{2}{T}\int_{d}^{d+T} f(t)\cos(n\omega t)\,dt
@@ -122,7 +122,6 @@ $$
 b_n=\frac{2}{T}\int_{d}^{d+T} f(t)\sin(n\omega t)\,dt
 $$
 
-These expressions measure the magnitude of the corresponding frequency component. In electrical engineering, these coefficients are referred to as the in-phase and quadrature components, respectively.
 
 ### Even and Odd Functions 
 
@@ -144,4 +143,5 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for fostering engineering awareness through his lectures, assignments, and inquiry-driven approach.
+
 
