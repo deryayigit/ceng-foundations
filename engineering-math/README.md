@@ -2,7 +2,7 @@
 
 Engineering Mathematics is a structured framework that enables engineers to model, transform, analyse, and apply real-world systems through mathematical representations.  
 The aim is to transform abstract mathematical structures into tools applicable to engineering problems.
-This course covers Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant calculations, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector calculation methods, and the numerical applications of these concepts. 
+This course includes Fourier series, Discrete Fourier Transform (DFT), Fast Fourier Transform (FFT), convolution and correlation operations, matrix analysis, determinant calculations, N-dimensional vector spaces, matrix rank, eigenvalue and eigenvector calculation methods, and the numerical applications of these concepts. 
 
 ## Repository Structure 
 
@@ -20,7 +20,7 @@ At its core, Engineering Mathematics is an art of changing representation. Real-
 
 ### Fourier Series 
 
-Joseph Fourier, while attempting to solve heat transfer problems at the turn of the 19th century, realised that classical methods were insufficient for solving the heat equation, which models how the temperature distribution of a rod changes over time. He saw that the most effective way to solve the problem was to express the temperature distribution as the sum of sine and cosine waves; thus, he succeeded in solving the differential equation in terms of frequency components.
+Joseph Fourier, while attempting to solve heat transfer problems at the turn of the 19th century, realised that classical methods were insufficient for solving the heat equation, which models how the temperature distribution of a rod changes over time. He saw that the most effective way to solve the problem was to express the temperature distribution as the sum of sine and cosine waves thus, he succeeded in solving the differential equation in terms of frequency components.
 
 Although the idea of expanding a function in this way had previously been used by Bernoulli, D'Alembert, and Euler in problems involving vibrating strings, it was Fourier who transformed this approach into a general and systematic framework.
 According to Fourier's Theorem, a periodic function that satisfies certain conditions can be expressed as the sum of sine and cosine waves, which means that the function can be decomposed into different frequency components. The reason for choosing sine and cosine is that they provide a powerful mathematical structure for decomposing periodic functions into frequency components via orthogonal basis functions. Although originating from heat transfer problems, they are considered one of the most natural representations both theoretically and physically.
@@ -139,4 +139,5 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
