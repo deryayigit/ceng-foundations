@@ -1,15 +1,6 @@
 # Fourier Series Visualization
 
-## Project Scope
-
-This project aims to visualize the Fourier Series using user-defined Fourier coefficients \( a_n \) and \( b_n \).
-
-Each harmonic component is calculated individually and plotted separately. Then, at a given time \( t \), these harmonic values are summed to generate:
-
-- The partial sum of the Fourier series
-- The complete (up to N) Fourier approximation
-
-This allows a visual demonstration of the **superposition principle**, showing how independent harmonic components combine to form a complex waveform.
+Using the Fourier coefficients (a_n and b_n) entered by the user, each harmonic component will be calculated separately and plotted graphically. Subsequently, the values of these components at the same time t will be summed to create partial and complete sum graphs of the Fourier series. Thus, the superposition principle of harmonics will be visually demonstrated. 
 
 ---
 
@@ -31,13 +22,6 @@ Each harmonic component behaves independently and corresponds to a specific mult
 
 ## Example Results
 
-When square wave coefficients are used:
-
-- \( a_n = 0 \)
-- \( b_n = \frac{4}{n\pi} \) for odd \( n \), and 0 otherwise
-
-As \( N \) increases, the waveform approaches the shape of a square wave.
-
 ---
 
 ## References
@@ -45,4 +29,5 @@ As \( N \) increases, the waveform approaches the shape of a square wave.
 Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
 
 locogame, *Coding a Fourier Transform in C*
+
 
