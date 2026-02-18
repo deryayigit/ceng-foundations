@@ -123,6 +123,9 @@ $$
 
 If a function satisfies $f(t)=f(-t)$, it is called an even function and its graph is symmetric with respect to the vertical axis. In this case, some Fourier coefficients become zero and the series simplifies. If $f(t)=-f(-t)$, the function is called an odd function and its graph is symmetric with respect to the origin. These symmetry properties significantly simplify Fourier series calculations.
 
+### 🔗 Projects Related to the Subject:
+👉 [01_fourier_series_visualization](01_fourier_series_visualization)
+
 ## References 
 
 James, G. (2007). Advanced Modern Engineering Mathematics (4th ed.). Pearson Education.  
@@ -139,5 +142,6 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
