@@ -29,15 +29,7 @@ General form:
 
 $$
 f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left(a_n \cos(n\omega t)+b_n \sin(n\omega t)\right)
-$$
-
-where  
-
-$$
-\omega=\frac{2\pi}{T}
-$$
-
-is the angular frequency.
+$$, $$ \omega=\frac{2\pi}{T} $$
 
 #### Periodic Function  
 
@@ -142,6 +134,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
