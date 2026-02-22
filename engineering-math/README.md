@@ -28,7 +28,7 @@ According to Fourier's Theorem, a periodic function that satisfies certain condi
 General form:
 
 $$
-f(t)=A_0+A_1\sin(\omega t+\phi_1)+A_2\sin(2\omega t+\phi_2)+\dots+A_n\sin(n\omega t+\phi_n)+\dots, \quad \omega=\frac{2\pi}{T}
+f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left(a_n \cos(n\omega t)+b_n \sin(n\omega t)\right), \quad \omega=\frac{2\pi}{T}
 $$
 
 #### Periodic Function  
@@ -60,16 +60,8 @@ The Fourier Theorem states that a periodic function satisfying certain condition
 That is, if $f(t)$ is a periodic function with period $T$:
 
 $$
-f(t)=A_0+A_1\sin(\omega t+\phi_1)+A_2\sin(2\omega t+\phi_2)+\dots+A_n\sin(n\omega t+\phi_n)+\dots
+f(t)=A_0+A_1\sin(\omega t+\phi_1)+A_2\sin(2\omega t+\phi_2)+\dots+A_n\sin(n\omega t+\phi_n)+\dots, \quad \omega=\frac{2\pi}{T}
 $$
-
-Here $A_n$ are constants and  
-
-$$
-\omega=\frac{2\pi}{T}
-$$
-
-is the frequency of $f(t)$.
 
 The term $A_1\sin(\omega t+\phi_1)$ is called the first harmonic (fundamental mode) and has the same frequency as $f(t)$.  
 The term $A_n\sin(n\omega t+\phi_n)$ is called the $n$-th harmonic; its frequency is $n\omega$, which is $n$ times the fundamental frequency.
@@ -134,6 +126,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
