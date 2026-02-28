@@ -20,7 +20,12 @@ def ensure_dir(path):
 
 
 def load_and_preprocess_image(path):
-    img = Image.open(path) # Open image file (PIL automatically detects the format)
+     try:
+        img = Image.open(path)  # Open image safely
+    except Exception as e:
+        print(f"[WARNING] Image could not be opened: {path}")
+        print(f"Error: {e}")
+        return None
 
     #Convert the image to 8-bit grayscale ('L' mode, 0–255) if it is not already grayscale.
     if img.mode != "L":
@@ -81,8 +86,12 @@ def main():
 
     image_paths = image_paths[:NUM_IMAGES]
 
-    images = [load_and_preprocess_image(p) for p in image_paths]
-
+    images = []
+    for p in image_paths:
+        img = load_and_preprocess_image(p)
+        if img is not None:
+            images.append(img)
+    
     # Individual grayscale images and PMFs 
     for idx, img in enumerate(images, start=1):
 
@@ -133,3 +142,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
