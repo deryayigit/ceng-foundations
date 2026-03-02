@@ -156,7 +156,14 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 FFT computes the DFT efficiently:
 
 $$
-X[k] = \sum_{n=0}^{N-1} x[n]\ e^{-j\frac{2\pi}{N}kn}
+X[k] =
+\sum_{m=0}^{N/2-1} x[2m] e^{-j\frac{2\pi}{N}(2m)k}
++
+\sum_{m=0}^{N/2-1} x[2m+1] e^{-j\frac{2\pi}{N}(2m+1)k},
+$$
+
+$$
+W_N^{k} = e^{-j\frac{2\pi}{N}k}
 $$
 
 
@@ -190,6 +197,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
