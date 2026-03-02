@@ -110,6 +110,70 @@ If a function satisfies $f(t)=f(-t)$, it is called an even function and its grap
 #### 🔗 Projects Related to the Subject:
 👉 [01_fourier_series_visualization](01_fourier_series_visualization)
 
+
+---
+
+### Discrete Fourier Transform (DFT)
+
+$$
+X[k] = \sum_{n=0}^{N-1} x[n]\; e^{-j\frac{2\pi}{N}kn}
+$$
+
+
+The **Discrete Fourier Transform (DFT)** is a mathematical transformation that converts a finite-length discrete-time signal, obtained with equal sampling intervals, from the time domain into the frequency domain. As a result of the DFT, \(N\) samples in the time domain produce \(N\) complex frequency coefficients, and these coefficients represent the amplitude and phase information of the frequency components contained in the signal.
+
+The DFT numerically analyzes the frequency content of a signal known at \(N\) discrete instants separated by the sampling time \(T_s\), providing the discrete-frequency counterpart of the Continuous Fourier Transform. The operation essentially corresponds to the numerical computation of the Fourier Series representation under the assumption that the finite data sequence is periodic.
+
+While frequency analysis in the Continuous Fourier Transform is performed using an integral operation, only a finite number of samples exist in a digital computing environment; therefore, this operation is reduced to a summation form and computed as a discrete transform. For this reason, the DFT can also be interpreted as a linear transformation expressible as the multiplication of a signal vector by a large matrix composed of complex exponential basis functions (sine and cosine).
+
+#### Code Implementation
+👉
+
+### Inverse Discrete Fourier Transform (IDFT)
+
+
+$$
+x[n] = \frac{1}{N}\sum_{k=0}^{N-1} X[k]\; e^{j\frac{2\pi}{N}kn}
+$$
+
+
+The **Inverse Discrete Fourier Transform (IDFT)** is a mathematical transformation that reconstructs the original discrete-time signal by converting discrete spectrum coefficients obtained in the frequency domain back into the time domain. In the IDFT process, the signal is resynthesized as a weighted sum of complex exponential basis functions with different frequencies using the \(N\) complex Fourier coefficients in the frequency domain, thereby perfectly recovering the \(N\) samples in the time domain.
+
+This operation is the inverse of the frequency analysis performed during the DFT and enables reconstruction of the signal from its frequency components. Essentially, the process reconstructs the signal by properly combining the Fourier coefficients obtained in the Fourier Series representation.
+
+Since the signal amplitude increases due to the summation operation performed during the DFT, normalization by the factor \(1/N\) is applied to ensure that the original time-domain samples are recovered without alteration.
+
+Mathematically, the IDFT corresponds to applying the inverse of the Fourier matrix composed of complex exponential functions and can be expressed as a linear transformation in the form of a large matrix multiplication, providing a one-to-one transformation between the frequency and time domains.
+
+
+#### Code Implementation
+👉
+
+
+### Fast Fourier Transform (FFT)
+
+
+FFT computes the DFT efficiently:
+
+$$
+X[k] = \sum_{n=0}^{N-1} x[n]\; e^{-j\frac{2\pi}{N}kn}
+$$
+
+
+The **Fast Fourier Transform (FFT)** is an algorithm that efficiently computes the Discrete Fourier Transform (DFT) using fewer computational steps. The FFT converts \(N\) discrete signal samples in the time domain into the frequency domain and produces exactly the same \(N\) complex frequency coefficients as the DFT.
+
+The fundamental idea is to divide the signal samples into even- and odd-indexed groups, compute smaller-sized DFTs, and combine these intermediate results using the structure known as the **Butterfly algorithm**. During this process, the large DFT problem is recursively decomposed into smaller DFT computations, and intermediate results are combined at each stage using complex phase coefficients (twiddle factors).
+
+Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DFT is decomposed into structured computational stages, significantly reducing computational cost. The FFT is therefore not a new transform but a computational method that produces the same mathematical result as the DFT much more efficiently.
+
+As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from \(O(N^2)\) to \(O(N\log N)\).
+
+
+#### Code Implementation
+👉
+
+
+---
 ## References 
 
 James, G. (2007). Advanced Modern Engineering Mathematics (4th ed.). Pearson Education.  
@@ -126,6 +190,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
