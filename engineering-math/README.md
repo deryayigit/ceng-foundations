@@ -173,7 +173,7 @@ The fundamental idea is to divide the signal samples into even- and odd-indexed 
 
 Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DFT is decomposed into structured computational stages, significantly reducing computational cost. The FFT is therefore not a new transform but a computational method that produces the same mathematical result as the DFT much more efficiently.
 
-As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from \(O(N^2)\) to \(O(N\log N)\).
+As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from O(N^2) to O $\frac{N}{2}\log_2 N$.
 
 
 #### Code Implementation
@@ -197,6 +197,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
