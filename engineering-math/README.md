@@ -116,7 +116,7 @@ If a function satisfies $f(t)=f(-t)$, it is called an even function and its grap
 ### Discrete Fourier Transform (DFT)
 
 $$
-X[k] = \sum_{n=0}^{N-1} x[n]\; e^{-j\frac{2\pi}{N}kn}
+X[k] = \sum_{n=0}^{N-1} x[n]\ e^{-j\frac{2\pi}{N}kn}
 $$
 
 
@@ -133,7 +133,7 @@ While frequency analysis in the Continuous Fourier Transform is performed using 
 
 
 $$
-x[n] = \frac{1}{N}\sum_{k=0}^{N-1} X[k]\; e^{j\frac{2\pi}{N}kn}
+x[n] = \frac{1}{N}\sum_{k=0}^{N-1} X[k]\ e^{j\frac{2\pi}{N}kn}
 $$
 
 
@@ -156,7 +156,7 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 FFT computes the DFT efficiently:
 
 $$
-X[k] = \sum_{n=0}^{N-1} x[n]\; e^{-j\frac{2\pi}{N}kn}
+X[k] = \sum_{n=0}^{N-1} x[n]\ e^{-j\frac{2\pi}{N}kn}
 $$
 
 
@@ -190,6 +190,7 @@ Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Ana
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
