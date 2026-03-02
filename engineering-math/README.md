@@ -127,7 +127,7 @@ The DFT numerically analyzes the frequency content of a signal known at \(N\) di
 While frequency analysis in the Continuous Fourier Transform is performed using an integral operation, only a finite number of samples exist in a digital computing environment; therefore, this operation is reduced to a summation form and computed as a discrete transform. For this reason, the DFT can also be interpreted as a linear transformation expressible as the multiplication of a signal vector by a large matrix composed of complex exponential basis functions (sine and cosine).
 
 #### Code Implementation
-👉
+👉 [02_Discrete Fourier Transform](02_dft.c)
 
 ### Inverse Discrete Fourier Transform (IDFT)
 
@@ -147,7 +147,7 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 
 
 #### Code Implementation
-👉
+👉 [03 Inverse Discrete Fourier Transform](03_idft.c)
 
 
 ### Fast Fourier Transform (FFT)
@@ -173,41 +173,40 @@ The fundamental idea is to divide the signal samples into even- and odd-indexed 
 
 Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DFT is decomposed into structured computational stages, significantly reducing computational cost. The FFT is therefore not a new transform but a computational method that produces the same mathematical result as the DFT much more efficiently.
 
-As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from O(N^2) to O $\frac{N}{2}\log_2 N$.
+As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from $O(N^2)$ to $O($\frac{N}{2}\log_2 N$).
 
 
 #### Code Implementation
-👉
+👉 [04 Fast Fourier Transform](04_fft.c )
 
 
 ---
-## References 
+## References
 
-James, G. (2007). Advanced Modern Engineering Mathematics (4th ed.). Pearson Education.  
+[1] G. James, Advanced Modern Engineering Mathematics, 4th ed., Pearson Education, 2007.
 
-Massachusetts Institute of Technology (MIT). (n.d.). Chapter 4: Fourier Series and Integrals.  
-Available at: https://math.mit.edu/~gs/cse/websections/cse41.pdf  
+[2] Massachusetts Institute of Technology, "Chapter 4: Fourier Series and Integrals."
+Available: https://math.mit.edu/~gs/cse/websections/cse41.pdf
 
-MathOverflow. (2010). Why sin and cos in the Fourier series?  
-Available at: https://mathoverflow.net/questions/11761/why-sin-and-cos-in-the-fourier-series  
+[3] MathOverflow, "Why sin and cos in the Fourier series?"
+Available: https://mathoverflow.net/questions/11761/why-sin-and-cos-in-the-fourier-series
 
-Stanford University. (n.d.). Chapter 5: Fourier Analysis (Course Notes).  
-Available at: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Analysis.pdf  
+[4] Stanford University,
+"Chapter 5: Fourier Analysis," Course Notes.
+Available: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Analysis.pdf
+
+[5] Z. Arief,
+Interfacing with the Analog World, Lecture Notes.
+Available: https://www.scribd.com/document/315114093/Interfacing-With-the-Analog-World
+
+[6] MIT OpenCourseWare, "Lecture 7: The Discrete Fourier Transform.
+Available: https://ocw.mit.edu
+
+[7] E. C. Ifeachor and B. W. Jervis, Digital Signal Processing: A Practical Approach, 2nd ed., Pearson Education, 2002.
+
+
 
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
