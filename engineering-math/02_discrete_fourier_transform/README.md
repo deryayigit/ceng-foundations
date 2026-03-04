@@ -6,7 +6,8 @@ The Discrete Fourier Transform (DFT) converts a discrete-time signal into its fr
 ---
 
 ## Input Format
-The program expects the number of samples **N** and then **N discrete-time signal values** \(x[n]\) where \(n = 0,1,\dots,N-1\). These values represent the input signal in the time domain and are used to compute the corresponding frequency-domain coefficients.
+
+The program expects the number of samples **N** and then **N discrete-time signal values** $x[n]$ where $n = 0,1,...,N-1$. These values represent the input signal in the time domain and are used to compute the corresponding frequency-domain coefficients.
 
 ---
 
@@ -73,4 +74,5 @@ Each frequency coefficient requires summing **N** complex terms, resulting in a 
 1. G. James, *Advanced Modern Engineering Mathematics*, Pearson Education, 2007.  
 2. MIT OpenCourseWare — *The Discrete Fourier Transform*  
 3. Stanford University Lecture Notes — *Fourier Analysis*
+
 
