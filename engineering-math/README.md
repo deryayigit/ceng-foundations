@@ -27,28 +27,17 @@ According to Fourier's Theorem, a periodic function that satisfies certain condi
 
 #### Periodic Function
 
-A function is called periodic if it repeats its values after a fixed interval \(T\):
+A function is called periodic if it repeats its values after a fixed interval $T$:
 
 $$
 f(t+mT)=f(t)
 $$
 
-#### Periodic Function
-
-A function is called periodic if it repeats its values after a fixed interval \(T\):
-
-$$
-f(t+mT)=f(t)
-$$
-
-where \(m\) is any integer and \(T\) is the period of the function.
-
-| Concept | Mathematical Expression | Description |
-|-------|-------|-------|
-| Period | \(T\) | The interval over which the function repeats itself |
-| Frequency | \(f=\frac{1}{T}\) | Number of cycles per second |
-| Angular Frequency | \(\omega=\frac{2\pi}{T}\) | Frequency expressed in radians per second |
-
+| Concept | Description |
+|---|---|
+| Period (T) | Interval over which the function repeats |
+| Frequency (f = 1/T) | Number of cycles per second |
+| Angular Frequency (ω = 2π/T) | Frequency expressed in radians per second |
 
 Fourier Series Representation:
 
@@ -215,6 +204,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
