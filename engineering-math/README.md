@@ -25,33 +25,42 @@ Joseph Fourier, while attempting to solve heat transfer problems at the turn of 
 Although the idea of expanding a function in this way had previously been used by Bernoulli, D'Alembert, and Euler in problems involving vibrating strings, it was Fourier who transformed this approach into a general and systematic framework.
 According to Fourier's Theorem, a periodic function that satisfies certain conditions can be expressed as the sum of sine and cosine waves, which means that the function can be decomposed into different frequency components. The reason for choosing sine and cosine is that they provide a powerful mathematical structure for decomposing periodic functions into frequency components via orthogonal basis functions. Although originating from heat transfer problems, they are considered one of the most natural representations both theoretically and physically.
 
-General form:
+#### Periodic Function
 
-$$
-f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left(a_n \cos(n\omega t)+b_n \sin(n\omega t)\right), \quad \omega=\frac{2\pi}{T}
-$$
-
-#### Periodic Function  
-
-A function is called periodic if for a given period $T$:
+A function is called periodic if it repeats its values after a fixed interval \(T\):
 
 $$
 f(t+mT)=f(t)
 $$
 
-for any integer $m$. The period is the interval over which the function repeats itself. The frequency is the reciprocal of the period:
+for any integer \(m\).  
+
+The value \(T\) is called the **period** of the function.
+
+The **frequency** of the signal is the reciprocal of the period:
 
 $$
 f=\frac{1}{T}
 $$
 
-The angular frequency is defined as:
+The **angular frequency** is defined as
 
 $$
 \omega=\frac{2\pi}{T}
 $$
 
 and its unit is radians per second.
+
+Once a signal is periodic, Fourier showed that it can be expressed as the sum of sinusoidal components.
+
+Fourier Series Representation:
+
+$$
+f(t)=\frac{a_0}{2}+\sum_{n=1}^{\infty}\left(a_n \cos(n\omega t)+b_n \sin(n\omega t)\right), \quad \omega=\frac{2\pi}{T}
+$$
+
+The Fourier Series expresses a periodic function as a linear combination of sine and cosine waves. 
+Each term represents a harmonic component whose frequency is an integer multiple of the fundamental frequency.
 
 ### Fourier Theorem 
 
@@ -209,4 +218,5 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
