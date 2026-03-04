@@ -15,9 +15,9 @@ The implementation follows a modular design in which each function performs a si
 
 The IDFT is defined as
 
-$
+$$
 x[n] = \frac{1}{N}\sum_{k=0}^{N-1} X[k] e^{j\frac{2\pi}{N}kn}
-$
+$$
 
 | Symbol | Description |
 |------|-------------|
@@ -29,7 +29,9 @@ $
 
 Using Euler's identity
 
-$ e^{j\theta} = \cos(\theta) + j\sin(\theta) $
+$$ 
+e^{j\theta} = \cos(\theta) + j\sin(\theta) 
+$$
 
 ---
 
@@ -71,4 +73,5 @@ Each output sample is computed as a sum of N complex exponential terms, resultin
 1. G. James, Advanced Modern Engineering Mathematics, Pearson Education, 2007.
 2. MIT OpenCourseWare — The Discrete Fourier Transform
 3. Stanford University Lecture Notes — Fourier Analysis
+
 
