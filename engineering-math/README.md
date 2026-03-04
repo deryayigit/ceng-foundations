@@ -33,25 +33,22 @@ $$
 f(t+mT)=f(t)
 $$
 
-for any integer \(m\).  
+#### Periodic Function
 
-The value \(T\) is called the **period** of the function.
-
-The **frequency** of the signal is the reciprocal of the period:
+A function is called periodic if it repeats its values after a fixed interval \(T\):
 
 $$
-f=\frac{1}{T}
+f(t+mT)=f(t)
 $$
 
-The **angular frequency** is defined as
+where \(m\) is any integer and \(T\) is the period of the function.
 
-$$
-\omega=\frac{2\pi}{T}
-$$
+| Concept | Mathematical Expression | Description |
+|-------|-------|-------|
+| Period | \(T\) | The interval over which the function repeats itself |
+| Frequency | \(f=\frac{1}{T}\) | Number of cycles per second |
+| Angular Frequency | \(\omega=\frac{2\pi}{T}\) | Frequency expressed in radians per second |
 
-and its unit is radians per second.
-
-Once a signal is periodic, Fourier showed that it can be expressed as the sum of sinusoidal components.
 
 Fourier Series Representation:
 
@@ -218,5 +215,6 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
