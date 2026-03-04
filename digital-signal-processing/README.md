@@ -263,9 +263,15 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ## Fourier Transform
 
+## Fourier Transform
+
+The theoretical background of Fourier analysis (Fourier Series, DFT, IDFT and FFT)
+is explained in detail in the Engineering Mathematics folder. It also contains implimentations.
+
+👉 See: [Fourier Series](https://github.com/USERNAME/engineering-mathematics#fourier-series)
 
 
-### 🔗 Projects Related to the Subject:
+### 🔗 Code Implimentations :
 👉 [fourier_transform](fourier_transform)
 
 ---
@@ -303,7 +309,9 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 
 ## Acknowledgments
 
-The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. I would like to thank Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. 
+I would like to thank Assoc. Prof. Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
 
