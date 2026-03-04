@@ -51,12 +51,6 @@ While there is a new sample x:
 
 ```
 
-### Requirements
-
-- GNU g++
-- GNU make
-- C++11 compatible compiler
-
 ---
 
 ## References
@@ -65,6 +59,7 @@ While there is a new sample x:
 2. D. E. Knuth, The Art of Computer Programming, Vol. 2: Seminumerical Algorithms.
 3. S. W. Smith, The Scientist and Engineer’s Guide to Digital Signal Processing.
 4. Alchemmist, “Welford Algorithm – Online Variance Estimation,” https://alchemmist.xyz/articles/welford-algorithm/
+
 
 
 
