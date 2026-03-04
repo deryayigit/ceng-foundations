@@ -122,7 +122,7 @@ The DFT numerically analyzes the frequency content of a signal known at \(N\) di
 While frequency analysis in the Continuous Fourier Transform is performed using an integral operation, only a finite number of samples exist in a digital computing environment; therefore, this operation is reduced to a summation form and computed as a discrete transform. For this reason, the DFT can also be interpreted as a linear transformation expressible as the multiplication of a signal vector by a large matrix composed of complex exponential basis functions (sine and cosine).
 
 #### Code Implementation
-👉 [02_Discrete Fourier Transform](02_dft.c)
+👉 [02_Discrete Fourier Transform](02_discrete_fourier_transform)
 
 ### Inverse Discrete Fourier Transform (IDFT)
 
@@ -142,7 +142,7 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 
 
 #### Code Implementation
-👉 [03 Inverse Discrete Fourier Transform](03_idft.c)
+👉 [03 Inverse Discrete Fourier Transform](03_inverse_discrete_fourier_transform)
 
 
 ### Fast Fourier Transform (FFT)
@@ -172,7 +172,7 @@ As a result, redundant computations present in the direct DFT are eliminated, an
 
 
 #### Code Implementation
-👉 [04 Fast Fourier Transform](04_fft.c )
+👉 [04 Fast Fourier Transform](04_fast_fourier_transform)
 
 
 ---
@@ -204,6 +204,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
