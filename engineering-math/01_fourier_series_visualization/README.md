@@ -12,6 +12,33 @@ In this application, the user specifies the number of harmonics \( N \), the per
 
 ## Code Implementation
 
+
+### Pseudo Code
+
+```text
+Read N
+Read period T
+Read coefficients a0, an, bn
+
+Compute fundamental frequency
+
+w0 = 2π / T
+
+Generate time samples
+
+for each time t
+
+    sum = a0/2
+
+    for n=1..N
+        sum += an*cos(n*w0*t)
+        sum += bn*sin(n*w0*t)
+
+    store (t,sum)
+
+Plot results
+
+```
 ---
 
 ## Key Observations from Implementation
@@ -29,5 +56,6 @@ Each harmonic component behaves independently and corresponds to a specific mult
 Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
 
 locogame, *Coding a Fourier Transform in C*
+
 
 
