@@ -300,7 +300,11 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 
 9. GeeksforGeeks – *Mean, Variance and Standard Deviation*
 
-10. 10. Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss –  *Digital Systems: Principles and Applications*, 11th Edition, Pearson
+10. Ronald J. Tocci, Neal S. Widmer, Gregory L. Moss –  *Digital Systems: Principles and Applications*, 11th Edition, Pearson
+
+11. Z. Arief,
+Interfacing with the Analog World, Lecture Notes.
+Available: https://www.scribd.com/document/315114093/Interfacing-With-the-Analog-World 
 
 ---
 
@@ -308,6 +312,7 @@ https://library.soton.ac.uk/variance-standard-deviation-and-standard-error
 
 The assignments and implementations included in this repository were prepared within the scope of the Digital Signal Processing (DSP) course offered by the Department of Computer Engineering at Karadeniz Technical University. 
 I would like to thank Assoc. Prof. Dr. Sedat Görmüş, the instructor of the Digital Signal Processing course, for his lectures, guidance, and contributions that helped shape an engineering-oriented perspective.
+
 
 
 
