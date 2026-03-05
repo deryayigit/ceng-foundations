@@ -152,9 +152,10 @@ FFT computes the DFT efficiently:
 
 $$
 X[k] =
-Σ_{n=0}^{N/2 - 1} x_{2n} * W_{N/2}^{n k}
+\sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk}
 +
-W_N^k * Σ_{n=0}^{N/2 - 1} x_{2n+1} * W_{N/2}^{n k}
+W_N^k
+\sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}
 $$
 
 
@@ -207,6 +208,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
