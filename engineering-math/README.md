@@ -145,7 +145,7 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 👉 [03 Inverse Discrete Fourier Transform](03_inverse_discrete_fourier_transform)
 
 
-### Fast Fourier Transform (FFT)
+#### Fast Fourier Transform (FFT)
 
 
 FFT computes the DFT efficiently:
@@ -168,7 +168,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 ## FFT Derivation Flow from DFT
 
 | Step | Mathematical Expression |
-|-----|-----|
+|:---:|:---:|
 | **Start from the DFT definition** | $$X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$$ <br> where $$W_N = e^{-j\frac{2\pi}{N}}$$ |
 | ↓ | |
 | **Separate samples into even and odd indices** | $$X[k] = \sum_{n=0}^{N/2-1} x[2n] W_N^{2nk} + \sum_{n=0}^{N/2-1} x[2n+1] W_N^{(2n+1)k}$$ |
@@ -185,7 +185,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 | ↓ | |
 | **Butterfly combination** | $$X(k) = E(k) + W_N^k O(k)$$ <br> $$X(k+N/2) = E(k) - W_N^k O(k)$$ |
 | ↓ | |
-| **FFT computational complexity** | $$O(N^2) \rightarrow O(N \log_2 N)$$ |
+| **FFT computational complexity** | Recursive computation using the butterfly structure  |
 
 
 As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from $O(N^2) \rightarrow O(N \log_2 N)$
@@ -231,6 +231,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
