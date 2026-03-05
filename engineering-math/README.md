@@ -179,7 +179,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 | ↓ | |
 | **Use the identity** | $$W_N^{2nk} = W_{N/2}^{nk}$$ |
 | ↓ | |
-| **Two DFTs of size \(N/2\)** | $$X[k] = \sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk} + W_N^k \sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}$$ |
+| **DFT of size \(N\) becomes two DFTs of size \(N/2\)** | $$X[k] = \sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk} + W_N^k \sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}$$ |
 | ↓ | |
 | **Define even and odd transforms** | $$E(k) = \sum_{n=0}^{N/2-1} x_{2n} W_{N/2}^{nk}$$ <br> $$O(k) = \sum_{n=0}^{N/2-1} x_{2n+1} W_{N/2}^{nk}$$ |
 | ↓ | |
@@ -230,6 +230,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
