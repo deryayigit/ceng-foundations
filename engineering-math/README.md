@@ -165,6 +165,22 @@ The fundamental idea is to divide the signal samples into even- and odd-indexed 
 
 Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DFT is decomposed into structured computational stages, significantly reducing computational cost. The FFT is therefore not a new transform but a computational method that produces the same mathematical result as the DFT much more efficiently.
 
+## FFT Derivation Flow
+
+| Step | Mathematical Expression |
+|-----|-----|
+| **DFT definition** | $X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$ |
+| ↓ | |
+| **Even / Odd decomposition** | $X[k] = \sum_{n=0}^{N/2-1} x[2n] W_N^{2nk} + \sum_{n=0}^{N/2-1} x[2n+1] W_N^{(2n+1)k}$ |
+| ↓ | |
+| **Twiddle factor identity** | $W_N^{(2n+1)k} = W_N^{2nk} W_N^k$ |
+| ↓ | |
+| **Two DFTs of size $N/2$** | $X[k] = \sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk} + W_N^k \sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}$ |
+| ↓ | |
+| **Butterfly combination** | $X(k) = E(k) + W_N^k O(k)$ <br> $X(k+N/2) = E(k) - W_N^k O(k)$ |
+| ↓ | |
+| **FFT complexity** | $O(N^2) \rightarrow O(N \log_2 N)$ |
+
 As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from $O(N^2) \rightarrow O(N \log_2 N)$
 
 
@@ -208,6 +224,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
