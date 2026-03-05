@@ -185,7 +185,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 | ↓ | |
 | **Butterfly combination** | $$X(k) = E(k) + W_N^k O(k)$$ <br> $$X(k+N/2) = E(k) - W_N^k O(k)$$ |
 | ↓ | |
-| **FFT computational complexity** | Recursive computation using the butterfly structure  |
+| **Fast Fourier Transform (FFT) algorithm is obtained** | Recursive computation using the butterfly structure  |
 
 
 As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from $O(N^2) \rightarrow O(N \log_2 N)$
@@ -231,6 +231,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
