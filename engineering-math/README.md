@@ -169,7 +169,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 
 | Step | Mathematical Expression |
 |-----|-----|
-| **Start from the DFT definition** | $$X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$$ |
+| **Start from the DFT definition** | $$X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$$ <br> where $$W_N = e^{-j\frac{2\pi}{N}}$$ |
 | ↓ | |
 | **Separate samples into even and odd indices** | $$X[k] = \sum_{n=0}^{N/2-1} x[2n] W_N^{2nk} + \sum_{n=0}^{N/2-1} x[2n+1] W_N^{(2n+1)k}$$ |
 | ↓ | |
@@ -179,13 +179,14 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 | ↓ | |
 | **Use the identity** | $$W_N^{2nk} = W_{N/2}^{nk}$$ |
 | ↓ | |
-| **DFT of size \(N\) becomes two DFTs of size \(N/2\)** | $$X[k] = \sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk} + W_N^k \sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}$$ |
+| **Two DFTs of size \(N/2\)** | $$X[k] = \sum_{n=0}^{\frac{N}{2}-1} x_{2n} W_{N/2}^{nk} + W_N^k \sum_{n=0}^{\frac{N}{2}-1} x_{2n+1} W_{N/2}^{nk}$$ |
 | ↓ | |
 | **Define even and odd transforms** | $$E(k) = \sum_{n=0}^{N/2-1} x_{2n} W_{N/2}^{nk}$$ <br> $$O(k) = \sum_{n=0}^{N/2-1} x_{2n+1} W_{N/2}^{nk}$$ |
 | ↓ | |
 | **Butterfly combination** | $$X(k) = E(k) + W_N^k O(k)$$ <br> $$X(k+N/2) = E(k) - W_N^k O(k)$$ |
 | ↓ | |
 | **FFT computational complexity** | $$O(N^2) \rightarrow O(N \log_2 N)$$ |
+
 
 As a result, redundant computations present in the direct DFT are eliminated, and computational complexity is reduced from $O(N^2) \rightarrow O(N \log_2 N)$
 
@@ -230,6 +231,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
