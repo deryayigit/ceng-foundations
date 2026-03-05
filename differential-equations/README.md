@@ -475,18 +475,16 @@ $$
 ---
 ## References
 
-[1] C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
+1) C. H. Edwards and D. E. Penney, *Differential Equations and Boundary Value Problems: Computing and Modeling*, 5th ed. Boston, MA: Pearson, 2014.
 
+2) R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010.
 
-[2] R. Bronson and G. Costa, *Schaum's Outline of Differential Equations*, 4th ed. New York, NY: McGraw-Hill, 2010. 
+3) G. James, *Advanced Modern Engineering Mathematics*, 4th ed., Pearson Education, 2007.
 
-[3] https://tutorial.math.lamar.edu/
+4) https://tutorial.math.lamar.edu/
 
-[4] J.Sundnes, *Solving Ordinary Differential Equations in Python*, 2023.
+5) J. Sundnes, *Solving Ordinary Differential Equations in Python*, 2023.
 
-[5] İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
+6) İ. Ören, *Differential Equations – Lecture Notes*, Karadeniz Technical University, 2023–2025.
 
-[6] B. Ö, Güler, "Differential Equations – Lectures" Karadeniz Technical University, 2021
-
-
-
+7) B. Ö. Güler, "Differential Equations – Lectures," Karadeniz Technical University, 2021.
