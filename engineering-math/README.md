@@ -169,7 +169,7 @@ Thus, the direct \(N \times N\) Fourier matrix multiplication required in the DF
 
 | Step | Mathematical Expression |
 |:---:|:---:|
-| **Start from the DFT definition** | $$X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$$ <br> where $$W_N = e^{-j\frac{2\pi}{N}}$$ |
+| **Start from the DFT definition** | $$X[k] = \sum_{n=0}^{N-1} x[n] W_N^{nk}$$ <br> Twiddle Factor is $$W_N = e^{-j\frac{2\pi}{N}}$$ |
 | ↓ | |
 | **Separate samples into even and odd indices** | $$X[k] = \sum_{n=0}^{N/2-1} x[2n] W_N^{2nk} + \sum_{n=0}^{N/2-1} x[2n+1] W_N^{(2n+1)k}$$ |
 | ↓ | |
@@ -231,6 +231,7 @@ Available: https://ocw.mit.edu
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
+
 
 
 
