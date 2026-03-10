@@ -1,6 +1,6 @@
-#include <stdio.h>   // input-output operations (printf, scanf)
+#include <stdio.h>   // input-output operations 
 #include <stdlib.h>  // dynamic memory management (malloc, free)
-#include <math.h>    // mathematical functions (sin, cos)
+#include <math.h>    // mathematical functions (sin, cos, sqrt)
 
 #define PI 3.141592653589793
 
@@ -29,6 +29,26 @@ Complex multiply(Complex a, Complex b)
     return result;
 }
 
+//Twiddle factor : W_N^(kn) = e^(-j2πkn/N)
+Complex twiddle(int k, int n, int N)
+{
+    Complex W;
+
+    double angle = -2.0 * PI * k * n / N;
+
+    W.real = cos(angle);
+    W.imag = sin(angle);
+
+    return W;
+}
+
+//Magnitude of complex number
+double magnitude(Complex x)
+{
+    return sqrt(x.real*x.real + x.imag*x.imag);
+}
+
+//X[k] = Σ x[n] * e^(-j2πkn/N)
 void DFT(double x[], Complex X[], int N)
 {
     for(int k = 0; k < N; k++)
@@ -38,16 +58,12 @@ void DFT(double x[], Complex X[], int N)
 
         for(int n = 0; n < N; n++)
         {
-            double angle = -2.0 * PI * k * n / N;
-
-            Complex W = {
-                cos(angle),
-                sin(angle)
-            };
+            Complex W = twiddle(k, n, N);
 
             Complex sample = {x[n], 0.0};
 
             Complex term = multiply(sample, W);
+
             X[k] = add(X[k], term);
         }
     }
