@@ -49,7 +49,7 @@ for k = 0 to N-1
 
     for n = 0 to N-1  
         θ ← -2πkn / N  
-        W ← cos(θ) + j sin(θ)  
+        W ← cos(θ) - j sin(θ)  
 
         X[k] ← X[k] + x[n] * W  
     end for  
@@ -74,5 +74,6 @@ Each frequency coefficient requires summing **N** complex terms, resulting in a 
 1. G. James, *Advanced Modern Engineering Mathematics*, Pearson Education, 2007.  
 2. MIT OpenCourseWare — *The Discrete Fourier Transform*  
 3. Stanford University Lecture Notes — *Fourier Analysis*
+
 
 
