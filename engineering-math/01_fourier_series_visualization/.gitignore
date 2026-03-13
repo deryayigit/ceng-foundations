@@ -1,0 +1,16 @@
+.vs/
+.vscode/
+
+x64/
+Debug/
+Release/
+
+*.obj
+*.pdb
+*.exe
+*.log
+*.tlog
+*.ipch
+*.user
+*.vcxproj.user
+
