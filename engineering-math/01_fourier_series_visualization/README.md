@@ -1,12 +1,39 @@
 # Fourier Series Visualization
 
-Using the Fourier coefficients (a_n and b_n) entered by the user, each harmonic component will be calculated separately and plotted graphically. Subsequently, the values of these components at the same time t will be summed to create partial and complete sum graphs of the Fourier series. Thus, the superposition principle of harmonics will be visually demonstrated. 
+Using the Fourier coefficients \(a_n\) and \(b_n\) entered by the user, each harmonic component is calculated separately and plotted graphically. Subsequently, the values of these components at the same time \(t\) are summed to generate the partial and complete Fourier series approximations. In this way, the **superposition principle of harmonics** is visually demonstrated.
+
+---
+
+## Mathematical Model
+
+The implemented Fourier series corresponds to the trigonometric representation
+
+$$
+f(t) =
+\frac{a_0}{2}
++
+\sum_{n=1}^{N}
+\left[
+a_n \cos\left(\frac{2\pi n t}{T}\right)
++
+b_n \sin\left(\frac{2\pi n t}{T}\right)
+\right]
+$$
+
+| Symbol | Description |
+|------|-------------|
+| \(T\) | Period of the signal |
+| \(a_0\) | Constant (DC) component |
+| \(a_n\) | Fourier cosine coefficients |
+| \(b_n\) | Fourier sine coefficients |
+| \(N\) | Number of harmonics used in the approximation |
 
 ---
 
 ## Input Format
 
-In this application, the user specifies the number of harmonics \( N \), the period \( T \), and the constant term \( a_0 \). The Fourier coefficients \( a_n \) and \( b_n \) for \( n = 1, 2, ..., N \) are entered manually through the interface table. Based on these inputs, the program constructs the truncated Fourier series and performs the numerical evaluation over the defined time interval.
+In this application, the user specifies the parameters of the Fourier series through the graphical interface. The user provides the number of harmonics \(N\), the signal period \(T\), and the constant term \(a_0\). In addition, the Fourier cosine coefficients \(a_n\) and sine coefficients \(b_n\) are entered manually. These coefficients are supplied as comma-separated lists corresponding to the harmonic indices \(n = 1,2,\dots,N\). Based on these inputs, the program constructs the truncated Fourier series and performs the numerical evaluation over the selected time interval.
+
 
 ---
 
@@ -56,6 +83,7 @@ Each harmonic component behaves independently and corresponds to a specific mult
 Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
 
 locogame, *Coding a Fourier Transform in C*
+
 
 
 
