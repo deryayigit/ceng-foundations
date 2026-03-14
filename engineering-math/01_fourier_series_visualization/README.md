@@ -38,8 +38,6 @@ $n = 1,2,\dots,N$ are entered as comma-separated values. Based on these paramete
 
 ## Code Implementation
 
-## Code Implementation
-
 The program is implemented in C++ using the Windows Forms framework and the 
 `.NET System.Windows.Forms.DataVisualization.Charting` library for graphical 
 visualization. The implementation is structured into two main components: the 
@@ -51,14 +49,6 @@ specify the constant coefficient $a_0$, the number of harmonics $N$, and the
 Fourier coefficients $a_n$ and $b_n$. The coefficients are entered as 
 comma-separated values and parsed into numerical arrays that represent the 
 harmonic parameters of the series.
-
-For each time sample within the selected interval, the program evaluates the 
-truncated Fourier series using the trigonometric representation
-
-$$
-f(t) = \frac{a_0}{2} + \sum_{n=1}^{N} \left( a_n \cos(n\omega_0 t) + b_n \sin(n\omega_0 t) \right).
-$$
-
 Each harmonic contribution is computed individually and added to the running 
 sum representing the reconstructed signal. The program also stores the value 
 of each harmonic component separately, allowing the visualization of both the 
