@@ -1,7 +1,7 @@
 # Fourier Series Visualization
 
-## Project Scope
 This project demonstrates the graphical visualization of a Fourier series constructed from user-defined harmonic coefficients.
+
 ---
 
 ## Objective
