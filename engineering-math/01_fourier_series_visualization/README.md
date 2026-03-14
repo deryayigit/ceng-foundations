@@ -105,6 +105,15 @@ The animation below illustrates how the Fourier series approximation improves as
 
 ## References
 
+1. Glyn James, Advanced Modern Engineering Mathematics, 4th Edition, Pearson Education.
+
+2. locogame, Coding a Fourier Transform in C, YouTube Tutorial Series.
+
+3. Microsoft, System.Windows.Forms.DataVisualization.Charting Namespace Documentation, .NET Framework Documentation.
+
+4. Rab McMenemy, Creating a Fourier Transform Function in C: A Step-by-Step Guide, Medium. Rab McMenemy, Creating a Fourier Transform Function in C: A Step-by-Step Guide, Medium.
 Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
 
+5. ProgrammingKnowledge, *C++ WinForms in Visual Studio 2019 | Getting Started*, YouTube.  
+https://www.youtube.com/watch?v=gB51Tla5pPI
 locogame, *Coding a Fourier Transform in C*
