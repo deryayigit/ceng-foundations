@@ -75,11 +75,9 @@ Each harmonic component represents a sinusoidal signal with frequency $n\omega_0
 
 ## Example Results
 
-## Example Results
-
 The animation below illustrates how the Fourier series approximation improves as the number of harmonics increases.
 
-![Fourier Series Animation](images/fourier_series_animation.gif)
+![Fourier Series Animation](fourier_series_animation.gif)
 
 ---
 
