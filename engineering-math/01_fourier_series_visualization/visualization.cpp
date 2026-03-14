@@ -1,4 +1,4 @@
-﻿#using <System.dll>                                   // Core .NET types (String, Exception, Math, etc.)
+#using <System.dll>                                   // Core .NET types (String, Exception, Math, etc.)
 #using <System.Drawing.dll>                           // Graphics utilities (Color, Font, Point, Size)
 #using <System.Windows.Forms.dll>                     // Windows Forms UI components (Form, Button, TextBox)
 #using <System.Windows.Forms.DataVisualization.dll>   // Charting library for plotting graphs
@@ -113,64 +113,69 @@ private:
     void InitializeComponent()
     {
         this->Text = "Fourier Series Visualization";
-        this->Width = 1200;
-        this->Height = 760;
+
+        this->Width = 1080;
+        this->Height = 1080;
+
         this->StartPosition = FormStartPosition::CenterScreen;
         this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
         this->Font = gcnew Drawing::Font("Segoe UI", 10.0f);
 
+        int chartWidth = 600; //genislik
+        int chartLeft = (this->Width - chartWidth) / 2;
+
         Label^ lblA0 = gcnew Label();
         lblA0->Text = "a0:";
-        lblA0->Location = Point(20, 20);
+        lblA0->Location = Point(chartLeft, 20);
         lblA0->AutoSize = true;
 
         txtA0 = gcnew TextBox();
-        txtA0->Location = Point(140, 18);
-        txtA0->Width = 260;
+        txtA0->Location = Point(chartLeft + 120, 18);
+        txtA0->Width = 260; 
         txtA0->Text = "6.283185307179586";
 
         Label^ lblAN = gcnew Label();
-        lblAN->Text = "a_n (use comma sep:";
-        lblAN->Location = Point(20, 60);
+        lblAN->Text = "a_n:";
+        lblAN->Location = Point(chartLeft, 60);
         lblAN->AutoSize = true;
 
         txtAN = gcnew TextBox();
-        txtAN->Location = Point(140, 58);
-        txtAN->Width = 480;
+        txtAN->Location = Point(chartLeft + 120, 58);
+        txtAN->Width = 360;
         txtAN->Text = "0,0,0";
 
         Label^ lblBN = gcnew Label();
-        lblBN->Text = "b_n (use comma sep:):";
-        lblBN->Location = Point(20, 100);
+        lblBN->Text = "b_n:";
+        lblBN->Location = Point(chartLeft, 100);
         lblBN->AutoSize = true;
 
         txtBN = gcnew TextBox();
-        txtBN->Location = Point(140, 98);
-        txtBN->Width = 480;
+        txtBN->Location = Point(chartLeft + 120, 98);
+        txtBN->Width = 360;
         txtBN->Text = "-2,-1,-0.6666667";
 
         Label^ lblN = gcnew Label();
         lblN->Text = "Harmonics:";
-        lblN->Location = Point(20, 140);
+        lblN->Location = Point(chartLeft, 140);
         lblN->AutoSize = true;
 
         numHarmonics = gcnew NumericUpDown();
-        numHarmonics->Location = Point(140, 138);
-        numHarmonics->Width = 100;
+        numHarmonics->Location = Point(chartLeft + 120, 138);
+        numHarmonics->Width = 120;
         numHarmonics->Minimum = 1;
         numHarmonics->Maximum = 20;
         numHarmonics->Value = 3;
 
         btnPlot = gcnew Button();
         btnPlot->Text = "Plot Graphic";
-        btnPlot->Location = Point(20, 230);
-        btnPlot->Size = Drawing::Size(140, 38);
+        btnPlot->Size = Drawing::Size(160, 40);
+        btnPlot->Location = Point(chartLeft + chartWidth / 2 - 80, 200);
         btnPlot->Click += gcnew EventHandler(this, &FourierForm::OnPlotClicked);
 
-
         chart = gcnew Chart();
-        chart->Location = Point(20, 330);
-        chart->Size = Drawing::Size(1140, 360);
+
+        chart->Size = Drawing::Size(chartWidth, 420);
+        chart->Location = Point(chartLeft, 260);
 
         ChartArea^ area = gcnew ChartArea("MainArea");
 
@@ -178,7 +183,6 @@ private:
         area->AxisY->Title = "f(t)";
 
         area->AxisX->LabelStyle->Font = gcnew Drawing::Font("Segoe UI", 10);
-        area->AxisX->LabelStyle->Enabled = true;
         area->AxisX->Interval = PI / 2.0;
 
         area->AxisY->LabelStyle->Format = "F2";
@@ -196,22 +200,25 @@ private:
         chart->ChartAreas->Add(area);
 
         Legend^ legend = gcnew Legend("MainLegend");
-
         legend->Font = gcnew Drawing::Font("Segoe UI", 9);
-
-        legend->Docking = Docking::Right;
+        legend->Docking = Docking::Top;
 
         chart->Legends->Add(legend);
 
         this->Controls->Add(lblA0);
         this->Controls->Add(txtA0);
+
         this->Controls->Add(lblAN);
         this->Controls->Add(txtAN);
+
         this->Controls->Add(lblBN);
         this->Controls->Add(txtBN);
+
         this->Controls->Add(lblN);
         this->Controls->Add(numHarmonics);
+
         this->Controls->Add(btnPlot);
+
         this->Controls->Add(chart);
     }
 
@@ -459,7 +466,7 @@ private:
         }
         catch (Exception^ ex)
         {
-            MessageBox::Show("Hata: " + ex->Message);
+            MessageBox::Show("Error: " + ex->Message);
         }
 
     }
