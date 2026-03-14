@@ -1,39 +1,39 @@
 # Fourier Series Visualization
 
-Using the Fourier coefficients \(a_n\) and \(b_n\) entered by the user, each harmonic component is calculated separately and plotted graphically. Subsequently, the values of these components at the same time \(t\) are summed to generate the partial and complete Fourier series approximations. In this way, the **superposition principle of harmonics** is visually demonstrated.
-
+## Project Scope
+This project demonstrates the graphical visualization of a Fourier series constructed from user-defined harmonic coefficients.
 ---
 
+## Objective
+The objective of this project is to numerically evaluate and visualize a Fourier series using user-provided Fourier coefficients. The program allows the user to define the number of harmonics and the corresponding sine and cosine coefficients, and then computes the resulting signal over a specified time interval. The graphical output illustrates how harmonic components combine to form the final waveform.
+
+---
 ## Mathematical Model
 
 The implemented Fourier series corresponds to the trigonometric representation
 
 $$
-f(t) =
-\frac{a_0}{2}
-+
-\sum_{n=1}^{N}
-\left[
-a_n \cos\left(\frac{2\pi n t}{T}\right)
-+
-b_n \sin\left(\frac{2\pi n t}{T}\right)
-\right]
+f(t) = \frac{a_0}{2} + \sum_{n=1}^{N} \left( a_n \cos(n\omega_0 t) + b_n \sin(n\omega_0 t) \right)
 $$
+
 
 | Symbol | Description |
 |------|-------------|
-| \(T\) | Period of the signal |
-| \(a_0\) | Constant (DC) component |
-| \(a_n\) | Fourier cosine coefficients |
-| \(b_n\) | Fourier sine coefficients |
-| \(N\) | Number of harmonics used in the approximation |
+| $T$ | Period of the signal |
+| $a_0$ | Constant (DC) component |
+| $a_n$ | Fourier cosine coefficients |
+| $b_n$ | Fourier sine coefficients |
+| $N$ | Number of harmonics used in the approximation |
+| $\omega_0$ | Fundamental angular frequency |
+| $\omega_0 = \frac{2\pi}{T}$ | Relation between angular frequency and period | Fundamental angular frequency 
+
+|
 
 ---
 
 ## Input Format
-
-In this application, the user specifies the parameters of the Fourier series through the graphical interface. The user provides the number of harmonics \(N\), the signal period \(T\), and the constant term \(a_0\). In addition, the Fourier cosine coefficients \(a_n\) and sine coefficients \(b_n\) are entered manually. These coefficients are supplied as comma-separated lists corresponding to the harmonic indices \(n = 1,2,\dots,N\). Based on these inputs, the program constructs the truncated Fourier series and performs the numerical evaluation over the selected time interval.
-
+In this application, the user specifies the parameters of the Fourier series through a graphical interface. The user manually enters the number of harmonics $N$, the signal period $T$, and the constant coefficient $a_0$, while the Fourier cosine coefficients $a_n$ and sine coefficients $b_n$ for 
+$n = 1,2,\dots,N$ are entered as comma-separated values. Based on these parameters, the program constructs a truncated Fourier series and computes the signal values over a discrete set of time samples.
 
 ---
 
@@ -69,12 +69,17 @@ Plot results
 ---
 
 ## Key Observations from Implementation
-
-Each harmonic component behaves independently and corresponds to a specific multiple of the fundamental frequency. As the number of harmonics \( N \) increases, the Fourier approximation converges toward the target waveform. When square wave coefficients are used, oscillations near discontinuities become visible, illustrating the **Gibbs phenomenon**. Overall, the implementation clearly demonstrates the linearity and superposition principle of the Fourier Series.
+Each harmonic component represents a sinusoidal signal with frequency $n\omega_0$, and the final waveform is obtained by superposing these individual harmonic contributions. As the number of harmonics increases, the truncated Fourier series provides a progressively better approximation of the reconstructed signal. Lower-frequency harmonics primarily determine the global structure of the waveform, while higher-frequency components refine the detailed features of the signal. The graphical visualization produced by the program clearly illustrates how these harmonic components combine to form the final signal through the principle of superposition.
 
 ---
 
 ## Example Results
+
+## Example Results
+
+The animation below illustrates how the Fourier series approximation improves as the number of harmonics increases.
+
+![Fourier Series Animation](images/fourier_series_animation.gif)
 
 ---
 
@@ -83,7 +88,3 @@ Each harmonic component behaves independently and corresponds to a specific mult
 Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
 
 locogame, *Coding a Fourier Transform in C*
-
-
-
-
