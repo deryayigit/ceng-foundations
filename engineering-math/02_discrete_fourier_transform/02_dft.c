@@ -29,7 +29,7 @@ Complex multiply(Complex a, Complex b)
     return result;
 }
 
-//Twiddle factor : W_N^(kn) = e^(-j2πkn/N) = cos(-2πkn/N) + j sin(-2πkn/N)
+//Twiddle factor: W_N^(kn) = e^(-j2πkn/N) = cos(2πkn/N) - j sin(2πkn/N)
 Complex twiddle(int k, int n, int N)
 {
     Complex W;
