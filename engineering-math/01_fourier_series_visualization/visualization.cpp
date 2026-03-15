@@ -83,7 +83,7 @@ private:
 
             String^ label;
 
-            // human-readable π labels
+            // readable π labels
             switch (i)
             {
             case -4: label = L"-2π"; break;
@@ -121,7 +121,7 @@ private:
         this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
         this->Font = gcnew Drawing::Font("Segoe UI", 10.0f);
 
-        int chartWidth = 600; //genislik
+        int chartWidth = 600; 
         int chartLeft = (this->Width - chartWidth) / 2;
 
         Label^ lblA0 = gcnew Label();
