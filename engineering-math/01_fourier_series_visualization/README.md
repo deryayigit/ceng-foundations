@@ -32,7 +32,7 @@ $$
 ## Input Format
 
 In this application, the user specifies the parameters of the Fourier series through a graphical interface. The user manually enters the number of harmonics $N$, the signal period $T$, and the constant coefficient $a_0$, while the Fourier cosine coefficients $a_n$ and sine coefficients $b_n$ for 
-$n = 1,2,\dots,N$ are entered as comma-separated values. Based on these parameters, the program constructs a truncated Fourier series and computes the signal values over a discrete set of time samples.
+$n = 1,2,\dots,N$ are entered as comma-separated values. The signal period is fixed as T = 2π.
 
 ---
 
@@ -105,15 +105,14 @@ The animation below illustrates how the Fourier series approximation improves as
 
 ## References
 
-1. Glyn James, Advanced Modern Engineering Mathematics, 4th Edition, Pearson Education.
+## References
 
-2. locogame, Coding a Fourier Transform in C, YouTube Tutorial Series.
+1. Glyn James, *Advanced Modern Engineering Mathematics*, 4th Edition, Pearson Education.
 
-3. Microsoft, System.Windows.Forms.DataVisualization.Charting Namespace Documentation, .NET Framework Documentation.
+2. Microsoft, *System.Windows.Forms.DataVisualization.Charting Namespace Documentation*.
 
-4. Rab McMenemy, Creating a Fourier Transform Function in C: A Step-by-Step Guide, Medium. Rab McMenemy, Creating a Fourier Transform Function in C: A Step-by-Step Guide, Medium.
-Glyn James, *Advanced Modern Engineering Mathematics*, Fourth Edition  
+3. Rab McMenemy, *Creating a Fourier Transform Function in C: A Step-by-Step Guide*, Medium.
 
-5. ProgrammingKnowledge, *C++ WinForms in Visual Studio 2019 | Getting Started*, YouTube.  
-https://www.youtube.com/watch?v=gB51Tla5pPI
-locogame, *Coding a Fourier Transform in C*
+4. locogame, *Coding a Fourier Transform in C*, YouTube Tutorial Series.
+
+5. ProgrammingKnowledge, *C++ WinForms in Visual Studio | Getting Started*, YouTube.
