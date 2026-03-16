@@ -105,8 +105,6 @@ The animation below illustrates how the Fourier series approximation improves as
 
 ## References
 
-## References
-
 1. Glyn James, *Advanced Modern Engineering Mathematics*, 4th Edition, Pearson Education.
 
 2. Microsoft, *System.Windows.Forms.DataVisualization.Charting Namespace Documentation*.
