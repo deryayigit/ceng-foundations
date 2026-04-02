@@ -206,10 +206,217 @@ As a result, redundant computations present in the direct DFT are eliminated, an
 
 ## Matrices and System of Linear Equations
 
+## Matrices and Systems of Linear Equations
+
+Mathematics is not only a theoretical discipline but also a powerful tool used to model real world problems. Many engineering and scientific problems can be expressed as systems of linear equations. Historically linear algebra developed from studying methods for solving such systems. This section introduces the structure of linear systems, the types of solutions, and the matrix method used to solve them.
+
+A linear equation in two variables represents a straight line in the plane. The solution of a system of two linear equations is the intersection point of these lines. Three possibilities may occur. The system may have a unique solution, no solution, or infinitely many solutions.
+
+### Unique Solution
+
+$$
+x + y = 4
+$$
+$$
+x - y = 2
+$$
+
+The solution is
+
+$$
+x = 3, \quad y = 1
+$$
+
+The lines have different slopes and intersect at one point.
+
+### No Solution
+
+$$
+2x + y = 3
+$$
+$$
+2x + y = 7
+$$
+
+The lines are parallel and do not intersect. Therefore the system has no solution.
+
+### Infinitely Many Solutions
+
+$$
+x + 2y = 6
+$$
+$$
+2x + 4y = 12
+$$
+
+The second equation is a multiple of the first. Both equations represent the same line, so the system has infinitely many solutions.
+
+For systems with three variables, each equation represents a plane instead of a line. For example
+
+$$
+x + y + z = 6
+$$
+$$
+2x - y + z = 3
+$$
+$$
+x + 2y - z = 3
+$$
+
+This system represents three planes. The solution corresponds to the intersection of these planes.
+
+As the number of variables increases, the geometric interpretation becomes more difficult. While three dimensional systems can still be visualized, higher dimensional systems cannot be easily represented geometrically. For this reason algebraic and algorithmic methods are required to solve linear systems.
+
 
 
 ### Gauss-Jordan Elimination
 
+## What is a Matrix
+
+A matrix is a rectangular array of numbers. The numbers in the array are called the elements of the matrix.
+
+Matrices consist of rows and columns. Rows are labeled from the top and columns from the left. For example the following matrix has two rows and three columns
+
+$$
+A =
+\begin{bmatrix}
+2 & 1 & -3 \\
+4 & 0 & 5
+\end{bmatrix}
+$$
+
+This matrix is of size $2 \times 3$. The element in row 1 column 3 is $-3$.
+
+---
+
+## Identity Matrix
+
+An identity matrix is a square matrix whose diagonal elements are 1 and all other elements are 0.
+
+$$
+I_3 =
+\begin{bmatrix}
+1 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{bmatrix}
+$$
+
+The identity matrix plays an important role in Gauss Jordan elimination because the goal is to transform the coefficient matrix into the identity matrix.
+
+---
+
+## Coefficient Matrix
+
+Given a system of linear equations
+
+$$
+x + y + z = 6
+$$
+$$
+2x - y + z = 3
+$$
+$$
+x + 2y - z = 3
+$$
+
+The coefficient matrix contains only the coefficients of the variables
+
+$$
+A =
+\begin{bmatrix}
+1 & 1 & 1 \\
+2 & -1 & 1 \\
+1 & 2 & -1
+\end{bmatrix}
+$$
+
+---
+
+## Augmented Matrix
+
+The augmented matrix is formed by combining the coefficient matrix with the constant terms
+
+$$
+[A|b] =
+\begin{bmatrix}
+1 & 1 & 1 & | & 6 \\
+2 & -1 & 1 & | & 3 \\
+1 & 2 & -1 & | & 3
+\end{bmatrix}
+$$
+
+The augmented matrix completely represents the system of equations.
+
+---
+
+## Gauss Jordan Elimination
+
+Gauss Jordan elimination is a systematic method used to solve systems of linear equations. The process starts by writing the system in augmented matrix form. A pivot element is selected in the first column and row swapping is performed if necessary. The pivot is scaled to 1. Then all other elements in the pivot column are eliminated by row operations. The same steps are repeated for the remaining columns.
+
+The goal is to transform the coefficient part of the augmented matrix into the identity matrix
+
+$$
+[A|b] \rightarrow [I|x]
+$$
+
+Once this form is obtained the solution can be read directly from the last column.
+
+
+### Applications of Gauss Jordan Elimination
+
+Gauss Jordan elimination is not only a theoretical method. It can be applied to many real world problems.
+
+### Curve Fitting
+
+Given data points we can determine a polynomial that passes through them. For example
+
+$$
+(1,2), (2,3), (3,5)
+$$
+
+Using a quadratic polynomial
+
+$$
+y = a_0 + a_1 x + a_2 x^2
+$$
+
+Substituting the points produces a system of linear equations that can be solved using Gauss Jordan elimination.
+
+
+### Electrical Networks
+
+Kirchhoff laws generate linear equations for unknown currents in a circuit. These equations are written as a matrix and solved using Gauss Jordan elimination.
+
+Example system
+
+$$
+I_1 + I_2 - I_3 = 0
+$$
+$$
+2I_1 + I_3 = 5
+$$
+$$
+I_2 + I_3 = 4
+$$
+
+### Traffic Flow
+
+Traffic flow at intersections can also be modeled using linear systems. The total flow entering an intersection equals the flow leaving.
+
+Example
+
+$$
+x_1 + x_2 = 400
+$$
+$$
+x_1 + x_3 = 300
+$$
+$$
+x_2 + x_3 = 500
+$$
+
+These equations form a linear system that can be solved using Gauss Jordan elimination.
 
 
 #### Code Implementation
