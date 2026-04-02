@@ -216,55 +216,42 @@ As a result, redundant computations present in the direct DFT are eliminated, an
 👉 [06 Gauss-Jordan Elimination](06_gauss_jordan_elimination)
 
 
+
+---
+
 ## References
 
 1) G. James, *Advanced Modern Engineering Mathematics*, 4th ed., Pearson Education, 2007.
 
-2) Massachusetts Institute of Technology,  
+2) G. Williams, *Linear Algebra with Applications*, 8th ed.
+
+3) Massachusetts Institute of Technology,  
 "Chapter 4: Fourier Series and Integrals."  
 Available: https://math.mit.edu/~gs/cse/websections/cse41.pdf
 
-3) MathOverflow,  
+4) MathOverflow,  
 "Why sin and cos in the Fourier series?"  
 Available: https://mathoverflow.net/questions/11761/why-sin-and-cos-in-the-fourier-series
 
-4) Stanford University,  
+5) Stanford University,  
 "Chapter 5: Fourier Analysis," Course Notes.  
 Available: https://web.stanford.edu/class/nbio228-01/handouts/Ch5_Fourier_Analysis.pdf
 
-5) Z. Arief,  
+6) Z. Arief,  
 *Interfacing with the Analog World*, Lecture Notes.  
 Available: https://www.scribd.com/document/315114093/Interfacing-With-the-Analog-World
 
-6) MIT OpenCourseWare,  
+7) MIT OpenCourseWare,  
 "Lecture 7: The Discrete Fourier Transform."  
 Available: https://ocw.mit.edu
 
-7) E. C. Ifeachor and B. W. Jervis,  
+8) E. C. Ifeachor and B. W. Jervis,  
 *Digital Signal Processing: A Practical Approach*, 2nd ed., Pearson Education, 2002.
 
-8) W. H. Press, S. A. Teukolsky, W. T. Vetterling, and B. P. Flannery,  
+9) W. H. Press, S. A. Teukolsky, W. T. Vetterling, and B. P. Flannery,  
 *Numerical Recipes in C: The Art of Scientific Computing*, 2nd ed., Cambridge University Press, 1992.
 
 
 ## Acknowledgments 
 
 I would like to thank Prof. Dr. Murat Ekinci for building a strong engineering mindset through his lectures and assignments, and for his insistence on analytical thinking.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
