@@ -197,6 +197,25 @@ As a result, redundant computations present in the direct DFT are eliminated, an
 
 ---
 
+## Correlation & Convulation
+
+#### Code Implementation
+👉 [05 Correlation and Convulation](05_correlation_convulation)
+
+---
+
+## Matrices and System of Linear Equations
+
+
+
+### Gauss-Jordan Elimination
+
+
+
+#### Code Implementation
+👉 [06 Gauss-Jordan Elimination](06_gauss_jordan_elimination)
+
+
 ## References
 
 1) G. James, *Advanced Modern Engineering Mathematics*, 4th ed., Pearson Education, 2007.
