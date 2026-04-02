@@ -210,44 +210,14 @@ Mathematics is not only a theoretical discipline but also a powerful tool used t
 
 A linear equation in two variables represents a straight line in the plane. The solution of a system of two linear equations is the intersection point of these lines. Three possibilities may occur. The system may have a unique solution, no solution, or infinitely many solutions.
 
-### Unique Solution
+### Types of Solutions
 
-$$
-x + y = 4
-$$
-$$
-x - y = 2
-$$
+| Case | System | Interpretation | Result |
+|------|--------|---------------|--------|
+| Unique Solution | $$x+y=4$$ <br> $$x-y=2$$ | Lines have different slopes and intersect at one point | $$x=3,\ y=1$$ |
+| No Solution | $$2x+y=3$$ <br> $$2x+y=7$$ | Lines are parallel and do not intersect | No solution |
+| Infinitely Many Solutions | $$x+2y=6$$ <br> $$2x+4y=12$$ | Second equation is a multiple of the first. Same line | Infinitely many solutions |
 
-The solution is
-
-$$
-x = 3, \quad y = 1
-$$
-
-The lines have different slopes and intersect at one point.
-
-### No Solution
-
-$$
-2x + y = 3
-$$
-$$
-2x + y = 7
-$$
-
-The lines are parallel and do not intersect. Therefore the system has no solution.
-
-### Infinitely Many Solutions
-
-$$
-x + 2y = 6
-$$
-$$
-2x + 4y = 12
-$$
-
-The second equation is a multiple of the first. Both equations represent the same line, so the system has infinitely many solutions.
 
 For systems with three variables, each equation represents a plane instead of a line. For example
 
