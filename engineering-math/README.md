@@ -330,12 +330,82 @@ A matrix is in reduced row echelon form if:
 4. Each pivot is the only nonzero entry in its column.  
 
 
-| **Reduced Row Echelon Form (RREF)** | **Not in Reduced Row Echelon Form** |
-|-------------------------------------|--------------------------------------|
-| [1 0 8; 0 1 2; 0 0 0] | [1 2 0 4; 0 0 0 0; 0 0 3 1] |
-| [1 0 0 7; 0 1 0 3; 0 0 1 9] | [1 2 0 3 0; 0 0 3 4 0; 0 0 0 0 1] |
-| [1 4 0 0; 0 0 0 1; 0 0 0 0] | [1 0 0 2; 0 0 1 4; 0 0 0 0] |
-| [1 2 3 0; 0 0 0 1; 0 0 0 0] | [1 7 0 8; 0 1 0 3; 0 0 1 2; 0 0 0 0] |
+<table>
+<tr>
+<th>Reduced Row Echelon Form (RREF)</th>
+<th>Not in Reduced Row Echelon Form</th>
+</tr>
+
+<tr>
+<td>
+
+1 0 8  
+0 1 2  
+0 0 0  
+
+</td>
+<td>
+
+1 2 0 4  
+0 0 0 0  
+0 0 3 1  
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+1 0 0 7  
+0 1 0 3  
+0 0 1 9  
+
+</td>
+<td>
+
+1 2 0 3 0  
+0 0 3 4 0  
+0 0 0 0 1  
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+1 4 0 0  
+0 0 0 1  
+0 0 0 0  
+
+</td>
+<td>
+
+1 0 0 2  
+0 0 1 4  
+0 0 0 0  
+
+</td>
+</tr>
+
+<tr>
+<td>
+
+1 2 3 0  
+0 0 0 1  
+0 0 0 0  
+
+</td>
+<td>
+
+1 7 0 8  
+0 1 0 3  
+0 0 1 2  
+0 0 0 0  
+
+</td>
+</tr>
+
+</table>
 
 
 ### Gauss–Jordan Algorithm:
