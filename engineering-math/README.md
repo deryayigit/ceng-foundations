@@ -332,11 +332,10 @@ A matrix is in reduced row echelon form if:
 
 | **Reduced Row Echelon Form (RREF)** | **Not in Reduced Row Echelon Form** |
 |-------------------------------------|--------------------------------------|
-| `1 0 8; 0 1 2; 0 0 0` | `1 2 0 4; 0 0 0 0; 0 0 3 1` |
-| `1 0 0 7; 0 1 0 3; 0 0 1 9` | `1 2 0 3 0; 0 0 3 4 0; 0 0 0 0 1` |
-| `1 4 0 0; 0 0 0 1; 0 0 0 0` | `1 0 0 2; 0 0 1 4; 0 0 0 0` |
-| `1 2 3 0; 0 0 0 1; 0 0 0 0` | `1 7 0 8; 0 1 0 3; 0 0 1 2; 0 0 0 0` |
-
+| 1 0 8 <br> 0 1 2 <br> 0 0 0 | 1 2 0 4 <br> 0 0 0 0 <br> 0 0 3 1 |
+| 1 0 0 7 <br> 0 1 0 3 <br> 0 0 1 9 | 1 2 0 3 0 <br> 0 0 3 4 0 <br> 0 0 0 0 1 |
+| 1 4 0 0 <br> 0 0 0 1 <br> 0 0 0 0 | 1 0 0 2 <br> 0 0 1 4 <br> 0 0 0 0 |
+| 1 2 3 0 <br> 0 0 0 1 <br> 0 0 0 0 | 1 7 0 8 <br> 0 1 0 3 <br> 0 0 1 2 <br> 0 0 0 0 |
 
 ### Gauss–Jordan Algorithm:
 1. Write the augmented matrix of the system of linear equations.  
