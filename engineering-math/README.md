@@ -145,7 +145,7 @@ Mathematically, the IDFT corresponds to applying the inverse of the Fourier matr
 👉 [03 Inverse Discrete Fourier Transform](03_inverse_discrete_fourier_transform)
 
 
-#### Fast Fourier Transform (FFT)
+### Fast Fourier Transform (FFT)
 
 
 FFT computes the DFT efficiently:
@@ -197,7 +197,7 @@ As a result, redundant computations present in the direct DFT are eliminated, an
 
 ---
 
-## Correlation & Convulation
+## Correlation & Convulution
 
 #### Code Implementation
 👉 [05 Correlation and Convulation](05_correlation_convulation)
@@ -339,16 +339,16 @@ A matrix is in reduced row echelon form if:
 <tr>
 <td>
 
-1 0 8  
-0 1 2  
+1 0 16  
+0 1 8 
 0 0 0  
 
 </td>
 <td>
 
-1 2 0 4  
+1 2 0 6 
 0 0 0 0  
-0 0 3 1  
+0 0 5 1  
 
 </td>
 </tr>
@@ -356,9 +356,9 @@ A matrix is in reduced row echelon form if:
 <tr>
 <td>
 
-1 0 0 7  
-0 1 0 3  
-0 0 1 9  
+1 0 0 9  
+0 1 0 1  
+0 0 1 3  
 
 </td>
 <td>
@@ -397,7 +397,7 @@ A matrix is in reduced row echelon form if:
 </td>
 <td>
 
-1 7 0 8  
+1 5 0 9  
 0 1 0 3  
 0 0 1 2  
 0 0 0 0  
@@ -406,6 +406,7 @@ A matrix is in reduced row echelon form if:
 </tr>
 
 </table>
+
 
 ### Gauss–Jordan Algorithm:
 1. Write the augmented matrix of the system of linear equations.  
