@@ -332,10 +332,10 @@ A matrix is in reduced row echelon form if:
 
 | **Reduced Row Echelon Form (RREF)** | **Not in Reduced Row Echelon Form** |
 |-------------------------------------|--------------------------------------|
-| $\begin{bmatrix} 1 & 0 & 8 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 2 & 0 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 3 & 1 \end{bmatrix}$ |
-| $\begin{bmatrix} 1 & 0 & 0 & 7 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & 9 \end{bmatrix}$ | $\begin{bmatrix} 1 & 2 & 0 & 3 & 0 \\ 0 & 0 & 3 & 4 & 0 \\ 0 & 0 & 0 & 0 & 1 \end{bmatrix}$ |
-| $\begin{bmatrix} 1 & 4 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 0 & 0 & 2 \\ 0 & 0 & 1 & 4 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ |
-| $\begin{bmatrix} 1 & 2 & 3 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 7 & 0 & 8 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ |
+| [1 0 8; 0 1 2; 0 0 0] | [1 2 0 4; 0 0 0 0; 0 0 3 1] |
+| [1 0 0 7; 0 1 0 3; 0 0 1 9] | [1 2 0 3 0; 0 0 3 4 0; 0 0 0 0 1] |
+| [1 4 0 0; 0 0 0 1; 0 0 0 0] | [1 0 0 2; 0 0 1 4; 0 0 0 0] |
+| [1 2 3 0; 0 0 0 1; 0 0 0 0] | [1 7 0 8; 0 1 0 3; 0 0 1 2; 0 0 0 0] |
 
 
 ### Gauss–Jordan Algorithm:
