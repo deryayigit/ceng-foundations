@@ -255,7 +255,6 @@ $$
 
 This matrix is of size $2 \times 3$. The element in row 1 column 3 is $-3$.
 
----
 
 #### Identity Matrix
 
@@ -272,7 +271,6 @@ $$
 
 The identity matrix plays an important role in Gauss Jordan elimination because the goal is to transform the coefficient matrix into the identity matrix.
 
----
 
 #### Coefficient Matrix
 
@@ -299,7 +297,6 @@ A =
 \end{bmatrix}
 $$
 
----
 
 #### Augmented Matrix
 
@@ -316,75 +313,39 @@ $$
 
 The augmented matrix completely represents the system of equations.
 
----
 
-#### Gauss Jordan Elimination Method
+### Gauss–Jordan Elimination Method
 
-Gauss Jordan elimination is a systematic method used to solve systems of linear equations. The process starts by writing the system in augmented matrix form. A pivot element is selected in the first column and row swapping is performed if necessary. The pivot is scaled to 1. Then all other elements in the pivot column are eliminated by row operations. The same steps are repeated for the remaining columns.
+The Gauss–Jordan elimination method is a systematic matrix method used to solve systems of linear equations. This method can also be applied in situations where the number of equations differs from the number of unknowns. Thus, all possibilities—such as the system having a single solution, an infinite number of solutions, or no solution at all—can be analysed. The primary aim of the method is to transform the given system of linear equations into a simpler matrix form using row operations and to obtain the solution directly from this simplified form.
 
-The goal is to transform the coefficient part of the augmented matrix into the identity matrix
-
-$$
-[A|b] \rightarrow [I|x]
-$$
-
-Once this form is obtained the solution can be read directly from the last column.
+In this approach, the first step is to write the system of linear equations in augmented matrix form. Subsequently, elementary row operations are applied to the matrix to transform it into reduced row echelon form. Once this form is reached, the solution can be read directly from the last column of the matrix.
 
 
-### Applications of Gauss Jordan Elimination
+#### Reduced Row Echelon Form 
 
-Gauss Jordan elimination is not only a theoretical method. It can be applied to many real world problems.
-
-### Curve Fitting
-
-Given data points we can determine a polynomial that passes through them. For example
-
-$$
-(1,2), (2,3), (3,5)
-$$
-
-Using a quadratic polynomial
-
-$$
-y = a_0 + a_1 x + a_2 x^2
-$$
-
-Substituting the points produces a system of linear equations that can be solved using Gauss Jordan elimination.
+A matrix is in reduced row echelon form if:
+1. All rows consisting entirely of zeros are at the bottom of the matrix.  
+2. The first nonzero entry in each nonzero row is 1 (called a pivot or leading 1).  
+3. Each pivot is to the right of the pivot in the row above it.  
+4. Each pivot is the only nonzero entry in its column.  
 
 
-### Electrical Networks
+| **Reduced Row Echelon Form (RREF)** | **Not in Reduced Row Echelon Form** |
+|-------------------------------------|--------------------------------------|
+| $\begin{bmatrix} 1 & 0 & 8 \\ 0 & 1 & 2 \\ 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 2 & 0 & 4 \\ 0 & 0 & 0 & 0 \\ 0 & 0 & 3 & 1 \end{bmatrix}$ |
+| $\begin{bmatrix} 1 & 0 & 0 & 7 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & 9 \end{bmatrix}$ | $\begin{bmatrix} 1 & 2 & 0 & 3 & 0 \\ 0 & 0 & 3 & 4 & 0 \\ 0 & 0 & 0 & 0 & 1 \end{bmatrix}$ |
+| $\begin{bmatrix} 1 & 4 & 0 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 0 & 0 & 2 \\ 0 & 0 & 1 & 4 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ |
+| $\begin{bmatrix} 1 & 2 & 3 & 0 \\ 0 & 0 & 0 & 1 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ | $\begin{bmatrix} 1 & 7 & 0 & 8 \\ 0 & 1 & 0 & 3 \\ 0 & 0 & 1 & 2 \\ 0 & 0 & 0 & 0 \end{bmatrix}$ |
 
-Kirchhoff laws generate linear equations for unknown currents in a circuit. These equations are written as a matrix and solved using Gauss Jordan elimination.
 
-Example system
+### Gauss–Jordan Algorithm:
+1. Write the augmented matrix of the system of linear equations.  
+2. Use elementary row operations to convert the matrix into reduced row echelon form by creating pivots and zeros above and below each pivot.  
+3. Write the corresponding system of equations.  
+4. Read the solution directly from the last column.  
 
-$$
-I_1 + I_2 - I_3 = 0
-$$
-$$
-2I_1 + I_3 = 5
-$$
-$$
-I_2 + I_3 = 4
-$$
+### Applications of Gauss–Jordan Elimination
 
-### Traffic Flow
-
-Traffic flow at intersections can also be modeled using linear systems. The total flow entering an intersection equals the flow leaving.
-
-Example
-
-$$
-x_1 + x_2 = 400
-$$
-$$
-x_1 + x_3 = 300
-$$
-$$
-x_2 + x_3 = 500
-$$
-
-These equations form a linear system that can be solved using Gauss Jordan elimination.
 
 
 #### Code Implementation
