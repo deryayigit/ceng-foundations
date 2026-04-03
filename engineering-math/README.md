@@ -332,7 +332,7 @@ A matrix is in reduced row echelon form if:
 
 <table>
 <tr>
-<th>Reduced Row Echelon Form (RREF)</th>
+<th>Reduced Row Echelon Form </th>
 <th>Not in Reduced Row Echelon Form</th>
 </tr>
 
@@ -406,7 +406,6 @@ A matrix is in reduced row echelon form if:
 </tr>
 
 </table>
-
 
 ### Gauss–Jordan Algorithm:
 1. Write the augmented matrix of the system of linear equations.  
