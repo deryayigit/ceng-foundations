@@ -94,8 +94,9 @@ for i = 0 to n-1
 ```
 
 ## References
-Gilbert Strang, Introduction to Linear Algebra
-David C. Lay, Linear Algebra and Its Applications
-MIT OpenCourseWare — Linear Algebra
-Numerical Recipes in C — Gauss–Jordan Elimination
-https://www.geeksforgeeks.org/dsa/program-for-gauss-jordan-elimination-method/
+
+1. Gilbert Strang, *Introduction to Linear Algebra*, Wellesley-Cambridge Press.
+2. David C. Lay, *Linear Algebra and Its Applications*, Pearson.
+3. William H. Press et al., *Numerical Recipes in C: The Art of Scientific Computing*, Cambridge University Press.
+4. GeeksforGeeks, "Program for Gauss Jordan Elimination Method",  
+   https://www.geeksforgeeks.org/dsa/program-for-gauss-jordan-elimination-method/
