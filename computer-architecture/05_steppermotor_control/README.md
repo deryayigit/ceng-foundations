@@ -49,7 +49,6 @@ By changing the sequence of coil activation, the rotor moves accordingly. Since 
 Repeating this process continuously results in rotational motion. The delay between steps determines the motor speed: shorter delays increase speed, while longer delays decrease it.
 
 
-
 ---
 
 ## Driving Methods  
