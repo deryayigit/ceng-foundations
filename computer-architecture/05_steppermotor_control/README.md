@@ -8,7 +8,7 @@ A stepper motor consists of a rotor, stator, and coils. The rotor is the rotatin
 
 This structure enables the motor to produce controlled motion that is directly compatible with digital systems.
 
-## Stepper Motor Visualization
+<div align="center">
 
 ## Stepper Motor Visualization
 
@@ -28,10 +28,17 @@ This structure enables the motor to produce controlled motion that is directly c
 
 <br>
 
-<p align="center">
-<b>Step Angle:</b> θ = 360° / N &nbsp;&nbsp; | &nbsp;&nbsp; θ = 360° / (2 × Rotor Teeth × Stator Phases)
-</p>
+<pre>
+Step Angle
 
+θ = 360° / N
+
+or
+
+θ = 360° / (2 × Rotor Teeth × Stator Phases)
+</pre>
+
+</div>
 
 
 ---
