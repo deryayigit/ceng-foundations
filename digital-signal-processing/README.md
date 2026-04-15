@@ -245,6 +245,8 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ### 🔗 Projects Related to the Subject:
 👉 [multi_rate_audio_recorder](multi_rate_audio_recorder)
+Also you can visit lab implimentation:
+👉 [ADC](01_analog_digital_converter)
 
 ---
 
@@ -267,9 +269,6 @@ The theoretical background of Fourier analysis (Fourier Series, DFT, IDFT and FF
 is explained in detail in the Engineering Mathematics folder. It also contains implimentations.
 
 👉 [Fourier Series](https://github.com/deryayigit/ceng-foundations/tree/main/engineering-math#fourier-series)
-
-### 🔗 Fourier Transform Signal Processing Implementations
-👉 [fourier_transform](fourier_transform)
 
 ---
 
