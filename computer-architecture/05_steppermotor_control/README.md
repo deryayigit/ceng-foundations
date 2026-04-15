@@ -8,6 +8,32 @@ A stepper motor consists of a rotor, stator, and coils. The rotor is the rotatin
 
 This structure enables the motor to produce controlled motion that is directly compatible with digital systems.
 
+## Stepper Motor Visualization
+
+## Stepper Motor Visualization
+
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="300"><br>
+      <img src="https://github.com/user-attachments/assets/2c6b6c6f-7f11-4392-919c-bc6b6a91238a" width="300"><br>
+      <b>General View</b>
+    </td>
+    <td align="center">
+      <img src="https://github.com/user-attachments/assets/f82aea5d-e3f6-4ead-a790-8a086e3edc48" width="350"><br>
+      <b>Diagram of a Stepper Motor</b>
+    </td>
+  </tr>
+</table>
+
+<br>
+
+<p align="center">
+<b>Step Angle:</b> θ = 360° / N &nbsp;&nbsp; | &nbsp;&nbsp; θ = 360° / (2 × Rotor Teeth × Stator Phases)
+</p>
+
+
+
 ---
 
 ## Working Principle  
@@ -17,6 +43,8 @@ A stepper motor operates by energizing the stator coils in a specific sequence. 
 By changing the sequence of coil activation, the rotor moves accordingly. Since this motion occurs step by step, the motor produces discrete but controlled rotation.  
 
 Repeating this process continuously results in rotational motion. The delay between steps determines the motor speed: shorter delays increase speed, while longer delays decrease it.
+
+
 
 ---
 
@@ -110,22 +138,31 @@ This demonstrates how software timing directly affects motion control in embedde
 ---
 
 ## References
-AMCI — What is a Stepper Motor
+1. AMCI — What is a Stepper Motor
 https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/
-AMCI — Stepper vs Servo
+
+2. AMCI — Stepper vs Servo
 https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/
-Clippard — How Stepper Motors Provide Precision Control
+
+3. Clippard — How Stepper Motors Provide Precision Control
 https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control
-RS Online — Full Step, Half Step and Microstepping
+
+4. RS Online — Full Step, Half Step and Microstepping
 https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping
-GeeksforGeeks — Applications of Stepper Motor
+
+5.GeeksforGeeks — Applications of Stepper Motor
 https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/
-Monolithic Power Systems — Stepper Motors: Basics, Types and Uses
+
+7. Monolithic Power Systems — Stepper Motors: Basics, Types and Uses
 https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses
-Anaheim Automation — Stepper Motor Guide
+
+8. Anaheim Automation — Stepper Motor Guide
 https://anaheimautomation.com/blog/post/stepper-motor-guide
-Scribd — Stepper Motor Notes
+
+9. Scribd — Stepper Motor Notes
 https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor
-Karadeniz Technical University — Computer Organization Laboratory Documentation
+
+10. Karadeniz Technical University — Computer Organization Laboratory Documentation
 GitHub — Organization Lab (Stepper Motor)
-https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru
+
+12. https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru
