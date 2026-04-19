@@ -18,8 +18,8 @@ This structure enables the motor to produce controlled motion that is directly c
   <tr>
     <!-- LEFT SIDE -->
     <td align="center" width="420">
-      <img src="images/stepper-motor-general-v2.png" width="300" alt="General View 1"><br><br>
-      <img src="images/stepper-motor-v2.png" width="300" alt="General View 2"><br><br>
+      <img src="images/stepper-motor-v2.png" width="250" alt="General View 2"><br><br>
+      <img src="images/stepper-motor-general-v2.png" width="350" alt="General View 1"><br><br>
       <b>General View</b>
     </td>
     <td align="center" width="420">
