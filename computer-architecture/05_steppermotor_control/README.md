@@ -141,31 +141,32 @@ This demonstrates how software timing directly affects motion control in embedde
 ---
 
 ## References
-1. *AMCI — What is a Stepper Motor*,
-https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/
 
-2. "AMCI — Stepper vs Servo",
-https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/
+1. **AMCI**, *What is a Stepper Motor*.  
+   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/  
 
-3. "Clippard — How Stepper Motors Provide Precision Control",
-https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control
+2. **AMCI**, *Stepper vs Servo*.  
+   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/  
 
-4. "RS Online — Full Step, Half Step and Microstepping",
-https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping
+3. **Clippard**, *How Stepper Motors Provide Precision Control*.  
+   https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control  
 
-5."GeeksforGeeks — Applications of Stepper Motor",
-https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/
+4. **RS Online**, *Full Step, Half Step and Microstepping*.  
+   https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping  
 
-7. "Monolithic Power Systems — Stepper Motors: Basics, Types and Uses",
-https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses
+5. **GeeksforGeeks**, *Applications of Stepper Motor*.  
+   https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/  
 
-8. "Anaheim Automation — Stepper Motor Guide",
-https://anaheimautomation.com/blog/post/stepper-motor-guide
+6. **Monolithic Power Systems**, *Stepper Motors: Basics, Types and Uses*.  
+   https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses  
 
-9."Scribd — Stepper Motor Notes",
-https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor
+7. **Anaheim Automation**, *Stepper Motor Guide*.  
+   https://anaheimautomation.com/blog/post/stepper-motor-guide  
 
-10. Karadeniz Technical University — Computer Organization Laboratory Documentation
-GitHub — Organization Lab (Stepper Motor)
+8. **Scribd**, *Stepper Motor Notes*.  
+   https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor  
 
-12. https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru
+9. **Karadeniz Technical University**, *Computer Organization Laboratory Documentation*.  
+
+10. **GitHub — Yıldız Büşra**, *Organization Lab (Stepper Motor)*.  
+    https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru  
