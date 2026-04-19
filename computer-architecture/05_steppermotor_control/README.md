@@ -16,13 +16,13 @@ This structure enables the motor to produce controlled motion that is directly c
 
 <table>
   <tr>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="200"><br>
-      <img src="https://github.com/user-attachments/assets/2c6b6c6f-7f11-4392-919c-bc6b6a91238a" width="300"><br>
+    <td align="center" width="420">
+      <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="120" alt="General View 1"><br><br>
+      <img src="https://github.com/user-attachments/assets/2c6b6c6f-7f11-4392-919c-bc6b6a91238a" width="220" alt="General View 2"><br><br>
       <b>General View</b>
     </td>
-    <td align="center">
-      <img src="https://github.com/user-attachments/assets/f82aea5d-e3f6-4ead-a790-8a086e3edc48" width="350"><br>
+    <td align="center" width="420">
+      <img src="https://github.com/user-attachments/assets/f82aea5d-e3f6-4ead-a790-8a086e3edc48" width="300" alt="Diagram of a Stepper Motor"><br><br>
       <b>Diagram of a Stepper Motor</b>
     </td>
   </tr>
@@ -30,13 +30,20 @@ This structure enables the motor to produce controlled motion that is directly c
   <tr>
     <td colspan="2" align="center">
       <pre>
-θ = 360° / N   =>   θ = 360° / (2 × Rotor Teeth × Stator Phases), (N: Number of steps per revolution)
+θ = 360° / N   =>   θ = 360° / (2 × Rotor Teeth × Stator Phases)
+(N: Number of steps per revolution)
       </pre>
     </td>
   </tr>
 </table>
 
 </div>
+
+For example, if a motor has 200 steps per revolution:
+
+θ = 360° / 200 = 1.8°
+
+This means each step rotates the motor shaft by 1.8°, defining the resolution of motion.
 
 ---
 
@@ -46,8 +53,20 @@ A stepper motor operates by energizing the stator coils in a specific sequence. 
 
 By changing the sequence of coil activation, the rotor moves accordingly. Since this motion occurs step by step, the motor produces discrete but controlled rotation.  
 
-Repeating this process continuously results in rotational motion. The delay between steps determines the motor speed: shorter delays increase speed, while longer delays decrease it.
+Repeating this process continuously results in rotational motion.
 
+---
+
+## Speed Control and Timing  
+
+Motor speed is directly controlled by the delay between steps. In general, shorter delays produce higher stepping frequency, while longer delays produce lower stepping frequency.
+
+f ∝ 1 / delay  
+
+- Higher frequency → higher speed  
+- Lower frequency → lower speed  
+
+This establishes a direct relationship between software timing and motion control.
 
 ---
 
@@ -77,24 +96,21 @@ The rotation direction of the motor is determined by the order of the phase sequ
 
 ---
 
-## Code Implementation  
+## Code Implementation
 
 ### stepper_speed_up_down  
 
 In this version, the motor first accelerates and then decelerates.  
 
-The delay between steps is initially decreased to increase speed. After a certain number of steps, the delay is increased to slow the motor down.  
-
----
+The delay between steps is decreased linearly to increase speed, and after a threshold, it is increased to slow the motor down.  
 
 ### stepper_speed_down_up  
 
 In this version, the motor first decelerates and then accelerates.  
 
-The delay between steps is initially increased to reduce speed. After that, the delay is decreased to speed the motor up.  
+The delay is initially increased to reduce speed, then decreased to speed up the motor.  
 
-
-## Pseudo Code  
+### Pseudo Code  
 
 ```text
 Initialize system
@@ -112,7 +128,7 @@ Loop:
     Else:
         Reverse delay behavior
 
-    Output next step to motor
+    Output next step to motor (write to I/O port)
 
     Update step index
     Increment step counter
@@ -126,46 +142,44 @@ Loop:
 ---
 
 ## Development Environment
-This experiment was implemented using 8086 assembly language in a simulation environment. No physical stepper motor hardware was used. 
-The motor behavior was emulated by sending phase values to the output port, allowing the observation of control logic and timing behavior.
+This experiment was implemented using 8086 assembly language in a simulation environment. No physical stepper motor hardware was used. The program simulated stepper motor control by sending phase sequence values to an output port and varying the delay in software.
 
 ---
 
 ## Observation
 
-In this experiment, the working principle of a stepper motor and its control logic were studied.
-By applying phase sequences to the output port, the stepping behavior was simulated.
-It was observed that motor speed can be controlled by adjusting the delay between steps.
-This demonstrates how software timing directly affects motion control in embedded systems.
+In this experiment, the working principle of a stepper motor and its control logic were studied. By applying phase sequences to the output port, the stepping behavior was simulated.
+It was observed that motor speed can be controlled by adjusting the delay between steps. This demonstrates how software timing directly affects motion control in embedded systems.
 
 ---
 
 ## References
-1. AMCI — What is a Stepper Motor
-https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/
 
-2. AMCI — Stepper vs Servo
-https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/
+1. **AMCI**, *What is a Stepper Motor*.  
+   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/  
 
-3. Clippard — How Stepper Motors Provide Precision Control
-https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control
+2. **AMCI**, *Stepper vs Servo*.  
+   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/  
 
-4. RS Online — Full Step, Half Step and Microstepping
-https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping
+3. **Clippard**, *How Stepper Motors Provide Precision Control*.  
+   https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control  
 
-5.GeeksforGeeks — Applications of Stepper Motor
-https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/
+4. **RS Online**, *Full Step, Half Step and Microstepping*.  
+   https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping  
 
-7. Monolithic Power Systems — Stepper Motors: Basics, Types and Uses
-https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses
+5. **GeeksforGeeks**, *Applications of Stepper Motor*.  
+   https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/  
 
-8. Anaheim Automation — Stepper Motor Guide
-https://anaheimautomation.com/blog/post/stepper-motor-guide
+6. **Monolithic Power Systems**, *Stepper Motors: Basics, Types and Uses*.  
+   https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses  
 
-9. Scribd — Stepper Motor Notes
-https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor
+7. **Anaheim Automation**, *Stepper Motor Guide*.  
+   https://anaheimautomation.com/blog/post/stepper-motor-guide  
 
-10. Karadeniz Technical University — Computer Organization Laboratory Documentation
-GitHub — Organization Lab (Stepper Motor)
+8. **Scribd**, *Stepper Motor Notes*.  
+   https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor  
 
-12. https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru
+9. **Karadeniz Technical University**, *Computer Organization Laboratory Documentation*.  
+
+10. **GitHub — Yıldız Büşra**, *Organization Lab (Stepper Motor)*.  
+    https://github.com/yildiz-busra/Organizasyon-Lab/tree/main/Ad%C4%B1m-Motoru  
