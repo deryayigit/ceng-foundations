@@ -141,7 +141,7 @@ This demonstrates how software timing directly affects motion control in embedde
 ---
 
 ## References
-1. "AMCI — What is a Stepper Motor",
+1. *AMCI — What is a Stepper Motor*,
 https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/
 
 2. "AMCI — Stepper vs Servo",
