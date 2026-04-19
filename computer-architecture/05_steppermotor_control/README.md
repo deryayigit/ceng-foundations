@@ -59,14 +59,14 @@ Repeating this process continuously results in rotational motion.
 
 ## Speed Control and Timing  
 
-Motor speed is directly controlled by the delay between steps.
+Motor speed is directly controlled by the delay between steps. In general, shorter delays produce higher stepping frequency, while longer delays produce lower stepping frequency.
 
-f = 1 / delay  
+f ∝ 1 / delay  
 
 - Higher frequency → higher speed  
 - Lower frequency → lower speed  
 
-This establishes a direct relationship between software timing and physical motion.
+This establishes a direct relationship between software timing and motion control.
 
 ---
 
@@ -96,7 +96,7 @@ The rotation direction of the motor is determined by the order of the phase sequ
 
 ---
 
-## Acceleration and Deceleration Profiles  
+## Code Implementation
 
 ### stepper_speed_up_down  
 
@@ -104,29 +104,13 @@ In this version, the motor first accelerates and then decelerates.
 
 The delay between steps is decreased linearly to increase speed, and after a threshold, it is increased to slow the motor down.  
 
----
-
 ### stepper_speed_down_up  
 
 In this version, the motor first decelerates and then accelerates.  
 
 The delay is initially increased to reduce speed, then decreased to speed up the motor.  
 
----
-
-### Engineering Note  
-
-In this implementation, delay changes are **linear**.  
-
-More advanced systems may use:  
-- Exponential ramps  
-- S-curve profiles  
-
-These provide smoother motion and reduce mechanical stress.
-
----
-
-## Pseudo Code  
+### Pseudo Code  
 
 ```text
 Initialize system
@@ -158,17 +142,14 @@ Loop:
 ---
 
 ## Development Environment
-This experiment was implemented using 8086 assembly language in a simulation environment. No physical stepper motor hardware was used. 
-The motor behavior was emulated by sending phase values to the output port, allowing the observation of control logic and timing behavior.
+This experiment was implemented using 8086 assembly language in a simulation environment. No physical stepper motor hardware was used. The program simulated stepper motor control by sending phase sequence values to an output port and varying the delay in software.
 
 ---
 
 ## Observation
 
-In this experiment, the working principle of a stepper motor and its control logic were studied.
-By applying phase sequences to the output port, the stepping behavior was simulated.
-It was observed that motor speed can be controlled by adjusting the delay between steps.
-This demonstrates how software timing directly affects motion control in embedded systems.
+In this experiment, the working principle of a stepper motor and its control logic were studied. By applying phase sequences to the output port, the stepping behavior was simulated.
+It was observed that motor speed can be controlled by adjusting the delay between steps. This demonstrates how software timing directly affects motion control in embedded systems.
 
 ---
 
