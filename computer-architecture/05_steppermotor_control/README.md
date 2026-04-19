@@ -141,28 +141,28 @@ This demonstrates how software timing directly affects motion control in embedde
 ---
 
 ## References
-1. AMCI — What is a Stepper Motor
+1. "AMCI — What is a Stepper Motor",
 https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/
 
-2. AMCI — Stepper vs Servo
+2. "AMCI — Stepper vs Servo",
 https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/
 
-3. Clippard — How Stepper Motors Provide Precision Control
+3. "Clippard — How Stepper Motors Provide Precision Control",
 https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control
 
-4. RS Online — Full Step, Half Step and Microstepping
+4. "RS Online — Full Step, Half Step and Microstepping",
 https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping
 
-5.GeeksforGeeks — Applications of Stepper Motor
+5."GeeksforGeeks — Applications of Stepper Motor",
 https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/
 
-7. Monolithic Power Systems — Stepper Motors: Basics, Types and Uses
+7. "Monolithic Power Systems — Stepper Motors: Basics, Types and Uses",
 https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses
 
-8. Anaheim Automation — Stepper Motor Guide
+8. "Anaheim Automation — Stepper Motor Guide",
 https://anaheimautomation.com/blog/post/stepper-motor-guide
 
-9. Scribd — Stepper Motor Notes
+9."Scribd — Stepper Motor Notes",
 https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor
 
 10. Karadeniz Technical University — Computer Organization Laboratory Documentation
