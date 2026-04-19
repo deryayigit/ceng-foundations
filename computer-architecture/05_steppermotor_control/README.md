@@ -16,15 +16,17 @@ This structure enables the motor to produce controlled motion that is directly c
 
 <table>
   <tr>
-    <!-- LEFT SIDE -->
-    <td align="center" width="420">
-      <img src="images/stepper-motor-v2.png" width="250" alt="General View 2"><br><br>
-      <img src="images/stepper-motor-general-v2.png" width="350" alt="General View 1"><br><br>
-      <b>General View</b>
+    <th align="center" width="420">General View</th>
+    <th align="center" width="420">Diagram of a Stepper Motor</th>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="images/stepper-motor-v2.png" width="300"><br><br>
+      <img src="images/stepper-motor-general-v2.png" width="300">
     </td>
-    <td align="center" width="420">
-      <img src="images/stepper-motor-diagram-v2.png" width="320" alt="Diagram of a Stepper Motor"><br><br>
-      <b>Diagram of a Stepper Motor</b>
+    <td align="center">
+      <img src="images/stepper-motor-diagram-v2.png" width="260">
     </td>
   </tr>
   <tr>
