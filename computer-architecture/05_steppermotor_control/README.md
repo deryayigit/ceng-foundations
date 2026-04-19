@@ -12,6 +12,8 @@ This structure enables the motor to produce controlled motion that is directly c
 
 ## Stepper Motor Visualization
 
+## Stepper Motor Visualization
+
 <div align="center">
 
 <table>
@@ -22,8 +24,8 @@ This structure enables the motor to produce controlled motion that is directly c
 
   <tr>
     <td align="center">
-      <img src="images/stepper-motor-v2.png" width="48%">
-      <img src="images/stepper-motor-general-v2.png" width="48%">
+      <img src="images/stepper-motor-v2.png" width="320"><br><br>
+      <img src="images/stepper-motor-general-v2.png" width="320">
     </td>
     <td align="center">
       <img src="images/stepper-motor-diagram-v2.png" width="95%">
