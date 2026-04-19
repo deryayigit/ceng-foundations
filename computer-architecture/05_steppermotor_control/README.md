@@ -16,17 +16,17 @@ This structure enables the motor to produce controlled motion that is directly c
 
 <table>
   <tr>
+    <!-- LEFT SIDE -->
     <td align="center" width="420">
-      <img src="images/stepper-motor-general.png" width="260" alt="General View 1"><br><br>
-      <img src="images/stepper-motor.png" width="260" alt="General View 2"><br><br>
+      <img src="images/stepper-motor-general-v2.png" width="300" alt="General View 1"><br><br>
+      <img src="images/stepper-motor-v2.png" width="300" alt="General View 2"><br><br>
       <b>General View</b>
     </td>
     <td align="center" width="420">
-      <img src="images/stepper-motor-diagram.png" width="320" alt="Diagram of a Stepper Motor"><br><br>
+      <img src="images/stepper-motor-diagram-v2.png" width="320" alt="Diagram of a Stepper Motor"><br><br>
       <b>Diagram of a Stepper Motor</b>
     </td>
   </tr>
-
   <tr>
     <td colspan="2" align="center">
       θ = 360° / N &nbsp;&nbsp; =&gt; &nbsp;&nbsp; θ = 360° / (2 × Rotor Teeth × Stator Phases)<br>
