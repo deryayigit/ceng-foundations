@@ -17,7 +17,7 @@ This structure enables the motor to produce controlled motion that is directly c
 <table>
   <tr>
     <td align="center" width="420">
-      <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="220" alt="General View 1"><br><br>
+      <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="120" alt="General View 1"><br><br>
       <img src="https://github.com/user-attachments/assets/2c6b6c6f-7f11-4392-919c-bc6b6a91238a" width="220" alt="General View 2"><br><br>
       <b>General View</b>
     </td>
