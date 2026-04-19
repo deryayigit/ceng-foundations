@@ -12,7 +12,7 @@ This structure enables the motor to produce controlled motion that is directly c
 
 ## Stepper Motor Visualization
 
-<div align="center"> <table> <tr> <td align="center" width="420"> <img src="images/stepper-motor-general.png" width="180" alt="General View 1"><br><br> <img src="images/stepper-motor.png" width="180" alt="General View 2"><br><br> <b>General View</b> </td> <td align="center" width="420"> <img src="images/stepper-motor-diagram.png" width="300" alt="Diagram of a Stepper Motor"><br><br> <b>Diagram of a Stepper Motor</b> </td> </tr> <tr> <td colspan="2" align="center"> θ = 360° / N &nbsp;&nbsp; =&gt; &nbsp;&nbsp; θ = 360° / (2 × Rotor Teeth × Stator Phases)<br> (N: Number of steps per revolution) </td> </tr> </table> </div>
+<div align="center"> <table> <tr> <td align="center"> <img src="https://github.com/user-attachments/assets/5e6c7ee3-0e37-4fc1-9852-4808ea8d5d42" width="200"><br> <img src="https://github.com/user-attachments/assets/2c6b6c6f-7f11-4392-919c-bc6b6a91238a" width="300"><br> <b>General View</b> </td> <td align="center"> <img src="https://github.com/user-attachments/assets/f82aea5d-e3f6-4ead-a790-8a086e3edc48" width="350"><br> <b>Diagram of a Stepper Motor</b> </td> </tr> <tr> <td colspan="2" align="center"> <pre> θ = 360° / N => θ = 360° / (2 × Rotor Teeth × Stator Phases) (N: Number of steps per revolution) </pre> </td> </tr> </table> </div>
 
 For example, if a motor has 200 steps per revolution:
 
