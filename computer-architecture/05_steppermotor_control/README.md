@@ -12,33 +12,7 @@ This structure enables the motor to produce controlled motion that is directly c
 
 ## Stepper Motor Visualization
 
-<div align="center">
-
-<table>
-  <tr>
-    <td align="center" width="420">
-      <img src="images/stepper-motor.png" width="180" alt="General View 1"><br><br>
-      <img src="images/stepper-motor-diagram.png" width="180" alt="General View 2"><br>
-      <b>General View</b>
-    </td>
-
-    <td align="center" width="420">
-      <img src="images/stepper-motor-diagram.png" width="260" alt="Diagram of a Stepper Motor"><br>
-      <b>Diagram of a Stepper Motor</b>
-    </td>
-  </tr>
-
-  <tr>
-    <td colspan="2" align="center">
-      <pre>
-θ = 360° / N   =>   θ = 360° / (2 × Rotor Teeth × Stator Phases)
-(N: Number of steps per revolution)
-      </pre>
-    </td>
-  </tr>
-</table>
-
-</div>
+<div align="center"> <table> <tr> <td align="center" width="420"> <img src="images/stepper-motor-general.png" width="180" alt="General View 1"><br><br> <img src="images/stepper-motor.png" width="180" alt="General View 2"><br><br> <b>General View</b> </td> <td align="center" width="420"> <img src="images/stepper-motor-diagram.png" width="300" alt="Diagram of a Stepper Motor"><br><br> <b>Diagram of a Stepper Motor</b> </td> </tr> <tr> <td colspan="2" align="center"> θ = 360° / N &nbsp;&nbsp; =&gt; &nbsp;&nbsp; θ = 360° / (2 × Rotor Teeth × Stator Phases)<br> (N: Number of steps per revolution) </td> </tr> </table> </div>
 
 For example, if a motor has 200 steps per revolution:
 
