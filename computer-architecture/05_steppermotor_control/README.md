@@ -10,9 +10,7 @@ This structure enables the motor to produce controlled motion that is directly c
 
 ---
 
-## Stepper Motor Visualization
-
-## Stepper Motor Visualization
+## Stepper Motor 
 
 <div align="center">
 
@@ -157,26 +155,24 @@ It was observed that motor speed can be controlled by adjusting the delay betwee
 
 ## References
 
-1. **AMCI**, *What is a Stepper Motor*.  
+1. **Anaheim Automation**, *Stepper Motor Guide*.  
+   https://anaheimautomation.com/blog/post/stepper-motor-guide  
+
+2. **AMCI**, *What is a Stepper Motor*,  *Stepper vs Servo*. 
+   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/
    https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/what-stepper-motor/  
 
-2. **AMCI**, *Stepper vs Servo*.  
-   https://www.amci.com/industrial-automation-resources/plc-automation-tutorials/stepper-vs-servo/  
-
-3. **Clippard**, *How Stepper Motors Provide Precision Control*.  
+4. **Clippard**, *How Stepper Motors Provide Precision Control*.  
    https://www.clippard.com/cms/wiki/how-stepper-motors-provide-precision-control  
 
-4. **RS Online**, *Full Step, Half Step and Microstepping*.  
+5. **RS Online**, *Full Step, Half Step and Microstepping*.  
    https://www.rs-online.com/designspark/stepper-motors-and-drives-what-is-full-step-half-step-and-microstepping  
 
-5. **GeeksforGeeks**, *Applications of Stepper Motor*.  
+6. **GeeksforGeeks**, *Applications of Stepper Motor*.  
    https://www.geeksforgeeks.org/electrical-engineering/applications-of-stepper-motor/  
 
-6. **Monolithic Power Systems**, *Stepper Motors: Basics, Types and Uses*.  
+7. **Monolithic Power Systems**, *Stepper Motors: Basics, Types and Uses*.  
    https://www.monolithicpower.com/en/learning/resources/stepper-motors-basics-types-uses  
-
-7. **Anaheim Automation**, *Stepper Motor Guide*.  
-   https://anaheimautomation.com/blog/post/stepper-motor-guide  
 
 8. **Scribd**, *Stepper Motor Notes*.  
    https://www.scribd.com/document/942227267/Sem-Unit-2-Stepper-Motor  
