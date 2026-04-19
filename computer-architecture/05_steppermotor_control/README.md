@@ -30,13 +30,20 @@ This structure enables the motor to produce controlled motion that is directly c
   <tr>
     <td colspan="2" align="center">
       <pre>
-θ = 360° / N   =>   θ = 360° / (2 × Rotor Teeth × Stator Phases), (N: Number of steps per revolution)
+θ = 360° / N   =>   θ = 360° / (2 × Rotor Teeth × Stator Phases)
+(N: Number of steps per revolution)
       </pre>
     </td>
   </tr>
 </table>
 
 </div>
+
+For example, if a motor has 200 steps per revolution:
+
+θ = 360° / 200 = 1.8°
+
+This means each step rotates the motor shaft by 1.8°, defining the resolution of motion.
 
 ---
 
@@ -46,8 +53,20 @@ A stepper motor operates by energizing the stator coils in a specific sequence. 
 
 By changing the sequence of coil activation, the rotor moves accordingly. Since this motion occurs step by step, the motor produces discrete but controlled rotation.  
 
-Repeating this process continuously results in rotational motion. The delay between steps determines the motor speed: shorter delays increase speed, while longer delays decrease it.
+Repeating this process continuously results in rotational motion.
 
+---
+
+## Speed Control and Timing  
+
+Motor speed is directly controlled by the delay between steps.
+
+f = 1 / delay  
+
+- Higher frequency → higher speed  
+- Lower frequency → lower speed  
+
+This establishes a direct relationship between software timing and physical motion.
 
 ---
 
@@ -77,13 +96,13 @@ The rotation direction of the motor is determined by the order of the phase sequ
 
 ---
 
-## Code Implementation  
+## Acceleration and Deceleration Profiles  
 
 ### stepper_speed_up_down  
 
 In this version, the motor first accelerates and then decelerates.  
 
-The delay between steps is initially decreased to increase speed. After a certain number of steps, the delay is increased to slow the motor down.  
+The delay between steps is decreased linearly to increase speed, and after a threshold, it is increased to slow the motor down.  
 
 ---
 
@@ -91,8 +110,21 @@ The delay between steps is initially decreased to increase speed. After a certai
 
 In this version, the motor first decelerates and then accelerates.  
 
-The delay between steps is initially increased to reduce speed. After that, the delay is decreased to speed the motor up.  
+The delay is initially increased to reduce speed, then decreased to speed up the motor.  
 
+---
+
+### Engineering Note  
+
+In this implementation, delay changes are **linear**.  
+
+More advanced systems may use:  
+- Exponential ramps  
+- S-curve profiles  
+
+These provide smoother motion and reduce mechanical stress.
+
+---
 
 ## Pseudo Code  
 
@@ -112,7 +144,7 @@ Loop:
     Else:
         Reverse delay behavior
 
-    Output next step to motor
+    Output next step to motor (write to I/O port)
 
     Update step index
     Increment step counter
