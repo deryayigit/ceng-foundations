@@ -96,18 +96,15 @@ In microcomputer systems, the distinction between architecture and organization 
 
 ---
 
-## System Perspective  
+## System Perspective 
 
-A computer system is inherently complex, consisting of millions of electronic components. To manage this complexity, systems are analyzed using a hierarchical approach, where each level is composed of smaller subsystems down to the most fundamental elements.
+A computer system is inherently complex and consists of millions of electronic components. In order to understand such complexity, systems are analyzed through a hierarchical structure, where each level is composed of smaller subsystems down to the most fundamental building blocks. Within this hierarchy, two fundamental concepts are considered at every level: structure and function. Structure refers to how components are organized and interconnected, while function defines the operations performed by the system. Computer architecture focuses on how structure enables function and how their interaction determines overall system behavior and performance. 
 
-At each level, two key concepts are considered:
-structure, which defines how components are interconnected, and
-function, which describes the operations performed by the system.
+From a functional perspective, a computer performs four essential operations. It processes data through arithmetic and logical transformations, stores data either temporarily or permanently, transfers data between internal components or external devices, and controls system operations by coordinating all components according to instructions. Despite the apparent complexity of modern systems, these four functions form the foundation of all computational behavior. 
 
-From a functional perspective, a computer performs four essential operations:
-data processing, data storage, data movement, and control. Despite the complexity of modern systems, these four functions form the foundation of all computational activity.
+From a structural perspective, a traditional computer system is composed of four main components. The central processing unit (CPU) executes instructions and performs data processing operations. Main memory stores both data and instructions required during execution. Input/output (I/O) devices enable communication between the computer and the external environment. These components are connected through a system interconnection mechanism, commonly implemented as a bus, which facilitates communication between the CPU, memory, and I/O units. 
 
-From a structural perspective, a traditional computer system consists of four main components: the central processing unit (CPU), main memory, input/output (I/O) devices, and the system interconnection mechanism (commonly implemented as a bus). These components work together to enable computation, communication, and control within the system.
+---
 
 ## References  
 
