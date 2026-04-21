@@ -14,8 +14,8 @@ HIGH:
     OUT 160, AL
     INC AL
     CMP AL,0FFH
-	  JNZ HIGH
-	  MOV AL, 0FFH
+	JNZ HIGH
+	MOV AL, 0FFH
     
 LOW:  
     PUSH AX	
@@ -25,7 +25,7 @@ LOW:
     DEC AL
     CMP AL,0FFH
 
-	  JNZ LOW
+	JNZ LOW
 	
 	;JMP START
 
