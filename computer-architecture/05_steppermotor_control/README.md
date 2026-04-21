@@ -103,14 +103,14 @@ The rotation direction of the motor is determined by the order of the phase sequ
 In this version, the motor first accelerates and then decelerates.  
 The delay between steps is decreased linearly to increase speed, and after a threshold, it is increased to slow the motor down.  
 
-👉 [stepper_speed_down_up](stepper_speed_down_up)
+👉 [stepper_speed_down_up](stepper_speed_down_up.asm)
 
 ### stepper_speed_down_up  
 
 In this version, the motor first decelerates and then accelerates.  
 The delay is initially increased to reduce speed, then decreased to speed up the motor.  
 
-👉 [stepper_speed_up_down](stepper_speed_up_down)
+👉 [stepper_speed_up_down](stepper_speed_up_down.asm)
 
 ### Pseudo Code  
 
