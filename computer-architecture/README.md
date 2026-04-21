@@ -1,6 +1,7 @@
 # Computer Architecture  
 
 The scope of the Computer Architecture course includes organization and architecture, structure and function, the brief history of computers, the evolution of the Intel x86 architecture, embedded systems, ARM architecture, performance considerations and design criteria, multicore systems, GPUs, Amdahl’s Law, Little’s Law, fundamental performance metrics, benchmarking and SPEC, interconnection technologies such as bus structures, point-to-point communication and PCI Express, cache memory design and organization (including Pentium 4), external memory systems such as magnetic disks, RAID, solid-state drives and optical storage, as well as input/output mechanisms including programmed I/O, interrupt-driven I/O, Direct Memory Access (DMA), and Direct Cache Access (DCA).
+
 ---
 
 ## Repository Structure  
