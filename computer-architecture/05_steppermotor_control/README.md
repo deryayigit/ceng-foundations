@@ -22,11 +22,11 @@ This structure enables the motor to produce controlled motion that is directly c
 
   <tr>
     <td align="center">
-      <img src="computer-architecture/images/stepper-motor-v2.png" width="320"><br><br>
-      <img src="computer-architecture/images/stepper-motor-general-v2.png" width="320">
+      <img src="../images/stepper-motor-v2.png" width="320"><br><br>
+      <img src="../images/stepper-motor-general-v2.png" width="320">
     </td>
     <td align="center">
-      <img src="computer-architecture/images/stepper-motor-diagram-v2.png" width="95%">
+      <img src="../images/stepper-motor-diagram-v2.png" width="95%">
     </td>
   </tr>
   <tr>
