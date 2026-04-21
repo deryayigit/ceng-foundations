@@ -77,7 +77,6 @@ This innovation eliminated the need for assembling individual components and sig
 
 As a result, systems became faster, smaller, more energy-efficient, and more reliable due to reduced physical interconnections.
 
----
 
 In summary, the evolution from vacuum tubes to transistors and then to integrated circuits represents a continuous effort to overcome the physical and operational limitations of earlier technologies. Each generation improved performance, scalability, efficiency, and reliability, enabling the development of modern high-performance computing systems.
 
