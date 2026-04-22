@@ -51,6 +51,12 @@ To address this issue, the Harvard Architecture was developed, separating instru
 
 Modern systems adopt a hybrid approach that combines the advantages of both models. While they appear externally as Von Neumann systems with unified memory, internally they separate instruction and data paths at the cache level, achieving parallelism similar to Harvard architecture. This approach is known as the Modified Harvard Architecture and represents the most widely used design in contemporary systems.
 
+<p align="center">
+  <img src="images/vonNe-harvard-modifHardvard.png" width="600"/>
+  <br/>
+  <em>Comparison of Memory Architectures</em>
+</p>
+
 ---
 
 ## Evolution of Computer Hardware  
