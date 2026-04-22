@@ -126,7 +126,7 @@ Embedded systems are hardware and software systems integrated into a specific pr
 
 ## Microprocessor and Microcontroller
 
-A microprocessor (CPU) is a general-purpose processing unit with high computational power that requires external memory and peripheral components to operate. A microcontroller, on the other hand, is a compact computer that integrates the CPU, RAM, ROM, and I/O ports on a single chip, making it low-cost and specialized for embedded systems. Microprocessors are typically used in computers, whereas microcontrollers are used in specific devices such as household appliances. 
+A microprocessor is a general-purpose processing unit with high computational power that requires external memory and peripheral components to operate. A microcontroller, on the other hand, is a compact computer that integrates the CPU, RAM, ROM, and I/O ports on a single chip, making it low-cost and specialized for embedded systems. Microprocessors are typically used in computers, whereas microcontrollers are used in specific devices such as household appliances. 
 
 ---
 
