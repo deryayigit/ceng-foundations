@@ -112,6 +112,24 @@ From a structural perspective, a traditional computer system is composed of four
 
 ---
 
+## The Evolution of the Intel x86 Architecture 
+
+The Intel x86 architecture has evolved over decades as a strong example of the CISC (Complex Instruction Set Computer) approach. This evolution began with the 8080, continued with the introduction of the x86 architecture through the 8086, advanced to a 32-bit design with the 80386, introduced parallel execution with the Pentium, and progressed to multi-core architectures with the Core series. Over time, clock speeds have increased by hundreds of times, and transistor counts have reached into the billions. Despite these changes, one of the most critical features of x86 is its backward compatibility, allowing older software to run on newer systems. Today, x86 remains dominant in the processor market outside of embedded systems. 
+
+## ARM Architecture 
+
+The ARM architecture is a processor architecture based on RISC principles and widely used, particularly in embedded systems and mobile devices. It is designed by ARM Holdings and licensed to manufacturers. Thanks to its low power consumption, small chip footprint and high efficiency, it is the preferred choice for smartphones, IoT devices and many electronic systems. ARM’s Cortex family is divided into three main groups: the Cortex-A series for high-performance applications, the Cortex-R series for real-time systems, and the Cortex-M series for microcontroller-based applications. The Cortex-M series, in particular, integrates the processor, memory and peripheral units onto a single chip, offering efficient and compact solutions for embedded systems.
+
+## Embedded Systems 
+
+Embedded systems are hardware and software systems integrated into a specific product, unlike general-purpose computers. Today, billions of devices—including smartphones, automobiles, and household appliances—contain embedded systems. These systems are typically real-time, reactive (continuously interacting with their environment), and highly optimized for efficiency. They communicate with the external world through sensors and actuators. Although their software is usually designed for a specific purpose, modern embedded systems are increasingly capable of being updated and running applications, as seen in devices such as smartphones and smart TVs. 
+
+## Microprocessor and Microcontroller
+
+A microprocessor (CPU) is a general-purpose processing unit with high computational power that requires external memory and peripheral components to operate. A microcontroller, on the other hand, is a compact computer that integrates the CPU, RAM, ROM, and I/O ports on a single chip, making it low-cost and specialized for embedded systems. Microprocessors are typically used in computers, whereas microcontrollers are used in specific devices such as household appliances. 
+
+---
+
 ## References  
 
 1. William Stallings, *Computer Organization and Architecture: Designing for Performance*, 10th Edition, Pearson.  
