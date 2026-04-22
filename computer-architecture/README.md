@@ -41,7 +41,7 @@ There are two fundamental approaches to analysing a system. The bottom-up approa
 
 ## Architecture Models  
 
-Early computers were designed as special-purpose systems intended to solve specific problems, and the concept of a program, as understood today, did not exist. The behavior of these machines was determined through physical wiring, switches, and manual configuration, which severely limited flexibility.
+Early computers were designed as special purpose systems intended to solve specific problems, and the concept of a program, as understood today, did not exist. The behavior of these machines was determined through physical wiring, switches, and manual configuration, which severely limited flexibility.
 
 A fundamental breakthrough occurred in 1945 with the introduction of the stored-program concept. This approach allowed programs to be stored in memory alongside data, enabling computers to solve different problems without requiring physical reconfiguration. This model forms the basis of the Von Neumann Architecture, where both instructions and data reside in the same memory and are transferred over a shared bus.
 
@@ -68,7 +68,7 @@ First-generation computers relied on vacuum tubes for implementing digital logic
 
 ### The Second Generation: Transistors  
 
-The first major transformation in electronic computing occurred with the replacement of vacuum tubes by transistors. Transistors are significantly smaller, more cost-efficient, and generate less heat compared to vacuum tubes, while performing the same functions more reliably. Unlike vacuum tubes, transistors do not require glass enclosures, vacuum environments, or bulky metal structures; instead, they are solid-state devices based on semiconductor materials such as silicon.
+The first major transformation in electronic computing occurred with the replacement of vacuum tubes by transistors. Transistors are significantly smaller, more cost-efficient, and generate less heat compared to vacuum tubes, while performing the same functions more reliably. Unlike vacuum tubes, transistors do not require glass enclosures, vacuum environments, or bulky metal structures instead, they are solid-state devices based on semiconductor materials such as silicon.
 
 Invented at Bell Labs in 1947, transistors initiated the electronic revolution of the 1950s. Each new generation of computers was characterized by higher performance, increased memory capacity, and reduced physical size. Additionally, the second generation introduced more advanced arithmetic and control units, high-level programming languages, and system software. These developments laid the foundation for modern operating systems that manage program execution, data handling, and hardware control. 
 
@@ -77,7 +77,7 @@ Invented at Bell Labs in 1947, transistors initiated the electronic revolution o
 
 As the demand for computational power increased, assembling systems from discrete transistors became inefficient, costly, and complex. The need to individually solder components onto circuit boards introduced scalability and reliability challenges.
 
-In 1958, a major breakthrough occurred with the invention of the integrated circuit (IC), marking the beginning of the third generation of computers. Integrated circuits allow multiple electronic components—such as transistors, resistors, and interconnections—to be fabricated directly onto a single semiconductor substrate.
+In 1958, a major breakthrough occurred with the invention of the integrated circuit (IC), marking the beginning of the third generation of computers. Integrated circuits allow multiple electronic components such as transistors, resistors, and interconnections to be fabricated directly onto a single semiconductor substrate.
 
 This innovation eliminated the need for assembling individual components and significantly reduced system size, cost, and complexity. Initially limited to small-scale integration (SSI), advances in fabrication technology enabled increasingly higher transistor densities on a single chip. This trend is described by Moore’s Law, which states that the number of transistors on a chip approximately doubles every 18–24 months.
 
@@ -97,6 +97,7 @@ Computer architecture refers to the attributes of a system that are visible to t
 Computer organization, on the other hand, describes how these architectural features are implemented in hardware. It includes the internal operational units, interconnections, control signals, and hardware-level mechanisms that are typically hidden from the programmer.
 
 While multiple systems may share the same architecture, they can differ significantly in organization, leading to variations in cost and performance. Over time, a single architecture may be implemented using different organizational designs as technology evolves.
+For example, processors such as Intel Core i5 and Intel Core i9 implement the same x86 instruction set architecture (ISA). This means they are capable of executing the same programs and instructions from a programmer’s perspective.
 
 In microcomputer systems, the distinction between architecture and organization becomes less rigid, as technological advancements influence both simultaneously, enabling the development of more complex and powerful systems.
 
@@ -138,10 +139,3 @@ A microprocessor is a general-purpose processing unit with high computational po
 *Computer Organization and Design: The Hardware/Software Interface*.  
 Morgan Kaufmann.
 
-3. "Vacuum Tube Audio Explained"  
-   https://www.crutchfield.com/S-PffZwxT7XvH/learn/vacuum-tube-audio-explained.html  
-
-4. "History of Computer Development – Vacuum Tubes Era"  
-    https://elanina.narod.ru/lanina/ind/history/p1_11.htm 
-
- 
