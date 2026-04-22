@@ -19,17 +19,17 @@ The goal of this repository is to concretize the concepts covered in the course 
 
 ## Definition  
 
-A computer system should be understood as a layered structure:  
+A computer system can be understood as a layered abstraction, but these layers should certainly not be interpreted as linear. Instead, they form a hierarchy of abstraction levels:
 
-**Transistor → Logic → CPU → Memory → I/O → System → Performance**  
+Transistors → Logic Gates → Digital Circuits → Microarchitecture → Instruction Set Architecture → Computer System
 
-At the lowest level, transistors form the fundamental building blocks of hardware. These transistors combine to form logic gates, which in turn construct more complex computational structures such as the CPU. The CPU continuously interacts with memory to process data, while communication with the external environment is handled through input/output (I/O) devices.
+At the lowest level, transistors function as the fundamental physical building blocks. These combine to form logic gates, and these logic gates in turn form digital circuits such as adders, registers and control units. The CPU is in constant interaction with memory to process data; communication with the external environment is facilitated via input/output (I/O) devices.
 
-All these components together form a computer system. The interaction between these components defines system behavior, while overall performance is directly determined by how these interactions are designed and optimized. This perspective highlights that computer architecture is not merely about identifying components, but about understanding how they operate together as a system.
+All these components come together to form a computer system. The interaction between these components determines the system’s behaviour. Overall performance is directly determined by how these interactions are designed and optimised. Computer architecture is not merely about defining the components but also involves understanding how they work together as a system.
 
-Computer architecture, as a discipline, focuses on how these components are organized, how they communicate, and how performance can be optimized through design decisions.
+As a discipline, computer architecture focuses on how these components are organised, how they communicate, and how performance can be optimised through design decisions.
 
-Two primary approaches exist when analyzing a system: a bottom-up approach starting from the lowest level components, and a top-down approach that begins with the overall system and decomposes it into smaller subsystems. In practice, the top-down approach is generally more effective and is adopted throughout this course.  
+There are two fundamental approaches to analysing a system. The bottom-up approach, which starts with the lowest-level components, or the top-down approach, which begins with the overall system and breaks it down into smaller subsystems. In practice, the top-down approach is generally more effective and has been adopted throughout this course.  
 
 <p align="center">
   <img src="images/hierarchy.png" width="600"/>
