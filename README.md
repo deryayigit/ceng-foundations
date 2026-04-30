@@ -19,10 +19,10 @@ This way, you can explore each topic individually while still seeing the bigger 
 
 The technologies used in this repository are selected based on the nature of each problem, emphasizing understanding over convenience:
 
-C / C++ – Core systems programming, data structures, numerical methods, and performance-oriented implementations
-Assembly (x86 / 80286) – Low-level system behavior, microprocessor-based experiments, and hardware-near programming
-Python – Prototyping, data processing, and machine learning applications
-Haskell – Functional programming, recursion-based problem solving, and abstraction-oriented design
+🔨 C / C++ : Core systems programming, data structures, numerical methods, and performance-oriented implementations  
+🔨 Assembly (x86 / 80286) : Low-level system behavior, microprocessor-based experiments, and hardware-near programming  
+🔨 Python : Prototyping, data processing, and machine learning applications  
+🔨 Haskell : Functional programming, recursion-based problem solving, and abstraction-oriented design  
 
 Across the repository, particular emphasis is placed on recursive thinking as a fundamental problem-solving paradigm, especially in algorithm design, mathematical modeling, and functional programming contexts.
 
