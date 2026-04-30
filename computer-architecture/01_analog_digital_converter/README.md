@@ -36,9 +36,9 @@ Although higher resolution reduces quantization error, practical limitations suc
 
 The quantization step size \( q \) represents the smallest change in the input signal that can be detected by the ADC. It is determined by the range of the input signal and the resolution of the converter.
 
-\[
+$$
 q = \frac{V_{max} - V_{min}}{2^n - 1}
-\]
+$$
 
 A smaller value of \( q \) indicates higher resolution and allows the analog signal to be represented more accurately in digital form.
 
