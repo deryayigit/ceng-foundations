@@ -12,10 +12,6 @@ However, digital systems such as microprocessors and microcontrollers can only p
 
 The operation of an ADC can be described as a three-stage process. First, the continuous-time analog signal is sampled at discrete time intervals. Then, each sampled value is mapped to the nearest level within a finite set of discrete values, a process known as quantization. Finally, the quantized value is encoded as a binary number so that it can be processed by digital systems.
 
-This process can be summarized as:
-
-**Sample → Quantize → Encode**
-
 <p align="center">
   <img src="https://raw.githubusercontent.com/deryayigit/ceng-foundations/main/computer-architecture/images/ADC-scheme.png" width="800"/>
   <br/>
