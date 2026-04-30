@@ -1,8 +1,8 @@
 # Microprocessor Based Signal Generator
 
-In this experiment, the generation of different types of periodic signals using a microcomputer is investigated. Microprocessors are not only capable of processing digital data but can also generate waveform-like outputs by sending values to output ports at specific time intervals. These signals are inherently discrete, and therefore the smoothness and quality of the waveform depend directly on the processing speed of the microprocessor.  
+In this experiment, the generation of different types of periodic signals using a microcomputer is investigated. Microprocessors are not only capable of processing digital data but can also generate digital samples representing a waveform by sending values to output ports at specific time intervals. These signals are inherently discrete, and therefore the smoothness and quality of the waveform depend directly on the processing speed of the microprocessor.  
 
-The fundamental approach is to send a sequence of numerical values, representing the signal, to an output port in a controlled manner. These values can either be generated using counters or retrieved from a predefined lookup table stored in memory. A delay routine is used between successive outputs to control the frequency of the signal.  
+The fundamental approach is to send a sequence of numerical values, representing the signal, to an output port in a controlled manner. These values can either be generated using counters or retrieved from a predefined lookup table stored in memory. A delay routine is used between successive outputs to control the frequency of the signal. The implementation is carried out at the assembly language level using the instruction set of the Intel 80286 microprocessor. 
 
 ---
 
@@ -16,9 +16,20 @@ The purpose of this experiment is to generate periodic signals composed of linea
 
 Periodic signal generation is achieved by sequentially sending discrete sample values to an output port. A counter is used to track the current sample index, and this index is incremented at each step. Once the maximum value is reached, the counter is reset, ensuring the periodic nature of the signal.  
 
-Simple signals such as square waves can be generated easily even at low speeds because they consist of only two levels. However, more complex signals require finer resolution and faster updates, making the processor speed a critical factor in signal quality.  
+Simple signals such as square waves can be generated easily even at low speeds because they consist of only two levels. However, more complex signals require higher sampling resolution and faster updates, making the processor speed a critical factor in signal quality.  
 
-For nonlinear signals, a lookup table is typically used. This table contains precomputed values corresponding to each point of the waveform. These values are then read sequentially and sent to the output port. The digital output can be converted into an analog signal using a Digital-to-Analog Converter (DAC).  
+For nonlinear signals, a lookup table is typically used. This table contains precomputed values corresponding to each point of the waveform. These values are then read sequentially and sent to the output port. In a complete hardware setup, the digital output can be converted into an analog signal using a DAC.
+The output operation is performed using port-mapped I/O, where a specific port address (e.g., 160) corresponds to an external hardware interface. The instruction `OUT 160, AL` transfers the value stored in the AL register to the output port, enabling communication between the microprocessor and peripheral devices such as DACs.
+
+The frequency of the generated signal depends on both the number of samples and the delay between consecutive outputs.  
+
+$$
+f = \frac{1}{N \cdot T_{delay}}
+$$
+
+This relationship shows that the signal frequency is inversely proportional to both the number of samples per period and the delay between successive outputs.  
+
+where \(N\) is the number of samples per period and \(T_{delay}\) is the delay time between successive outputs. Increasing the number of samples improves the resolution of the waveform, resulting in a smoother signal, but requires higher processing speed.
 
 ---
 
@@ -54,7 +65,7 @@ The waitport subroutine ensures that the output port is ready before sending new
 
 This approach results in a waveform that closely resembles an ideal square wave.
 
-👉 [suquare_wave](suquare_wave.asm)
+👉 [square_wave](square_wave.asm)
 
 ### Triangle Wave Generation
 
@@ -69,6 +80,7 @@ This creates a waveform composed of linear rising and falling segments. With suf
 The programs follow a simple structure. The microprocessor initializes registers and enters a loop where it continuously sends values to the output port. After each output operation, a delay subroutine is executed to control timing.
 
 The instruction OUT 160, AL is used to send the generated value to the output port. The waitport subroutine checks whether the port is ready, preventing data loss and ensuring synchronization.
+Here, 160 represents the I/O port address assigned to the output device. This address is hardware-specific and defines the communication channel between the microprocessor and the external circuit.
 
 ## Observations
 
@@ -77,3 +89,11 @@ The experiment demonstrates that periodic signal generation is feasible using a 
 Simple signals such as square waves can be generated accurately even at low speeds, whereas more complex signals like triangle or sinusoidal waves require higher processing speeds and more precise timing control.
 
 Additionally, it is observed that the delay subroutine plays a crucial role in determining the frequency of the generated signal.
+
+## References
+
+1. Oppenheim, Alan V., and Ronald W. Schafer, *Signals and Systems*, Prentice Hall.
+
+2. Karadeniz Technical University, Computer Organization Laboratory Documentation.
+
+3. https://github.com/yildiz-busra/Organizasyon-Lab
