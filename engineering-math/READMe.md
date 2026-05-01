@@ -235,11 +235,7 @@ This system represents three planes. The solution corresponds to the intersectio
 
 As the number of variables increases, the geometric interpretation becomes more difficult. While three dimensional systems can still be visualized, higher dimensional systems cannot be easily represented geometrically. For this reason algebraic and algorithmic methods are required to solve linear systems.
 
-
-
-### Gauss-Jordan Elimination
-
-#### What is a Matrix
+### What is a Matrix
 
 A matrix is a rectangular array of numbers. The numbers in the array are called the elements of the matrix.
 
@@ -313,6 +309,8 @@ $$
 
 The augmented matrix completely represents the system of equations.
 
+#### Code Implementation
+👉 [Matrix Library](matrix-library)
 
 ### Gauss–Jordan Elimination Method
 
@@ -349,8 +347,6 @@ A matrix is in reduced row echelon form if:
 
 #### Code Implementation
 👉 [06 Gauss-Jordan Elimination](06_gauss_jordan_elimination)
-
-
 
 ---
 
