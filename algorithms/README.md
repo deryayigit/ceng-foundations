@@ -1,54 +1,46 @@
-# Algorithms Repository Structure
+# Algorithms 
+
+Algorithms course covers deterministic and non-deterministic algorithms, algorithm complexity, algorithm analysis, algorithm types, polynomial and NP problems, combinations, combinatorial algorithms, recursive approaches, algorithms for computing finite and infinite series and continued fractions, prime numbers, the Euclidean algorithm, mappings, sorting algorithms, searching algorithms, algorithm performance, matrix techniques, geometric algorithms, data encryption, and packing theory. 
+
+---
+
+## Purpose of This Repository
+
+The purpose of this course is to teach computational techniques and the fundamentals of algorithms, to analyze them, and to ensure the adoption of problem-solving approaches. 
+
+---
+
+## Repository Structure 
 
 Algorithms is one of the cornerstone courses of Computer Engineering, forming the foundation of problem-solving and software development skills.  
-This repository brings together my **theoretical knowledge** and **practical projects** from the course.  
 
-The content is organized into **two main sections**:
-
-📂 **algorithms**  
-├── 📂 **fundamentals** – Topic-based algorithm implementations and practice problems  
-│   ├── 📄 [Basics](fundamentals/basic-algorithms/)  
-│   ├── 📄 [Recursion](fundamentals/recursion-problems/)  
-│   ├── 📄 [Sorting](fundamentals/sorting-algorithms/)  
-│   └── 📄 [Searching](fundamentals/searching-algorithms/)  
-│  
-└── 📂 **projects** – Serious academic projects developed as coursework  
-&nbsp;&nbsp;&nbsp; ├── 📄 [Soroban](assignments/soroban_project/) – Simulation of the Japanese abacus  
-                   └── 📄 [Karatsuba]() 
+This repository brings together my theoretical knowledge and practical projects from the course. The content is organized into fundamental topics and applied projects, where each section focuses on a specific algorithmic concept and its implementation. 
 
 ---
 
+## Definition 
 
-# Algorithms Overview
+An algorithm is a finite and well-defined sequence of operations designed to solve a specific problem. In computer science, algorithms define the fundamental processes for processing, storing, and managing data. The term algorithm originates from the 9th-century mathematician Muhammad al-Khwarizmi, whose works on algebra were translated into Latin and spread in Europe under the term algorismus. Over time, the word evolved to represent not only arithmetic procedures but also general problem-solving methods. 
 
-## Definition
-An **algorithm** is a finite and well-defined sequence of operations designed to solve a specific problem.  
-In computer science, algorithms define the fundamental processes for processing, storing, and managing data.  
+### Properties of Algorithms  
 
-The term *algorithm* originates from the 9th-century mathematician **Muhammad al-Khwarizmi**, whose works on algebra were translated into Latin and spread in Europe under the term *algorismus*.  
-Over time, the word evolved to represent not only arithmetic procedures but also general problem-solving methods.  
+Algorithms possess certain fundamental properties. These properties define the correctness and applicability of an algorithm:
 
----
-
-## Properties of Algorithms
 - **Finiteness:** The algorithm must terminate after a finite number of steps.  
 - **Definiteness:** Each step must be clearly and unambiguously defined.  
-- **Input / Output:** Algorithms take input(s) and produce at least one output.  
+- **Input / Output:** The algorithm must take one or more inputs and produce at least one output.  
 - **Effectiveness:** Each step must be executable within a reasonable time using basic operations.  
 
 ---
 
-## Purpose of Algorithms
-- To solve problems systematically  
-- To search, sort, and process data  
-- To form the foundation of computer programs  
-- To decompose complex problems into smaller, manageable parts  
+## Purpose of Algorithms  
 
-In short, algorithms are the **step-by-step recipes** for both real-world processes and software systems.  
+The purpose of algorithms is to solve problems systematically, to search, sort, and process data, to form the foundation of computer programs, and to decompose complex problems into smaller, manageable parts.  
+**In short:** algorithms are the **step-by-step recipes** for both real-world processes and software systems.  
 
 ---
 
-## Key Algorithmic Paradigms
+### Key Algorithmic Paradigms
 
 | Concept              | Description                              | Example                          |
 |----------------------|------------------------------------------|----------------------------------|
@@ -63,27 +55,20 @@ In short, algorithms are the **step-by-step recipes** for both real-world proces
 
 ---
 
-## Algorithmic Complexity
-The performance of an algorithm is measured by the number of operations it requires, often expressed in **Big-O notation**.  
+### Algorithmic Complexity  
 
-Big O Notation is a **mathematical representation that describes the performance of an algorithm (time or space) as the input size grows**.  
-- It shows how code execution scales with data.  
-- Machine independent: based only on number of steps.  
-- Ignores smaller operations:  
-  - e.g. `O(n + 1)` → `O(n)`  
+The performance of an algorithm is measured by the number of operations it requires and is often expressed in Big-O notation. Big O notation is a mathematical representation that describes the performance of an algorithm (time or space) as the input size grows, showing how code execution scales with data. It is machine independent, as it is based only on the number of steps, and it focuses on dominant terms while ignoring smaller operations; for example, O(n + 1) → O(n).  
 
-> **In short:** *"How code slows as data grows."*
+**In short:** *"How code slows as data grows."*  
 
----
 
-## 🧮 Basic Definitions
-- **Big O (O)** → **Worst case** performance of an algorithm.  
-- **Big Ω (Ω)** → **Best case** performance of an algorithm.  
-- **Big Θ (Θ)** → **Average case** performance of an algorithm.  
+### Notations  
+
+In complexity analysis, Big O (O) represents the worst-case performance of an algorithm, Big Omega (Ω) represents the best-case performance, and Big Theta (Θ) represents the average-case performance of an algorithm.  
 
 ---
 
-## 📘 Rules for Big O Complexity Analysis
+## Rules for Big O Complexity Analysis
 
 These are general rules for analyzing algorithm complexity using **Big O notation**. They help estimate the upper bounds of operations, loops, and conditions during algorithm execution — both iteratively and structurally.
 
@@ -214,13 +199,20 @@ O(1) < O(log n) < O(n) < O(n log n) < O(n²) < O(n!)
 ---
 # References
 
-1. https://github.com/Kadiryanik/algorithms 
+1. Nabiyev V. , 2009, Seçkin Y., Algoritmalar: Teoriden Uygulamalara, Ankara
 
+2. Introduction to Algorithms
+Cormen, T. H., Leiserson, C. E., Rivest, R. L., & Stein, C. (2009). Introduction to Algorithms (3rd ed.). MIT Press.
 
+3. Grokking Algorithms
+Bhargava, A. (2016). Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People. Manning Publications.
+   
+4. D. E. Knuth,  
+*The Art of Computer Programming*, Addison-Wesley.
 
+5. Big-O Cheat Sheet,  
+https://www.bigocheatsheet.com
 
-
-
-
+6. https://github.com/Kadiryanik/algorithms 
 
 
