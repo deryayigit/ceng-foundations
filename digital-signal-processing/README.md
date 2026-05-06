@@ -245,8 +245,9 @@ If this condition is violated, aliasing occurs and information loss is irreversi
 
 ### 🔗 Projects Related to the Subject:
 👉 [multi_rate_audio_recorder](multi_rate_audio_recorder)
+
 Also you can visit lab implimentation:
-👉 [ADC](01_analog_digital_converter)
+👉 [ADC](computer-architecture/01_analog_digital_converter)
 
 ---
 
