@@ -66,7 +66,7 @@ $$
 This demonstrates the efficiency of the Newton-Raphson method.  
 
 <p align="center">
-  <img src="images/newton-raphson aproximation.png" width="850"/>
+  <img src="images/newton_raphson_approximation.png" width="850"/>
   <br/>
   <em>Newton–Raphson iterative root approximation method</em>
 </p>
