@@ -125,9 +125,74 @@ The ARM architecture is a processor architecture based on RISC principles and wi
 
 Embedded systems are hardware and software systems integrated into a specific product, unlike general-purpose computers. Today, billions of devices—including smartphones, automobiles, and household appliances—contain embedded systems. These systems are typically real-time, reactive (continuously interacting with their environment), and highly optimized for efficiency. They communicate with the external world through sensors and actuators. Although their software is usually designed for a specific purpose, modern embedded systems are increasingly capable of being updated and running applications, as seen in devices such as smartphones and smart TVs. 
 
-## Microprocessor and Microcontroller
+## Microprocessor vs Microcontroller
 
 A microprocessor is a general-purpose processing unit with high computational power that requires external memory and peripheral components to operate. A microcontroller, on the other hand, is a compact computer that integrates the CPU, RAM, ROM, and I/O ports on a single chip, making it low-cost and specialized for embedded systems. Microprocessors are typically used in computers, whereas microcontrollers are used in specific devices such as household appliances. 
+
+---
+
+# Performance Considerations and Design Criteria  
+
+## Designing for Performance  
+
+The primary goal of performance-oriented design is to achieve maximum efficiency from continuously evolving computer systems. While the cost of computer systems decreases year by year, their computational power and capacity continue to increase significantly. This advancement has enabled the development of modern high-performance applications such as image processing, three-dimensional rendering, speech recognition, and simulation systems.  
+
+From a computer architecture perspective, one of the most remarkable aspects of modern systems is that, despite their enormous performance improvements, they still rely on fundamental architectural principles similar to those used in earlier computer systems. While the basic structure has largely remained unchanged, the techniques used to extract maximum performance from existing hardware have become increasingly sophisticated and complex.  
+
+---
+
+## Microprocessor Speed & Performance Balance  
+
+The continuous improvement in microprocessor performance is primarily driven by ongoing efforts to increase processor speed and efficiency. This development follows Moore’s Law, where increasing transistor density enables processors to become faster and more powerful over time. As transistor counts continue to rise, chip manufacturers are able to develop new generations of processors with significantly greater computational capability every few years.  
+
+However, raw processor speed alone is not sufficient. In order for a processor to reach its full potential, it must be continuously supplied with instructions and data. For this reason, modern processor design focuses not only on hardware capability but also on instruction execution efficiency. Consequently, advanced techniques such as pipelining, branch prediction, superscalar execution, data flow analysis, and speculative execution are widely used in modern processors.  
+
+### Pipelining  
+Enables multiple instructions to be processed simultaneously by overlapping different stages of instruction execution.  
+
+### Branch Prediction  
+Predicts future instruction paths and prepares the required instructions in advance.  
+
+### Superscalar Execution  
+Allows multiple instructions to be executed in parallel during a single clock cycle.  
+
+### Data Flow Analysis  
+Optimizes instruction scheduling by analyzing data dependencies between instructions.  
+
+### Speculative Execution  
+Executes instructions that are likely to be needed before they are actually required.  
+
+These and similar techniques have become essential for utilizing the computational power of modern processors efficiently. As a result, processors are capable of executing multiple instructions within a single clock cycle rather than spending multiple cycles on a single instruction.  
+
+While processor performance has improved rapidly, other computer system components have not evolved at the same pace. This creates a performance balance problem. In modern system design, computer organization and architecture must continuously be optimized in order to balance the speed differences between processors, main memory, I/O devices, and interconnection structures.  
+
+This issue becomes particularly significant in the communication between the processor and main memory. Although processor speeds continue to increase, the rate at which data can be transferred from memory to the processor has not improved proportionally. The interface between the processor and main memory is one of the most critical communication paths within a computer system. If the memory subsystem cannot respond quickly enough to processor requests, the processor enters a wait state, resulting in substantial performance loss.  
+
+To address this problem, modern systems employ several performance-enhancing approaches, including wider buses, improved DRAM structures, multi-level cache systems, and bus hierarchies. In particular, cache structures positioned close to the processor significantly reduce memory access latency and accelerate data flow.  
+
+Similarly, input/output (I/O) systems represent another important design area in modern computer architecture. Although modern processors are capable of processing large amounts of data, transferring this data efficiently between processors and peripheral devices remains a major challenge. For this reason, buffering, caching, high-speed buses, and advanced interconnection structures are widely utilized.  
+
+The key concept in modern computer design is balance. Designers continuously attempt to balance data throughput and processing demands between processors, memory systems, I/O devices, and interconnection structures. However, because different technology areas evolve at different rates and new applications continuously alter system data access behavior, computer architecture remains a constantly evolving engineering discipline.  
+
+---
+
+## Improvements in Chip Organization and Architecture  
+
+Three primary approaches are used to improve processor performance: Increasing the hardware speed of the processor, improving the capacity and speed of cache structures between the processor and main memory, and increasing instruction execution efficiency through parallelism-oriented architectural approaches.  
+
+Processor speed improvements are mainly achieved by reducing logic gate sizes, increasing transistor density, and raising clock frequencies. In addition, multi-level cache structures integrated directly into the processor significantly reduce memory access latency and improve data throughput. Furthermore, techniques such as pipelining and superscalar execution improve processor efficiency by enabling parallel instruction execution.  
+
+However, as clock frequency and logic density continue to increase, several physical limitations become increasingly significant. Higher power density creates serious thermal dissipation problems, while increased resistance and capacitance in interconnection wires lead to RC delay. In addition, memory latency and data transfer throughput continue to lag behind processor speeds.  
+
+To address these issues, cache capacities have been expanded, multi-level cache architectures have been developed, and the level of parallelism within processors has been increased. Over time, however, both cache-based optimizations and parallel execution techniques have begun approaching diminishing returns in terms of performance improvement.  
+
+At the same time, performance scaling based solely on increasing clock frequency has become unsustainable due to power consumption and physical limitations. This limitation became one of the primary reasons behind the transition toward multicore processor architectures in modern computer systems.  
+
+<p align="center">
+  <img src="images/processor_trends.png" width="700"/>
+  <br/>
+  <em>Processor performance trends and the transition toward multicore architectures</em>
+</p>
 
 ---
 
