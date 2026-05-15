@@ -421,7 +421,7 @@ X =
 This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical decoding operations in matrix based cryptography systems.
 
 #### Code Implementation
-👉 []()
+👉 [Cryptography Implementation](engineering-math/06_gauss_jordan_elimination/gauss_jordan_cryptography.cpp)
 
 ---
 
