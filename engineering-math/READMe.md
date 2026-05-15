@@ -6,7 +6,7 @@ This course includes Fourier series, Discrete Fourier Transform (DFT), Fast Four
 
 ## Repository Structure 
 
-This repository has been prepared to examine the fundamental concepts covered in the Engineering Mathematics course both theoretically and practically. The content includes not only mathematical definitions but also how these structures are applied to engineering problems and implemented at the code level. Each folder represents an independent study focusing on the analysis of a specific mathematical concept and its engineering application.
+This repository has been prepared to examine the fundamental concepts covered in the Engineering Mathematics course both theoretically and practically. The content includes both mathematical definitions and how these structures are applied to engineering problems and implemented at the code level. Each folder represents an independent study focusing on the analysis of a specific mathematical concept and its engineering application.
 
 ## Purpose of This Repository 
 
