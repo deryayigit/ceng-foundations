@@ -344,7 +344,7 @@ A matrix is in reduced row echelon form if:
 #### Code Implementation
 👉 [06 Gauss-Jordan Elimination](06_gauss_jordan_elimination)
 
-### Applications of Gauss–Jordan Elimination
+## Applications of Gauss–Jordan Elimination
 
 One important application of the Gauss–Jordan elimination method is matrix inversion. Inverse matrices are widely used in engineering fields such as cryptography, signal processing, communication systems, computer graphics, and numerical analysis.
 
@@ -352,25 +352,53 @@ In matrix-based cryptography systems, a message can be encoded using a transform
 
 | Step | Mathematical Expression | Description |
 |---|---|---|
-| Encoding Model | $$AX = B$$ | The original message matrix is transformed into encoded form using the encoding matrix. |
-| Multiply by \(A^{-1}\) | $$A^{-1}AX = A^{-1}B$$ | Both sides are multiplied by the inverse matrix to isolate the original message matrix. |
-| Identity Property | $$A^{-1}A = I$$ | A matrix multiplied by its inverse produces the identity matrix. |
-| Decoding Equation | $$X = A^{-1}B$$ | The original message matrix is recovered from the encoded matrix. |
+| Encoding Model | \(AX = B\) | The original message matrix is transformed into encoded form using the encoding matrix. |
+| Multiply by \(A^{-1}\) | \(A^{-1}AX = A^{-1}B\) | Both sides are multiplied by the inverse matrix to isolate the original message matrix. |
+| Identity Property | \(A^{-1}A = I\) | A matrix multiplied by its inverse produces the identity matrix. |
+| Decoding Equation | \(X = A^{-1}B\) | The original message matrix is recovered from the encoded matrix. |
 
 ---
 
 ### Cryptography Example
 
-| Component | Representation |
+| Component | Description |
 |---|---|
-| Encoding Matrix | $$ A=\begin{bmatrix} 1 & 2 & -4 \\ -1 & -1 & 5 \\ 2 & 7 & -3 \end{bmatrix} $$ |
-| Encoded Data Sequence | $$ \{-20,\ 27,\ -7,\ 20,\ 29,\ 3,\ 4,\ 3,\ 35,\ -5,\ 21,\ 52\} $$ |
-| Matrix Construction | Since \(A\) is a \(3 \times 3\) matrix, the encoded sequence is grouped into blocks of 3 elements and arranged column-wise to preserve matrix dimensional compatibility. |
-| Encoded Message Matrix | $$ B=\begin{bmatrix} -20 & 20 & 4 & -5 \\ 27 & 29 & 3 & 21 \\ -7 & 3 & 35 & 52 \end{bmatrix} $$ |
+| Encoding Matrix | Transformation matrix used for encoding |
+| Encoded Data Sequence | Encrypted numerical sequence |
+| Matrix Construction | Since \(A\) is a \(3 \times 3\) matrix, the sequence is grouped into blocks of 3 elements and arranged column-wise. |
+| Encoded Message Matrix | Matrix representation of the encoded sequence |
+
+### Encoding Matrix
+
+$$
+A =
+\begin{bmatrix}
+1 & 2 & -4 \\
+-1 & -1 & 5 \\
+2 & 7 & -3
+\end{bmatrix}
+$$
+
+### Encoded Data Sequence
+
+$$
+\{-20,\ 27,\ -7,\ 20,\ 29,\ 3,\ 4,\ 3,\ 35,\ -5,\ 21,\ 52\}
+$$
+
+### Encoded Message Matrix
+
+$$
+B =
+\begin{bmatrix}
+-20 & 20 & 4 & -5 \\
+27 & 29 & 3 & 21 \\
+-7 & 3 & 35 & 52
+\end{bmatrix}
+$$
 
 ---
 
-### Gauss–Jordan Elimination for \(A^{-1}\)
+## Gauss–Jordan Elimination for \(A^{-1}\)
 
 Initial augmented matrix:
 
@@ -384,12 +412,60 @@ $$
 \right]
 $$
 
-| Step | Row Operation | Result |
-|---|---|---|
-| 1 | \(R_2 \leftarrow R_2 + R_1\) <br> \(R_3 \leftarrow R_3 - 2R_1\) | $$ \left[\begin{array}{ccc|ccc} 1 & 2 & -4 & 1 & 0 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
-| 2 | \(R_1 \leftarrow R_1 - 2R_2\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
-| 3 | \(R_3 \leftarrow (R_3 - 3R_2)/2\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 0 & 1 & -5/2 & -3/2 & 1/2 \end{array}\right] $$ |
-| 4 | \(R_1 \leftarrow R_1 + 6R_3\) <br> \(R_2 \leftarrow R_2 - R_3\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & 0 & -16 & -11 & 3 \\ 0 & 1 & 0 & 7/2 & 5/2 & -1/2 \\ 0 & 0 & 1 & -5/2 & -3/2 & 1/2 \end{array}\right] $$ |
+| Step | Row Operation |
+|---|---|
+| 1 | \(R_2 \leftarrow R_2 + R_1\), \(R_3 \leftarrow R_3 - 2R_1\) |
+| 2 | \(R_1 \leftarrow R_1 - 2R_2\) |
+| 3 | \(R_3 \leftarrow (R_3 - 3R_2)/2\) |
+| 4 | \(R_1 \leftarrow R_1 + 6R_3\), \(R_2 \leftarrow R_2 - R_3\) |
+
+### Step 1 Result
+
+$$
+\left[
+\begin{array}{ccc|ccc}
+1 & 2 & -4 & 1 & 0 & 0 \\
+0 & 1 & 1 & 1 & 1 & 0 \\
+0 & 3 & 5 & -2 & 0 & 1
+\end{array}
+\right]
+$$
+
+### Step 2 Result
+
+$$
+\left[
+\begin{array}{ccc|ccc}
+1 & 0 & -6 & -1 & -2 & 0 \\
+0 & 1 & 1 & 1 & 1 & 0 \\
+0 & 3 & 5 & -2 & 0 & 1
+\end{array}
+\right]
+$$
+
+### Step 3 Result
+
+$$
+\left[
+\begin{array}{ccc|ccc}
+1 & 0 & -6 & -1 & -2 & 0 \\
+0 & 1 & 1 & 1 & 1 & 0 \\
+0 & 0 & 1 & -5/2 & -3/2 & 1/2
+\end{array}
+\right]
+$$
+
+### Step 4 Result
+
+$$
+\left[
+\begin{array}{ccc|ccc}
+1 & 0 & 0 & -16 & -11 & 3 \\
+0 & 1 & 0 & 7/2 & 5/2 & -1/2 \\
+0 & 0 & 1 & -5/2 & -3/2 & 1/2
+\end{array}
+\right]
+$$
 
 Thus,
 
@@ -404,7 +480,7 @@ $$
 
 ---
 
-### Recovering the Original Message
+## Recovering the Original Message
 
 $$
 X = A^{-1}B
