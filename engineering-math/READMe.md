@@ -359,78 +359,64 @@ In matrix-based cryptography systems, a message can be encoded using a transform
 | Identity Property | $$A^{-1}A = I$$ | A matrix multiplied by its inverse produces the identity matrix. |
 | Decoding Equation | $$X = A^{-1}B$$ | The original message matrix is recovered from the encoded matrix. |
 
----
 
-# Cryptography Example
+### Cryptography Example
 
 | Component | Representation |
 |---|---|
-| Encoding Matrix | $$ A = \begin{bmatrix} 1 & 2 & -4 \\ -1 & -1 & 5 \\ 2 & 7 & -3 \end{bmatrix} $$ |
-| Encoded Data Sequence | $$\{-20,\ 27,\ -7,\ 20,\ 29,\ 3,\ 4,\ 3,\ 35,\ -5,\ 21,\ 52\}$$ |
-| Matrix Construction | Since $$A$$ is a $$3 \times 3$$ matrix, the encoded sequence is grouped into blocks of 3 elements and arranged column-wise to preserve matrix dimensional compatibility. |
-| Encoded Message Matrix | $$ B = \begin{bmatrix} -20 & 20 & 4 & -5 \\ 27 & 29 & 3 & 21 \\ -7 & 3 & 35 & 52 \end{bmatrix} $$ |
+| **Encoding Matrix** | <pre>A = [  1   2  -4 ]<br>    [ -1  -1   5 ]<br>    [  2   7  -3 ]</pre> |
+| **Encoded Data Sequence** | `{ -20, 27, -7, 20, 29, 3, 4, 3, 35, -5, 21, 52 }` |
+| **Matrix Construction** | Since `A` is a `3 × 3` matrix, the encoded sequence is grouped into blocks of 3 elements and arranged column-wise to preserve matrix dimensional compatibility. |
+| **Encoded Message Matrix** | <pre>B = [ -20   20    4   -5 ]<br>    [  27   29    3   21 ]<br>    [  -7    3   35   52 ]</pre> |
 
----
 
-# Gauss–Jordan Elimination for $$A^{-1}$$
+#### Gauss–Jordan Elimination for A⁻¹
 
 Initial augmented matrix:
 
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 2 & -4 & 1 & 0 & 0 \\
--1 & -1 & 5 & 0 & 1 & 0 \\
-2 & 7 & -3 & 0 & 0 & 1
-\end{array}
-\right]
-$$
+```text
+[  1   2  -4 | 1  0  0 ]
+[ -1  -1   5 | 0  1  0 ]
+[  2   7  -3 | 0  0  1 ]
+```
 
 | Step | Row Operation | Result |
 |---|---|---|
-| 1 | $$R_2 \leftarrow R_2 + R_1$$ <br> $$R_3 \leftarrow R_3 - 2R_1$$ | $$ \left[\begin{array}{ccc|ccc} 1 & 2 & -4 & 1 & 0 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
-| 2 | $$R_1 \leftarrow R_1 - 2R_2$$ | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
-| 3 | $$R_3 \leftarrow (R_3 - 3R_2)/2$$ | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 0 & 1 & -\frac{5}{2} & -\frac{3}{2} & \frac{1}{2} \end{array}\right] $$ |
-| 4 | $$R_1 \leftarrow R_1 + 6R_3$$ <br> $$R_2 \leftarrow R_2 - R_3$$ | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & 0 & -16 & -11 & 3 \\ 0 & 1 & 0 & \frac{7}{2} & \frac{5}{2} & -\frac{1}{2} \\ 0 & 0 & 1 & -\frac{5}{2} & -\frac{3}{2} & \frac{1}{2} \end{array}\right] $$ |
+| **1** | <pre>R₂ ← R₂ + R₁<br>R₃ ← R₃ − 2R₁</pre> | <pre>[ 1  2  -4 |  1   0   0 ]<br>[ 0  1   1 |  1   1   0 ]<br>[ 0  3   5 | -2   0   1 ]</pre> |
+| **2** | <pre>R₁ ← R₁ − 2R₂</pre> | <pre>[ 1  0  -6 | -1  -2   0 ]<br>[ 0  1   1 |  1   1   0 ]<br>[ 0  3   5 | -2   0   1 ]</pre> |
+| **3** | <pre>R₃ ← (R₃ − 3R₂) / 2</pre> | <pre>[ 1  0  -6 | -1   -2    0 ]<br>[ 0  1   1 |  1    1    0 ]<br>[ 0  0   1 | -5/2 -3/2  1/2 ]</pre> |
+| **4** | <pre>R₁ ← R₁ + 6R₃<br>R₂ ← R₂ − R₃</pre> | <pre>[ 1  0  0 | -16  -11    3 ]<br>[ 0  1  0 | 7/2  5/2  -1/2 ]<br>[ 0  0  1 | -5/2 -3/2  1/2 ]</pre> |
 
-Thus,
 
-$$
-A^{-1} =
-\begin{bmatrix}
--16 & -11 & 3 \\
-\frac{7}{2} & \frac{5}{2} & -\frac{1}{2} \\
--\frac{5}{2} & -\frac{3}{2} & \frac{1}{2}
-\end{bmatrix}
-$$
+#### Inverse Matrix
 
----
+```text
+A⁻¹ =
+[  -16   -11     3  ]
+[  7/2   5/2   -1/2 ]
+[ -5/2  -3/2    1/2 ]
+```
 
-# Recovering the Original Message
+### Recovering the Original Message
 
-$$
-X = A^{-1}B
-$$
+```text
+X = A⁻¹B
+```
 
-$$
+```text
 X =
-\begin{bmatrix}
--16 & -11 & 3 \\
-\frac{7}{2} & \frac{5}{2} & -\frac{1}{2} \\
--\frac{5}{2} & -\frac{3}{2} & \frac{1}{2}
-\end{bmatrix}
-\begin{bmatrix}
--20 & 20 & 4 & -5 \\
-27 & 29 & 3 & 21 \\
--7 & 3 & 35 & 52
-\end{bmatrix}
-=
-\begin{bmatrix}
-2 & -630 & 8 & 5 \\
-1 & 141 & 4 & 9 \\
-6 & -92 & 3 & 7
-\end{bmatrix}
-$$
+[  -16   -11     3  ]   [ -20   20    4   -5 ]
+[  7/2   5/2   -1/2 ] × [  27   29    3   21 ]
+[ -5/2  -3/2    1/2 ]   [  -7    3   35   52 ]
+```
+Resul:
+
+```text
+X =
+[  2   -630    8    5 ]
+[  1    141    4    9 ]
+[  6    -92    3    7 ]
+```
 
 This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical decoding operations in matrix-based cryptography systems.
 
