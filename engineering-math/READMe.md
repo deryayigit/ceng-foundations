@@ -344,7 +344,7 @@ A matrix is in reduced row echelon form if:
 #### Code Implementation
 👉 [06 Gauss-Jordan Elimination](06_gauss_jordan_elimination)
 
-# Applications of Gauss–Jordan Elimination
+### Applications of Gauss–Jordan Elimination
 
 One important application of the Gauss–Jordan elimination method is matrix inversion.
 
@@ -397,7 +397,7 @@ A⁻¹ =
 [ -5/2  -3/2    1/2 ]
 ```
 
-### Recovering the Original Message
+#### Recovering the Original Message
 
 ```text
 X = A⁻¹B
@@ -418,7 +418,7 @@ X =
 [  6    -92    3    7 ]
 ```
 
-This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical decoding operations in matrix-based cryptography systems.
+This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical decoding operations in matrix based cryptography systems.
 
 #### Code Implementation
 👉 []()
