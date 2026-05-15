@@ -346,88 +346,33 @@ A matrix is in reduced row echelon form if:
 
 ### Applications of Gauss–Jordan Elimination
 
-One important application of the Gauss–Jordan elimination method is matrix inversion.  
-By transforming a matrix into reduced row echelon form, the inverse of a matrix can be computed directly. This property is widely used in engineering applications such as solving systems of linear equations, signal processing, computer graphics, cryptography, and matrix-based encoding/decoding systems.
+One important application of the Gauss–Jordan elimination method is matrix inversion. Inverse matrices are widely used in engineering fields such as cryptography, signal processing, communication systems, computer graphics, and numerical analysis.
 
-Consider the following matrix equation:
+In matrix-based cryptography systems, a message can be encoded using a transformation matrix and later recovered using the inverse of that matrix.
 
-$$
-AX = B
-$$
-
-where:
-
-- \(A\) : encoding matrix  
-- \(X\) : original message matrix  
-- \(B\) : encoded message matrix  
-
-To recover the original message matrix \(X\), both sides of the equation are multiplied by \(A^{-1}\):
-
-$$
-A^{-1}AX = A^{-1}B
-$$
-
-Since
-
-$$
-A^{-1}A = I
-$$
-
-the equation becomes:
-
-$$
-IX = A^{-1}B
-$$
-
-and because
-
-$$
-IX = X
-$$
-
-the final decoding equation is obtained:
-
-$$
-X = A^{-1}B
-$$
+| Step | Mathematical Expression | Description |
+|---|---|---|
+| Encoding Model | $$AX = B$$ | The original message matrix is transformed into encoded form using the encoding matrix. |
+| Multiply by \(A^{-1}\) | $$A^{-1}AX = A^{-1}B$$ | Both sides are multiplied by the inverse matrix to isolate the original message matrix. |
+| Identity Property | $$A^{-1}A = I$$ | A matrix multiplied by its inverse produces the identity matrix. |
+| Decoding Equation | $$X = A^{-1}B$$ | The original message matrix is recovered from the encoded matrix. |
 
 ---
 
-### Encoding Matrix
+### Cryptography Example
 
-$$
-A =
-\begin{bmatrix}
-1 & 2 & -4 \\
--1 & -1 & 5 \\
-2 & 7 & -3
-\end{bmatrix}
-$$
-
-### Encoded Message Matrix
-
-The encoded data sequence is:
-
-$$
-\{-20,\ 27,\ -7,\ 20,\ 29,\ 3,\ 4,\ 3,\ 35,\ -5,\ 21,\ 52\}
-$$
-
-The sequence is grouped into blocks of 3 and converted into matrix form:
-
-$$
-B =
-\begin{bmatrix}
--20 & 20 & 4 & -5 \\
-27 & 29 & 3 & 21 \\
--7 & 3 & 35 & 52
-\end{bmatrix}
-$$
+| Component | Representation |
+|---|---|
+| Encoding Matrix | $$ A=\begin{bmatrix} 1 & 2 & -4 \\ -1 & -1 & 5 \\ 2 & 7 & -3 \end{bmatrix} $$ |
+| Encoded Data Sequence | $$ \{-20,\ 27,\ -7,\ 20,\ 29,\ 3,\ 4,\ 3,\ 35,\ -5,\ 21,\ 52\} $$ |
+| Matrix Construction | Since \(A\) is a \(3 \times 3\) matrix, the encoded sequence is grouped into blocks of 3 elements and arranged column-wise to preserve matrix dimensional compatibility. |
+| Encoded Message Matrix | $$ B=\begin{bmatrix} -20 & 20 & 4 & -5 \\ 27 & 29 & 3 & 21 \\ -7 & 3 & 35 & 52 \end{bmatrix} $$ |
 
 ---
 
-## Finding the Inverse Matrix Using Gauss–Jordan Elimination
+### Gauss–Jordan Elimination for \(A^{-1}\)
 
-The augmented matrix is constructed as:
+Initial augmented matrix:
 
 $$
 \left[
@@ -439,101 +384,14 @@ $$
 \right]
 $$
 
-### Step 1
+| Step | Row Operation | Result |
+|---|---|---|
+| 1 | \(R_2 \leftarrow R_2 + R_1\) <br> \(R_3 \leftarrow R_3 - 2R_1\) | $$ \left[\begin{array}{ccc|ccc} 1 & 2 & -4 & 1 & 0 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
+| 2 | \(R_1 \leftarrow R_1 - 2R_2\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 3 & 5 & -2 & 0 & 1 \end{array}\right] $$ |
+| 3 | \(R_3 \leftarrow (R_3 - 3R_2)/2\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & -6 & -1 & -2 & 0 \\ 0 & 1 & 1 & 1 & 1 & 0 \\ 0 & 0 & 1 & -5/2 & -3/2 & 1/2 \end{array}\right] $$ |
+| 4 | \(R_1 \leftarrow R_1 + 6R_3\) <br> \(R_2 \leftarrow R_2 - R_3\) | $$ \left[\begin{array}{ccc|ccc} 1 & 0 & 0 & -16 & -11 & 3 \\ 0 & 1 & 0 & 7/2 & 5/2 & -1/2 \\ 0 & 0 & 1 & -5/2 & -3/2 & 1/2 \end{array}\right] $$ |
 
-Apply the row operations:
-
-$$
-R_2 \leftarrow R_2 + R_1
-$$
-
-$$
-R_3 \leftarrow R_3 - 2R_1
-$$
-
-Result:
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 2 & -4 & 1 & 0 & 0 \\
-0 & 1 & 1 & 1 & 1 & 0 \\
-0 & 3 & 5 & -2 & 0 & 1
-\end{array}
-\right]
-$$
-
----
-
-### Step 2
-
-Apply:
-
-$$
-R_1 \leftarrow R_1 - 2R_2
-$$
-
-Result:
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 0 & -6 & -1 & -2 & 0 \\
-0 & 1 & 1 & 1 & 1 & 0 \\
-0 & 3 & 5 & -2 & 0 & 1
-\end{array}
-\right]
-$$
-
----
-
-### Step 3
-
-Apply:
-
-$$
-R_3 \leftarrow \frac{R_3 - 3R_2}{2}
-$$
-
-Result:
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 0 & -6 & -1 & -2 & 0 \\
-0 & 1 & 1 & 1 & 1 & 0 \\
-0 & 0 & 1 & -5/2 & -3/2 & 1/2
-\end{array}
-\right]
-$$
-
----
-
-### Step 4
-
-Apply:
-
-$$
-R_1 \leftarrow R_1 + 6R_3
-$$
-
-$$
-R_2 \leftarrow R_2 - R_3
-$$
-
-Result:
-
-$$
-\left[
-\begin{array}{ccc|ccc}
-1 & 0 & 0 & -16 & -11 & 3 \\
-0 & 1 & 0 & 7/2 & 5/2 & -1/2 \\
-0 & 0 & 1 & -5/2 & -3/2 & 1/2
-\end{array}
-\right]
-$$
-
-Thus:
+Thus,
 
 $$
 A^{-1} =
@@ -546,9 +404,7 @@ $$
 
 ---
 
-## Recovering the Original Message
-
-The decoded matrix is obtained by:
+### Recovering the Original Message
 
 $$
 X = A^{-1}B
@@ -561,18 +417,12 @@ X =
 7/2 & 5/2 & -1/2 \\
 -5/2 & -3/2 & 1/2
 \end{bmatrix}
-\cdot
 \begin{bmatrix}
 -20 & 20 & 4 & -5 \\
 27 & 29 & 3 & 21 \\
 -7 & 3 & 35 & 52
 \end{bmatrix}
-$$
-
-Result:
-
-$$
-X =
+=
 \begin{bmatrix}
 2 & -630 & 8 & 5 \\
 1 & 141 & 4 & 9 \\
@@ -580,9 +430,7 @@ X =
 \end{bmatrix}
 $$
 
-This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical matrix-based encoding and decoding operations.
-
-
+This example demonstrates how Gauss–Jordan elimination can be used not only for solving systems of linear equations, but also for practical decoding operations in matrix-based cryptography systems.
 
 #### Code Implementation
 👉 []()
