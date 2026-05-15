@@ -1,6 +1,6 @@
-#include <iostream>   // For console input and output
+#include <iostream>   // Provides console input and output
 #include <iomanip>    // For formatted matrix output
-#include <cmath>      // For fabs function used in pivot control
+#include <cmath>      // Used for mathematical functions such as fabs()
 
 using namespace std;
 
