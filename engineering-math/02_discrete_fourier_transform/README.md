@@ -74,6 +74,3 @@ Each frequency coefficient requires summing **N** complex terms, resulting in a 
 1. G. James, *Advanced Modern Engineering Mathematics*, Pearson Education, 2007.  
 2. MIT OpenCourseWare — *The Discrete Fourier Transform*  
 3. Stanford University Lecture Notes — *Fourier Analysis*
-
-
-
